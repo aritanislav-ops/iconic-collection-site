@@ -3,20 +3,22 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
- "scripts": {
-  "dev": "next dev",
-  "build": "next build",
-  "start": "next start",
-  "lint": "next lint"
-},
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "pages:build": "next-on-pages",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "dependencies": {
-   "next": "14.2.24",
-   "react": "18.3.1",
-   "react-dom": "18.3.1"
-},
- "devDependencies": {
-  "@types/node": "20.11.0",
-  "@types/react": "18.3.12",
-  "typescript": "5.9.3"
- }
+    "next": "14.2.24",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@cloudflare/next-on-pages": "1.13.0",
+    "@types/node": "20.11.0",
+    "@types/react": "18.3.12",
+    "typescript": "5.9.3"
+  }
 }
