@@ -1,8 +1,9 @@
 import { notFound } from "next/navigation";
 import { site } from "../../../content/site";
 
-export default function ModelPage({ params }: { params: { slug: string } }) {
-  const model = site.models.find((m) => m.slug === params.slug);
+export default async function ModelPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const model = site.models.find((m) => m.slug === slug);
   if (!model) return notFound();
 
   return (
