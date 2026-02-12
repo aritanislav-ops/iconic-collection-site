@@ -1,10 +1,15 @@
-export const runtime = 'edge'
-
 import { notFound } from "next/navigation";
 import { site } from "../../../content/site";
 
-export default async function ModelPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
+export const dynamic = "error";
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return site.models.map((m) => ({ slug: m.slug }));
+}
+
+export default function ModelPage({ params }: { params: { slug: string } }) {
+  const { slug } = params;
   const model = site.models.find((m) => m.slug === slug);
   if (!model) return notFound();
 
