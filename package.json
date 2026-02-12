@@ -3,12 +3,13 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build && next-on-pages",
-    "start": "next start",
-    "lint": "next lint"
-  },
+ "scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "pages:build": "next-on-pages",
+  "start": "next start",
+  "lint": "next lint"
+},
   "dependencies": {
     "next": "15.1.6",
     "react": "19.0.0",
