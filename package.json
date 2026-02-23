@@ -6,17 +6,15 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "pages:build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "export",
+    "next": "14.2.24",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "1.13.0",
     "@types/node": "20.11.0",
     "@types/react": "18.3.12",
     "typescript": "5.9.3"
