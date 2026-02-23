@@ -6,12 +6,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "pages:build": "next-on-pages",
+    "pages:build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "14.2.24",
+    "next": "export",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
