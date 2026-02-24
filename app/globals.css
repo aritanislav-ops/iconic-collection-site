@@ -76,12 +76,11 @@ a{color:inherit;text-decoration:none}
 .hero{
   position:relative;
   min-height:520px;
-  display:flex;
-  align-items:flex-end;
   padding:64px 0 56px;
   overflow:hidden;
 }
 
+/* video pe tot ecranul */
 .heroMedia{
   position:absolute;
   inset:0;
@@ -89,6 +88,7 @@ a{color:inherit;text-decoration:none}
 }
 
 .heroMedia video{
+  display:block;
   width:100%;
   height:100%;
   object-fit:cover;
@@ -96,6 +96,7 @@ a{color:inherit;text-decoration:none}
   filter: contrast(1.08) saturate(1.06);
 }
 
+/* overlay peste video */
 .heroMedia::after{
   content:"";
   position:absolute;
@@ -104,12 +105,13 @@ a{color:inherit;text-decoration:none}
   background:linear-gradient(90deg, rgba(2,6,23,.78) 0%, rgba(2,6,23,.35) 45%, rgba(2,6,23,.15) 100%);
 }
 
-/* conținutul peste video + overlay */
+/* conținutul peste video */
 .hero .container{
   position:relative;
   z-index:2;
 }
 
+/* grila */
 .heroGrid{
   position:relative;
   z-index:2;
@@ -117,6 +119,10 @@ a{color:inherit;text-decoration:none}
   grid-template-columns: 1.3fr .9fr;
   gap:22px;
   align-items:start;
+}
+
+@media (max-width: 920px){
+  .heroGrid{grid-template-columns:1fr}
 }
 
 @media (max-width: 920px){
