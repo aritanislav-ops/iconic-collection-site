@@ -7,7 +7,7 @@ export default function HomePage() {
       <section className="hero">
         <div className="heroMedia">
           <video autoPlay muted loop playsInline preload="metadata">
-            <source src="/media/hero.mp4" type="video/mp4" />
+            <source src="/public/brand/hero.mp4" type="video/mp4" />
           </video>
         </div>
 
