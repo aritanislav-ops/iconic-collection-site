@@ -84,33 +84,6 @@ export default function HomePage() {
           <div className="modelsHeader">
             <h2 className="modelsTitle">Modele de case</h2>
 
-            <div className="filters">
-              <select className="filter" defaultValue="suprafata">
-                <option value="suprafata">Suprafață</option>
-                <option value="100-140">100–140 mp</option>
-                <option value="140-200">140–200 mp</option>
-                <option value="200+">200+ mp</option>
-              </select>
-
-              <select className="filter" defaultValue="dormitoare">
-                <option value="dormitoare">Dormitoare</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4+">4+</option>
-              </select>
-
-              <select className="filter" defaultValue="stil">
-                <option value="stil">Stil</option>
-                <option value="minimalist">Minimalist</option>
-                <option value="modern">Modern</option>
-              </select>
-
-              <select className="filter" defaultValue="buget">
-                <option value="buget">Buget</option>
-                <option value="controlat">Controlat</option>
-                <option value="premium">Premium</option>
-              </select>
-            </div>
           </div>
 
           <div className="modelsGrid">
