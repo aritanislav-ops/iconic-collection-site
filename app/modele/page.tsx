@@ -11,7 +11,7 @@ export default function ModelePage() {
         {site.models.map((m) => (
           <div key={m.slug} className="listItem">
             <h3>
-              <Link href={`/modele/${m.slug}`}>{m.name}</Link> <span style={{ color: "var(--muted)" }}>({m.area})</span>
+              <Link href={`/modele/${m.slug}`}>{m.name}</Link>
             </h3>
             <p>{m.summary}</p>
           </div>
