@@ -1,8 +1,8 @@
 export const site = {
   brandName: "iCONiC collection",
   siteUrl: "https://www.iconic-collection.ro",
-  headline: "Case proiectate corect și usor construibile ",
-  subheadline: "Proiect (arhitectură + rezistență + instalații), design interior și execuție pe terenul clientului. Avize și management complet.",
+  headline: "Proiectare personalizată pentru fiecare model de casă.",
+  subheadline: "Arh + Structură + Instalații + autorizare. Execuție opțional.",
   heroBadges: ["Modele + adaptare la teren", "Avize + management"],
   cta: {
     primary: { label: "Cere ofertă", href: "/contact" },
@@ -41,16 +41,18 @@ export const site = {
   },
 models: [
   {
-    slug: "iconic-1'story-black",
-    name: "iCONiC 1'story BLACK",
+    slug: "iconic-1story-black",
+    name: "iCONiC 1story BLACK",
     summary: "Varianta BLACK — fațadă închisă, accente premium, look minimalist.",
+    image: "/brand/model-black.jpg",
   },
   {
-    slug: "iconic-1'story-white",
-    name: "iCONiC 1'story WHITE",
+    slug: "iconic-1story-white",
+    name: "iCONiC 1story WHITE",
     summary: "Varianta WHITE — fațadă deschisă, contrast elegant, lumină maximă.",
+    image: "/brand/model-white.jpg",
   },
-] as const,
+],
   proces: {
     title: "Proces",
     items: [
