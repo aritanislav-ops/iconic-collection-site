@@ -5,7 +5,12 @@
   --border:#e2e8f0;
   --card:#ffffff;
   --shadow: 0 10px 30px rgba(2,6,23,.08);
+  --shadow-strong: 0 18px 60px rgba(2,6,23,.16);
   --radius:14px;
+
+  /* accent (auriu discret) */
+  --gold:#caa46a;
+  --gold-ink:#1b1206;
 }
 
 *{box-sizing:border-box}
@@ -69,34 +74,36 @@ a{color:inherit;text-decoration:none}
   color:var(--text);
 }
 
-/* HERO */
+/* HERO (luminos, fără “perdea” grea) */
 .hero{
   position:relative;
   min-height:620px;
   padding:0;
   overflow:hidden;
-  background:#05070b;
+  background:#0b1220; /* fallback dacă video nu pornește */
 }
 
-/* video pe tot ecranul */
 .heroMedia{
   position:absolute;
   inset:0;
   z-index:0;
 }
 
-.heroMedia video{
+.heroMedia video,
+.heroVideo{
   position:absolute;
   inset:0;
   display:block;
   width:100%;
   height:100%;
   object-fit:cover;
+  object-position:center;
   transform:scale(1.02);
-  filter: contrast(1.03) saturate(1.04) brightness(1.06);
+  /* scoatem “întunecarea”, păstrăm doar un pic de pop */
+  filter: contrast(1.04) saturate(1.04) brightness(1.08);
 }
 
-/* overlay peste video (folosim pseudo-element; nu ai nevoie de .heroOverlay) */
+/* overlay discret (mai mult pentru lizibilitate, nu pentru întunecare) */
 .heroMedia::after{
   content:"";
   position:absolute;
@@ -104,9 +111,9 @@ a{color:inherit;text-decoration:none}
   z-index:1;
   background: linear-gradient(
     90deg,
-    rgba(2,6,23,.44) 0%,
-    rgba(2,6,23,.18) 52%,
-    rgba(2,6,23,.08) 100%
+    rgba(2,6,23,.38) 0%,
+    rgba(2,6,23,.18) 45%,
+    rgba(2,6,23,.10) 100%
   );
 }
 
@@ -116,12 +123,23 @@ a{color:inherit;text-decoration:none}
   z-index:2;
 }
 
-/* wrapper pentru text */
+/* wrapper text */
 .heroInner{
   min-height:620px;
   display:flex;
   align-items:center;
   padding:88px 0 44px;
+}
+
+/* panou “glass” în spatele textului (ca să citești ușor fără să omori randarea) */
+.heroText{
+  max-width:640px;
+  padding:22px 22px 18px;
+  border-radius:18px;
+  background: rgba(15,23,42,.22);
+  border: 1px solid rgba(255,255,255,.14);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 16px 50px rgba(2,6,23,.22);
 }
 
 .heroTitle{
@@ -131,15 +149,16 @@ a{color:inherit;text-decoration:none}
   margin:0 0 12px 0;
   font-weight:800;
   letter-spacing:-.03em;
+  text-shadow: 0 10px 30px rgba(2,6,23,.35);
 }
 
 .heroSub{
-  color:rgba(255,255,255,.86);
-  margin:0 0 18px 0;
+  color:rgba(255,255,255,.88);
+  margin:0 0 16px 0;
   font-size:16px;
 }
 
-/* bullets cu check */
+/* bullets */
 .heroChecks{
   list-style:none;
   padding:0;
@@ -153,7 +172,7 @@ a{color:inherit;text-decoration:none}
   display:flex;
   gap:10px;
   align-items:flex-start;
-  color:rgba(255,255,255,.86);
+  color:rgba(255,255,255,.90);
   font-size:14px;
 }
 
@@ -164,8 +183,8 @@ a{color:inherit;text-decoration:none}
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  background:rgba(255,255,255,.10);
-  border:1px solid rgba(255,255,255,.14);
+  background:rgba(255,255,255,.14);
+  border:1px solid rgba(255,255,255,.18);
   color:#fff;
   line-height:1;
   transform: translateY(1px);
@@ -183,12 +202,20 @@ a{color:inherit;text-decoration:none}
   border:1px solid transparent;
   cursor:pointer;
 }
-.btnPrimary{background:#caa46a;color:#1b1206;border-color:rgba(255,255,255,.12)}
+.btnPrimary{
+  background:var(--gold);
+  color:var(--gold-ink);
+  border-color:rgba(255,255,255,.12)
+}
 .btnPrimary:hover{filter:brightness(.98)}
-.btnSecondary{background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.14)}
-.btnSecondary:hover{background:rgba(255,255,255,.16)}
+.btnSecondary{
+  background:rgba(255,255,255,.14);
+  color:#fff;
+  border-color:rgba(255,255,255,.18)
+}
+.btnSecondary:hover{background:rgba(255,255,255,.18)}
 
-/* 3 carduri sub hero */
+/* 3 carduri sub hero (mai “light”, să nu pară grele) */
 .heroUnder{
   position:relative;
   z-index:2;
@@ -196,19 +223,19 @@ a{color:inherit;text-decoration:none}
 }
 
 .featureRow{
-  margin-top:-22px;
+  margin-top:-18px;
   display:grid;
   grid-template-columns:repeat(3, 1fr);
   gap:14px;
 }
 
 .featureCard{
-  background:rgba(15,23,42,.55);
-  border:1px solid rgba(255,255,255,.10);
+  background:rgba(255,255,255,.18);
+  border:1px solid rgba(255,255,255,.20);
   border-radius:16px;
   padding:14px 14px 12px;
   backdrop-filter: blur(10px);
-  box-shadow: 0 14px 40px rgba(2,6,23,.25);
+  box-shadow: 0 14px 40px rgba(2,6,23,.18);
   color:#fff;
 }
 
@@ -216,36 +243,36 @@ a{color:inherit;text-decoration:none}
   width:34px;
   height:34px;
   border-radius:12px;
-  background:rgba(255,255,255,.08);
-  border:1px solid rgba(255,255,255,.10);
+  background:rgba(255,255,255,.16);
+  border:1px solid rgba(255,255,255,.18);
   display:flex;
   align-items:center;
   justify-content:center;
   margin:0 0 10px 0;
 }
 
-.featureTitle{font-weight:800;margin:0 0 6px 0}
-.featureText{color:rgba(255,255,255,.78);font-size:13px;line-height:1.35}
-
-/* SECTION (default) */
-.section{padding:34px 0}
-.sectionTitle{margin:0 0 14px 0;font-size:18px;font-weight:750}
-
-/* MODELS (ALB) — aici e fix-ul pentru “fundal negru” */
-.modelsSection{
-  background:#ffffff;
-  padding:34px 0 56px;
-  position:relative;
+.featureTitle{
+  font-weight:800;
+  margin:0 0 6px 0;
 }
 
-/* trecere fină din hero spre alb */
-.modelsSection::before{
-  content:"";
-  position:absolute;
-  left:0; right:0; top:-48px;
-  height:48px;
-  background: linear-gradient(180deg, rgba(5,7,11,1) 0%, rgba(255,255,255,0) 100%);
-  pointer-events:none;
+.featureText{
+  color:rgba(255,255,255,.86);
+  font-size:13px;
+  line-height:1.35;
+}
+
+/* MODELS (pe alb, curat) */
+.modelsSection{
+  padding:34px 0 56px;
+  background:#ffffff;
+}
+
+.modelsTitle{
+  margin:0;
+  font-size:28px;
+  font-weight:820;
+  color:var(--text);
 }
 
 .modelsHeader{
@@ -254,13 +281,6 @@ a{color:inherit;text-decoration:none}
   align-items:flex-end;
   justify-content:space-between;
   margin:0 0 14px 0;
-}
-
-.modelsTitle{
-  margin:0;
-  font-size:28px;
-  font-weight:820;
-  color:#0f172a;
 }
 
 .filters{
@@ -274,16 +294,11 @@ a{color:inherit;text-decoration:none}
   height:36px;
   border-radius:999px;
   padding:0 12px;
-  border:1px solid #e2e8f0;
+  border:1px solid var(--border);
   background:#ffffff;
-  color:#0f172a;
+  color:var(--text);
   outline:none;
-  box-shadow: 0 8px 22px rgba(2,6,23,.06);
-}
-
-.filter:focus{
-  border-color:#caa46a;
-  box-shadow: 0 10px 26px rgba(2,6,23,.10);
+  box-shadow: 0 6px 18px rgba(2,6,23,.06);
 }
 
 .modelsGrid{
@@ -295,32 +310,23 @@ a{color:inherit;text-decoration:none}
 .modelCard{
   border-radius:18px;
   overflow:hidden;
-  border:1px solid #e2e8f0;
+  border:1px solid var(--border);
   background:#ffffff;
-  box-shadow: 0 18px 60px rgba(2,6,23,.10);
+  box-shadow: var(--shadow-strong);
 }
 
 .modelImg{
-  height:210px;
-  background:#0b0f17;
-  position:relative;
-}
-
-.modelImg::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background: linear-gradient(180deg, rgba(2,6,23,.06) 0%, rgba(2,6,23,.22) 100%);
+  height:220px;
+  background: linear-gradient(135deg, rgba(2,6,23,.06), rgba(2,6,23,.02));
 }
 
 .modelBody{
   padding:12px 12px 14px;
-  background:#ffffff;
 }
 
 .modelName{
   font-weight:820;
-  color:#0f172a;
+  color:var(--text);
   display:flex;
   align-items:baseline;
   gap:10px;
@@ -328,13 +334,13 @@ a{color:inherit;text-decoration:none}
 
 .modelArea{
   font-size:12px;
-  color:#64748b;
-  font-weight:650;
+  color:var(--muted);
+  font-weight:600;
 }
 
 .modelSummary{
   margin:6px 0 10px 0;
-  color:#475569;
+  color:var(--muted);
   font-size:13px;
   line-height:1.35;
 }
@@ -346,19 +352,16 @@ a{color:inherit;text-decoration:none}
   height:34px;
   padding:0 12px;
   border-radius:999px;
-  background:#f8fafc;
-  border:1px solid #e2e8f0;
-  color:#0f172a;
+  background:rgba(2,6,23,.04);
+  border:1px solid rgba(2,6,23,.08);
+  color:var(--text);
   font-size:13px;
 }
+.modelBtn:hover{background:rgba(2,6,23,.06);}
 
-.modelBtn:hover{
-  background:#ffffff;
-  box-shadow: 0 10px 26px rgba(2,6,23,.10);
-  border-color:#caa46a;
-}
-
-/* GRID3 / CARDS (restul paginilor) */
+/* SECTIONS (rest) */
+.section{padding:34px 0}
+.sectionTitle{margin:0 0 14px 0;font-size:18px;font-weight:750}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 @media (max-width: 920px){.grid3{grid-template-columns:1fr}}
 .card{
@@ -391,7 +394,8 @@ a{color:inherit;text-decoration:none}
 @media (max-width: 920px){
   .heroInner{min-height:560px;padding:72px 0 36px;}
   .heroTitle{font-size:36px;}
-  .featureRow{grid-template-columns:1fr;margin-top:-14px;}
+  .heroText{padding:16px 16px 14px;border-radius:16px;}
+  .featureRow{grid-template-columns:1fr;margin-top:-12px;}
   .modelsHeader{flex-direction:column;align-items:flex-start;}
   .modelsGrid{grid-template-columns:1fr;}
 }
