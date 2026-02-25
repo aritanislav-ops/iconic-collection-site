@@ -29,7 +29,7 @@ export default function HomePage() {
               </h1>
 
               <p className="heroSub">
-                Arh + Structură + Instalații + autorizare. Execuție opțional.
+                Arh + Structură + Instalații + autorizare. Execuție.
               </p>
 
               <ul className="heroChecks">
