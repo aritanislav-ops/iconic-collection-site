@@ -3,7 +3,7 @@ export const site = {
   siteUrl: "https://www.iconic-collection.ro",
   headline: "Proiectare personalizată pentru fiecare model de casă.",
   subheadline: "Arhitectură + Structură + Instalații + Managementul Proiectului + Dirigenție de Santier + Execuție",
-  heroBadges: ["Modele + adaptare la teren", "Avize + management"],
+  heroBadges: ["Contract + livrabile clare", "Deviz orientativ pe faze", "Asistență la autorizare"],
   cta: {
     primary: { label: "Cere ofertă", href: "/contact" },
     secondary: { label: "Vezi modele", href: "/modele" },
