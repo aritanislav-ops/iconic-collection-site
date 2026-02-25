@@ -25,7 +25,7 @@ export default function HomePage() {
           <div className="heroInner">
             <div className="heroText">
               <h1 className="heroTitle">
-                Proiectare personalizată <br /> pe modele de case 100 mp+
+                Proiectare personalizată <br /> pe fiecare model de casă
               </h1>
 
               <p className="heroSub">
