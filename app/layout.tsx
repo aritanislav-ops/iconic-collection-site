@@ -3,11 +3,8 @@ import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: {
-    default: "iCONiC collection",
-    template: "%s | iCONiC collection",
-  },
-  description: "Proiectare personalizată pe modele de case 100 mp+.",
+  title: "iCONiC collection",
+  description: "Proiectare personalizată pe fiecare model de casă.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -16,39 +13,44 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <header className="header">
           <div className="container">
-            <nav className="nav">
+            <div className="nav">
               <Link className="brandLogo" href="/" aria-label="Acasă">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/brand/logo-dark.png" alt="iCONiC collection" />
               </Link>
 
-              <div className="navlinks" role="navigation" aria-label="Navigație principală">
+              <nav className="navlinks" aria-label="Navigare">
                 <Link href="/">Acasă</Link>
                 <Link href="/modele">Modele</Link>
                 <Link href="/pachete">Pachete</Link>
                 <Link href="/proces">Proces</Link>
                 <Link href="/contact">Contact</Link>
-              </div>
-            </nav>
+              </nav>
+            </div>
           </div>
         </header>
 
         {children}
 
         <footer className="footer">
-          <div className="container" style={{ display: "flex", gap: 14, flexWrap: "wrap", alignItems: "center", justifyContent: "space-between" }}>
+          <div className="container" style={{ display: "flex", gap: 16, justifyContent: "space-between", flexWrap: "wrap" }}>
             <div>
-              © {new Date().getFullYear()} iCONiC collection
-              <div style={{ color: "var(--muted)", marginTop: 6, lineHeight: 1.4 }}>
-                [DENUMIRE FIRMĂ], [FORMA], CUI [CUI], Reg. Com. [J…], sediu: [ADRESĂ]
-                <br />
-                [EMAIL] · [TEL]
+              <div>© {new Date().getFullYear()} iCONiC collection</div>
+              <div style={{ marginTop: 6 }}>
+                <div>[DENUMIRE FIRMĂ] [SRL/PFA]</div>
+                <div>CUI: [CUI] · Reg. Com.: [NR] · Sediu: [ADRESĂ]</div>
+                <div>Email: [EMAIL] · Tel: [TEL]</div>
               </div>
             </div>
 
-            <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+            <div style={{ display: "flex", gap: 12, flexWrap: "wrap", alignItems: "flex-start" }}>
               <Link href="/termeni">Termeni</Link>
               <Link href="/confidentialitate">Confidențialitate</Link>
               <Link href="/cookies">Cookies</Link>
+
+              {/* link-uri externe uzuale (le poți scoate dacă nu vrei) */}
+              <a href="https://anpc.ro/" target="_blank" rel="noreferrer">ANPC</a>
+              <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noreferrer">SOL</a>
             </div>
           </div>
         </footer>
