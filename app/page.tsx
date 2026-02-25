@@ -116,7 +116,7 @@ export default function HomePage() {
           <div className="modelsGrid">
             {site.models.map((m) => (
               <article key={m.slug} className="modelCard">
-                <div className="modelImg" aria-hidden="true" />
+                <div className="modelImg" style={{ backgroundImage: `url(/brand/${m.slug}.jpg)`, backgroundSize: "cover", backgroundPosition: "center" }} />
                 <div className="modelBody">
                   <div className="modelName">{m.name} <span className="modelArea">{m.area}</span></div>
                   <div className="modelSummary">{m.summary}</div>
