@@ -2,7 +2,7 @@ export const site = {
   brandName: "iCONiC collection",
   siteUrl: "https://www.iconic-collection.ro",
   headline: "Proiectare personalizată pentru fiecare model de casă.",
-  subheadline: "Arh + Structură + Instalații + autorizare. Execuție opțional.",
+  subheadline: "Arhitectura + Structură + Instalații Execuție(opțional)",
   heroBadges: ["Modele + adaptare la teren", "Avize + management"],
   cta: {
     primary: { label: "Cere ofertă", href: "/contact" },
