@@ -1,11 +1,15 @@
 import Link from "next/link";
 import { site } from "../../content/site";
 
+export const dynamic = "error";
+export const dynamicParams = false;
+
 export default function ModelePage() {
   return (
     <main className="container">
       <h1 className="pageTitle">Modele</h1>
-      <p className="pageLead"> Alege un model și îl personalizăm pe terenul tău, buget și cerințe.</p>
+      <p className="pageLead">Alege un model și îl personalizăm pe terenul tău, buget și cerințe.</p>
+
       <div className="list">
         {site.models.map((m) => (
           <div key={m.slug} className="listItem">
