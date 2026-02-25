@@ -18,12 +18,13 @@ export default function HomePage() {
           <video className="heroVideo" autoPlay muted loop playsInline preload="metadata">
             <source src="/brand/hero.mp4" type="video/mp4" />
           </video>
+          <div className="heroOverlay" />
         </div>
 
         <div className="container">
           <div className="heroInner">
             <div className="heroText">
-              <h1 className="heroTitle">{site.headline}</h1>
+              <h1 className="heroTitle">Proiectare personalizată pe fiecare model de casă</h1>
 
               <p className="heroSub">{site.subheadline}</p>
 
@@ -50,25 +51,19 @@ export default function HomePage() {
             <div className="featureCard">
               <div className="featureIcon" aria-hidden="true">⌁</div>
               <div className="featureTitle">Proiect complet</div>
-              <div className="featureText">
-                Proiectare arhitectură, structură și instalații conform normativelor în vigoare.
-              </div>
+              <div className="featureText">Arhitectură, structură și instalații, coordonate și verificabile.</div>
             </div>
 
             <div className="featureCard">
               <div className="featureIcon" aria-hidden="true">◩</div>
               <div className="featureTitle">Adaptare la teren</div>
-              <div className="featureText">
-                Planuri personalizate după dimensiunea și forma terenului.
-              </div>
+              <div className="featureText">Planuri personalizate după teren, cerințe și buget.</div>
             </div>
 
             <div className="featureCard">
               <div className="featureIcon" aria-hidden="true">⎘</div>
-              <div className="featureTitle">Buget controlat + devize</div>
-              <div className="featureText">
-                Devize orientative pe faze și cantități estimate, ajustabile în execuție.
-              </div>
+              <div className="featureTitle">Buget controlat</div>
+              <div className="featureText">Devize orientative pe faze + cantități estimate, ajustabile în execuție.</div>
             </div>
           </div>
         </div>
@@ -83,7 +78,15 @@ export default function HomePage() {
           <div className="modelsGrid">
             {site.models.map((m) => (
               <article key={m.slug} className="modelCard">
-                <div className="modelImg" style={{ backgroundImage: `url(${(m as any).image || ""})` }} aria-hidden="true" />
+                <div
+                  className="modelImg"
+                  style={{
+                    backgroundImage: `url(${m.image})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                  aria-hidden="true"
+                />
                 <div className="modelBody">
                   <div className="modelName">{m.name}</div>
                   <div className="modelSummary">{m.summary}</div>
