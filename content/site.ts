@@ -1,6 +1,6 @@
 export const site = {
   brandName: "iCONiC collection",
-  siteUrl: "http://localhost:3000",
+  siteUrl: "https://www.iconic-collection.ro",
   headline: "Case de la 100 mp în sus, proiectate corect și construibile.",
   subheadline: "Proiect (arhitectură + rezistență + instalații), design interior și execuție pe terenul clientului. Avize și management complet.",
   heroBadges: ["Minim 100 mp", "Modele + adaptare la teren", "Avize + management"],
