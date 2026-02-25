@@ -22,20 +22,42 @@ export const site = {
     actions: [{ label: "Detalii servicii", href: "/pachete" }],
   },
 
-  models: [
-    {
-      slug: "iconic-1story-black",
-      name: "iCONiC 1story BLACK",
-      summary: "Varianta BLACK — fațadă închisă, accente premium, look minimalist.",
-      image: "/brand/model-black.jpg",
-    },
-    {
-      slug: "iconic-1story-white",
-      name: "iCONiC 1story WHITE",
-      summary: "Varianta WHITE — fațadă deschisă, contrast elegant, lumină naturală.",
-      image: "/brand/model-white.jpg",
-    },
-  ],
+models: [
+  {
+    slug: "iconic-1story-black",
+    name: "iCONiC 1story BLACK",
+    summary: "Varianta BLACK — fațadă închisă, accente premium, look minimalist.",
+    images: [
+      "/brand/models/iconic-1story-black/01.jpg",
+      "/brand/models/iconic-1story-black/02.jpg",
+      "/brand/models/iconic-1story-black/03.jpg",
+      "/brand/models/iconic-1story-black/04.jpg",
+      "/brand/models/iconic-1story-black/05.jpg",
+      "/brand/models/iconic-1story-black/06.jpg",
+      "/brand/models/iconic-1story-black/07.jpg",
+      "/brand/models/iconic-1story-black/08.jpg",
+      "/brand/models/iconic-1story-black/09.jpg",
+      "/brand/models/iconic-1story-black/10.jpg",      
+    ],
+  },
+  {
+    slug: "iconic-1story-white",
+    name: "iCONiC 1story WHITE",
+    summary: "Varianta WHITE — fațadă deschisă, contrast elegant, lumină maximă.",
+    images: [
+      "/brand/models/iconic-1story-white/01.jpg",
+      "/brand/models/iconic-1story-white/02.jpg",
+      "/brand/models/iconic-1story-white/03.jpg",
+      "/brand/models/iconic-1story-white/04.jpg",
+      "/brand/models/iconic-1story-white/05.jpg",
+      "/brand/models/iconic-1story-white/06.jpg",
+      "/brand/models/iconic-1story-white/07.jpg",
+      "/brand/models/iconic-1story-white/08.jpg",
+      "/brand/models/iconic-1story-white/09.jpg",
+      "/brand/models/iconic-1story-white/10.jpg",
+    ],
+  },
+] as const,
 
   proces: {
     title: "Proces",
