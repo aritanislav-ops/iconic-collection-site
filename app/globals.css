@@ -93,7 +93,7 @@ a{color:inherit;text-decoration:none}
   height:100%;
   object-fit:cover;
   transform:scale(1.02);
-  filter: contrast(1.06) saturate(1.04);
+  filter: contrast(1.03) saturate(1.04) brightness(1.06);
 }
 
 /* overlay peste video (folosim pseudo-element; nu ai nevoie de .heroOverlay) */
@@ -102,7 +102,12 @@ a{color:inherit;text-decoration:none}
   position:absolute;
   inset:0;
   z-index:1;
-  background: linear-gradient(90deg, rgba(2,6,23,.82) 0%, rgba(2,6,23,.42) 52%, rgba(2,6,23,.18) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(2,6,23,.44) 0%,
+    rgba(2,6,23,.18) 52%,
+    rgba(2,6,23,.08) 100%
+  );
 }
 
 /* conținutul peste video */
