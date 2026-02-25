@@ -96,7 +96,7 @@ a{color:inherit;text-decoration:none}
   filter: contrast(1.06) saturate(1.04);
 }
 
-/* overlay peste video */
+/* overlay peste video (folosim pseudo-element; nu ai nevoie de .heroOverlay) */
 .heroMedia::after{
   content:"";
   position:absolute;
@@ -222,20 +222,24 @@ a{color:inherit;text-decoration:none}
 .featureTitle{font-weight:800;margin:0 0 6px 0}
 .featureText{color:rgba(255,255,255,.78);font-size:13px;line-height:1.35}
 
-/* MODELS (alb) */
+/* SECTION (default) */
+.section{padding:34px 0}
+.sectionTitle{margin:0 0 14px 0;font-size:18px;font-weight:750}
+
+/* MODELS (ALB) — aici e fix-ul pentru “fundal negru” */
 .modelsSection{
-  padding:34px 0 56px;
   background:#ffffff;
+  padding:34px 0 56px;
   position:relative;
 }
 
-/* “fade” dinspre hero spre alb */
+/* trecere fină din hero spre alb */
 .modelsSection::before{
   content:"";
   position:absolute;
-  left:0; right:0; top:-42px;
-  height:42px;
-  background: linear-gradient(180deg, rgba(11,15,23,1) 0%, rgba(255,255,255,0) 100%);
+  left:0; right:0; top:-48px;
+  height:48px;
+  background: linear-gradient(180deg, rgba(5,7,11,1) 0%, rgba(255,255,255,0) 100%);
   pointer-events:none;
 }
 
@@ -349,9 +353,7 @@ a{color:inherit;text-decoration:none}
   border-color:#caa46a;
 }
 
-/* SECTIONS */
-.section{padding:34px 0}
-.sectionTitle{margin:0 0 14px 0;font-size:18px;font-weight:750}
+/* GRID3 / CARDS (restul paginilor) */
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 @media (max-width: 920px){.grid3{grid-template-columns:1fr}}
 .card{
