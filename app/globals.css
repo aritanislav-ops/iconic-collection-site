@@ -111,7 +111,7 @@ a{color:inherit;text-decoration:none}
   z-index:2;
 }
 
-/* wrapper pentru text (ca în screenshot) */
+/* wrapper pentru text */
 .heroInner{
   min-height:620px;
   display:flex;
@@ -219,28 +219,24 @@ a{color:inherit;text-decoration:none}
   margin:0 0 10px 0;
 }
 
-.featureTitle{
-  font-weight:800;
-  margin:0 0 6px 0;
-}
+.featureTitle{font-weight:800;margin:0 0 6px 0}
+.featureText{color:rgba(255,255,255,.78);font-size:13px;line-height:1.35}
 
-.featureText{
-  color:rgba(255,255,255,.78);
-  font-size:13px;
-  line-height:1.35;
-}
-
-/* MODELS (premium light, ca să nu fie “fundal negru”) */
+/* MODELS (alb) */
 .modelsSection{
   padding:34px 0 56px;
-  background: linear-gradient(180deg, #0b0f17 0%, #0e1420 22%, #ffffff 22%, #ffffff 100%);
+  background:#ffffff;
+  position:relative;
 }
 
-.modelsTitle{
-  margin:0;
-  font-size:28px;
-  font-weight:820;
-  color:#0f172a;
+/* “fade” dinspre hero spre alb */
+.modelsSection::before{
+  content:"";
+  position:absolute;
+  left:0; right:0; top:-42px;
+  height:42px;
+  background: linear-gradient(180deg, rgba(11,15,23,1) 0%, rgba(255,255,255,0) 100%);
+  pointer-events:none;
 }
 
 .modelsHeader{
@@ -249,6 +245,13 @@ a{color:inherit;text-decoration:none}
   align-items:flex-end;
   justify-content:space-between;
   margin:0 0 14px 0;
+}
+
+.modelsTitle{
+  margin:0;
+  font-size:28px;
+  font-weight:820;
+  color:#0f172a;
 }
 
 .filters{
@@ -346,7 +349,7 @@ a{color:inherit;text-decoration:none}
   border-color:#caa46a;
 }
 
-/* SECTIONS (restul site-ului – păstrat) */
+/* SECTIONS */
 .section{padding:34px 0}
 .sectionTitle{margin:0 0 14px 0;font-size:18px;font-weight:750}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
