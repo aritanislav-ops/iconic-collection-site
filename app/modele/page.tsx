@@ -5,8 +5,7 @@ export default function ModelePage() {
   return (
     <main className="container">
       <h1 className="pageTitle">Modele</h1>
-      <p className="pageLead">Catalog iCONiC. Alege un model și îl adaptăm la teren.</p>
-
+      <p className="pageLead"> Alege un model și îl personalizăm pe terenul tău, buget și cerințe.</p>
       <div className="list">
         {site.models.map((m) => (
           <div key={m.slug} className="listItem">
