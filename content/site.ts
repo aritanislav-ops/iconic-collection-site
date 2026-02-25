@@ -1,9 +1,9 @@
 export const site = {
   brandName: "iCONiC collection",
   siteUrl: "https://www.iconic-collection.ro",
-  headline: "Case de la 100 mp în sus, proiectate corect și construibile.",
+  headline: "Case proiectate corect și usor construibile ",
   subheadline: "Proiect (arhitectură + rezistență + instalații), design interior și execuție pe terenul clientului. Avize și management complet.",
-  heroBadges: ["Minim 100 mp", "Modele + adaptare la teren", "Avize + management"],
+  heroBadges: ["Modele + adaptare la teren", "Avize + management"],
   cta: {
     primary: { label: "Cere ofertă", href: "/contact" },
     secondary: { label: "Vezi modele", href: "/modele" },
@@ -12,12 +12,12 @@ export const site = {
     title: "Pachete",
     items: [
       "în liveluri: Proiect + autorizare / + Design interior / + Execuție.",
-      "Catalog 100 mp+",
+      "Catalog iCONiC",
       "Contracte pe faze",
       "Revizii controlate",
     ],
     actions: [
-      { label: "Catalog 100 mp+", href: "/modele" },
+      { label: "Catalog iCONiC", href: "/modele" },
       { label: "Contracte pe faze", href: "/pachete" },
       { label: "Revizii controlate", href: "/proces" },
     ],
@@ -27,7 +27,7 @@ export const site = {
     steps: [
       {
         title: "1) Alegi un model",
-        text: "Pornești din catalogul 100 mp+ și îl adaptăm la teren, buget și cerințe.",
+        text: "Alegi din catalog și îl adaptăm la teren, buget și cerințe.",
       },
       {
         title: "2) Proiect + autorizare",
@@ -39,20 +39,18 @@ export const site = {
       },
     ],
   },
-  models: [
-    {
-      slug: "iconic-100",
-      name: "iCONiC 100",
-      area: "100–120 mp",
-      summary: "Plan compact, lumină bună, living + 3 dormitoare, eficient energetic.",
-    },
-    {
-      slug: "iconic-140",
-      name: "iCONiC 140",
-      area: "140–160 mp",
-      summary: "Zonare zi/noapte, spații generoase, opțiuni de carport/garaj.",
-    },
-  ],
+models: [
+  {
+    slug: "iconic-1'story-black",
+    name: "iCONiC 1'story BLACK",
+    summary: "Varianta BLACK — fațadă închisă, accente premium, look minimalist.",
+  },
+  {
+    slug: "iconic-1'story-white",
+    name: "iCONiC 1'story WHITE",
+    summary: "Varianta WHITE — fațadă deschisă, contrast elegant, lumină maximă.",
+  },
+] as const,
   proces: {
     title: "Proces",
     items: [
