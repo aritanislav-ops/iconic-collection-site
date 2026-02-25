@@ -81,7 +81,7 @@ export default function HomePage() {
                 <div
                   className="modelImg"
                   style={{
-                    backgroundImage: `url(${m.image})`,
+                    backgroundImage: `url(${m.images?.[0] || ""})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}
