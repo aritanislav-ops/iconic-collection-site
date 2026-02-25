@@ -1,29 +1,42 @@
 import Link from "next/link";
 import { site } from "../content/site";
 
+function CheckItem({ children }: { children: React.ReactNode }) {
+  return (
+    <li className="heroCheckItem">
+      <span className="heroCheckIcon" aria-hidden="true">✓</span>
+      <span>{children}</span>
+    </li>
+  );
+}
+
 export default function HomePage() {
   return (
     <main>
       <section className="hero">
-        <div className="heroMedia">
-          <video autoPlay muted loop playsInline preload="metadata">
+        <div className="heroMedia" aria-hidden="true">
+          <video className="heroVideo" autoPlay muted loop playsInline preload="metadata">
             <source src="/brand/hero.mp4" type="video/mp4" />
           </video>
+          <div className="heroOverlay" />
         </div>
 
         <div className="container">
-          <div className="heroGrid">
-            <div>
-              <h1 className="heroTitle">{site.headline}</h1>
-              <p className="heroSub">{site.subheadline}</p>
+          <div className="heroInner">
+            <div className="heroText">
+              <h1 className="heroTitle">
+                Proiectare personalizată <br /> pe modele de case 100 mp+
+              </h1>
 
-              <div className="badges">
-                {site.heroBadges.map((b) => (
-                  <span key={b} className="badge">
-                    {b}
-                  </span>
-                ))}
-              </div>
+              <p className="heroSub">
+                Arh + Structură + Instalații + autorizare. Execuție opțional.
+              </p>
+
+              <ul className="heroChecks">
+                <CheckItem>Contract + livrabile clare</CheckItem>
+                <CheckItem>Deviz orientativ pe faze</CheckItem>
+                <CheckItem>Asistență la autorizare</CheckItem>
+              </ul>
 
               <div className="actions">
                 <Link className="btn btnPrimary" href={site.cta.primary.href}>
@@ -34,31 +47,84 @@ export default function HomePage() {
                 </Link>
               </div>
             </div>
+          </div>
+        </div>
 
-            <aside className="sideCard" aria-label="Pachete">
-              <div className="sideCardTitle">{site.pachete.title}</div>
-              <div className="sideCardText">{site.pachete.items[0]}</div>
-              <div className="sideCardActions">
-                {site.pachete.actions.map((a) => (
-                  <Link key={a.href} className="chip" href={a.href}>
-                    {a.label}
-                  </Link>
-                ))}
+        <div className="container heroUnder">
+          <div className="featureRow">
+            <div className="featureCard">
+              <div className="featureIcon" aria-hidden="true">⌁</div>
+              <div className="featureTitle">Proiect complet</div>
+              <div className="featureText">
+                Proiectare arhitectură, structură și instalații conform normativelor în vigoare.
               </div>
-            </aside>
+            </div>
+
+            <div className="featureCard">
+              <div className="featureIcon" aria-hidden="true">◩</div>
+              <div className="featureTitle">Adaptare la teren</div>
+              <div className="featureText">
+                Planuri personalizate după dimensiunea și forma terenului, dss.
+              </div>
+            </div>
+
+            <div className="featureCard">
+              <div className="featureIcon" aria-hidden="true">⎘</div>
+              <div className="featureTitle">Buget controlat + devize</div>
+              <div className="featureText">
+                Devize orientative pe faze și cantități estimate, ajustabile în execuție.
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="section">
+      <section className="section modelsSection">
         <div className="container">
-          <h2 className="sectionTitle">{site.howWeWork.title}</h2>
-          <div className="grid3">
-            {site.howWeWork.steps.map((s) => (
-              <div key={s.title} className="card">
-                <div className="cardTitle">{s.title}</div>
-                <p className="cardText">{s.text}</p>
-              </div>
+          <div className="modelsHeader">
+            <h2 className="modelsTitle">Modele de case</h2>
+
+            <div className="filters">
+              <select className="filter" defaultValue="suprafata">
+                <option value="suprafata">Suprafață</option>
+                <option value="100-140">100–140 mp</option>
+                <option value="140-200">140–200 mp</option>
+                <option value="200+">200+ mp</option>
+              </select>
+
+              <select className="filter" defaultValue="dormitoare">
+                <option value="dormitoare">Dormitoare</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4+">4+</option>
+              </select>
+
+              <select className="filter" defaultValue="stil">
+                <option value="stil">Stil</option>
+                <option value="minimalist">Minimalist</option>
+                <option value="modern">Modern</option>
+              </select>
+
+              <select className="filter" defaultValue="buget">
+                <option value="buget">Buget</option>
+                <option value="controlat">Controlat</option>
+                <option value="premium">Premium</option>
+              </select>
+            </div>
+          </div>
+
+          <div className="modelsGrid">
+            {site.models.map((m) => (
+              <article key={m.slug} className="modelCard">
+                <div className="modelImg" aria-hidden="true" />
+                <div className="modelBody">
+                  <div className="modelName">{m.name} <span className="modelArea">{m.area}</span></div>
+                  <div className="modelSummary">{m.summary}</div>
+                  <Link className="modelBtn" href={`/modele/${m.slug}`}>
+                    Vezi detalii <span aria-hidden="true">›</span>
+                  </Link>
+                </div>
+              </article>
             ))}
           </div>
         </div>
