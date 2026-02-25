@@ -1,57 +1,62 @@
-export const metadata = { title: "Politica de confidențialitate | iCONiC collection" };
-
 export default function ConfidentialitatePage() {
   return (
-    <main className="section">
-      <div className="container">
-        <h1 className="pageTitle">Politica de confidențialitate</h1>
-        <p className="pageLead">Informații privind prelucrarea datelor personale (GDPR).</p>
+    <main className="container">
+      <h1 className="pageTitle">Politica de confidențialitate</h1>
+      <p className="pageLead">
+        Această pagină descrie modul în care prelucrăm datele personale când ne contactezi.
+      </p>
 
-        <div className="list">
-          <div className="listItem">
-            <h3>1. Operator</h3>
-            <p>
-              [DENUMIRE FIRMĂ], [FORMA], CUI [CUI], Reg. Com. [J…], sediu: [ADRESĂ],
-              email: [EMAIL], telefon: [TEL].
-            </p>
-          </div>
+      <div className="list">
+        <div className="listItem">
+          <h3>1) Ce date putem colecta</h3>
+          <p>
+            Nume, telefon, e-mail, localizare/teren, informații despre proiect (suprafețe, preferințe),
+            și orice trimiți voluntar în mesaj.
+          </p>
+        </div>
 
-          <div className="listItem">
-            <h3>2. Ce date colectăm</h3>
-            <p>Nume, email, telefon și informații furnizate în cererea de ofertă (ex. locație teren).</p>
-          </div>
+        <div className="listItem">
+          <h3>2) Scop</h3>
+          <p>
+            Răspuns la solicitări, ofertare, pregătirea contractării și comunicare pe parcursul proiectului.
+          </p>
+        </div>
 
-          <div className="listItem">
-            <h3>3. Scop și temei</h3>
-            <p>
-              Scop: ofertare și comunicare. Temei: demersuri la cererea persoanei înainte de contract
-              și/sau interes legitim (răspuns la solicitări).
-            </p>
-          </div>
+        <div className="listItem">
+          <h3>3) Temei legal</h3>
+          <p>
+            Demersuri la cererea persoanei înainte de încheierea unui contract și/sau interes legitim
+            pentru a răspunde solicitărilor.
+          </p>
+        </div>
 
-          <div className="listItem">
-            <h3>4. Durata stocării</h3>
-            <p>Datele se păstrează cât este necesar pentru ofertare/contractare și obligații legale.</p>
-          </div>
+        <div className="listItem">
+          <h3>4) Perioada de stocare</h3>
+          <p>
+            Păstrăm datele cât este necesar pentru ofertare/contractare și obligații legale. La cerere,
+            putem șterge/anonimiza, dacă nu există obligații de păstrare.
+          </p>
+        </div>
 
-          <div className="listItem">
-            <h3>5. Destinatari</h3>
-            <p>
-              Furnizori de email/hosting și servicii tehnice strict necesare funcționării site-ului.
-            </p>
-          </div>
+        <div className="listItem">
+          <h3>5) Destinatari</h3>
+          <p>
+            Furnizori tehnici (hosting e-mail, găzduire site) și, dacă folosești, CRM. Nu vindem datele.
+          </p>
+        </div>
 
-          <div className="listItem">
-            <h3>6. Drepturile tale</h3>
-            <p>
-              Acces, rectificare, ștergere, restricționare, opoziție, portabilitate, plângere la ANSPDCP.
-            </p>
-          </div>
+        <div className="listItem">
+          <h3>6) Drepturile tale</h3>
+          <p>
+            Acces, rectificare, ștergere, restricționare, opoziție, portabilitate și plângere la ANSPDCP.
+          </p>
+        </div>
 
-          <div className="listItem">
-            <h3>7. Contact pentru solicitări</h3>
-            <p>Trimite cererea la [EMAIL].</p>
-          </div>
+        <div className="listItem">
+          <h3>7) Contact</h3>
+          <p>
+            Pentru cereri GDPR, folosește e-mailul din footer.
+          </p>
         </div>
       </div>
     </main>
