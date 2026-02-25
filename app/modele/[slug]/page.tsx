@@ -16,7 +16,6 @@ export default function ModelPage({ params }: { params: { slug: string } }) {
   return (
     <main className="container">
       <h1 className="pageTitle">{model.name}</h1>
-      <p className="pageLead">{model.area}</p>
       <div className="card">
         <div className="cardTitle">Descriere</div>
         <p className="cardText">{model.summary}</p>
