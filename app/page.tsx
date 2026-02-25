@@ -18,19 +18,14 @@ export default function HomePage() {
           <video className="heroVideo" autoPlay muted loop playsInline preload="metadata">
             <source src="/brand/hero.mp4" type="video/mp4" />
           </video>
-          <div className="heroOverlay" />
         </div>
 
         <div className="container">
           <div className="heroInner">
             <div className="heroText">
-              <h1 className="heroTitle">
-                Proiectare personalizată <br /> pe fiecare model de casă
-              </h1>
+              <h1 className="heroTitle">{site.headline}</h1>
 
-              <p className="heroSub">
-                Arh + Structură + Instalații + autorizare. Execuție.
-              </p>
+              <p className="heroSub">{site.subheadline}</p>
 
               <ul className="heroChecks">
                 <CheckItem>Contract + livrabile clare</CheckItem>
@@ -64,7 +59,7 @@ export default function HomePage() {
               <div className="featureIcon" aria-hidden="true">◩</div>
               <div className="featureTitle">Adaptare la teren</div>
               <div className="featureText">
-                Planuri personalizate după dimensiunea și forma terenului, dss.
+                Planuri personalizate după dimensiunea și forma terenului.
               </div>
             </div>
 
@@ -83,15 +78,14 @@ export default function HomePage() {
         <div className="container">
           <div className="modelsHeader">
             <h2 className="modelsTitle">Modele de case</h2>
-
           </div>
 
           <div className="modelsGrid">
             {site.models.map((m) => (
               <article key={m.slug} className="modelCard">
-                <div className="modelImg" style={{ backgroundImage: `url(/brand/${m.slug}.jpg)`, backgroundSize: "cover", backgroundPosition: "center" }} />
+                <div className="modelImg" style={{ backgroundImage: `url(${(m as any).image || ""})` }} aria-hidden="true" />
                 <div className="modelBody">
-                  <div className="modelName">{m.name} <span className="modelArea">{m.area}</span></div>
+                  <div className="modelName">{m.name}</div>
                   <div className="modelSummary">{m.summary}</div>
                   <Link className="modelBtn" href={`/modele/${m.slug}`}>
                     Vezi detalii <span aria-hidden="true">›</span>
