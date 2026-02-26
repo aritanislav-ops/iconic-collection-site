@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { site } from "../../../content/site";
+import ModelGallery from "@/app/ui/ModelGallery";
 
 export const dynamic = "error";
 export const dynamicParams = false;
