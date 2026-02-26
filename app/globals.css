@@ -575,3 +575,7 @@ a{color:inherit;text-decoration:none}
   width:auto;
   display:block;
 }
+.footerLinks{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.footerLogoLink{display:inline-flex;align-items:center;padding:6px 8px;border-radius:10px}
+.footerLogoLink:hover{background:#f1f5f9}
+.footerLogo{height:34px;width:auto;display:block}
