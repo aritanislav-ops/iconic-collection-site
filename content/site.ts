@@ -82,7 +82,7 @@ export const site = {
     note: "Înlocuiește datele cu ale tale.",
     address: "Sector 3, Str. Agatha Bârsescu Nr. 15B, Etaj 01, Biroul 07, București",
     program: "Luni–Vineri 09:00–18:00",
-    mapEmbedUrl: "https://www.google.com/maps?q=Strada%20Agatha%20Barsescu%2015B%20Bucuresti&output=embed",
+    mapEmbedUrl: "https://www.google.com/maps?q=Strada%20Agatha%20Barsescu%2015B%20Bucuresti&z=16&output=embed",
   },
 
   social: {
