@@ -52,8 +52,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/confidentialitate">Confidențialitate</Link>
               <Link href="/cookies">Cookies</Link>
               <Link href="/sal">SAL (ANPC)</Link>
-              <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noreferrer">
-                ODR (UE)
+
+              <a href="https://anpc.ro/ce-este-sal/" target="_blank" rel="noreferrer" aria-label="ANPC - SAL">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img className="footerLogo" src="/brand/legal/anpc-sal.png" alt="ANPC SAL" />
+              </a>
+
+              <a
+                href="https://consumer-redress.ec.europa.eu/site-relocation_en"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="SOL / Consumer Redress (UE)"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img className="footerLogo" src="/brand/legal/sol-ue.png" alt="SOL (UE) - Consumer Redress" />
               </a>
             </div>
           </div>
