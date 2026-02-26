@@ -14,16 +14,19 @@ function CheckItem({ children }: { children: React.ReactNode }) {
 
 export default function HomePage() {
   const [lbOpen, setLbOpen] = useState(false);
-  const [lbSrc, setLbSrc] = useState<string | null>(null);
+  const [lbImages, setLbImages] = useState<string[]>([]);
+  const [lbStart, setLbStart] = useState(0);
 
-  function openLightbox(src: string) {
-    setLbSrc(src);
+  function openGallery(images: string[], startIndex = 0) {
+    setLbImages(images || []);
+    setLbStart(startIndex);
     setLbOpen(true);
   }
 
-  function closeLightbox() {
+  function closeGallery() {
     setLbOpen(false);
-    setLbSrc(null);
+    setLbImages([]);
+    setLbStart(0);
   }
 
   return (
@@ -92,22 +95,19 @@ export default function HomePage() {
 
           <div className="modelsGrid">
             {site.models.map((m) => {
-              const cover = m.images?.[0] || null;
+              const images = (m.images || []).filter(Boolean);
+              const cover = images[0] || "";
 
               return (
                 <article key={m.slug} className="modelCard">
-                  <div
-                    className="modelImg"
-                    role="button"
-                    tabIndex={0}
-                    aria-label={`Vezi imagine: ${m.name}`}
-                    onClick={() => cover && openLightbox(cover)}
-                    onKeyDown={(e) => {
-                      if ((e.key === "Enter" || e.key === " ") && cover) openLightbox(cover);
-                    }}
+                  <button
+                    type="button"
+                    className="modelImgBtn"
+                    onClick={() => images.length && openGallery(images, 0)}
+                    aria-label={`Deschide galeria: ${m.name}`}
                   >
                     {cover ? <img className="modelCover" src={cover} alt="" loading="lazy" /> : null}
-                  </div>
+                  </button>
 
                   <div className="modelBody">
                     <div className="modelName">{m.name}</div>
@@ -123,7 +123,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <Lightbox open={lbOpen} src={lbSrc} onClose={closeLightbox} />
+      <Lightbox open={lbOpen} images={lbImages} startIndex={lbStart} onClose={closeGallery} />
     </main>
   );
 }
