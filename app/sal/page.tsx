@@ -1,61 +1,53 @@
-import type { Metadata } from "next";
-import Link from "next/link";
-import "./globals.css";
-
-export const metadata: Metadata = {
-  title: "iCONiC collection",
-  description: "Proiectare personalizată pe fiecare model de casă.",
-};
-
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function SALPage() {
   return (
-    <html lang="ro">
-      <body>
-        <header className="header">
-          <div className="container">
-            <div className="nav">
-              <Link className="brandLogo" href="/" aria-label="Acasă">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/brand/logo-dark.png" alt="iCONiC collection" />
-              </Link>
+    <main className="container">
+      <h1 className="pageTitle">SAL (ANPC) – Soluționarea alternativă a litigiilor</h1>
 
-              <nav className="navlinks" aria-label="Navigare">
-                <Link href="/">Acasă</Link>
-                <Link href="/modele">Modele</Link>
-                <Link href="/pachete">Pachete</Link>
-                <Link href="/proces">Proces</Link>
-                <Link href="/contact">Contact</Link>
-              </nav>
-            </div>
-          </div>
-        </header>
+      <p className="pageLead">
+        Dacă ești consumator și ai o nemulțumire legată de serviciile noastre, ai posibilitatea de a apela la mecanismele
+        de soluționare alternativă a litigiilor (SAL), fără a merge în instanță.
+      </p>
 
-        {children}
+      <div className="card">
+        <div className="cardTitle">1) SAL (ANPC) – România</div>
+        <p className="cardText">
+          Autoritatea competentă: Autoritatea Națională pentru Protecția Consumatorilor (ANPC).
+          Poți consulta informațiile oficiale și opțiunile disponibile pe site-ul ANPC.
+        </p>
 
-        <footer className="footer">
-          <div className="container footerGrid">
-            <div className="footerCompany">
-              <div>© {new Date().getFullYear()} iCONiC collection</div>
+        <p className="cardText">
+          <a href="https://anpc.ro/" target="_blank" rel="noreferrer">Deschide ANPC</a>
+        </p>
 
-              <div className="footerMeta">
-                <div>[DENUMIRE FIRMĂ] [SRL/PFA]</div>
-                <div>CUI: [CUI] · Reg. Com.: [NR] · Sediu: [ADRESĂ]</div>
-                <div>Email: [EMAIL] · Tel: [TEL]</div>
-              </div>
-            </div>
+        <p className="cardText" style={{ marginTop: 10 }}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/brand/sol-anpc.png"
+            alt="Pictograme SAL/ODR"
+            style={{ maxWidth: 520, width: "100%", height: "auto" }}
+          />
+        </p>
+      </div>
 
-            <div className="footerLinks" aria-label="Linkuri legale">
-              <Link href="/termeni">Termeni</Link>
-              <Link href="/confidentialitate">Confidențialitate</Link>
-              <Link href="/cookies">Cookies</Link>
-              <Link href="/sal">SAL (ANPC)</Link>
-              <a href="https://anpc.ro/" target="_blank" rel="noreferrer">
-                ANPC
-              </a>
-            </div>
-          </div>
-        </footer>
-      </body>
-    </html>
+      <div className="card" style={{ marginTop: 14 }}>
+        <div className="cardTitle">2) SOL/ODR (UE)</div>
+        <p className="cardText">
+          Platforma europeană ODR a fost întreruptă începând cu 20 iulie 2025. Pentru informații actuale despre
+          soluționarea litigiilor în UE, folosește pagina oficială de redirecționare:
+        </p>
+        <p className="cardText">
+          <a href="https://consumer-redress.ec.europa.eu/site-relocation_en" target="_blank" rel="noreferrer">
+            Consumer Redress (UE) – ODR / relocare
+          </a>
+        </p>
+      </div>
+
+      <div className="card" style={{ marginTop: 14 }}>
+        <div className="cardTitle">3) Datele comerciantului</div>
+        <p className="cardText">
+          [DENUMIRE FIRMĂ] [SRL/PFA] · CUI: [CUI] · Reg. Com.: [NR] · Sediu: [ADRESĂ] · Email: [EMAIL] · Tel: [TEL]
+        </p>
+      </div>
+    </main>
   );
 }
