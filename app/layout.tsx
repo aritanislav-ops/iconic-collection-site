@@ -38,9 +38,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <div>© {new Date().getFullYear()} iCONiC collection</div>
 
       <div className="footerMeta">
-        <div>[DENUMIRE FIRMĂ] [SRL/PFA]</div>
-        <div>CUI: [CUI] · Reg. Com.: [NR] · Sediu: [ADRESĂ]</div>
-        <div>Email: [EMAIL] · Tel: [TEL]</div>
+        <div>A&A Evoconstruct SRL</div>
+        <div>CUI: RO 21409238 · Reg. Com.: J2007005795403 · Sediu: Sector 3, Str. Agatha Barsescu Nr.15B, Etaj 01 Biroul 07</div>
+        <div>Email: office@aa-evoconstruct.ro ·
       </div>
     </div>
 
