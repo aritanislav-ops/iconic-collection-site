@@ -10,14 +10,13 @@ type Props = {
 };
 
 export default function Lightbox({ open, images, startIndex = 0, onClose }: Props) {
-  const safeImages = useMemo(() => (images || []).filter(Boolean), [images]);
-  const [idx, setIdx] = useState(0);
+  const list = useMemo(() => (images || []).filter(Boolean), [images]);
+  const [i, setI] = useState(startIndex);
 
   useEffect(() => {
     if (!open) return;
-    const s = Number.isFinite(startIndex) ? startIndex : 0;
-    setIdx(Math.min(Math.max(s, 0), Math.max(safeImages.length - 1, 0)));
-  }, [open, startIndex, safeImages.length]);
+    setI(Math.min(Math.max(startIndex, 0), Math.max(list.length - 1, 0)));
+  }, [open, startIndex, list.length]);
 
   useEffect(() => {
     if (!open) return;
@@ -25,56 +24,48 @@ export default function Lightbox({ open, images, startIndex = 0, onClose }: Prop
     const prevOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
 
-    const onKeyDown = (e: KeyboardEvent) => {
+    function onKey(e: KeyboardEvent) {
       if (e.key === "Escape") onClose();
-      if (e.key === "ArrowRight") next();
-      if (e.key === "ArrowLeft") prev();
-    };
+      if (e.key === "ArrowLeft") setI((v) => (v - 1 + list.length) % list.length);
+      if (e.key === "ArrowRight") setI((v) => (v + 1) % list.length);
+    }
 
-    window.addEventListener("keydown", onKeyDown);
+    window.addEventListener("keydown", onKey);
     return () => {
-      window.removeEventListener("keydown", onKeyDown);
+      window.removeEventListener("keydown", onKey);
       document.body.style.overflow = prevOverflow;
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [open, idx, safeImages.length]);
+  }, [open, list.length, onClose]);
 
-  if (!open || safeImages.length === 0) return null;
+  if (!open || list.length === 0) return null;
 
-  const total = safeImages.length;
-  const src = safeImages[idx];
-
-  function next() {
-    setIdx((v) => (v + 1) % total);
-  }
-  function prev() {
-    setIdx((v) => (v - 1 + total) % total);
-  }
+  const canNav = list.length > 1;
+  const src = list[i];
 
   return (
-    <div className="lbRoot" role="dialog" aria-modal="true" aria-label="Galerie imagini">
-      <button className="lbBackdrop" type="button" aria-label="Închide" onClick={onClose} />
-
+    <div className="lbRoot" role="dialog" aria-modal="true">
+      <button className="lbBackdrop" aria-label="Închide" onClick={onClose} />
       <div className="lbStage">
-        <button className="lbClose" type="button" aria-label="Închide" onClick={onClose}>
-          ×
-        </button>
-
-        {total > 1 ? (
-          <>
-            <button className="lbNav lbPrev" type="button" aria-label="Înapoi" onClick={prev}>
-              ‹
-            </button>
-            <button className="lbNav lbNext" type="button" aria-label="Înainte" onClick={next}>
-              ›
-            </button>
-          </>
+        {canNav ? (
+          <button className="lbNav lbPrev" aria-label="Anterior" onClick={() => setI((v) => (v - 1 + list.length) % list.length)}>
+            ‹
+          </button>
         ) : null}
 
         <img className="lbImg" src={src} alt="" />
 
+        {canNav ? (
+          <button className="lbNav lbNext" aria-label="Următor" onClick={() => setI((v) => (v + 1) % list.length)}>
+            ›
+          </button>
+        ) : null}
+
+        <button className="lbClose" aria-label="Închide" onClick={onClose}>
+          ×
+        </button>
+
         <div className="lbCounter">
-          {idx + 1}/{total}
+          {i + 1}/{list.length}
         </div>
       </div>
     </div>
