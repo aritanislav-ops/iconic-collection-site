@@ -40,9 +40,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div className="footerMeta">
                 <div>A&A Evoconstruct SRL</div>
                 <div>
-                  CUI: RO 21409238 · Reg. Com.: J2007005795403 
+                  CUI: RO 21409238 · Reg. Com.: J2007005795403 · Sediu: Sector 3,
+                  Str. Agatha Barsescu Nr.15B, Etaj 01 Biroul 07
                 </div>
-
+                <div>Email: office@aa-evoconstruct.ro</div>
+              </div>
             </div>
 
             <nav className="footerLinks" aria-label="Linkuri legale">
@@ -50,15 +52,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/confidentialitate">Confidențialitate</Link>
               <Link href="/cookies">Cookies</Link>
 
-              <Link href="/sal" className="footerPill">SAL (ANPC)</Link>
-
-              <a
-                href="https://anpc.ro/ce-este-sal/"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="SAL (ANPC) - ANPC"
-                className="footerLogoLink"
-              >
+              <a href="https://anpc.ro/ce-este-sal/" target="_blank" rel="noreferrer" aria-label="SAL (ANPC)" className="footerLogoLink">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img className="footerLogo" src="/brand/legal/anpc-sal.png" alt="SAL (ANPC)" />
               </a>
