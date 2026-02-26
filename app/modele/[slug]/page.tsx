@@ -19,7 +19,7 @@ export default function ModelPage({ params }: { params: { slug: string } }) {
       <div className="modelHeader">
         <h1 className="pageTitle">{model.name}</h1>
         <p className="pageLead">{model.summary}</p>
-        <p className="modelNote"> Modelul este un concept arhitectural realizat de specialiști atestați. Proiectul final se personalizează pentru terenul și cerințele tale, pe baza documentațiilor de urbanism(inclusiv Certificatul de urbanism) și a datelor din amplasament.</p>
+        <p className="modelNote"> Modelul este un concept realizat de arhitecti si ingineri experti atestați. Proiectul final se personalizează pentru terenul și cerințele tale, pe baza documentațiilor de urbanism(inclusiv Certificatul de urbanism) și a datelor din amplasament.</p>
       </div>
 
       {/* Mobil: slider (scroll-snap) */}
