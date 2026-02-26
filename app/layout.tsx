@@ -40,34 +40,40 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div className="footerMeta">
                 <div>A&A Evoconstruct SRL</div>
                 <div>
-                  CUI: RO 21409238 · Reg. Com.: J2007005795403 · Sediu: Sector 3,
-                  Str. Agatha Barsescu Nr.15B, Etaj 01 Biroul 07
+                  CUI: RO 21409238 · Reg. Com.: J2007005795403 
                 </div>
-                <div>Email: office@aa-evoconstruct.ro</div>
-              </div>
+
             </div>
 
-            <div className="footerLinks" aria-label="Linkuri legale">
+            <nav className="footerLinks" aria-label="Linkuri legale">
               <Link href="/termeni">Termeni</Link>
               <Link href="/confidentialitate">Confidențialitate</Link>
               <Link href="/cookies">Cookies</Link>
-              <Link href="/sal">SAL (ANPC)</Link>
 
-              <a href="https://anpc.ro/ce-este-sal/" target="_blank" rel="noreferrer" aria-label="ANPC - SAL">
+              <Link href="/sal" className="footerPill">SAL (ANPC)</Link>
+
+              <a
+                href="https://anpc.ro/ce-este-sal/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="SAL (ANPC) - ANPC"
+                className="footerLogoLink"
+              >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img className="footerLogo" src="/brand/legal/anpc-sal.png" alt="ANPC SAL" />
+                <img className="footerLogo" src="/brand/legal/anpc-sal.png" alt="SAL (ANPC)" />
               </a>
 
               <a
                 href="https://consumer-redress.ec.europa.eu/site-relocation_en"
                 target="_blank"
                 rel="noreferrer"
-                aria-label="SOL / Consumer Redress (UE)"
+                aria-label="SOL (UE) / Consumer Redress"
+                className="footerLogoLink"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img className="footerLogo" src="/brand/legal/sol-ue.png" alt="SOL (UE) - Consumer Redress" />
+                <img className="footerLogo" src="/brand/legal/sol-ue.png" alt="SOL (UE) / Consumer Redress" />
               </a>
-            </div>
+            </nav>
           </div>
         </footer>
       </body>
