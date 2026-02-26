@@ -99,11 +99,10 @@ a{color:inherit;text-decoration:none}
   object-fit:cover;
   object-position:center;
   transform:scale(1.02);
-  /* scoatem “întunecarea”, păstrăm doar un pic de pop */
   filter: contrast(1.04) saturate(1.04) brightness(1.08);
 }
 
-/* overlay discret (mai mult pentru lizibilitate, nu pentru întunecare) */
+/* overlay discret */
 .heroMedia::after{
   content:"";
   position:absolute;
@@ -131,7 +130,7 @@ a{color:inherit;text-decoration:none}
   padding:88px 0 44px;
 }
 
-/* panou “glass” în spatele textului (ca să citești ușor fără să omori randarea) */
+/* panou “glass” pentru lizibilitate */
 .heroText{
   max-width:640px;
   padding:22px 22px 18px;
@@ -215,7 +214,7 @@ a{color:inherit;text-decoration:none}
 }
 .btnSecondary:hover{background:rgba(255,255,255,.18)}
 
-/* 3 carduri sub hero (mai “light”, să nu pară grele) */
+/* 3 carduri sub hero */
 .heroUnder{
   position:relative;
   z-index:2;
@@ -283,24 +282,6 @@ a{color:inherit;text-decoration:none}
   margin:0 0 14px 0;
 }
 
-.filters{
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-  justify-content:flex-end;
-}
-
-.filter{
-  height:36px;
-  border-radius:999px;
-  padding:0 12px;
-  border:1px solid var(--border);
-  background:#ffffff;
-  color:var(--text);
-  outline:none;
-  box-shadow: 0 6px 18px rgba(2,6,23,.06);
-}
-
 .modelsGrid{
   display:grid;
   grid-template-columns:repeat(2, 1fr);
@@ -315,9 +296,20 @@ a{color:inherit;text-decoration:none}
   box-shadow: var(--shadow-strong);
 }
 
-.modelImg{
+.modelImgBtn{
+  border:0;
+  padding:0;
+  background:transparent;
+  width:100%;
+  display:block;
+  cursor:pointer;
+}
+
+.modelCover{
+  width:100%;
   height:220px;
-  background: linear-gradient(135deg, rgba(2,6,23,.06), rgba(2,6,23,.02));
+  object-fit:cover;
+  display:block;
 }
 
 .modelBody{
@@ -330,12 +322,6 @@ a{color:inherit;text-decoration:none}
   display:flex;
   align-items:baseline;
   gap:10px;
-}
-
-.modelArea{
-  font-size:12px;
-  color:var(--muted);
-  font-weight:600;
 }
 
 .modelSummary{
@@ -384,7 +370,17 @@ a{color:inherit;text-decoration:none}
 
 /* PAGE */
 .pageTitle{margin:26px 0 8px 0;font-size:28px;font-weight:760}
-.pageLead{margin:0 0 18px 0;color:var(--muted)}
+.pageLead{margin:0 0 10px 0;color:var(--muted)}
+
+/* nota standard sub descriere (pe paginile de model) */
+.modelNote{
+  margin:0 0 18px 0;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.45;
+  max-width:90ch;
+}
+
 .list{display:grid;gap:10px}
 .listItem{padding:12px;border:1px solid var(--border);border-radius:var(--radius);background:#fff}
 .listItem h3{margin:0 0 6px 0;font-size:14px}
@@ -398,66 +394,10 @@ a{color:inherit;text-decoration:none}
   .featureRow{grid-template-columns:1fr;margin-top:-12px;}
   .modelsHeader{flex-direction:column;align-items:flex-start;}
   .modelsGrid{grid-template-columns:1fr;}
-}
-/* LIGHTBOX */
-.lb{
-  position:fixed;
-  inset:0;
-  z-index:9999;
-  background:rgba(2,6,23,.86);
-  backdrop-filter: blur(6px);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding:22px;
+  .modelCover{height:210px;}
 }
 
-.lbInner{
-  width:min(1200px, 100%);
-  height:min(88vh, 100%);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-
-.lbImg{
-  max-width:100%;
-  max-height:100%;
-  object-fit:contain;
-  border-radius:16px;
-  box-shadow: 0 30px 120px rgba(0,0,0,.55);
-  background:rgba(255,255,255,.02);
-}
-
-.lbClose{
-  position:absolute;
-  top:14px;
-  right:16px;
-  width:44px;
-  height:44px;
-  border-radius:999px;
-  border:1px solid rgba(255,255,255,.18);
-  background:rgba(255,255,255,.08);
-  color:#fff;
-  font-size:28px;
-  line-height:1;
-  cursor:pointer;
-}
-.lbClose:hover{background:rgba(255,255,255,.12)}
-.modelImgBtn{border:0;padding:0;background:transparent;width:100%;display:block;cursor:pointer}
-.modelCover{width:100%;height:190px;object-fit:cover;display:block}
-
-/* LIGHTBOX */
-.lb{position:fixed;inset:0;z-index:9999}
-.lbBackdrop{position:absolute;inset:0;background:rgba(0,0,0,.78);border:0}
-.lbInner{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:18px}
-.lbImg{max-width:min(1200px, 96vw);max-height:92vh;border-radius:14px;box-shadow:0 24px 80px rgba(0,0,0,.55);background:#000}
-.lbClose{position:absolute;top:14px;right:16px;width:44px;height:44px;border-radius:999px;border:1px solid rgba(255,255,255,.18);background:rgba(0,0,0,.35);color:#fff;font-size:28px;line-height:1;cursor:pointer}
-.lbNav{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:999px;border:1px solid rgba(255,255,255,.18);background:rgba(0,0,0,.35);color:#fff;font-size:30px;line-height:1;cursor:pointer}
-.lbPrev{left:14px}
-.lbNext{right:14px}
-.lbCounter{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);padding:6px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.18);background:rgba(0,0,0,.35);color:#fff;font-size:12px}
-/* LIGHTBOX */
+/* LIGHTBOX (fullscreen) — o singură variantă */
 .lbRoot{
   position:fixed;
   inset:0;
@@ -506,6 +446,7 @@ a{color:inherit;text-decoration:none}
   line-height:1;
   cursor:pointer;
 }
+.lbClose:hover{background:rgba(255,255,255,.14);}
 
 .lbNav{
   position:absolute;
@@ -521,6 +462,7 @@ a{color:inherit;text-decoration:none}
   line-height:1;
   cursor:pointer;
 }
+.lbNav:hover{background:rgba(255,255,255,.14);}
 
 .lbPrev{ left:16px; }
 .lbNext{ right:16px; }
