@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
+import CookieBanner from "./ui/CookieBanner";
 
 export const metadata: Metadata = {
   title: "iCONiC collection",
@@ -35,7 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="footer">
           <div className="container footerGrid">
             <div className="footerCompany">
-              <div>Copyright© {new Date().getFullYear()} iCONiC collection</div>
+              <div>© {new Date().getFullYear()} iCONiC collection</div>
 
               <div className="footerMeta">
                 <div>A&A Evoconstruct SRL</div>
@@ -76,6 +77,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </nav>
           </div>
         </footer>
+
+        <CookieBanner />
       </body>
     </html>
   );
