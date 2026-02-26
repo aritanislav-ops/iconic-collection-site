@@ -1,5 +1,7 @@
 import Link from "next/link";
+import React, { useState } from "react";
 import { site } from "../content/site";
+import Lightbox from "./ui/Lightbox";
 
 function CheckItem({ children }: { children: React.ReactNode }) {
   return (
@@ -11,6 +13,19 @@ function CheckItem({ children }: { children: React.ReactNode }) {
 }
 
 export default function HomePage() {
+  const [lbOpen, setLbOpen] = useState(false);
+  const [lbSrc, setLbSrc] = useState<string | null>(null);
+
+  function openLightbox(src: string) {
+    setLbSrc(src);
+    setLbOpen(true);
+  }
+
+  function closeLightbox() {
+    setLbOpen(false);
+    setLbSrc(null);
+  }
+
   return (
     <main>
       <section className="hero">
@@ -76,29 +91,39 @@ export default function HomePage() {
           </div>
 
           <div className="modelsGrid">
-            {site.models.map((m) => (
-              <article key={m.slug} className="modelCard">
-                <div
-                  className="modelImg"
-                  style={{
-                    backgroundImage: `url(${m.images?.[0] || ""})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                  }}
-                  aria-hidden="true"
-                />
-                <div className="modelBody">
-                  <div className="modelName">{m.name}</div>
-                  <div className="modelSummary">{m.summary}</div>
-                  <Link className="modelBtn" href={`/modele/${m.slug}`}>
-                    Vezi detalii <span aria-hidden="true">›</span>
-                  </Link>
-                </div>
-              </article>
-            ))}
+            {site.models.map((m) => {
+              const cover = m.images?.[0] || null;
+
+              return (
+                <article key={m.slug} className="modelCard">
+                  <div
+                    className="modelImg"
+                    role="button"
+                    tabIndex={0}
+                    aria-label={`Vezi imagine: ${m.name}`}
+                    onClick={() => cover && openLightbox(cover)}
+                    onKeyDown={(e) => {
+                      if ((e.key === "Enter" || e.key === " ") && cover) openLightbox(cover);
+                    }}
+                  >
+                    {cover ? <img className="modelCover" src={cover} alt="" loading="lazy" /> : null}
+                  </div>
+
+                  <div className="modelBody">
+                    <div className="modelName">{m.name}</div>
+                    <div className="modelSummary">{m.summary}</div>
+                    <Link className="modelBtn" href={`/modele/${m.slug}`}>
+                      Vezi detalii <span aria-hidden="true">›</span>
+                    </Link>
+                  </div>
+                </article>
+              );
+            })}
           </div>
         </div>
       </section>
+
+      <Lightbox open={lbOpen} src={lbSrc} onClose={closeLightbox} />
     </main>
   );
 }
