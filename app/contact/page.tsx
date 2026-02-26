@@ -10,7 +10,7 @@ export default function ContactPage() {
         <section className="contactInfo">
           <div className="infoBlock">
             <div className="infoKey">ADRESĂ</div>
-            <div className="infoVal">{site.contact.address ?? "-"}</div>
+            <div className="infoVal">{site.contact.address}</div>
           </div>
           <div className="infoBlock">
             <div className="infoKey">TELEFON</div>
@@ -24,7 +24,7 @@ export default function ContactPage() {
           </div>
           <div className="infoBlock">
             <div className="infoKey">PROGRAM</div>
-            <div className="infoVal">{site.contact.program ?? "-"}</div>
+            <div className="infoVal">{site.contact.program}</div>
           </div>
         </section>
 
@@ -66,7 +66,7 @@ export default function ContactPage() {
               <span>Sunt de acord cu procesarea datelor personale.</span>
             </label>
 
-            <button className="btn" type="submit">TRIMITE</button>
+            <button className="contactSubmit" type="submit">TRIMITE</button>
           </form>
 
           <div className="mapWrap">
@@ -74,16 +74,10 @@ export default function ContactPage() {
               title="Hartă"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              src={site.contact.mapEmbedUrl ?? "https://www.google.com/maps?q=Bucuresti&output=embed"}
+              src={site.contact.mapEmbedUrl}
             />
           </div>
         </section>
-
-        <footer className="contactSocial">
-          <a href={site.social?.facebook ?? "#"} aria-label="Facebook">Fb</a>
-          <a href={site.social?.instagram ?? "#"} aria-label="Instagram">Ig</a>
-          <a href={site.social?.linkedin ?? "#"} aria-label="LinkedIn">In</a>
-        </footer>
       </div>
     </main>
   );
