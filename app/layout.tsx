@@ -32,33 +32,32 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         {children}
 
-<footer className="footer">
-  <div className="container footerGrid">
-    <div className="footerCompany">
-      <div>© {new Date().getFullYear()} iCONiC collection</div>
+        <footer className="footer">
+          <div className="container footerGrid">
+            <div className="footerCompany">
+              <div>© {new Date().getFullYear()} iCONiC collection</div>
 
-      <div className="footerMeta">
-        <div>A&A Evoconstruct SRL</div>
-        <div>CUI: RO 21409238 · Reg. Com.: J2007005795403 · Sediu: Sector 3, Str. Agatha Barsescu Nr.15B, Etaj 01 Biroul 07</div>
-        <div>Email: office@aa-evoconstruct.ro ·
-      </div>
-    </div>
+              <div className="footerMeta">
+                <div>A&A Evoconstruct SRL</div>
+                <div>
+                  CUI: RO 21409238 · Reg. Com.: J2007005795403 · Sediu: Sector 3,
+                  Str. Agatha Barsescu Nr.15B, Etaj 01 Biroul 07
+                </div>
+                <div>Email: office@aa-evoconstruct.ro</div>
+              </div>
+            </div>
 
-    <div className="footerLinks" aria-label="Linkuri legale">
-      <Link href="/termeni">Termeni</Link>
-      <Link href="/confidentialitate">Confidențialitate</Link>
-      <Link href="/cookies">Cookies</Link>
-
-      {/* SAL (ANPC) = pagina ta internă (recomandat) */}
-      <Link href="/sal">SAL (ANPC)</Link>
-
-      {/* ODR (UE) = platforma europeană (opțional, dar ok să existe) */}
-      <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noreferrer">
-        ODR (UE)
-      </a>
-    </div>
-  </div>
-</footer>
+            <div className="footerLinks" aria-label="Linkuri legale">
+              <Link href="/termeni">Termeni</Link>
+              <Link href="/confidentialitate">Confidențialitate</Link>
+              <Link href="/cookies">Cookies</Link>
+              <Link href="/sal">SAL (ANPC)</Link>
+              <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noreferrer">
+                ODR (UE)
+              </a>
+            </div>
+          </div>
+        </footer>
       </body>
     </html>
   );
