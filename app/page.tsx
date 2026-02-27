@@ -50,7 +50,7 @@ export default function HomePage() {
 
               <ul className="heroChecks">
                 <CheckItem>Contract + livrabile clare</CheckItem>
-                <CheckItem>Deviz orientativ pe faze</CheckItem>
+                <CheckItem>Deviz estimativ pe faze</CheckItem>
                 <CheckItem>Asistență la autorizare</CheckItem>
               </ul>
 
