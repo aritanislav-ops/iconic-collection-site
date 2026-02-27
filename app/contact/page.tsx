@@ -1,4 +1,5 @@
 import { site } from "../../content/site";
+import ContactForm from "../ui/ContactForm";
 
 export default function ContactPage() {
   return (
