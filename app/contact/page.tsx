@@ -2,8 +2,6 @@ import { site } from "../../content/site";
 import ContactForm from "../ui/ContactForm";
 
 export default function ContactPage() {
-  const gmailCompose = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(site.contact.email)}`;
-
   return (
     <main className="contact">
       <div className="container">
@@ -15,18 +13,21 @@ export default function ContactPage() {
             <div className="infoKey">ADRESĂ</div>
             <div className="infoVal">{site.contact.address}</div>
           </div>
+
           <div className="infoBlock">
             <div className="infoKey">TELEFON</div>
-            <div className="infoVal">{site.contact.phone}</div>
+            <div className="infoVal">
+              <a href={`tel:${site.contact.phone.replace(/\s+/g, "")}`}>{site.contact.phone}</a>
+            </div>
           </div>
+
           <div className="infoBlock">
             <div className="infoKey">E-MAIL</div>
             <div className="infoVal">
-              <a href={gmailCompose} target="_blank" rel="noreferrer">
-                {site.contact.email}
-              </a>
+              <a href={`mailto:${site.contact.email}`}>{site.contact.email}</a>
             </div>
           </div>
+
           <div className="infoBlock">
             <div className="infoKey">PROGRAM</div>
             <div className="infoVal">{site.contact.program}</div>
