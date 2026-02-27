@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 
+const FORM_ENDPOINT = "https://formspree.io/f/XXXXYYYY";
+
 export default function ContactForm() {
   const [state, setState] = useState<"idle" | "sending" | "ok" | "err">("idle");
 
@@ -9,31 +11,27 @@ export default function ContactForm() {
     e.preventDefault();
     setState("sending");
 
-    const fd = new FormData(e.currentTarget);
-    const payload = {
-      name: String(fd.get("name") ?? ""),
-      email: String(fd.get("email") ?? ""),
-      phone: String(fd.get("phone") ?? ""),
-      company: String(fd.get("company") ?? ""),
-      message: String(fd.get("message") ?? ""),
-    };
+    const form = e.currentTarget;
+    const fd = new FormData(form);
 
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch(FORM_ENDPOINT, {
         method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify(payload),
+        headers: { Accept: "application/json" },
+        body: fd,
       });
+
       if (!res.ok) throw new Error("bad");
+
       setState("ok");
-      e.currentTarget.reset();
+      form.reset();
     } catch {
       setState("err");
     }
   }
 
   return (
-    <form className="contactForm" onSubmit={onSubmit}>
+    <form className="contactForm" method="POST" onSubmit={onSubmit}>
       <p className="formLead">
         Dorești să dezvoltăm un proiect împreună?
         <br />
@@ -66,9 +64,12 @@ export default function ContactForm() {
       </label>
 
       <label className="consent">
-        <input type="checkbox" required />
+        <input type="checkbox" name="gdpr" required />
         <span>Sunt de acord cu procesarea datelor personale.</span>
       </label>
+
+      {/* opțional: subject mai frumos în email */}
+      <input type="hidden" name="_subject" value="Cerere ofertă - iCONiC collection" />
 
       <button className="contactSubmit" type="submit" disabled={state === "sending"}>
         {state === "sending" ? "TRIMIT..." : "TRIMITE"}
