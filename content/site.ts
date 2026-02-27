@@ -3,7 +3,7 @@ export const site = {
   siteUrl: "https://www.iconic-collection.ro",
   headline: "Proiectare personalizată pentru fiecare model de casă.",
   subheadline: "Arhitectură + Structură + Instalații + Managementul Proiectului + Dirigenție de Santier + Execuție",
-  heroBadges: ["Contract + livrabile clare", "Deviz orientativ pe faze", "Asistență la autorizare"],
+  heroBadges: ["Contract + livrabile clare", "Deviz estimativ pe faze", "Asistență la autorizare"],
   cta: {
     primary: { label: "Cere ofertă", href: "/contact" },
     secondary: { label: "Vezi modele", href: "/modele" },
@@ -25,7 +25,7 @@ export const site = {
   models: [
     {
       slug: "iconic-1story-black",
-      name: "iCONiC 1story BLACK",
+      name: "iCONiC 1-story BLACK",
       summary: "Varianta BLACK — fațadă închisă, accente premium, look minimalist.",
       images: [
         "/brand/models/iconic-1story-black/01.jpg",
@@ -48,7 +48,7 @@ export const site = {
     },
     {
       slug: "iconic-1story-white",
-      name: "iCONiC 1story WHITE",
+      name: "iCONiC 1-story WHITE",
       summary: "Varianta WHITE — fațadă deschisă, contrast elegant, lumină maximă.",
       images: [
         "/brand/models/iconic-1story-white/01.jpg",
