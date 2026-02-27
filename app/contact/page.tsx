@@ -1,52 +1,82 @@
-import { site } from "../../content/site";
-import ContactForm from "../ui/ContactForm";
+"use client";
 
-export default function ContactPage() {
+import { useState } from "react";
+
+const FORM_ENDPOINT = "https://formspree.io/f/xreaoprb";
+
+export default function ContactForm() {
+  const [state, setState] = useState<"idle" | "sending" | "ok" | "err">("idle");
+
+  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setState("sending");
+
+    try {
+      const form = e.currentTarget;
+      const fd = new FormData(form);
+
+      const res = await fetch(FORM_ENDPOINT, {
+        method: "POST",
+        body: fd,
+        headers: { Accept: "application/json" },
+      });
+
+      if (res.ok) {
+        form.reset();
+        setState("ok");
+        return;
+      }
+
+      setState("err");
+    } catch {
+      setState("err");
+    }
+  }
+
   return (
-    <main className="contact">
-      <div className="container">
-        <h1 className="pageTitle">{site.contact.title}</h1>
-        {site.contact.note ? <p className="pageLead">{site.contact.note}</p> : null}
+    <form className="contactForm" onSubmit={onSubmit}>
+      <p className="formLead">
+        Dorești să dezvoltăm un proiect împreună?
+        <br />
+        Ne poți contacta folosind formularul de mai jos.
+      </p>
 
-        <section className="contactInfo">
-          <div className="infoBlock">
-            <div className="infoKey">ADRESĂ</div>
-            <div className="infoVal">{site.contact.address}</div>
-          </div>
+      <label className="field">
+        <span>Nume</span>
+        <input type="text" name="name" required />
+      </label>
 
-          <div className="infoBlock">
-            <div className="infoKey">TELEFON</div>
-            <div className="infoVal">
-              <a href={`tel:${site.contact.phone.replace(/\s+/g, "")}`}>{site.contact.phone}</a>
-            </div>
-          </div>
+      <label className="field">
+        <span>Email</span>
+        <input type="email" name="email" required />
+      </label>
 
-          <div className="infoBlock">
-            <div className="infoKey">E-MAIL</div>
-            <div className="infoVal">
-              <a href={`mailto:${site.contact.email}`}>{site.contact.email}</a>
-            </div>
-          </div>
+      <label className="field">
+        <span>Telefon</span>
+        <input type="tel" name="phone" />
+      </label>
 
-          <div className="infoBlock">
-            <div className="infoKey">PROGRAM</div>
-            <div className="infoVal">{site.contact.program}</div>
-          </div>
-        </section>
+      <label className="field">
+        <span>Companie</span>
+        <input type="text" name="company" />
+      </label>
 
-        <section className="contactGrid">
-          <ContactForm />
+      <label className="field">
+        <span>Detalii</span>
+        <textarea name="message" rows={6} required />
+      </label>
 
-          <div className="mapWrap">
-            <iframe
-              title="Hartă"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              src={site.contact.mapEmbedUrl}
-            />
-          </div>
-        </section>
-      </div>
-    </main>
+      <label className="consent">
+        <input type="checkbox" name="gdpr" required />
+        <span>Sunt de acord cu procesarea datelor personale.</span>
+      </label>
+
+      <button className="btn" type="submit" disabled={state === "sending"}>
+        {state === "sending" ? "TRIMIT..." : "TRIMITE"}
+      </button>
+
+      {state === "ok" ? <div className="formOk">Mesaj trimis.</div> : null}
+      {state === "err" ? <div className="formErr">Nu s-a putut trimite. Încearcă din nou.</div> : null}
+    </form>
   );
 }
