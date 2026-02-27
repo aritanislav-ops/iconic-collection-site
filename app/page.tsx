@@ -71,19 +71,19 @@ export default function HomePage() {
             <div className="featureCard">
               <div className="featureIcon" aria-hidden="true">⌁</div>
               <div className="featureTitle">Proiect complet</div>
-              <div className="featureText">Arhitectură, structură și instalații, coordonate și verificabile.</div>
+              <div className="featureText">Arhitectură, structură și instalații, coordonate și verificate de verificatori si experti atestati.</div>
             </div>
 
             <div className="featureCard">
               <div className="featureIcon" aria-hidden="true">◩</div>
               <div className="featureTitle">Adaptare la teren</div>
-              <div className="featureText">Planuri personalizate după teren, cerințe și buget.</div>
+              <div className="featureText">Planuri personalizate in functie de teren, cerințe și buget.</div>
             </div>
 
             <div className="featureCard">
               <div className="featureIcon" aria-hidden="true">⎘</div>
               <div className="featureTitle">Buget controlat</div>
-              <div className="featureText">Devize orientative pe faze + cantități estimate, ajustabile în execuție.</div>
+              <div className="featureText">Devize estimativ pe faze.</div>
             </div>
           </div>
         </div>
