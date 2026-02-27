@@ -77,9 +77,9 @@ export const site = {
 
   contact: {
     title: "Contact",
-    phone: "+40 7xx xxx xxx",
+    phone: "+40 741 259 236",
     email: "contact@iconic-collection.ro",
-    note: "Înlocuiește datele cu ale tale.",
+    note: "iCONiC collection - Prestanta & Experienta",
     address: "Sector 3, Str. Agatha Bârsescu Nr. 15B, Etaj 01, Biroul 07, București",
     program: "Luni–Vineri 09:00–18:00",
     mapEmbedUrl: "https://www.google.com/maps?q=Strada%20Agatha%20Barsescu%2015B%20Bucuresti&z=16&output=embed",
