@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const FORM_ENDPOINT = "https://formspree.io/f/xreaoprb";
+const FORM_ENDPOINT = "https://formspree.io/f/xreaqprb";
 
 export default function ContactForm() {
   const [state, setState] = useState<"idle" | "sending" | "ok" | "err">("idle");
@@ -18,9 +18,7 @@ export default function ContactForm() {
       const res = await fetch(FORM_ENDPOINT, {
         method: "POST",
         body: fd,
-        headers: {
-          Accept: "application/json",
-        },
+        headers: { Accept: "application/json" },
       });
 
       if (res.ok) {
@@ -36,7 +34,7 @@ export default function ContactForm() {
   }
 
   return (
-    <form className="contactForm" onSubmit={onSubmit}>
+    <form className="contactForm" method="post" onSubmit={onSubmit}>
       <p className="formLead">
         Dorești să dezvoltăm un proiect împreună?
         <br />
@@ -77,7 +75,7 @@ export default function ContactForm() {
         {state === "sending" ? "TRIMIT..." : "TRIMITE"}
       </button>
 
-      {state === "ok" ? <div className="formOk">Mesaj trimis.</div> : null}
+      {state === "ok" ? <div className="formOK">Mesaj trimis. Mulțumim.</div> : null}
       {state === "err" ? <div className="formErr">Nu s-a putut trimite. Încearcă din nou.</div> : null}
     </form>
   );
