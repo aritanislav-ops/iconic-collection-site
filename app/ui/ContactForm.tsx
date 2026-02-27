@@ -2,24 +2,28 @@
 
 import { useState } from "react";
 
-const FORM_ENDPOINT = "https://formspree.io/f/xreaqprb";
+const FORM_ENDPOINT = "https://formspree.io/f/xreacprb";
 
 export default function ContactForm() {
   const [state, setState] = useState<"idle" | "sending" | "ok" | "err">("idle");
+  const [errMsg, setErrMsg] = useState<string>("");
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setState("sending");
+    setErrMsg("");
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
 
     try {
-      const form = e.currentTarget;
-      const fd = new FormData(form);
-
       const res = await fetch(FORM_ENDPOINT, {
         method: "POST",
-        body: fd,
+        body: formData,
         headers: { Accept: "application/json" },
       });
+
+      const data = await res.json().catch(() => null);
 
       if (res.ok) {
         form.reset();
@@ -27,14 +31,20 @@ export default function ContactForm() {
         return;
       }
 
+      const msg =
+        data?.errors?.[0]?.message ||
+        data?.error ||
+        "Nu s-a putut trimite. Încearcă din nou.";
+      setErrMsg(msg);
       setState("err");
     } catch {
+      setErrMsg("Nu s-a putut trimite. Verifică internetul și încearcă din nou.");
       setState("err");
     }
   }
 
   return (
-    <form className="contactForm" method="post" onSubmit={onSubmit}>
+    <form className="contactForm" action={FORM_ENDPOINT} method="POST" onSubmit={onSubmit}>
       <p className="formLead">
         Dorești să dezvoltăm un proiect împreună?
         <br />
@@ -71,12 +81,14 @@ export default function ContactForm() {
         <span>Sunt de acord cu procesarea datelor personale.</span>
       </label>
 
-      <button className="btn" type="submit" disabled={state === "sending"}>
+      <input type="hidden" name="_subject" value="Cerere ofertă — iCONiC collection" />
+
+      <button className="contactSubmit" type="submit" disabled={state === "sending"}>
         {state === "sending" ? "TRIMIT..." : "TRIMITE"}
       </button>
 
-      {state === "ok" ? <div className="formOK">Mesaj trimis. Mulțumim.</div> : null}
-      {state === "err" ? <div className="formErr">Nu s-a putut trimite. Încearcă din nou.</div> : null}
+      {state === "ok" ? <div className="formOk">Mesaj trimis. Îți răspundem cât mai repede.</div> : null}
+      {state === "err" ? <div className="formErr">{errMsg}</div> : null}
     </form>
   );
 }
