@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const FORM_ENDPOINT = "https://formspree.io/f/XXXXYYYY";
+const FORM_ENDPOINT = "https://formspree.io/f/xreaoprb";
 
 export default function ContactForm() {
   const [state, setState] = useState<"idle" | "sending" | "ok" | "err">("idle");
