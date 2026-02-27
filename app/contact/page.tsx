@@ -1,4 +1,4 @@
-import { site } from "../../content/site";
+import { site } from <ContactForm toEmail={site.contact.email} />;
 
 export default function ContactPage() {
   return (
