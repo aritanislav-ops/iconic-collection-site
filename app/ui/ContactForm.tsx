@@ -11,27 +11,32 @@ export default function ContactForm() {
     e.preventDefault();
     setState("sending");
 
-    const form = e.currentTarget;
-    const fd = new FormData(form);
-
     try {
+      const form = e.currentTarget;
+      const fd = new FormData(form);
+
       const res = await fetch(FORM_ENDPOINT, {
         method: "POST",
-        headers: { Accept: "application/json" },
         body: fd,
+        headers: {
+          Accept: "application/json",
+        },
       });
 
-      if (!res.ok) throw new Error("bad");
+      if (res.ok) {
+        form.reset();
+        setState("ok");
+        return;
+      }
 
-      setState("ok");
-      form.reset();
+      setState("err");
     } catch {
       setState("err");
     }
   }
 
   return (
-    <form className="contactForm" method="POST" onSubmit={onSubmit}>
+    <form className="contactForm" onSubmit={onSubmit}>
       <p className="formLead">
         Dorești să dezvoltăm un proiect împreună?
         <br />
@@ -68,9 +73,7 @@ export default function ContactForm() {
         <span>Sunt de acord cu procesarea datelor personale.</span>
       </label>
 
-      <input type="hidden" name="_subject" value="Cerere ofertă - iCONiC collection" />
-
-      <button className="contactSubmit" type="submit" disabled={state === "sending"}>
+      <button className="btn" type="submit" disabled={state === "sending"}>
         {state === "sending" ? "TRIMIT..." : "TRIMITE"}
       </button>
 
