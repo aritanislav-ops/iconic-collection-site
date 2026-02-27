@@ -1,4 +1,5 @@
-import { site } from <ContactForm toEmail={site.contact.email} />;
+import { site } from "../../content/site";
+import ContactForm from "../ui/ContactForm";
 
 export default function ContactPage() {
   return (
@@ -29,45 +30,7 @@ export default function ContactPage() {
         </section>
 
         <section className="contactGrid">
-          <form className="contactForm" action="#" method="post">
-            <p className="formLead">
-              Dorești să dezvoltăm un proiect împreună?
-              <br />
-              Ne poți contacta folosind formularul de mai jos.
-            </p>
-
-            <label className="field">
-              <span>Nume</span>
-              <input type="text" name="name" required />
-            </label>
-
-            <label className="field">
-              <span>Email</span>
-              <input type="email" name="email" required />
-            </label>
-
-            <label className="field">
-              <span>Telefon</span>
-              <input type="tel" name="phone" />
-            </label>
-
-            <label className="field">
-              <span>Companie</span>
-              <input type="text" name="company" />
-            </label>
-
-            <label className="field">
-              <span>Detalii</span>
-              <textarea name="message" rows={6} required />
-            </label>
-
-            <label className="consent">
-              <input type="checkbox" required />
-              <span>Sunt de acord cu procesarea datelor personale.</span>
-            </label>
-
-            <button className="contactSubmit" type="submit">TRIMITE</button>
-          </form>
+          <ContactForm toEmail={site.contact.email} />
 
           <div className="mapWrap">
             <iframe
