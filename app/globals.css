@@ -763,3 +763,6 @@ a{color:inherit;text-decoration:none}
   font-size:12px;
 }
 .contactAltBtn:hover{background:#f1f5f9}
+
+.formOk{margin-top:10px;color:#166534;font-size:13px}
+.formErr{margin-top:10px;color:#b91c1c;font-size:13px}
