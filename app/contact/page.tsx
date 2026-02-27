@@ -1,97 +1,51 @@
-"use client";
+import { site } from "../../content/site";
+import ContactForm from "../ui/ContactForm";
 
-import { useState } from "react";
-
-function enc(v: string) {
-  return encodeURIComponent(v);
-}
-
-export default function ContactForm({ toEmail }: { toEmail: string }) {
-  const [copied, setCopied] = useState(false);
-
-  function onSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-
-    const fd = new FormData(e.currentTarget);
-    const name = String(fd.get("name") ?? "");
-    const email = String(fd.get("email") ?? "");
-    const phone = String(fd.get("phone") ?? "");
-    const company = String(fd.get("company") ?? "");
-    const message = String(fd.get("message") ?? "");
-
-    const subject = `Cerere ofertă - ${name || "contact"}${company ? ` (${company})` : ""}`;
-    const body =
-      `Nume: ${name}\n` +
-      `Email: ${email}\n` +
-      `Telefon: ${phone}\n` +
-      `Companie: ${company}\n\n` +
-      `Mesaj:\n${message}\n`;
-
-    const gmailUrl =
-      "https://mail.google.com/mail/?view=cm&fs=1" +
-      `&to=${enc(toEmail)}` +
-      `&su=${enc(subject)}` +
-      `&body=${enc(body)}`;
-
-    window.open(gmailUrl, "_blank", "noopener,noreferrer");
-  }
-
-  async function copyEmail() {
-    try {
-      await navigator.clipboard.writeText(toEmail);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 1200);
-    } catch {}
-  }
+export default function ContactPage() {
+  const gmailCompose = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(site.contact.email)}`;
 
   return (
-    <form className="contactForm" onSubmit={onSubmit}>
-      <p className="formLead">
-        Dorești să dezvoltăm un proiect împreună?
-        <br />
-        Ne poți contacta folosind formularul de mai jos.
-      </p>
+    <main className="contact">
+      <div className="container">
+        <h1 className="pageTitle">{site.contact.title}</h1>
+        {site.contact.note ? <p className="pageLead">{site.contact.note}</p> : null}
 
-      <label className="field">
-        <span>Nume</span>
-        <input type="text" name="name" required />
-      </label>
+        <section className="contactInfo">
+          <div className="infoBlock">
+            <div className="infoKey">ADRESĂ</div>
+            <div className="infoVal">{site.contact.address}</div>
+          </div>
+          <div className="infoBlock">
+            <div className="infoKey">TELEFON</div>
+            <div className="infoVal">{site.contact.phone}</div>
+          </div>
+          <div className="infoBlock">
+            <div className="infoKey">E-MAIL</div>
+            <div className="infoVal">
+              <a href={gmailCompose} target="_blank" rel="noreferrer">
+                {site.contact.email}
+              </a>
+            </div>
+          </div>
+          <div className="infoBlock">
+            <div className="infoKey">PROGRAM</div>
+            <div className="infoVal">{site.contact.program}</div>
+          </div>
+        </section>
 
-      <label className="field">
-        <span>Email</span>
-        <input type="email" name="email" required />
-      </label>
+        <section className="contactGrid">
+          <ContactForm toEmail={site.contact.email} />
 
-      <label className="field">
-        <span>Telefon</span>
-        <input type="tel" name="phone" />
-      </label>
-
-      <label className="field">
-        <span>Companie</span>
-        <input type="text" name="company" />
-      </label>
-
-      <label className="field">
-        <span>Detalii</span>
-        <textarea name="message" rows={6} required />
-      </label>
-
-      <label className="consent">
-        <input type="checkbox" required />
-        <span>Sunt de acord cu procesarea datelor personale.</span>
-      </label>
-
-      <button className="contactSubmit" type="submit">TRIMITE</button>
-
-      <div className="contactAlt">
-        <div className="contactAltText">
-          Dacă nu se deschide Gmail, scrie direct la: <b>{toEmail}</b>
-        </div>
-        <button className="contactAltBtn" type="button" onClick={copyEmail}>
-          {copied ? "COPIAT" : "Copiază email"}
-        </button>
+          <div className="mapWrap">
+            <iframe
+              title="Hartă"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              src={site.contact.mapEmbedUrl}
+            />
+          </div>
+        </section>
       </div>
-    </form>
+    </main>
   );
 }
