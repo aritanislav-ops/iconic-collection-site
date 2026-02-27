@@ -20,7 +20,9 @@ export default function ContactForm() {
         headers: { Accept: "application/json" },
         body: fd,
       });
+
       if (!res.ok) throw new Error("bad");
+
       setState("ok");
       form.reset();
     } catch {
