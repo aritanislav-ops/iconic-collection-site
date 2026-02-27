@@ -2,46 +2,34 @@
 
 import { useState } from "react";
 
-function enc(v: string) {
-  return encodeURIComponent(v);
-}
+export default function ContactForm() {
+  const [state, setState] = useState<"idle" | "sending" | "ok" | "err">("idle");
 
-export default function ContactForm({ toEmail }: { toEmail: string }) {
-  const [copied, setCopied] = useState(false);
-
-  function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    setState("sending");
 
     const fd = new FormData(e.currentTarget);
-    const name = String(fd.get("name") ?? "");
-    const email = String(fd.get("email") ?? "");
-    const phone = String(fd.get("phone") ?? "");
-    const company = String(fd.get("company") ?? "");
-    const message = String(fd.get("message") ?? "");
+    const payload = {
+      name: String(fd.get("name") ?? ""),
+      email: String(fd.get("email") ?? ""),
+      phone: String(fd.get("phone") ?? ""),
+      company: String(fd.get("company") ?? ""),
+      message: String(fd.get("message") ?? ""),
+    };
 
-    const subject = `Cerere ofertă - ${name || "contact"}${company ? ` (${company})` : ""}`;
-    const body =
-      `Nume: ${name}\n` +
-      `Email: ${email}\n` +
-      `Telefon: ${phone}\n` +
-      `Companie: ${company}\n\n` +
-      `Mesaj:\n${message}\n`;
-
-    const gmailUrl =
-      "https://mail.google.com/mail/?view=cm&fs=1" +
-      `&to=${enc(toEmail)}` +
-      `&su=${enc(subject)}` +
-      `&body=${enc(body)}`;
-
-    window.open(gmailUrl, "_blank", "noopener,noreferrer");
-  }
-
-  async function copyEmail() {
     try {
-      await navigator.clipboard.writeText(toEmail);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 1200);
-    } catch {}
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok) throw new Error("bad");
+      setState("ok");
+      e.currentTarget.reset();
+    } catch {
+      setState("err");
+    }
   }
 
   return (
@@ -82,16 +70,12 @@ export default function ContactForm({ toEmail }: { toEmail: string }) {
         <span>Sunt de acord cu procesarea datelor personale.</span>
       </label>
 
-      <button className="contactSubmit" type="submit">TRIMITE</button>
+      <button className="contactSubmit" type="submit" disabled={state === "sending"}>
+        {state === "sending" ? "TRIMIT..." : "TRIMITE"}
+      </button>
 
-      <div className="contactAlt">
-        <div className="contactAltText">
-          Dacă nu se deschide Gmail, scrie direct la: <b>{toEmail}</b>
-        </div>
-        <button className="contactAltBtn" type="button" onClick={copyEmail}>
-          {copied ? "COPIAT" : "Copiază email"}
-        </button>
-      </div>
+      {state === "ok" ? <div className="formOk">Mesaj trimis.</div> : null}
+      {state === "err" ? <div className="formErr">Nu s-a putut trimite. Încearcă din nou.</div> : null}
     </form>
   );
 }
