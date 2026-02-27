@@ -20,9 +20,7 @@ export default function ContactForm() {
         headers: { Accept: "application/json" },
         body: fd,
       });
-
       if (!res.ok) throw new Error("bad");
-
       setState("ok");
       form.reset();
     } catch {
@@ -68,7 +66,6 @@ export default function ContactForm() {
         <span>Sunt de acord cu procesarea datelor personale.</span>
       </label>
 
-      {/* opțional: subject mai frumos în email */}
       <input type="hidden" name="_subject" value="Cerere ofertă - iCONiC collection" />
 
       <button className="contactSubmit" type="submit" disabled={state === "sending"}>
