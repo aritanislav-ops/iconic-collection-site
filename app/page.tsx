@@ -44,7 +44,7 @@ export default function HomePage() {
         <div className="container">
           <div className="heroInner">
             <div className="heroText">
-              <h1 className="heroTitle">Proiectare personalizată pe fiecare model de casă</h1>
+              <h1 className="heroTitle">Case proiectate corect, pe terenul tău, conform reglementărilor urbanistice.</h1>
 
               <p className="heroSub">{site.subheadline}</p>
 
