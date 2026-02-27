@@ -34,7 +34,7 @@ export default function ContactPage() {
         </section>
 
         <section className="contactGrid">
-          <ContactForm toEmail={site.contact.email} />
+          <ContactForm />
 
           <div className="mapWrap">
             <iframe
