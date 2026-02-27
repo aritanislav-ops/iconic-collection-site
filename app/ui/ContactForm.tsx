@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useState } from "react";
 
 function enc(v: string) {
   return encodeURIComponent(v);
@@ -8,7 +8,6 @@ function enc(v: string) {
 
 export default function ContactForm({ toEmail }: { toEmail: string }) {
   const [copied, setCopied] = useState(false);
-  const mailtoBase = useMemo(() => `mailto:${toEmail}`, [toEmail]);
 
   function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -28,7 +27,13 @@ export default function ContactForm({ toEmail }: { toEmail: string }) {
       `Companie: ${company}\n\n` +
       `Mesaj:\n${message}\n`;
 
-    window.location.href = `${mailtoBase}?subject=${enc(subject)}&body=${enc(body)}`;
+    const gmailUrl =
+      "https://mail.google.com/mail/?view=cm&fs=1" +
+      `&to=${enc(toEmail)}` +
+      `&su=${enc(subject)}` +
+      `&body=${enc(body)}`;
+
+    window.open(gmailUrl, "_blank", "noopener,noreferrer");
   }
 
   async function copyEmail() {
@@ -81,7 +86,7 @@ export default function ContactForm({ toEmail }: { toEmail: string }) {
 
       <div className="contactAlt">
         <div className="contactAltText">
-          Dacă nu se deschide emailul, scrie direct la: <b>{toEmail}</b>
+          Dacă nu se deschide Gmail, scrie direct la: <b>{toEmail}</b>
         </div>
         <button className="contactAltBtn" type="button" onClick={copyEmail}>
           {copied ? "COPIAT" : "Copiază email"}
