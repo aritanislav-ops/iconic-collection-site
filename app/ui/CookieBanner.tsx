@@ -41,8 +41,7 @@ export default function CookieBanner() {
       <div className="cbCard">
         <div className="cbTitle">Cookies</div>
         <p className="cbText">
-          Folosim cookies pentru statistici anonime (Cloudflare Web Analytics). Poți accepta sau refuza.
-          {" "}
+          Folosim cookies pentru statistici anonime (Cloudflare Web Analytics). Poți accepta sau refuza.{" "}
           <a className="cbLink" href="/cookies">Detalii</a>
         </p>
 
