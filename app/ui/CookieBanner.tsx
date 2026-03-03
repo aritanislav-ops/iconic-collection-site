@@ -3,33 +3,29 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
+const CONSENT_KEY = "cookie_consent_v1";
+
 type Consent = {
-  necessary: true;
+  necessary: boolean;
   analytics: boolean;
-  marketing: boolean;
-  ts: number;
 };
 
-const STORAGE_KEY = "cookie_consent_v1";
-
-function readConsent(): Consent | null {
+function loadConsent(): Consent | null {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
+    const raw = localStorage.getItem(CONSENT_KEY);
     if (!raw) return null;
-    const parsed = JSON.parse(raw) as Consent;
-    if (typeof parsed !== "object" || parsed === null) return null;
-    if (parsed.necessary !== true) return null;
-    if (typeof parsed.analytics !== "boolean") return null;
-    if (typeof parsed.marketing !== "boolean") return null;
-    if (typeof parsed.ts !== "number") return null;
-    return parsed;
+    const parsed = JSON.parse(raw) as Partial<Consent>;
+    return {
+      necessary: parsed.necessary !== false,
+      analytics: parsed.analytics === true,
+    };
   } catch {
     return null;
   }
 }
 
-function writeConsent(consent: Consent) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(consent));
+function saveConsent(c: Consent) {
+  localStorage.setItem(CONSENT_KEY, JSON.stringify(c));
   window.dispatchEvent(new Event("cookie-consent-changed"));
 }
 
@@ -37,93 +33,91 @@ export default function CookieBanner() {
   const [open, setOpen] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [analytics, setAnalytics] = useState(false);
-  const [marketing, setMarketing] = useState(false);
 
   useEffect(() => {
-    const existing = readConsent();
-    if (!existing) {
+    const c = loadConsent();
+    if (!c) {
       setOpen(true);
       return;
     }
+    setAnalytics(!!c.analytics);
     setOpen(false);
   }, []);
 
-  function acceptAll() {
-    writeConsent({ necessary: true, analytics: true, marketing: true, ts: Date.now() });
-    setOpen(false);
-  }
-
-  function rejectAll() {
-    writeConsent({ necessary: true, analytics: false, marketing: false, ts: Date.now() });
-    setOpen(false);
-  }
-
-  function saveChoices() {
-    writeConsent({ necessary: true, analytics, marketing, ts: Date.now() });
-    setOpen(false);
-  }
-
   if (!open) return null;
 
+  const acceptAll = () => {
+    saveConsent({ necessary: true, analytics: true });
+    setOpen(false);
+  };
+
+  const rejectAll = () => {
+    saveConsent({ necessary: true, analytics: false });
+    setOpen(false);
+  };
+
+  const saveSettings = () => {
+    saveConsent({ necessary: true, analytics });
+    setOpen(false);
+  };
+
   return (
-    <div className="cbRoot" role="dialog" aria-modal="true" aria-label="Consimțământ cookie-uri">
+    <div className="cbRoot" role="dialog" aria-label="Preferințe cookies">
       <div className="cbCard">
-        <div className="cbTitle">Cookie-uri</div>
+        <div className="cbTitle">Cookies</div>
 
         <p className="cbText">
-          Folosim cookie-uri strict necesare pentru funcționarea site-ului. Opțional, poți permite cookie-uri de analiză și marketing.
-          Detalii în <Link href="/cookies" className="cbLink">Politica de cookies</Link> și{" "}
-          <Link href="/confidentialitate" className="cbLink">Politica de confidențialitate</Link>.
+          Folosim cookies esențiale pentru funcționarea site-ului. Opțional, poți accepta cookies de analiză
+          (statistici anonime). Detalii în{" "}
+          <Link className="cbLink" href="/cookies">
+            pagina Cookies
+          </Link>
+          .
         </p>
 
         {showSettings ? (
           <div className="cbSettings">
-            <label className="cbRow">
-              <input type="checkbox" checked disabled />
-              <span>
-                Strict necesare <span className="cbHint">(întotdeauna active)</span>
-              </span>
-            </label>
+            <div className="cbRow">
+              <input type="checkbox" checked readOnly />
+              <div>
+                <div>Esențiale (obligatorii)</div>
+                <div className="cbHint">Necesare pentru funcționarea site-ului.</div>
+              </div>
+            </div>
 
-            <label className="cbRow">
+            <div className="cbRow">
               <input
                 type="checkbox"
                 checked={analytics}
                 onChange={(e) => setAnalytics(e.target.checked)}
               />
-              <span>Analiză</span>
-            </label>
-
-            <label className="cbRow">
-              <input
-                type="checkbox"
-                checked={marketing}
-                onChange={(e) => setMarketing(e.target.checked)}
-              />
-              <span>Marketing</span>
-            </label>
+              <div>
+                <div>Analiză (Cloudflare Web Analytics)</div>
+                <div className="cbHint">Statistici de trafic. Se încarcă doar dacă accepți.</div>
+              </div>
+            </div>
           </div>
         ) : null}
 
         <div className="cbActions">
-          <button className="cbBtn cbGhost" type="button" onClick={rejectAll}>
+          <button className="cbBtn cbGhost" onClick={rejectAll} type="button">
             Refuz
           </button>
 
           <button
             className="cbBtn cbGhost"
-            type="button"
             onClick={() => setShowSettings((v) => !v)}
+            type="button"
           >
             Setări
           </button>
 
           {showSettings ? (
-            <button className="cbBtn cbPrimary" type="button" onClick={saveChoices}>
+            <button className="cbBtn cbPrimary" onClick={saveSettings} type="button">
               Salvează
             </button>
           ) : (
-            <button className="cbBtn cbPrimary" type="button" onClick={acceptAll}>
+            <button className="cbBtn cbPrimary" onClick={acceptAll} type="button">
               Accept
             </button>
           )}
