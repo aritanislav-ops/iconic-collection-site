@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
 import CookieBanner from "./ui/CookieBanner";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "iCONiC collection",
