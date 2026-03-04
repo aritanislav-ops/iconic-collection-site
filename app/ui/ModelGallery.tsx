@@ -1,29 +1,71 @@
 "use client";
 
-import React, { useMemo, useState } from "react";
-import Lightbox from "./Lightbox";
+import { useEffect, useState } from "react";
 
-export default function ModelGallery({ images }: { images: string[] }) {
-  const list = useMemo(() => (images || []).filter(Boolean), [images]);
+type Props = {
+  images: { src: string; alt?: string }[];
+};
+
+export default function ModelGallery({ images }: Props) {
   const [open, setOpen] = useState(false);
-  const [start, setStart] = useState(0);
+  const [idx, setIdx] = useState(0);
 
-  function openAt(idx: number) {
-    setStart(idx);
+  function show(i: number) {
+    setIdx(i);
     setOpen(true);
   }
+
+  function close() {
+    setOpen(false);
+  }
+
+  function prev() {
+    setIdx((p) => (p - 1 + images.length) % images.length);
+  }
+
+  function next() {
+    setIdx((p) => (p + 1) % images.length);
+  }
+
+  useEffect(() => {
+    if (!open) return;
+    function onKey(e: KeyboardEvent) {
+      if (e.key === "Escape") close();
+      if (e.key === "ArrowLeft") prev();
+      if (e.key === "ArrowRight") next();
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open, images.length]);
 
   return (
     <>
       <div className="modelGallery">
-        {list.map((src, idx) => (
-          <button key={src + idx} type="button" className="modelGalleryBtn" onClick={() => openAt(idx)} aria-label={`Deschide imaginea ${idx + 1}`}>
-            <img className="modelGalleryImg" src={src} alt="" loading="lazy" />
+        {images.map((img, i) => (
+          <button key={img.src} type="button" className="modelGalleryBtn" onClick={() => show(i)} aria-label="Mărește imaginea">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img className="modelGalleryImg" src={img.src} alt={img.alt || ""} />
           </button>
         ))}
       </div>
 
-      <Lightbox open={open} images={list} startIndex={start} onClose={() => setOpen(false)} />
+      {open ? (
+        <div className="lbRoot" role="dialog" aria-modal="true">
+          <button type="button" className="lbBackdrop" onClick={close} aria-label="Închide" />
+          <div className="lbStage">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img className="lbImg" src={images[idx]?.src} alt={images[idx]?.alt || ""} />
+            {images.length > 1 ? (
+              <>
+                <button type="button" className="lbNav lbPrev" onClick={prev} aria-label="Anterior">‹</button>
+                <button type="button" className="lbNav lbNext" onClick={next} aria-label="Următor">›</button>
+                <div className="lbCounter">{idx + 1} / {images.length}</div>
+              </>
+            ) : null}
+            <button type="button" className="lbClose" onClick={close} aria-label="Închide">×</button>
+          </div>
+        </div>
+      ) : null}
     </>
   );
 }
