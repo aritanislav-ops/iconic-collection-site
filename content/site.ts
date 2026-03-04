@@ -61,6 +61,8 @@ export const site = {
         "/brand/models/iconic-1story-white/08.jpg",
         "/brand/models/iconic-1story-white/09.jpg",
         "/brand/models/iconic-1story-white/10.jpg",
+        "/brand/models/iconic-1story-white/11.jpg",
+        "/brand/models/iconic-1story-white/12.jpg",
       ],
     },
   ] as const,
