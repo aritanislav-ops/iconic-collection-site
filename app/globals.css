@@ -766,3 +766,33 @@ a{color:inherit;text-decoration:none}
 
 .formOk{margin-top:10px;color:#166534;font-size:13px}
 .formErr{margin-top:10px;color:#b91c1c;font-size:13px}
+@media (max-width: 520px){
+  .nav{
+    height:auto;
+    padding:10px 0;
+    align-items:center;
+    gap:10px;
+  }
+
+  .brandLogo img{ height:52px; }
+
+  .navlinks{
+    width:100%;
+    justify-content:flex-start;
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+    gap:8px;
+    padding-bottom:4px;
+  }
+
+  .navlinks a{
+    white-space:nowrap;
+    flex:0 0 auto;
+    padding:6px 8px;
+    font-size:13px;
+  }
+
+  /* opțional: ascunde scrollbarul (Chrome/Safari) */
+  .navlinks::-webkit-scrollbar{ height:0; }
+}
