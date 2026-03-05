@@ -417,11 +417,10 @@ a{color:inherit;text-decoration:none}
 
 .modelGalleryImg{
   width:100%;
-  height:260px;          /* rămâne fix pentru aliniere curată */
-  object-fit:cover;      /* thumbnail = profi */
-  object-position:center;
+  height:260px;          /* păstrează grila uniformă */
+  object-fit:cover;      /* arată “pro” pe grid */
   display:block;
-  background:#0b0f17;    /* nu se vede în mod normal */
+  background:#0b0f17;
 }
 
 @media (max-width: 920px){.modelGalleryImg{height:240px;}
