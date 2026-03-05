@@ -407,8 +407,8 @@ a{color:inherit;text-decoration:none}
 
 .modelGalleryBtn{
   border:0;
-  padding:8px;
-  background:#0b0f17;
+  padding:0;
+  background:transparent;
   cursor:pointer;
   border-radius:16px;
   overflow:hidden;
@@ -417,11 +417,9 @@ a{color:inherit;text-decoration:none}
 
 .modelGalleryImg{
   width:100%;
-  height:auto;
-  aspect-ratio:16/9;
-  object-fit:contain;
+  height:260px;
+  object-fit:cover;
   display:block;
-  background:#0b0f17;
 }
 @media (max-width: 920px){.modelGalleryImg{height:240px;}
 }
@@ -451,15 +449,14 @@ a{color:inherit;text-decoration:none}
 }
 
 .lbImg{
-  max-width: min(96vw, 1400px);
-  max-height: 92vh;
+  max-width:min(96vw,1400px);
+  max-height:92vh;
   width:auto;
   height:auto;
   object-fit:contain;
   border-radius:14px;
-  box-shadow: 0 24px 80px rgba(0,0,0,.55);
-  background: #0b0f17;   /* în loc de rgba(...) */
-  padding: 6px;          /* margine fină, arată “curat” */
+  box-shadow:0 24px 80px rgba(0,0,0,.55);
+  background:rgba(255,255,255,.02);
 }
 
 .lbClose{
