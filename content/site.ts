@@ -22,7 +22,7 @@ export const site = {
     actions: [{ label: "Detalii servicii", href: "/pachete" }],
   },
 
-  models: [
+    models: [
     {
       slug: "iconic-1story-black",
       name: "iCONiC 1-story BLACK",
