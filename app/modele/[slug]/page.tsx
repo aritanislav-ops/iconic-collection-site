@@ -13,10 +13,17 @@ export default function ModelPage({ params }: { params: { slug: string } }) {
   const model = site.models.find((m) => m.slug === params.slug);
   if (!model) return notFound();
 
-  const images = (model.images ?? []).map((src: string, i: number) => ({
-    src,
-    alt: `${model.name} – imagine ${i + 1}`,
-  }));
+  const images = (model.images ?? [])
+    .slice()
+    .sort((a, b) => {
+      const na = Number((a.match(/\/(\d+)\.(jpg|jpeg|png|webp)$/i) || [])[1] ?? 0);
+      const nb = Number((b.match(/\/(\d+)\.(jpg|jpeg|png|webp)$/i) || [])[1] ?? 0);
+      return na - nb;
+    })
+    .map((src: string, i: number) => ({
+      src,
+      alt: `${model.name} – imagine ${i + 1}`,
+    }));
 
   return (
     <main className="container">
