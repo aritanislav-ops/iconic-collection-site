@@ -42,7 +42,7 @@ export default function ModelGallery({ images }: Props) {
     <>
       <div className="modelGallery">
         {images.map((img, i) => (
-          <button key={`${img.src}-${i}`} type="button" className="modelGalleryBtn" onClick={() => show(i)} aria-label="Mărește imaginea">
+          <button key={i} type="button" className="modelGalleryBtn" onClick={() => show(i)} aria-label="Mărește imaginea">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img className="modelGalleryImg" src={img.src} alt={img.alt || ""} />
           </button>
