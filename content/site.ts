@@ -26,7 +26,7 @@ export const site = {
     {
       slug: "iconic-1story-black",
       name: "iCONiC 1-story BLACK",
-      summary: "Varianta BLACK — fațadă închisă, accente premium, look minimalist.",
+      summary: "Varianta black— fațadă închisă, accente premium, look minimalist.",
       images: [
         "/brand/models/iconic-1story-black/01.jpg",
         "/brand/models/iconic-1story-black/02.jpg",
@@ -63,9 +63,10 @@ export const site = {
         "/brand/models/iconic-1story-white/10.jpg",
         "/brand/models/iconic-1story-white/11.jpg",
         "/brand/models/iconic-1story-white/12.jpg",
+        "/brand/models/iconic-1story-white/13.jpg",
       ],
     },
-          slug: "iconic-1story-stone",
+      slug: "iconic-1story-stone",
       name: "iCONiC 1-story STONE",
       summary: "Varianta WHITE — fațadă deschisă, contrast elegant, lumină maximă.",
       images: [
@@ -80,6 +81,7 @@ export const site = {
         "/brand/models/iconic-1story-stone/09.jpg",
         "/brand/models/iconic-1story-stone/10.jpg",
         "/brand/models/iconic-1story-stone/11.jpg",
+        "/brand/models/iconic-1story-stone/12.jpg",
         "/brand/models/iconic-1story-stone/12.jpg",
       ],
     },
