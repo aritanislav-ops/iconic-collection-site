@@ -66,9 +66,10 @@ export const site = {
         "/brand/models/iconic-1story-white/13.jpg",
       ],
     },
+    {
       slug: "iconic-1story-stone",
       name: "iCONiC 1-story STONE",
-      summary: "Varianta STONE — Fațadă din piatră, aspect solid, contrast modern",
+      summary: "Varianta STONE — fațadă din piatră, aspect solid, contrast modern.",
       images: [
         "/brand/models/iconic-1story-stone/01.jpg",
         "/brand/models/iconic-1story-stone/02.jpg",
@@ -82,7 +83,7 @@ export const site = {
         "/brand/models/iconic-1story-stone/10.jpg",
         "/brand/models/iconic-1story-stone/11.jpg",
         "/brand/models/iconic-1story-stone/12.jpg",
-        "/brand/models/iconic-1story-stone/12.jpg",
+        "/brand/models/iconic-1story-stone/13.jpg",
       ],
     },
   ] as const,
