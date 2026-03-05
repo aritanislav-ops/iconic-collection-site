@@ -453,13 +453,15 @@ a{color:inherit;text-decoration:none}
   display:flex;
   align-items:center;
   justify-content:center;
-  padding:0;
+  padding:24px;            /* puțin aer */
 }
 
 .lbImg{
-  width:100vw;
-  height:100vh;
-  object-fit:contain;     /* vezi poza întreagă */
+  max-width: calc(100vw - 48px);
+  max-height: calc(100vh - 48px);
+  width:auto;
+  height:auto;
+  object-fit:contain;
   background:#000;
   border-radius:0;
   box-shadow:none;
