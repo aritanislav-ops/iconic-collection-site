@@ -68,7 +68,7 @@ export const site = {
     },
       slug: "iconic-1story-stone",
       name: "iCONiC 1-story STONE",
-      summary: "Varianta WHITE — fațadă deschisă, contrast elegant, lumină maximă.",
+      summary: "Varianta STONE — Fațadă din piatră, aspect solid, contrast modern",
       images: [
         "/brand/models/iconic-1story-stone/01.jpg",
         "/brand/models/iconic-1story-stone/02.jpg",
