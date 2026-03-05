@@ -407,8 +407,8 @@ a{color:inherit;text-decoration:none}
 
 .modelGalleryBtn{
   border:0;
-  padding:0;
-  background:transparent;
+  padding:8px;
+  background:#0b0f17;
   cursor:pointer;
   border-radius:16px;
   overflow:hidden;
@@ -417,12 +417,12 @@ a{color:inherit;text-decoration:none}
 
 .modelGalleryImg{
   width:100%;
-  height:260px;          /* păstrează grila uniformă */
-  object-fit:cover;      /* arată “pro” pe grid */
+  height:auto;
+  aspect-ratio:16/9;
+  object-fit:contain;
   display:block;
   background:#0b0f17;
 }
-
 @media (max-width: 920px){.modelGalleryImg{height:240px;}
 }
 
