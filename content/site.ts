@@ -25,7 +25,7 @@ export const site = {
     models: [
     {
       slug: "iconic-1story-black",
-      name: "CASA PARTER iCONiC 1-story BLACK",
+      name: "CASA PARTER-iCONiC 1-story BLACK",
       summary: "Varianta black— fațadă închisă, accente premium, look minimalist.",
       images: [
         "/brand/models/iconic-1story-black/01.jpg",
@@ -48,7 +48,7 @@ export const site = {
     },
     {
       slug: "iconic-1story-white",
-      name: "CASA PARTER iCONiC 1-story WHITE",
+      name: "CASA PARTER-iCONiC 1-story WHITE",
       summary: "Varianta WHITE — fațadă deschisă, contrast elegant, lumină maximă.",
       images: [
         "/brand/models/iconic-1story-white/01.jpg",
@@ -68,7 +68,7 @@ export const site = {
     },
     {
       slug: "iconic-1story-stone",
-      name: "CASA PARTER iCONiC 1-story STONE",
+      name: "CASA PARTER-iCONiC 1-story STONE",
       summary: "Varianta STONE — fațadă din piatră, aspect solid, contrast modern.",
       images: [
         "/brand/models/iconic-1story-stone/01.jpg",
