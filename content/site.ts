@@ -44,6 +44,7 @@ export const site = {
         "/brand/models/iconic-1story-black/14.jpg",
         "/brand/models/iconic-1story-black/15.jpg",
         "/brand/models/iconic-1story-black/16.jpg",
+        "/brand/models/iconic-1story-black/17.jpg",
       ],
     },
     {
