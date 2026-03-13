@@ -841,3 +841,26 @@ a{color:inherit;text-decoration:none}
 .faqSection .sectionTitle{
   margin-bottom: 14px;
 }
+.qualitySection{
+  padding-top: 8px;
+  padding-bottom: 20px;
+}
+
+.qualityLead{
+  max-width: 74ch;
+  margin-bottom: 16px;
+}
+
+.qualityGrid{
+  align-items: stretch;
+}
+
+.qualityCard{
+  box-shadow: var(--shadow);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.qualityCard:hover{
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-strong);
+}
