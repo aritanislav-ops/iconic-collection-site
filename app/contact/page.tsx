@@ -1,5 +1,29 @@
+import type { Metadata } from "next";
 import { site } from "../../content/site";
 import ContactForm from "../ui/ContactForm";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description:
+    "Contactează iCONiC collection pentru proiectare case, documentații pentru autorizare, coordonarea specialităților și execuție.",
+  alternates: {
+    canonical: "/contact",
+  },
+  openGraph: {
+    title: "Contact | iCONiC collection",
+    description:
+      "Contactează iCONiC collection pentru proiectare case, documentații pentru autorizare, coordonarea specialităților și execuție.",
+    url: "https://www.iconic-collection.ro/contact",
+    images: ["/brand/og-home.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact | iCONiC collection",
+    description:
+      "Contactează iCONiC collection pentru proiectare case, documentații pentru autorizare, coordonarea specialităților și execuție.",
+    images: ["/brand/og-home.jpg"],
+  },
+};
 
 export default function ContactPage() {
   return (
