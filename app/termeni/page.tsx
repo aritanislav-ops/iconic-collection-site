@@ -51,12 +51,12 @@ export default function TermeniPage() {
         </div>
 
         <div className="listItem">
-          <h3>3) Caracterul informațiilor</h3>
+          <h3>3) Caracterul informațiilor publicate</h3>
           <p>
             Informațiile prezentate pe site au caracter informativ și nu reprezintă, prin ele însele,
             o ofertă contractuală fermă. Orice ofertă concretă se stabilește în funcție de cerințele
-            proiectului, amplasament, documentație disponibilă, complexitate și condițiile convenite
-            între părți.
+            proiectului, amplasament, documentația disponibilă, complexitate și condițiile convenite
+            ulterior între părți.
           </p>
         </div>
 
@@ -74,7 +74,7 @@ export default function TermeniPage() {
           <p>
             Conținutul site-ului, inclusiv textele, imaginile, machetele, elementele grafice,
             siglele și structura generală, este protejat de legislația aplicabilă și nu poate fi
-            copiat, reutilizat sau distribuit fără acordul titularului drepturilor.
+            copiat, reutilizat, distribuit sau exploatat fără acordul titularului drepturilor.
           </p>
         </div>
 
@@ -91,7 +91,7 @@ export default function TermeniPage() {
         <div className="listItem">
           <h3>7) Servicii și colaborări</h3>
           <p>
-            Anumite servicii prezentate pe site pot fi oferite direct de A&amp;A Evoconstruct SRL
+            Anumite servicii prezentate pe site pot fi furnizate direct de A&amp;A Evoconstruct SRL
             sau, după caz, prin colaborare cu specialiști, consultanți, echipe sau constructori,
             în funcție de natura proiectului și de condițiile contractuale aplicabile.
           </p>
@@ -100,17 +100,17 @@ export default function TermeniPage() {
         <div className="listItem">
           <h3>8) Linkuri către terți</h3>
           <p>
-            Site-ul poate conține linkuri către pagini externe. Nu controlăm în mod direct conținutul
-            sau politicile acestor site-uri și nu răspundem pentru modul în care acestea funcționează.
+            Site-ul poate conține linkuri către pagini externe. Nu controlăm în mod direct conținutul,
+            disponibilitatea sau politicile acestor site-uri și nu răspundem pentru modul în care acestea funcționează.
           </p>
         </div>
 
         <div className="listItem">
           <h3>9) Litigii și soluționare alternativă</h3>
           <p>
-            În cazul unor eventuale litigii, vom încerca mai întâi soluționarea amiabilă. Consumatorii
-            pot apela și la mecanismele de soluționare alternativă a litigiilor puse la dispoziție
-            de ANPC, conform informațiilor publicate de autoritatea competentă.
+            În cazul unor eventuale litigii, vom încerca mai întâi soluționarea amiabilă.
+            Consumatorii pot apela și la mecanismele de soluționare alternativă a litigiilor
+            puse la dispoziție de ANPC, conform informațiilor publicate de autoritatea competentă.
           </p>
         </div>
 
@@ -118,7 +118,7 @@ export default function TermeniPage() {
           <h3>10) Contact</h3>
           <p>
             Pentru întrebări privind acești termeni, ne poți contacta la
-            contact@iconic-collection.ro.
+            {" "}contact@iconic-collection.ro.
           </p>
         </div>
       </div>
