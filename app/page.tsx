@@ -55,7 +55,7 @@ export default function HomePage() {
 
               <div className="actions">
                 <Link className="btn btnPrimary" href={site.cta.primary.href}>
-                  Cere o discuție
+                  Contactează-ne
                 </Link>
                 <Link className="btn btnSecondary" href={site.cta.secondary.href}>
                   {site.cta.secondary.label}
