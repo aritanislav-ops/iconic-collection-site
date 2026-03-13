@@ -49,9 +49,9 @@ export default function HomePage() {
               <p className="heroSub">Pentru clienții care vor un partener unic, preluăm coordonarea completă: concept, proiectare, specialități, documentații și pașii necesari. Dacă ai nevoie doar de proiectare, lucrăm și flexibil, exact pe etapa de care ai nevoie.</p>
 
               <ul className="heroChecks">
-                <CheckItem>Contract + livrabile clare</CheckItem>
-                <CheckItem>Deviz estimativ pe faze</CheckItem>
-                <CheckItem>Asistență la autorizare</CheckItem>
+                <CheckItem>Un singur punct de contact</CheckItem>
+                <CheckItem>Etape și livrabile clare</CheckItem>
+                <CheckItem>Soluție completă sau doar proiectare</CheckItem>
               </ul>
 
               <div className="actions">
