@@ -3,14 +3,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Standardul nostru de proiectare",
   description:
-    "Proiectăm case gândite pentru siguranță seismică, eficiență energetică, durabilitate și avantajul real al clientului.",
+    "Proiectăm case pentru siguranță seismică, eficiență energetică, durabilitate și avantajul real al clientului.",
   alternates: {
     canonical: "/proces",
   },
   openGraph: {
     title: "Standardul nostru de proiectare | iCONiC collection",
     description:
-      "Proiectăm case gândite pentru siguranță seismică, eficiență energetică, durabilitate și avantajul real al clientului.",
+      "Proiectăm case pentru siguranță seismică, eficiență energetică, durabilitate și avantajul real al clientului.",
     url: "https://www.iconic-collection.ro/proces",
     images: ["/brand/og-home.jpg"],
   },
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Standardul nostru de proiectare | iCONiC collection",
     description:
-      "Proiectăm case gândite pentru siguranță seismică, eficiență energetică, durabilitate și avantajul real al clientului.",
+      "Proiectăm case pentru siguranță seismică, eficiență energetică, durabilitate și avantajul real al clientului.",
     images: ["/brand/og-home.jpg"],
   },
 };
@@ -28,16 +28,16 @@ export default function ProcesPage() {
     <main className="container">
       <h1 className="pageTitle">Standardul nostru de proiectare</h1>
       <p className="pageLead">
-        Proiectăm case gândite pentru siguranță, durabilitate, eficiență și avantajul real al clientului,
+        Proiectăm case pentru siguranță, durabilitate, eficiență și avantajul real al clientului,
         nu pentru compromisuri făcute doar ca să iasă mai ieftin pe termen scurt.
       </p>
 
       <div className="list">
         <div className="listItem">
-          <h3>1) Siguranță seismică reală</h3>
+          <h3>1) Siguranță seismică tratată responsabil</h3>
           <p>
             Structura este gândită pentru o comportare seismică corectă, cu soluții coerente și controlate,
-            astfel încât casa să ofere un nivel ridicat de siguranță și predictibilitate în exploatare.
+            astfel încât casa să ofere siguranță, robustețe și predictibilitate în exploatare.
           </p>
         </div>
 
@@ -52,7 +52,7 @@ export default function ProcesPage() {
         <div className="listItem">
           <h3>3) Case proiectate după standarde actuale de eficiență</h3>
           <p>
-            Integram soluții compatibile cu cerințele actuale de performanță energetică și cu principiile NZEB,
+            Integrăm soluții compatibile cu cerințele actuale de performanță energetică și cu principiile NZEB,
             astfel încât casa să fie mai eficientă, mai confortabilă și mai bine pregătită pentru costurile reale de exploatare.
           </p>
         </div>
@@ -76,7 +76,7 @@ export default function ProcesPage() {
         <div className="listItem">
           <h3>6) Proiectare în interesul clientului</h3>
           <p>
-            Nu proiectăm pentru a cosmetiza costul pe hârtie și nici pentru profitul rapid al unui dezvoltator.
+            Nu proiectăm pentru a cosmetiza costul pe hârtie și nici pentru compromisuri făcute doar în favoarea costului inițial.
             Proiectăm pentru ca beneficiarul să primească o casă bine gândită, sigură și corect dimensionată pentru folosire reală.
           </p>
         </div>
