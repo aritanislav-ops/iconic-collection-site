@@ -1,8 +1,32 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "../../content/site";
 
 export const dynamic = "error";
 export const dynamicParams = false;
+
+export const metadata: Metadata = {
+  title: "Modele de case",
+  description:
+    "Descoperă modelele de case iCONiC collection, adaptabile terenului, cerințelor și bugetului tău.",
+  alternates: {
+    canonical: "/modele",
+  },
+  openGraph: {
+    title: "Modele de case | iCONiC collection",
+    description:
+      "Descoperă modelele de case iCONiC collection, adaptabile terenului, cerințelor și bugetului tău.",
+    url: "https://www.iconic-collection.ro/modele",
+    images: ["/brand/og-home.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Modele de case | iCONiC collection",
+    description:
+      "Descoperă modelele de case iCONiC collection, adaptabile terenului, cerințelor și bugetului tău.",
+    images: ["/brand/og-home.jpg"],
+  },
+};
 
 export default function ModelePage() {
   return (
