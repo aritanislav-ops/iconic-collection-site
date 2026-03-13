@@ -44,8 +44,8 @@ export default function HomePage() {
         <div className="container">
           <div className="heroInner">
             <div className="heroText">
-              <h1 className="heroTitle">Case proiectate corect, personalizate pe terenul tău, conform reglementărilor urbanistice. Ai terenul și vrei o casă? Ne putem ocupa de toti de pașii de care ai nevoie.</h1>
-              <p className="heroSub">Tu vii cu terenul și obiectivul, noi ne putem ocupam de restul: concept,studiu geotehnic, proiect complet(arhitectura+rezistenta+instalatii), urmarire de santier, dirigentie, executie.</p>
+              <h1 className="heroTitle">Case proiectate corect, personalizate pe terenul tău, conform reglementărilor urbanistice.</h1>
+              <p className="heroSub">Tu vii cu terenul și obiectivul, noi ne putem ocupam de ce ai nevoie: concept,studiu geotehnic, proiect complet(arhitectura+rezistenta+instalatii), urmarire de santier, dirigentie, executie.</p>
 
               <ul className="heroChecks">
                 <CheckItem>Un singur punct de contact</CheckItem>
