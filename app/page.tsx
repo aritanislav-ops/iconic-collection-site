@@ -46,7 +46,7 @@ export default function HomePage() {
           addressCountry: "RO",
           addressLocality: "București",
           addressRegion: "Sector 3",
-          streetAddress: "Str. Agatha Bârsescu Nr. 15B, Etaj 01, Biroul 07",
+          streetAddress: "Str. Agatha Bârsescu Nr. 15B, Etaj 01, Biroul 7",
         },
         parentOrganization: {
           "@type": "Organization",
