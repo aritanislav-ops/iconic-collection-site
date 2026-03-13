@@ -55,8 +55,7 @@ export default function HomePage() {
               </ul>
 
               <div className="actions">
-                <Link className="btn btnPrimary" href={site.cta.primary.href}>
-                  {site.cta.primary.label}
+                <Link className="btn btnPrimary" href={site.cta.primary.href}> Cere o discuție
                 </Link>
                 <Link className="btn btnSecondary" href={site.cta.secondary.href}>
                   {site.cta.secondary.label}
