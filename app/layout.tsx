@@ -4,8 +4,44 @@ import "./globals.css";
 import CookieBanner from "./ui/CookieBanner";
 
 export const metadata: Metadata = {
-  title: "iCONiC collection",
-  description: "Proiectare personalizată pe fiecare model de casă.",
+  metadataBase: new URL("https://www.iconic-collection.ro"),
+  title: {
+    default: "iCONiC collection | Proiectare case, autorizații și execuție",
+    template: "%s | iCONiC collection",
+  },
+  description:
+    "Proiectare completă pentru casa ta, documentații pentru autorizare, coordonarea specialităților și execuție, adaptate terenului, cerințelor și bugetului tău.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "ro_RO",
+    url: "https://www.iconic-collection.ro",
+    siteName: "iCONiC collection",
+    title: "iCONiC collection | Proiectare case, autorizații și execuție",
+    description:
+      "Proiectare completă pentru case, documentații pentru autorizare, coordonarea specialităților și execuție, adaptate terenului, cerințelor și bugetului tău.",
+    images: [
+      {
+        url: "/brand/og-home.jpg",
+        width: 1200,
+        height: 630,
+        alt: "iCONiC collection - proiectare case, autorizatii si executie",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "iCONiC collection | Proiectare case, autorizații și execuție",
+    description:
+      "Proiectare completă pentru case, documentații pentru autorizare, coordonarea specialităților și execuție.",
+    images: ["/brand/og-home.jpg"],
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
