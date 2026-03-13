@@ -1,32 +1,39 @@
 export const site = {
   brandName: "iCONiC collection",
   siteUrl: "https://www.iconic-collection.ro",
-  headline: "Proiectare personalizată pentru fiecare model de casă.",
-  subheadline: "Arhitectură + Structură + Instalații + Managementul Proiectului + Dirigenție de Santier + Execuție",
-  heroBadges: ["Contract + livrabile clare", "Deviz estimativ pe faze", "Asistență la autorizare"],
+  headline: "Case proiectate corect, personalizate pe terenul tău, conform reglementărilor urbanistice.",
+  subheadline:
+    "Tu vii cu terenul și obiectivul, iar noi ne putem ocupa de ce ai nevoie: concept, studiu geotehnic, proiect complet (arhitectură, structură și instalații), documentații pentru autorizare, urmărire de șantier, dirigenție și execuție.",
+  heroBadges: [
+    "Proiectare completă pentru casă",
+    "Documentații și pași pentru autorizare",
+    "Execuție și coordonare până la capăt",
+  ],
   cta: {
-    primary: { label: "Cere ofertă", href: "/contact" },
+    primary: { label: "Contactează-ne", href: "/contact" },
     secondary: { label: "Vezi modele", href: "/modele" },
   },
 
   pachete: {
-    title: "Ce oferim",
+    title: "Pașii Proiectului",
     items: [
-      "Ridicare topo",
+      "Discuția inițială și analiza terenului",
+      "Ridicare topografică",
       "Studiu geotehnic",
-      "DTAC – Documentație pentru autorizare",
-      "PTE (PTh + DE) – Proiect tehnic + detalii de execuție",
-      "Project Management execuție",
-      "Execuție prin constructori acreditați",
+      "Conceptul casei și organizarea soluției",
+      "Documentația pentru autorizare",
+      "Proiectul tehnic și detaliile de execuție",
+      "Coordonare și clarificări pe parcurs",
+      "Execuție",
     ],
-    actions: [{ label: "Detalii servicii", href: "/pachete" }],
+    actions: [{ label: "Vezi pașii proiectului", href: "/pachete" }],
   },
 
-    models: [
+  models: [
     {
       slug: "iconic-1story-black",
       name: "CASA PARTER-iCONiC 1-story BLACK",
-      summary: "Varianta black— fațadă închisă, accente premium, look minimalist.",
+      summary: "Varianta BLACK — fațadă închisă, accente premium și look minimalist.",
       images: [
         "/brand/models/iconic-1story-black/01.jpg",
         "/brand/models/iconic-1story-black/02.jpg",
@@ -50,7 +57,7 @@ export const site = {
     {
       slug: "iconic-1story-white",
       name: "CASA PARTER-iCONiC 1-story WHITE",
-      summary: "Varianta WHITE — fațadă deschisă, contrast elegant, lumină maximă.",
+      summary: "Varianta WHITE — fațadă deschisă, contrast elegant și lumină maximă.",
       images: [
         "/brand/models/iconic-1story-white/01.jpg",
         "/brand/models/iconic-1story-white/02.jpg",
@@ -70,7 +77,7 @@ export const site = {
     {
       slug: "iconic-1story-stone",
       name: "CASA PARTER-iCONiC 1-story STONE",
-      summary: "Varianta STONE — fațadă din piatră, aspect solid, contrast modern.",
+      summary: "Varianta STONE — fațadă din piatră, aspect solid și contrast modern.",
       images: [
         "/brand/models/iconic-1story-stone/01.jpg",
         "/brand/models/iconic-1story-stone/02.jpg",
@@ -90,12 +97,24 @@ export const site = {
   ] as const,
 
   proces: {
-    title: "Proces",
+    title: "Standardul nostru de proiectare",
     items: [
-      { title: "Brief", text: "Clarificăm cerințele, terenul și bugetul. Stabilim pașii și livrabilele." },
-      { title: "Proiectare", text: "Arh + structură + instalații, coordonare și verificări pe specialități." },
-      { title: "Autorizare", text: "DTAC și suport pentru avize, după caz." },
-      { title: "Execuție (opțional)", text: "Management, control calitate și participare la faze determinate." },
+      {
+        title: "Siguranță seismică tratată responsabil",
+        text: "Proiectăm structura pentru o comportare seismică corectă, cu soluții coerente și controlate."
+      },
+      {
+        title: "Soluție structurală aleasă rațional",
+        text: "Alegem structura în funcție de teren, arhitectură, deschideri, utilizare și comportarea dorită în timp."
+      },
+      {
+        title: "Eficiență energetică și principii NZEB",
+        text: "Integrăm soluții compatibile cu cerințele actuale de performanță energetică și cu principiile NZEB."
+      },
+      {
+        title: "Proiectare în interesul clientului",
+        text: "Urmărim siguranța, durabilitatea și avantajul real al beneficiarului, nu economii false pe termen scurt."
+      },
     ],
   },
 
@@ -103,7 +122,7 @@ export const site = {
     title: "Contact",
     phone: "+40 741 259 236",
     email: "contact@iconic-collection.ro",
-    note: "iCONiC collection - Prestanta & Experienta",
+    note: "Nu trebuie să știi tot de la început. Scrie-ne și te ajutăm să înțelegi clar ce urmează.",
     address: "Sector 3, Str. Agatha Bârsescu Nr. 15B, Etaj 01, Biroul 07, București",
     program: "Luni–Vineri 09:00–18:00",
     mapEmbedUrl: "https://www.google.com/maps?q=Strada%20Agatha%20Barsescu%2015B%20Bucuresti&z=16&output=embed",
