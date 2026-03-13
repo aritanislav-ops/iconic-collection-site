@@ -1,57 +1,124 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Termeni și condiții",
+  description:
+    "Termeni și condiții pentru utilizarea site-ului iCONiC collection.",
+  alternates: {
+    canonical: "/termeni",
+  },
+  openGraph: {
+    title: "Termeni și condiții | iCONiC collection",
+    description:
+      "Termeni și condiții pentru utilizarea site-ului iCONiC collection.",
+    url: "https://www.iconic-collection.ro/termeni",
+    images: ["/brand/og-home.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Termeni și condiții | iCONiC collection",
+    description:
+      "Termeni și condiții pentru utilizarea site-ului iCONiC collection.",
+    images: ["/brand/og-home.jpg"],
+  },
+};
+
 export default function TermeniPage() {
   return (
-    <main className="container">
+    <main className="container legalPage">
       <h1 className="pageTitle">Termeni și condiții</h1>
-
       <p className="pageLead">
-        Acest site are scop informativ și permite trimiterea unei cereri de ofertă pentru servicii de proiectare și/sau
-        management/executie (după caz). Nu reprezintă un magazin online.
+        Acest site este operat sub brandul iCONiC collection de către A&amp;A Evoconstruct SRL.
       </p>
 
       <div className="list">
         <div className="listItem">
-          <h3>1) Ce oferim prin site</h3>
+          <h3>1) Identitatea operatorului economic</h3>
           <p>
-            Informații despre modele, servicii, proces și posibilitatea de a solicita o ofertă (prin contact/formular).
+            iCONiC collection este un brand A&amp;A Evoconstruct SRL, CUI RO 21409238,
+            Nr. Reg. Com. J2007005795403, cu sediul în Sector 3, Str. Agatha Bârsescu Nr. 15B,
+            Etaj 01, Biroul 07, București.
           </p>
         </div>
 
         <div className="listItem">
-          <h3>2) Cererea de ofertă nu este ofertă fermă</h3>
+          <h3>2) Scopul site-ului</h3>
           <p>
-            Trimiterea unei cereri nu creează o obligație contractuală. Oferta finală se transmite separat, după
-            clarificarea cerințelor și a datelor de teren.
+            Site-ul are rol de prezentare a serviciilor și soluțiilor oferite sub brandul
+            iCONiC collection, inclusiv proiectare pentru case, documentații pentru autorizare,
+            coordonarea specialităților și, după caz, servicii conexe sau etape ulterioare de execuție.
           </p>
         </div>
 
         <div className="listItem">
-          <h3>3) Contract și livrabile</h3>
+          <h3>3) Caracterul informațiilor</h3>
           <p>
-            Prestarea serviciilor se face doar pe baza unui contract (cu faze, termene, livrabile, preț și condiții
-            agreate).
+            Informațiile prezentate pe site au caracter informativ și nu reprezintă, prin ele însele,
+            o ofertă contractuală fermă. Orice ofertă concretă se stabilește în funcție de cerințele
+            proiectului, amplasament, documentație disponibilă, complexitate și condițiile convenite
+            între părți.
           </p>
         </div>
 
         <div className="listItem">
-          <h3>4) Limitarea răspunderii</h3>
+          <h3>4) Solicitări transmise prin site</h3>
           <p>
-            Informațiile de pe site sunt generale. Pot exista diferențe între exemplele prezentate și soluția finală,
-            care depinde de teren, cerințe, reglementări urbanistice, avize și verificări.
+            Transmiterea unui mesaj prin formularul de contact sau prin e-mail nu echivalează cu
+            încheierea unui contract. Relația contractuală se naște numai în baza unui acord expres
+            între părți și, după caz, a unui contract sau a unei oferte acceptate.
           </p>
         </div>
 
         <div className="listItem">
-          <h3>5) Drepturi de autor</h3>
+          <h3>5) Drepturi de proprietate intelectuală</h3>
           <p>
-            Conținutul (texte, randări, imagini, planșe, documentații) este protejat de drepturi de autor.
-            Reutilizarea/copierea este permisă doar cu acordul scris al titularului.
+            Conținutul site-ului, inclusiv textele, imaginile, machetele, elementele grafice,
+            siglele și structura generală, este protejat de legislația aplicabilă și nu poate fi
+            copiat, reutilizat sau distribuit fără acordul titularului drepturilor.
           </p>
         </div>
 
         <div className="listItem">
-          <h3>6) Contact</h3>
+          <h3>6) Răspundere</h3>
           <p>
-            [DENUMIRE FIRMĂ] [SRL/PFA] · CUI: [CUI] · Reg. Com.: [NR] · Sediu: [ADRESĂ] · Email: [EMAIL] · Tel: [TEL]
+            Depunem eforturi rezonabile pentru ca informațiile publicate pe site să fie corecte și
+            actualizate, însă nu garantăm absența completă a erorilor, omisiunilor sau neconcordanțelor.
+            Utilizarea informațiilor de pe site se face cu luarea în considerare a caracterului lor
+            general și informativ.
+          </p>
+        </div>
+
+        <div className="listItem">
+          <h3>7) Servicii și colaborări</h3>
+          <p>
+            Anumite servicii prezentate pe site pot fi oferite direct de A&amp;A Evoconstruct SRL
+            sau, după caz, prin colaborare cu specialiști, consultanți, echipe sau constructori,
+            în funcție de natura proiectului și de condițiile contractuale aplicabile.
+          </p>
+        </div>
+
+        <div className="listItem">
+          <h3>8) Linkuri către terți</h3>
+          <p>
+            Site-ul poate conține linkuri către pagini externe. Nu controlăm în mod direct conținutul
+            sau politicile acestor site-uri și nu răspundem pentru modul în care acestea funcționează.
+          </p>
+        </div>
+
+        <div className="listItem">
+          <h3>9) Litigii și soluționare alternativă</h3>
+          <p>
+            În cazul unor eventuale litigii, vom încerca mai întâi soluționarea amiabilă. Consumatorii
+            pot apela și la mecanismele de soluționare alternativă a litigiilor puse la dispoziție
+            de ANPC, conform informațiilor publicate de autoritatea competentă.
+          </p>
+        </div>
+
+        <div className="listItem">
+          <h3>10) Contact</h3>
+          <p>
+            Pentru întrebări privind acești termeni, ne poți contacta la
+            contact@iconic-collection.ro.
           </p>
         </div>
       </div>
