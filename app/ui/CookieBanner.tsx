@@ -37,11 +37,12 @@ export default function CookieBanner() {
   if (!open) return null;
 
   return (
-    <div className="cbRoot" role="dialog" aria-live="polite">
+    <div className="cbRoot" role="dialog" aria-live="polite" aria-label="Preferințe cookies și confidențialitate">
       <div className="cbCard">
-        <div className="cbTitle">Cookies</div>
+        <div className="cbTitle">Confidențialitate și statistici</div>
         <p className="cbText">
-          Folosim cookies pentru statistici anonime (Cloudflare Web Analytics). Poți accepta sau refuza.{" "}
+          Folosim un instrument de analiză a traficului pentru statistici de utilizare ale site-ului.
+          Poți accepta sau refuza activarea lui.{" "}
           <a className="cbLink" href="/cookies">Detalii</a>
         </p>
 
