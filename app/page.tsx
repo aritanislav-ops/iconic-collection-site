@@ -48,9 +48,10 @@ export default function HomePage() {
               <p className="heroSub">Tu vii cu terenul și obiectivul, noi ne putem ocupa de ce ai nevoie: concept, studiu geotehnic, proiect complet (arhitectura+rezistenta+instalatii), urmarire de santier, dirigenție, executie.</p>
 
               <ul className="heroChecks">
-                <CheckItem>Un singur punct de contact</CheckItem>
-                <CheckItem>Etape și livrabile clare</CheckItem>
-                <CheckItem>Soluție completă personalizată pe cerințele tale</CheckItem>
+                <CheckItem>Proiectare completă pentru casă</CheckItem>
+                <CheckItem>Soluție personalizată pe cerințele tale</CheckItem>
+                <CheckItem>Documentații complete și pași pentru autorizare</CheckItem>
+                <CheckItem>Execuție și coordonare până la capăt</CheckItem>
               </ul>
 
               <div className="actions">
