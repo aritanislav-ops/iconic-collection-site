@@ -28,7 +28,7 @@ export default function HomePage() {
         name: "iCONiC collection",
         url: "https://www.iconic-collection.ro",
         logo: "https://www.iconic-collection.ro/brand/logo-dark.png",
-        email: "office@aa-evoconstruct.ro",
+        email: "contact@iconic-collection.ro",
         parentOrganization: {
           "@type": "Organization",
           name: "A&A Evoconstruct SRL",
@@ -40,7 +40,7 @@ export default function HomePage() {
         name: "iCONiC collection",
         url: "https://www.iconic-collection.ro",
         image: "https://www.iconic-collection.ro/brand/logo-dark.png",
-        email: "office@aa-evoconstruct.ro",
+        email: "contact@iconic-collection.ro",
         address: {
           "@type": "PostalAddress",
           addressCountry: "RO",
@@ -90,6 +90,61 @@ export default function HomePage() {
     ],
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Pot veni doar cu terenul, fără să știu exact ce trebuie făcut?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Da. Mulți clienți pornesc doar de la teren și de la ideea generală a casei dorite. Îți explicăm clar pașii necesari și te ajutăm să înțelegi ce urmează.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Vă ocupați doar de proiectare sau și de restul etapelor?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Putem lucra flexibil. În funcție de nevoie, putem asigura proiectarea, documentațiile pentru autorizare, coordonarea specialităților și, la nevoie, sprijin până în etapa de execuție.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Se poate adapta un model de casă la terenul meu?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Da. Modelele prezentate sunt puncte de plecare și pot fi adaptate în funcție de teren, cerințe, reglementări urbanistice și buget.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Vă ocupați și de documentațiile pentru autorizare?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Da. Pregătim documentațiile necesare pentru autorizare, în funcție de cerințele aplicabile și de etapele necesare proiectului tău.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Ce specialități sunt incluse într-un proiect complet?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Într-un proiect complet sunt corelate arhitectura, structura și instalațiile, astfel încât soluția finală să fie coerentă și pregătită corect pentru execuție.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Pot discuta cu voi chiar dacă sunt la început și nu știu exact ce vreau?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Da. Nu trebuie să ai toate răspunsurile de la început. Este suficient să ne spui ce teren ai și ce obiectiv urmărești, iar noi te ajutăm să clarifici pașii potriviți.",
+        },
+      },
+    ],
+  };
+
   function openGallery(images: string[], startIndex = 0) {
     setLbImages(images || []);
     setLbStart(startIndex);
@@ -107,6 +162,10 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homeSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       <section className="hero">
@@ -210,6 +269,62 @@ export default function HomePage() {
                 </article>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      <section className="section faqSection">
+        <div className="container">
+          <h2 className="sectionTitle">Întrebări frecvente</h2>
+
+          <div className="list">
+            <div className="listItem">
+              <h3>Pot veni doar cu terenul, fără să știu exact ce trebuie făcut?</h3>
+              <p>
+                Da. Mulți clienți pornesc doar de la teren și de la ideea generală a casei dorite.
+                Îți explicăm clar pașii necesari și te ajutăm să înțelegi ce urmează.
+              </p>
+            </div>
+
+            <div className="listItem">
+              <h3>Vă ocupați doar de proiectare sau și de restul etapelor?</h3>
+              <p>
+                Putem lucra flexibil. În funcție de nevoie, putem asigura proiectarea, documentațiile
+                pentru autorizare, coordonarea specialităților și, la nevoie, sprijin până în etapa de execuție.
+              </p>
+            </div>
+
+            <div className="listItem">
+              <h3>Se poate adapta un model de casă la terenul meu?</h3>
+              <p>
+                Da. Modelele prezentate sunt puncte de plecare și pot fi adaptate în funcție de teren,
+                cerințe, reglementări urbanistice și buget.
+              </p>
+            </div>
+
+            <div className="listItem">
+              <h3>Vă ocupați și de documentațiile pentru autorizare?</h3>
+              <p>
+                Da. Pregătim documentațiile necesare pentru autorizare, în funcție de cerințele aplicabile
+                și de etapele necesare proiectului tău.
+              </p>
+            </div>
+
+            <div className="listItem">
+              <h3>Ce specialități sunt incluse într-un proiect complet?</h3>
+              <p>
+                Într-un proiect complet sunt corelate arhitectura, structura și instalațiile,
+                astfel încât soluția finală să fie coerentă și pregătită corect pentru execuție.
+              </p>
+            </div>
+
+            <div className="listItem">
+              <h3>Pot discuta cu voi chiar dacă sunt la început și nu știu exact ce vreau?</h3>
+              <p>
+                Da. Nu trebuie să ai toate răspunsurile de la început. Este suficient să ne spui ce teren ai
+                și ce obiectiv urmărești, iar noi te ajutăm să clarifici pașii potriviți.
+              </p>
+            </div>
           </div>
         </div>
       </section>
