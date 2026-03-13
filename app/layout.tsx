@@ -88,6 +88,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/termeni">Termeni</Link>
               <Link href="/confidentialitate">Confidențialitate</Link>
               <Link href="/cookies">Cookies</Link>
+              <Link href="/contact" className="footerContactBtn">Contactează-ne</Link>
 
               <a href="https://anpc.ro/ce-este-sal/" target="_blank" rel="noreferrer" aria-label="SAL (ANPC)" className="footerLogoLink">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
