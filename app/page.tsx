@@ -44,7 +44,7 @@ export default function HomePage() {
         <div className="container">
           <div className="heroInner">
             <div className="heroText">
-              <h1 className="heroTitle">Case proiectate corect, personalizate pe terenul tău, conform reglementărilor urbanistice.</h1>
+              <h1 className="heroTitle">Case proiectate corect, personalizate pe terenul tău, conform reglementărilor urbanistice. Ai terenul și vrei o casă? Ne putem ocupa de tot procesul sau doar de proiectare.</h1>
 
               <p className="heroSub">{site.subheadline}</p>
 
