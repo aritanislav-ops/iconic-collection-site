@@ -453,14 +453,16 @@ a{color:inherit;text-decoration:none}
   display:flex;
   align-items:center;
   justify-content:center;
-  padding:0;
+  padding:6px;
 }
 
 .lbImg{
-  width:100vw;
-  height:100vh;
-  object-fit:cover;
-  background:#000;
+  max-width: calc(100vw - 12px);
+  max-height: calc(100vh - 12px);
+  width:auto;
+  height:auto;
+  object-fit:contain;
+  background:transparent;
 }
 
 /* butoane peste imagine */
