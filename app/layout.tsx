@@ -92,7 +92,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
               <a href="https://anpc.ro/ce-este-sal/" target="_blank" rel="noreferrer" aria-label="SAL (ANPC)" className="footerLogoLink">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img className="footerLogo" src="/brand/legal/anpc-sal.png" alt="SAL (ANPC)" />
+                <img className="footerLogo" src="/brand/legal/sol-ue.png" alt="SOL (UE) / Consumer Redress" />
               </a>
 
               <a href="https://consumer-redress.ec.europa.eu/index_en" target="_blank" rel="noreferrer" aria-label="SOL (UE) / Consumer Redress" className="footerLogoLink">
