@@ -272,7 +272,41 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      <section className="section qualitySection">
+        <div className="container">
+          <h2 className="sectionTitle">De ce proiectăm altfel</h2>
+          <p className="pageLead qualityLead">
+            Nu urmărim compromisuri făcute doar pentru costul inițial. Proiectăm case pentru
+            siguranță, eficiență, durabilitate și avantajul real al clientului.
+          </p>
 
+          <div className="grid3 qualityGrid">
+            <div className="card qualityCard">
+              <h3 className="cardTitle">Siguranță seismică tratată responsabil</h3>
+              <p className="cardText">
+                Structura este gândită pentru o comportare corectă, cu soluții coerente și controlate,
+                nu doar pentru a bifa minimul necesar.
+              </p>
+            </div>
+
+            <div className="card qualityCard">
+              <h3 className="cardTitle">Eficiență energetică și principii NZEB</h3>
+              <p className="cardText">
+                Integrăm soluții compatibile cu cerințele actuale de performanță energetică,
+                astfel încât casa să fie mai confortabilă și mai bine pregătită pentru costurile reale de exploatare.
+              </p>
+            </div>
+
+            <div className="card qualityCard">
+              <h3 className="cardTitle">Proiectare în interesul clientului</h3>
+              <p className="cardText">
+                Urmărim o casă bine gândită, durabilă și corect dimensionată pentru folosire reală,
+                nu artificii făcute doar pentru economie aparentă pe termen scurt.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="section faqSection">
         <div className="container">
           <h2 className="sectionTitle">Întrebări frecvente</h2>
