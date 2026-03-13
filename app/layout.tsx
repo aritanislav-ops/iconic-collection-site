@@ -59,8 +59,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <nav className="navlinks" aria-label="Navigare">
                 <Link href="/">Acasă</Link>
                 <Link href="/modele">Modele</Link>
-                <Link href="/pachete">Pachete</Link>
-                <Link href="/proces">Proces</Link>
+                <Link href="/pachete">Pașii Proiectului</Link>
+                <Link href="/proces">Standardul nostru</Link>
                 <Link href="/contact">Contact</Link>
               </nav>
             </div>
