@@ -77,17 +77,19 @@ export default function ConfidentialitatePage() {
             În funcție de situație, prelucrăm datele în temeiul art. 6 alin. (1) lit. b) din GDPR
             atunci când prelucrarea este necesară pentru demersuri precontractuale sau executarea
             unui contract, în temeiul art. 6 alin. (1) lit. f) pentru interese legitime precum
-            securitatea, administrarea și îmbunătățirea site-ului, iar pentru cookies și analytics
-            neesențiale pe baza consimțământului, acolo unde acesta este necesar.
+            securitatea, administrarea și îmbunătățirea site-ului, iar pentru activarea instrumentului
+            de statistici în condițiile stabilite de bannerul de pe site, pe baza opțiunii exprimate
+            de utilizator.
           </p>
         </div>
 
         <div className="listItem">
-          <h3>6) Google Analytics și date de utilizare</h3>
+          <h3>6) Statistici de utilizare ale site-ului</h3>
           <p>
-            Site-ul poate folosi Google Analytics pentru a înțelege modul de utilizare a site-ului,
-            paginile accesate, durata vizitelor și alte date agregate de trafic. Aceste tehnologii
-            trebuie activate numai în condițiile stabilite de opțiunile tale privind cookies și consimțământul.
+            Site-ul poate utiliza Cloudflare Web Analytics pentru a înțelege modul de utilizare a
+            site-ului, paginile accesate și alte date agregate de trafic. Acest instrument este
+            activat în condițiile stabilite de opțiunile exprimate de utilizator prin bannerul afișat
+            pe site.
           </p>
         </div>
 
@@ -124,7 +126,7 @@ export default function ConfidentialitatePage() {
           <h3>10) Contact</h3>
           <p>
             Pentru întrebări privind protecția datelor, ne poți contacta la
-            contact@iconic-collection.ro.
+            {" "}contact@iconic-collection.ro.
           </p>
         </div>
       </div>
