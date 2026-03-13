@@ -65,7 +65,7 @@ export default function HomePage() {
             "@type": "Offer",
             itemOffered: {
               "@type": "Service",
-              name: "Documentații și autorizare",
+              name: "Documentații pentru autorizare",
             },
           },
           {
