@@ -45,12 +45,12 @@ export default function HomePage() {
           <div className="heroInner">
             <div className="heroText">
               <h1 className="heroTitle">Case proiectate corect, personalizate pe terenul tău, conform reglementărilor urbanistice.</h1>
-              <p className="heroSub">Tu vii cu terenul și obiectivul, noi ne putem ocupa de ce ai nevoie: concept, studiu geotehnic, proiect complet (arhitectura+rezistenta+instalatii), urmarire de santier, dirigentie, executie.</p>
+              <p className="heroSub">Tu vii cu terenul și obiectivul, noi ne putem ocupa de ce ai nevoie: concept, studiu geotehnic, proiect complet (arhitectura+rezistenta+instalatii), urmarire de santier, dirigenție, executie.</p>
 
               <ul className="heroChecks">
                 <CheckItem>Un singur punct de contact</CheckItem>
                 <CheckItem>Etape și livrabile clare</CheckItem>
-                <CheckItem>Soluție completă sau doar proiectare</CheckItem>
+                <CheckItem>Soluție completă personalizată pe cerințele tale</CheckItem>
               </ul>
 
               <div className="actions">
@@ -82,7 +82,7 @@ export default function HomePage() {
             <div className="featureCard">
               <div className="featureIcon" aria-hidden="true">⎘</div>
               <div className="featureTitle">Buget controlat</div>
-              <div className="featureText">Devize estimativ pe faze.</div>
+              <div className="featureText">Devize etapizate pe faze.</div>
             </div>
           </div>
         </div>
