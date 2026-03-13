@@ -453,17 +453,28 @@ a{color:inherit;text-decoration:none}
   display:flex;
   align-items:center;
   justify-content:center;
-  padding:6px;
+  padding:16px;
 }
 
 .lbImg{
-  max-width: calc(100vw - 12px);
-  max-height: calc(100vh - 12px);
+  max-width:min(92vw, 1400px);
+  max-height:88vh;
   width:auto;
   height:auto;
   object-fit:contain;
   background:transparent;
 }
+@media (max-width: 920px){
+  .lbStage{
+    padding:10px;
+  }
+
+  .lbImg{
+    max-width:95vw;
+    max-height:82vh;
+  }
+}
+
 
 /* butoane peste imagine */
 .lbClose{
