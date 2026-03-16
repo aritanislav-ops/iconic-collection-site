@@ -322,7 +322,7 @@ export default function HomePage() {
                 Structura este gândită pentru o comportare corectă, cu soluții coerente și controlate, nu doar pentru a atinge nivelul minim acceptat.
                 În proiectarea seismică uzuală aplicată astăzi, casa este dimensionată la nivelul seismic corespunzător unei perioade medii de recurență de 225 de ani.
                 La cutremurele mai frecvente se urmărește limitarea degradărilor, însă la seismul mare de proiectare prioritatea este protejarea vieții, nu eliminarea avariilor.
-                Cu alte cuvinte, după un cutremur sever, casa poate rămâne în picioare, dar proprietarul poate rămâne cu reparații importante și cu pierderea folosinței locuinței.
+                Cu alte cuvinte, după un cutremur sever, casa poate rămâne în picioare, dar proprietarul poate rămâne cu reparații importante, inclusiv imposibilitatea utilizării imobilului.
                 Noi alegem un standard superior și, datorită regimului mic de înălțime și unei conformări structurale corecte, dimensionăm casa cu răspuns preponderent elastic inclusiv pentru cutremurul de 475 de ani.
                 Rezultatul este o structură cu degradări minime și cu costuri post-seism mult reduse, fără creșteri importante de cost pentru o locuință cu regim mic de înaltime, bine gândită și eficient concepută.
               </p>
@@ -333,6 +333,11 @@ export default function HomePage() {
               <p className="cardText">
                 Integrăm soluții compatibile cu cerințele actuale de performanță energetică,
                 astfel încât casa să fie mai confortabilă și mai bine pregătită pentru costurile reale de exploatare.
+                O casă bine proiectată nu înseamnă doar rezistență, ci și un consum redus de energie pe toată durata de exploatare.
+                De aceea, încă din faza de proiectare, urmărim o anvelopă eficientă, eliminarea punților termice, o orientare corectă
+                față de punctele cardinale și soluții compatibile cu standardele actuale de eficiență energetică. Rezultatul este o locuință
+                mai confortabilă în orice anotimp, cu pierderi reduse de energie, costuri mai mici de încălzire și răcire și o valoare mai bună
+                a investiției în timp. Nu tratăm eficiența energetică ca pe un adaos de final, ci ca pe o parte integrată din proiectul casei.
               </p>
             </div>
 
@@ -340,7 +345,10 @@ export default function HomePage() {
               <h3 className="cardTitle">Proiectare în interesul clientului</h3>
               <p className="cardText">
                 Urmărim o casă bine gândită, durabilă și corect dimensionată pentru folosire reală,
-                nu artificii făcute doar pentru economie aparentă pe termen scurt.
+                nu compromisuri făcute doar pentru a reduce aparent costul inițial. Analizăm structura,
+                funcționalitatea, costurile de exploatare și comportarea în timp, astfel încât soluția
+                aleasă să fie echilibrată și avantajoasă pentru beneficiar. Asta înseamnă mai puține improvizații
+                în șantier, mai puține cheltuieli ascunse și o casă proiectată coerent, pentru siguranță, confort și exploatare eficientă pe termen lung.
               </p>
             </div>
           </div>
