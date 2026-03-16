@@ -317,7 +317,7 @@ export default function HomePage() {
 
           <div className="grid3 qualityGrid">
             <div className="card qualityCard">
-              <h3 className="cardTitle">Siguranță seismică tratată responsabil</h3>
+              <h3 className="cardTitle">Siguranță seismică tratată responsabil, prin proiectare pentru seismul corespunzător perioadei medii de recurență de 475 de ani și prin dimensionare elastică, astfel încât degradările structurale seismice să tindă către ZERO. </h3>
               <p className="cardText">
                 Structura este gândită pentru o comportare corectă, cu soluții coerente și controlate,
                 nu doar pentru a bifa minimul necesar.
@@ -325,7 +325,7 @@ export default function HomePage() {
             </div>
 
             <div className="card qualityCard">
-              <h3 className="cardTitle">Eficiență energetică și principii NZEB (Nearly Zero-Energy Building) reprezintă clădiri cu o performanță energetică extrem de ridicată. Acestea au un consum de energie aproape egal cu zero, acoperit în proporție semnificativă (minim 10% prin reglementări sau directivă UE 30%)  </h3>
+              <h3 className="cardTitle">Eficiență energetică și principii NZEB (Nearly Zero-Energy Building) reprezintă clădiri cu o performanță energetică extrem de ridicată care necesită un consum de energie aproape egal cu ZERO.  </h3>
               <p className="cardText">
                 Integrăm soluții compatibile cu cerințele actuale de performanță energetică,
                 astfel încât casa să fie mai confortabilă și mai bine pregătită pentru costurile reale de exploatare.
