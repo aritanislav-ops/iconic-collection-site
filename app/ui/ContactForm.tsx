@@ -46,10 +46,10 @@ export default function ContactForm() {
   return (
     <form className="contactForm" action={FORM_ENDPOINT} method="POST" onSubmit={onSubmit}>
       <p className="formLead">
-        Dorești să dezvoltăm un proiect împreună?
+        Nu trebuie să ai totul clar de la început.
         <br />
-        Ne poți contacta folosind formularul de mai jos.
-      </p>
+        Spune-ne ce teren ai, ce casă îți dorești sau în ce etapă te afli, iar noi îți răspundem cât mai clar.
+    </p>
 
       <label className="field">
         <span>Nume</span>
