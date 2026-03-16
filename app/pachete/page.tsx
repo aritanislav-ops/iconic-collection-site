@@ -140,6 +140,49 @@ export default function PachetePage() {
           </p>
         </div>
       </div>
+
+
+      <h3>Siguranță și claritate pe termen lung</h3>
+<p>
+  Pentru că urmărim calitatea prin proiectare, verificare tehnică, coordonare în execuție,
+  dirigenție de șantier și controlul responsabil al lucrărilor, la iCONiC collection livrăm
+  o locuință gândită pentru siguranță, durabilitate și exploatare corectă în timp.
+</p>
+
+<p>
+  Transparența investiției tale este susținută prin documentație tehnică clară, recepție
+  corectă a lucrărilor și stabilirea contractuală a responsabilităților și garanțiilor
+  aferente etapelor asumate.
+</p>
+
+<ul>
+  <li>
+    <strong>Garanții stabilite contractual, în funcție de lucrările asumate:</strong>
+    perioada de garanție pentru lucrările executate se definește clar în contract,
+    în funcție de natura și complexitatea acestora.
+  </li>
+  <li>
+    <strong>Răspundere pentru vicii ascunse:</strong>
+    conform cadrului legal aplicabil, răspunderea pentru vicii ascunse se analizează
+    distinct față de garanția curentă de execuție.
+  </li>
+  <li>
+    <strong>Răspundere pentru structura de rezistență:</strong>
+    pentru viciile ascunse ale structurii de rezistență rezultate din nerespectarea
+    normelor de proiectare și de execuție, răspunderea poate exista pe toată durata
+    de existență a construcției, în condițiile legii.
+  </li>
+  <li>
+    <strong>Materiale conforme:</strong>
+    urmărim folosirea de produse pentru construcții conforme, certificate și,
+    unde este cazul, cu agremente tehnice, potrivit cerințelor aplicabile fiecărei soluții.
+  </li>
+</ul>
+
+
+
+
+      
     </main>
   );
 }
