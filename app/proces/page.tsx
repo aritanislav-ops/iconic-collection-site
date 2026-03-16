@@ -3,14 +3,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Standardul nostru",
   description:
-    "Află standardul nostru de proiectare: respectarea normelor în vigoare, siguranță seismică, eficiență energetică, materiale corect alese, durabilitate și proiectare în interesul real al clientului.",
+    "Află standardul nostru de proiectare și execuție: respectarea normelor în vigoare, siguranță seismică, eficiență energetică, materiale corect alese, controlul calității execuției și proiectare în interesul real al clientului.",
   alternates: {
     canonical: "/proces",
   },
   openGraph: {
     title: "Standardul nostru | iCONiC collection",
     description:
-      "Află standardul nostru de proiectare: respectarea normelor în vigoare, siguranță seismică, eficiență energetică, materiale corect alese, durabilitate și proiectare în interesul real al clientului.",
+      "Află standardul nostru de proiectare și execuție: respectarea normelor în vigoare, siguranță seismică, eficiență energetică, materiale corect alese, controlul calității execuției și proiectare în interesul real al clientului.",
     url: "https://www.iconic-collection.ro/proces",
     images: ["/brand/og-home.jpg"],
   },
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Standardul nostru | iCONiC collection",
     description:
-      "Află standardul nostru de proiectare: respectarea normelor în vigoare, siguranță seismică, eficiență energetică, materiale corect alese, durabilitate și proiectare în interesul real al clientului.",
+      "Află standardul nostru de proiectare și execuție: respectarea normelor în vigoare, siguranță seismică, eficiență energetică, materiale corect alese, controlul calității execuției și proiectare în interesul real al clientului.",
     images: ["/brand/og-home.jpg"],
   },
 };
@@ -72,13 +72,30 @@ export default function ProcesPage() {
           <p>
             Materialele și soluțiile prevăzute în proiect nu sunt alese doar după preț,
             ci după rolul lor real în construcție, durabilitate, întreținere și comportare în timp.
-            Urmărim folosirea unor produse conforme, certificate sau pentru care există agremente tehnice,
+            Urmărim folosirea unor produse conforme, certificate și, unde este cazul, cu agremente tehnice,
             potrivit cerințelor aplicabile fiecărei soluții.
           </p>
         </div>
 
         <div className="listItem">
-          <h3>6) Durabilitate și cost corect pe termen lung</h3>
+          <h3>6) Controlul calității în execuție</h3>
+          <p>
+            Atunci când mergem mai departe și în etapa de execuție, urmărim calitatea lucrărilor prin coordonare tehnică,
+            dirigenție de șantier, RTE și verificarea respectării proiectului, a detaliilor de execuție și a etapelor de control.
+          </p>
+        </div>
+
+        <div className="listItem">
+          <h3>7) Echipă de execuție și responsabilități clare</h3>
+          <p>
+            Lucrăm cu echipe și constructori acreditați sau calificați pentru tipul de lucrări asumate,
+            cu responsabilități clar definite în execuție, astfel încât beneficiarul să știe cine execută,
+            cine verifică și cum este urmărită calitatea pe șantier.
+          </p>
+        </div>
+
+        <div className="listItem">
+          <h3>8) Durabilitate și cost corect pe termen lung</h3>
           <p>
             O casă bună nu înseamnă doar cost mai mic la început.
             Înseamnă și întreținere mai predictibilă, comportare corectă în timp și evitarea unor economii false care costă mai mult ulterior.
@@ -86,7 +103,7 @@ export default function ProcesPage() {
         </div>
 
         <div className="listItem">
-          <h3>7) Proiectare în interesul clientului</h3>
+          <h3>9) Proiectare în interesul clientului</h3>
           <p>
             Nu proiectăm pentru a cosmetiza costul pe hârtie și nici pentru compromisuri făcute doar în favoarea costului inițial.
             Proiectăm pentru ca beneficiarul să primească o casă bine gândită, sigură și corect dimensionată pentru folosire reală.
@@ -94,7 +111,7 @@ export default function ProcesPage() {
         </div>
 
         <div className="listItem">
-          <h3>8) Claritate contractuală și garanții</h3>
+          <h3>10) Claritate contractuală și garanții</h3>
           <p>
             Perioada de garanție se stabilește contractual, în funcție de categoria construcției și de lucrările asumate.
             Urmărim o definire clară a responsabilităților, a etapelor de recepție și a documentației tehnice,
