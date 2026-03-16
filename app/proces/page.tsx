@@ -3,14 +3,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Standardul nostru",
   description:
-    "Află standardul nostru de proiectare: siguranță seismică, eficiență energetică, durabilitate, materiale corect alese și proiectare în interesul real al clientului.",
+    "Află standardul nostru de proiectare: respectarea normelor în vigoare, siguranță seismică, eficiență energetică, materiale corect alese, durabilitate și proiectare în interesul real al clientului.",
   alternates: {
     canonical: "/proces",
   },
   openGraph: {
     title: "Standardul nostru | iCONiC collection",
     description:
-      "Află standardul nostru de proiectare: siguranță seismică, eficiență energetică, durabilitate, materiale corect alese și proiectare în interesul real al clientului.",
+      "Află standardul nostru de proiectare: respectarea normelor în vigoare, siguranță seismică, eficiență energetică, materiale corect alese, durabilitate și proiectare în interesul real al clientului.",
     url: "https://www.iconic-collection.ro/proces",
     images: ["/brand/og-home.jpg"],
   },
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Standardul nostru | iCONiC collection",
     description:
-      "Află standardul nostru de proiectare: siguranță seismică, eficiență energetică, durabilitate, materiale corect alese și proiectare în interesul real al clientului.",
+      "Află standardul nostru de proiectare: respectarea normelor în vigoare, siguranță seismică, eficiență energetică, materiale corect alese, durabilitate și proiectare în interesul real al clientului.",
     images: ["/brand/og-home.jpg"],
   },
 };
@@ -29,12 +29,22 @@ export default function ProcesPage() {
       <h1 className="pageTitle">Standardul nostru</h1>
       <p className="pageLead">
         Proiectăm case pentru siguranță, durabilitate, eficiență și avantajul real al clientului,
-        nu pentru compromisuri făcute doar ca să iasă mai ieftin pe termen scurt.
+        cu respectarea normelor în vigoare și fără compromisuri făcute doar pentru a reduce artificial costul inițial.
       </p>
 
       <div className="list">
         <div className="listItem">
-          <h3>1) Siguranță seismică tratată responsabil</h3>
+          <h3>1) Respectarea normelor în vigoare</h3>
+          <p>
+            Proiectarea se face cu respectarea legislației românești aplicabile, a reglementărilor tehnice în vigoare
+            și a eurocodurilor utilizate în cadrul legal și tehnic aplicabil proiectului. La cerere, pot fi analizate și
+            referințe tehnice suplimentare, inclusiv standarde americane, acolo unde acestea ajută comparativ sau conceptual,
+            fără a înlocui cerințele obligatorii aplicabile proiectului în România.
+          </p>
+        </div>
+
+        <div className="listItem">
+          <h3>2) Siguranță seismică tratată responsabil</h3>
           <p>
             Structura este gândită pentru o comportare corectă, cu soluții coerente și controlate,
             astfel încât casa să ofere siguranță, robustețe și predictibilitate în exploatare.
@@ -42,7 +52,7 @@ export default function ProcesPage() {
         </div>
 
         <div className="listItem">
-          <h3>2) Soluție structurală aleasă rațional</h3>
+          <h3>3) Soluție structurală aleasă rațional</h3>
           <p>
             Nu urmărim artificii inutile și nici soluții slăbite de compromisuri.
             Alegem structura în funcție de teren, arhitectură, deschideri, utilizare și comportarea dorită în timp.
@@ -50,7 +60,7 @@ export default function ProcesPage() {
         </div>
 
         <div className="listItem">
-          <h3>3) Eficiență energetică și principii NZEB</h3>
+          <h3>4) Eficiență energetică și principii NZEB</h3>
           <p>
             Integrăm soluții compatibile cu cerințele actuale de performanță energetică și cu principiile NZEB,
             astfel încât casa să fie mai eficientă, mai confortabilă și mai bine pregătită pentru costurile reale de exploatare.
@@ -58,15 +68,17 @@ export default function ProcesPage() {
         </div>
 
         <div className="listItem">
-          <h3>4) Materiale și soluții tehnice alese corect</h3>
+          <h3>5) Materiale și soluții tehnice alese corect</h3>
           <p>
             Materialele și soluțiile prevăzute în proiect nu sunt alese doar după preț,
             ci după rolul lor real în construcție, durabilitate, întreținere și comportare în timp.
+            Urmărim folosirea unor produse conforme, certificate sau pentru care există agremente tehnice,
+            potrivit cerințelor aplicabile fiecărei soluții.
           </p>
         </div>
 
         <div className="listItem">
-          <h3>5) Durabilitate și cost corect pe termen lung</h3>
+          <h3>6) Durabilitate și cost corect pe termen lung</h3>
           <p>
             O casă bună nu înseamnă doar cost mai mic la început.
             Înseamnă și întreținere mai predictibilă, comportare corectă în timp și evitarea unor economii false care costă mai mult ulterior.
@@ -74,10 +86,19 @@ export default function ProcesPage() {
         </div>
 
         <div className="listItem">
-          <h3>6) Proiectare în interesul clientului</h3>
+          <h3>7) Proiectare în interesul clientului</h3>
           <p>
             Nu proiectăm pentru a cosmetiza costul pe hârtie și nici pentru compromisuri făcute doar în favoarea costului inițial.
             Proiectăm pentru ca beneficiarul să primească o casă bine gândită, sigură și corect dimensionată pentru folosire reală.
+          </p>
+        </div>
+
+        <div className="listItem">
+          <h3>8) Claritate contractuală și garanții</h3>
+          <p>
+            Perioada de garanție se stabilește contractual, în funcție de categoria construcției și de lucrările asumate.
+            Urmărim o definire clară a responsabilităților, a etapelor de recepție și a documentației tehnice,
+            astfel încât beneficiarul să știe exact ce primește și în ce condiții.
           </p>
         </div>
       </div>
