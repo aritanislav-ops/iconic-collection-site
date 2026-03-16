@@ -40,6 +40,7 @@ export default function PachetePage() {
             Analizăm situația de pornire și stabilim direcția potrivită pentru proiect.
           </p>
         </div>
+        
         <div className="listItem">
           <h3>2) Certificatul de urbanism</h3>
           <p>
@@ -47,6 +48,7 @@ export default function PachetePage() {
             și lista de avize sau acorduri necesare pentru autorizare.
           </p>
         </div>
+        
         <div className="listItem">
           <h3>3) Analiza utilităților și a condițiilor de branșare</h3>
           <p>
@@ -87,8 +89,6 @@ export default function PachetePage() {
             astfel încât soluția să fie potrivită atât pentru stilul tău de viață, cât și pentru amplasament.
           </p>
         </div>
-
-
 
         <div className="listItem">
           <h3>8) DTAC – documentația pentru autorizare</h3>
