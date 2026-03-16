@@ -344,14 +344,11 @@ export default function HomePage() {
             <div className="card qualityCard">
               <h3 className="cardTitle">Proiectare în interesul clientului</h3>
               <p className="cardText">
-                Arhitectură gândită pentru a fi trăită, nu doar construită.
-                Urmărim o casă bine gândită, durabilă și corect dimensionată pentru o folosire reală,
-                nu compromisuri făcute doar pentru a reduce aparent costul inițial. Analizăm structura,
-                funcționalitatea, costurile de exploatare și comportarea în timp, astfel încât soluția
-                aleasă să fie echilibrată și avantajoasă pentru beneficiar. Asta înseamnă mai puține improvizații
-                în șantier, mai puține cheltuieli ascunse și o casă proiectată coerent, pentru siguranță, confort și exploatare eficientă pe termen lung.
-                Fără soluții standardizate sau case modulare lipsite de identitate. Urmărim locuințe funcționale și echilibrate, în care lumina, proporțiile,
-                relația dintre spații și expresia fațadelor sunt gândite împreună. Rezultatul nu este doar o casă care arată bine, ci un loc în care te simți bine în fiecare zi: cald, firesc, aerisit și primitor.
+                Arhitectură gândită pentru a fi trăită, nu doar construită. 
+                Proiectăm locuințe personalizate, cu identitate, ancorate în realitatea și visurile tale, nu soluții de serie. 
+                Design adaptat stilului tău de viață și particularităților terenului.
+                Echilibru estetic prin lumină naturală, proporții armonioase și fațade coerente.
+                Experiența locuiriieste mai mult decât o clădire durabilă — garantăm confortul și îți oferim în fiecare zi sentimentul de vacanță, acasă.                         
               </p>
             </div>
           </div>
