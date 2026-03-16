@@ -309,7 +309,7 @@ export default function HomePage() {
             
       <section className="section qualitySection">
         <div className="container">
-          <h2 className="sectionTitle">De ce proiectăm altfel</h2>
+          <h2 className="sectionTitle">De ce suntem altfel</h2>
           <p className="pageLead qualityLead">
             Nu urmărim compromisuri făcute doar pentru costul inițial. Proiectăm case pentru
             siguranță, eficiență, durabilitate și avantajul real al clientului.
