@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Standardul nostru ",
+  title: "Standardul nostru",
   description:
     "Proiectăm case pentru siguranță seismică, eficiență energetică, durabilitate și avantajul real al clientului.",
   alternates: {
