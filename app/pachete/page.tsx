@@ -40,9 +40,15 @@ export default function PachetePage() {
             Analizăm situația de pornire și stabilim direcția potrivită pentru proiect.
           </p>
         </div>
-
         <div className="listItem">
-          <h3>2) Ridicare topografică</h3>
+          <h3>2) Certificatul de urbanism</h3>
+          <p>
+            Certificatul de urbanism este etapa care clarifică reglementările aplicabile terenului
+            și lista de avize sau acorduri necesare pentru autorizare.
+          </p>
+        </div>
+        <div className="listItem">
+          <h3>3) Ridicare topografică</h3>
           <p>
             Realizăm ridicarea topografică a amplasamentului, atunci când este necesară,
             pentru a avea baza corectă de lucru pentru proiectare și pentru documentațiile următoare.
@@ -50,7 +56,7 @@ export default function PachetePage() {
         </div>
 
         <div className="listItem">
-          <h3>3) Studiu geotehnic</h3>
+          <h3>4) Studiu geotehnic</h3>
           <p>
             Obținem investigațiile geotehnice și recomandările de fundare,
             astfel încât soluția structurală să fie aleasă corect în funcție de teren.
@@ -58,18 +64,10 @@ export default function PachetePage() {
         </div>
 
         <div className="listItem">
-          <h3>4) Conceptul casei și organizarea soluției</h3>
+          <h3>5) Conceptul casei și organizarea soluției</h3>
           <p>
             Stabilim împreună forma casei, compartimentarea, relația cu terenul și direcția generală a proiectului,
             astfel încât soluția să fie potrivită atât pentru stilul tău de viață, cât și pentru amplasament.
-          </p>
-        </div>
-
-        <div className="listItem">
-          <h3>5) Certificatul de urbanism</h3>
-          <p>
-            Certificatul de urbanism este etapa care clarifică reglementările aplicabile terenului
-            și lista de avize sau acorduri necesare pentru autorizare.
           </p>
         </div>
 
