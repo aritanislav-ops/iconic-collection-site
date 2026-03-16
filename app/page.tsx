@@ -344,11 +344,14 @@ export default function HomePage() {
             <div className="card qualityCard">
               <h3 className="cardTitle">Proiectare în interesul clientului</h3>
               <p className="cardText">
-                Urmărim o casă bine gândită, durabilă și corect dimensionată pentru folosire reală,
+                Arhitectură gândită pentru a fi trăită, nu doar construită.
+                Urmărim o casă bine gândită, durabilă și corect dimensionată pentru o folosire reală,
                 nu compromisuri făcute doar pentru a reduce aparent costul inițial. Analizăm structura,
                 funcționalitatea, costurile de exploatare și comportarea în timp, astfel încât soluția
                 aleasă să fie echilibrată și avantajoasă pentru beneficiar. Asta înseamnă mai puține improvizații
                 în șantier, mai puține cheltuieli ascunse și o casă proiectată coerent, pentru siguranță, confort și exploatare eficientă pe termen lung.
+                Fără soluții standardizate sau case modulare lipsite de identitate. Urmărim locuințe funcționale și echilibrate, în care lumina, proporțiile,
+                relația dintre spații și expresia fațadelor sunt gândite împreună. Rezultatul nu este doar o casă care arată bine, ci un loc în care te simți bine în fiecare zi: cald, firesc, aerisit și primitor.
               </p>
             </div>
           </div>
