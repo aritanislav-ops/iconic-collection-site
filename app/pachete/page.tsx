@@ -125,7 +125,8 @@ export default function PachetePage() {
         <div className="listItem">
           <h3>12) Execuție</h3>
           <p>
-            Pentru a garanta că realitatea va reflecta la milimetru proiectul, îți oferim servicii complete de Project Management și coordonare generală a execuției.
+            Pentru a garanta că realitatea va reflecta la milimetru proiectul, îți oferim servicii complete de Project Management prin coordonare generală a execuției, 
+            asigurarea și coordonarea rolurilor tehnice esențiale — Diriginte de Șantier și RTE (Responsabil Tehnic cu Execuția).
             Acționăm ca unicul tău punct de contact pe durata șantierului, selectând și supervizând echipele de constructori acreditați, astfel încât calitatea lucrării
             să rămână la standardele noastre, fără ca tu să pierzi timp sau energie.
           </p>
