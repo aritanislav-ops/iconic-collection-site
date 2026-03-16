@@ -48,7 +48,23 @@ export default function PachetePage() {
           </p>
         </div>
         <div className="listItem">
-          <h3>3) Ridicare topografică</h3>
+        <div className="listItem">
+          <h3>3) Analiza utilităților și a condițiilor de branșare</h3>
+          <p>
+            Verificăm situația utilităților existente la teren sau în zonă: energie electrică, apă,
+            canalizare și, după caz, gaze. Dacă terenul nu este racordat, analizăm soluțiile posibile,
+            condițiile de branșare și eventualele variante alternative necesare proiectului.
+          </p>
+        </div>
+
+        <div className="listItem">
+          <h3>4) Avizele și acordurile necesare</h3>
+          <p>
+            În funcție de ce cere certificatul de urbanism și de situația utilităților din teren sau din zonă,
+            pregătim documentațiile necesare pentru obținerea avizelor și acordurilor cerute pentru autorizare.
+          </p>
+        </div>          
+          <h3>5) Ridicare topografică</h3>
           <p>
             Realizăm ridicarea topografică a amplasamentului, atunci când este necesară,
             pentru a avea baza corectă de lucru pentru proiectare și pentru documentațiile următoare.
@@ -56,7 +72,7 @@ export default function PachetePage() {
         </div>
 
         <div className="listItem">
-          <h3>4) Studiu geotehnic</h3>
+          <h3>6) Studiu geotehnic</h3>
           <p>
             Obținem investigațiile geotehnice și recomandările de fundare,
             astfel încât soluția structurală să fie aleasă corect în funcție de teren.
@@ -71,22 +87,7 @@ export default function PachetePage() {
           </p>
         </div>
 
-        <div className="listItem">
-          <h3>6) Analiza utilităților și a condițiilor de branșare</h3>
-          <p>
-            Verificăm situația utilităților existente la teren sau în zonă: energie electrică, apă,
-            canalizare și, după caz, gaze. Dacă terenul nu este racordat, analizăm soluțiile posibile,
-            condițiile de branșare și eventualele variante alternative necesare proiectului.
-          </p>
-        </div>
 
-        <div className="listItem">
-          <h3>7) Avizele și acordurile necesare</h3>
-          <p>
-            În funcție de ce cere certificatul de urbanism și de situația utilităților din teren sau din zonă,
-            pregătim documentațiile necesare pentru obținerea avizelor și acordurilor cerute pentru autorizare.
-          </p>
-        </div>
 
         <div className="listItem">
           <h3>8) DTAC – documentația pentru autorizare</h3>
