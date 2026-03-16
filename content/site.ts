@@ -123,7 +123,7 @@ contact: {
   phone: "+40 741 259 236",
   email: "contact@iconic-collection.ro",
   note: "Dacă ai deja terenul sau doar ideea de la care vrei să pornești, ne poți scrie. Îți răspundem clar și îți spunem ce pași urmează.",
-  address: "Bucuresti, Sector 3, Str. Agatha Bârsescu Nr. 15B, Etaj 01, Biroul 7, București",
+  address: "Sector 3, Str. Agatha Bârsescu Nr. 15B, Etaj 01, Biroul 7, București",
   program: "Luni–Vineri 09:00–18:00",
   mapEmbedUrl: "https://www.google.com/maps?q=Strada%20Agatha%20Barsescu%2015B%20Bucuresti&z=16&output=embed",
 },
