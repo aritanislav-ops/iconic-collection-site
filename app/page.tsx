@@ -319,8 +319,12 @@ export default function HomePage() {
             <div className="card qualityCard">
               <h3 className="cardTitle">Siguranță seismică tratată responsabil, prin proiectare pentru seismul corespunzător perioadei medii de recurență de 475 de ani și prin dimensionare elastică, astfel încât degradările structurale seismice să tindă către ZERO. </h3>
               <p className="cardText">
-                Structura este gândită pentru o comportare corectă, cu soluții coerente și controlate,
-                nu doar pentru a bifa minimul necesar.
+                Structura este gândită pentru o comportare corectă, cu soluții coerente și controlate, nu doar pentru a atinge nivelul minim acceptat.
+                În proiectarea seismică uzuală aplicată astăzi, casa este dimensionată la nivelul seismic corespunzător unei perioade medii de recurență de 225 de ani.
+                La cutremurele mai frecvente se urmărește limitarea degradărilor, însă la seismul mare de proiectare prioritatea este protejarea vieții, nu eliminarea avariilor.
+                Cu alte cuvinte, după un cutremur sever, casa poate rămâne în picioare, dar proprietarul poate rămâne cu reparații importante și cu pierderea folosinței locuinței.
+                Noi alegem un standard superior și, datorită regimului mic de înălțime și unei conformări structurale corecte, dimensionăm casa cu răspuns preponderent elastic inclusiv pentru cutremurul de 475 de ani.
+                Rezultatul este o structură cu degradări minime și cu costuri post-seism mult reduse, fără creșteri importante de cost pentru o locuință cu regim mic de înaltime, bine gândită și eficient concepută.
               </p>
             </div>
 
