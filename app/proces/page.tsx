@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     canonical: "/proces",
   },
   openGraph: {
-    title: "Standardul nostru de proiectare | iCONiC collection",
+    title: "Standardul nostru | iCONiC collection",
     description:
       "Proiectăm case pentru siguranță seismică, eficiență energetică, durabilitate și avantajul real al clientului.",
     url: "https://www.iconic-collection.ro/proces",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Standardul nostru de proiectare | iCONiC collection",
+    title: "Standardul | iCONiC collection",
     description:
       "Proiectăm case pentru siguranță seismică, eficiență energetică, durabilitate și avantajul real al clientului.",
     images: ["/brand/og-home.jpg"],
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 export default function ProcesPage() {
   return (
     <main className="container">
-      <h1 className="pageTitle">Standardul nostru de proiectare</h1>
+      <h1 className="pageTitle">Standardul nostru </h1>
       <p className="pageLead">
         Proiectăm case pentru siguranță, durabilitate, eficiență și avantajul real al clientului,
         nu pentru compromisuri făcute doar ca să iasă mai ieftin pe termen scurt.
