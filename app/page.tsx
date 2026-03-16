@@ -127,57 +127,104 @@ export default function HomePage() {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "Pot veni doar cu terenul, fără să știu exact ce trebuie făcut?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Da. Mulți clienți pornesc doar de la teren și de la ideea generală a casei dorite. Îți explicăm clar pașii necesari și te ajutăm să înțelegi ce urmează.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Vă ocupați doar de proiectare sau și de restul etapelor?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Putem lucra flexibil. În funcție de nevoie, putem asigura proiectarea, documentațiile pentru autorizare, coordonarea specialităților și, la nevoie, sprijin până în etapa de execuție.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Se poate adapta un model de casă la terenul meu?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Da. Modelele prezentate sunt puncte de plecare și pot fi adaptate în funcție de teren, cerințe, reglementări urbanistice și buget.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Vă ocupați și de documentațiile pentru autorizare?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Da. Pregătim documentațiile necesare pentru autorizare, în funcție de cerințele aplicabile și de etapele necesare proiectului tău.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Ce specialități sunt incluse într-un proiect complet?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Într-un proiect complet sunt corelate arhitectura, structura și instalațiile, astfel încât soluția finală să fie coerentă și pregătită corect pentru execuție.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Pot discuta cu voi chiar dacă sunt la început și nu știu exact ce vreau?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Da. Nu trebuie să ai toate răspunsurile de la început. Este suficient să ne spui ce teren ai și ce obiectiv urmărești, iar noi te ajutăm să clarifici pașii potriviți.",
-        },
-      },
-    ],
-  };
+mainEntity: [
+  {
+    "@type": "Question",
+    name: "Pot veni doar cu terenul, fără să știu exact ce trebuie făcut?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "Da. Mulți clienți pornesc doar de la teren și de la ideea generală a casei dorite. Îți explicăm clar pașii necesari și te ajutăm să înțelegi ce urmează.",
+    },
+  },
+  {
+    "@type": "Question",
+    name: "Este necesar certificatul de urbanism înainte de autorizare?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "Da. Certificatul de urbanism este punctul de plecare pentru etapa de autorizare. El arată ce condiții urbanistice trebuie respectate și ce avize sau acorduri sunt necesare pentru DTAC.",
+    },
+  },
+  {
+    "@type": "Question",
+    name: "Vă ocupați și de documentațiile pentru autorizare?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "Da. Te ajutăm cu pașii necesari pentru certificatul de urbanism, cu documentațiile pentru autorizare și cu coordonarea avizelor cerute, în funcție de proiect și amplasament.",
+    },
+  },
+  {
+    "@type": "Question",
+    name: "Respectați normele de proiectare în vigoare?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "Da. Proiectarea se face cu respectarea cerințelor legale și tehnice aplicabile, inclusiv a condițiilor urbanistice, structurale, de siguranță la incendiu și de eficiență energetică.",
+    },
+  },
+  {
+    "@type": "Question",
+    name: "Casa este proiectată să reziste la cutremur, vânt și foc?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "Proiectul este gândit astfel încât structura și soluțiile tehnice să respecte cerințele aplicabile privind siguranța structurală și securitatea la incendiu, în funcție de categoria construcției și de amplasament.",
+    },
+  },
+  {
+    "@type": "Question",
+    name: "Ce specialități sunt incluse într-un proiect complet?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "Într-un proiect complet sunt corelate arhitectura, structura și instalațiile, astfel încât soluția finală să fie coerentă și pregătită corect pentru execuție.",
+    },
+  },
+  {
+    "@type": "Question",
+    name: "Se poate adapta un model de casă la terenul meu?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "Da. Modelele prezentate sunt puncte de plecare și pot fi adaptate în funcție de teren, cerințe, reglementări urbanistice și buget.",
+    },
+  },
+  {
+    "@type": "Question",
+    name: "Materialele prevăzute în proiect sunt alese doar după preț?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "Nu. Urmărim un echilibru între cost, durabilitate, performanță și întreținere în timp, astfel încât soluția aleasă să fie corectă pentru beneficiar, nu doar ieftină la început.",
+    },
+  },
+  {
+    "@type": "Question",
+    name: "Luați în calcul durabilitatea construcției în timp?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "Da. Prin proiectare și prin alegerea soluțiilor tehnice urmărim nu doar rezistența structurii, ci și comportarea corectă în exploatare, inclusiv controlul umidității, protecția elementelor sensibile și detalii constructive corecte.",
+    },
+  },
+  {
+    "@type": "Question",
+    name: "Proiectați și în logica actuală de eficiență energetică și NZEB?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "Da. Integrăm soluții compatibile cu cerințele actuale de performanță energetică, astfel încât casa să fie mai eficientă, mai confortabilă și mai bine pregătită pentru costurile reale de exploatare.",
+    },
+  },
+  {
+    "@type": "Question",
+    name: "Vă ocupați doar de proiectare sau și de restul etapelor?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "Putem lucra flexibil. În funcție de nevoie, putem asigura proiectarea, documentațiile pentru autorizare, coordonarea specialităților și, la nevoie, sprijin până în etapa de execuție.",
+    },
+  },
+  {
+    "@type": "Question",
+    name: "Pot discuta cu voi chiar dacă sunt la început și nu știu exact ce vreau?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "Da. Nu trebuie să ai toate răspunsurile de la început. Este suficient să ne spui ce teren ai și ce obiectiv urmărești, iar noi te ajutăm să clarifici pașii potriviți.",
+    },
+  },
+],
 
   function openGallery(images: string[], startIndex = 0) {
     setLbImages(images || []);
@@ -396,61 +443,110 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <section className="section faqSection">
-        <div className="container">
-          <h2 className="sectionTitle">Întrebări frecvente</h2>
+      <<section className="section faqSection">
+  <div className="container">
+    <h2 className="sectionTitle">Întrebări frecvente</h2>
 
-          <div className="list">
-            <div className="listItem">
-              <h3>Pot veni doar cu terenul, fără să știu exact ce trebuie făcut?</h3>
-              <p>
-                Da. Mulți clienți pornesc doar de la teren și de la ideea generală a casei dorite.
-                Îți explicăm clar pașii necesari și te ajutăm să înțelegi ce urmează.
-              </p>
-            </div>
+    <div className="list">
+      <div className="listItem">
+        <h3>Pot veni doar cu terenul, fără să știu exact ce trebuie făcut?</h3>
+        <p>
+          Da. Mulți clienți pornesc doar de la teren și de la ideea generală a casei dorite.
+          Îți explicăm clar pașii necesari și te ajutăm să înțelegi ce urmează.
+        </p>
+      </div>
 
-            <div className="listItem">
-              <h3>Vă ocupați doar de proiectare sau și de restul etapelor?</h3>
-              <p>
-                Putem lucra flexibil. În funcție de nevoie, putem asigura proiectarea, documentațiile
-                pentru autorizare, coordonarea specialităților și, la nevoie, sprijin până în etapa de execuție.
-              </p>
-            </div>
+      <div className="listItem">
+        <h3>Este necesar certificatul de urbanism înainte de autorizare?</h3>
+        <p>
+          Da. Certificatul de urbanism este punctul de plecare pentru etapa de autorizare.
+          El arată ce condiții urbanistice trebuie respectate și ce avize sau acorduri sunt necesare pentru DTAC.
+        </p>
+      </div>
 
-            <div className="listItem">
-              <h3>Se poate adapta un model de casă la terenul meu?</h3>
-              <p>
-                Da. Modelele prezentate sunt puncte de plecare și pot fi adaptate în funcție de teren,
-                cerințe, reglementări urbanistice și buget.
-              </p>
-            </div>
+      <div className="listItem">
+        <h3>Vă ocupați și de documentațiile pentru autorizare?</h3>
+        <p>
+          Da. Te ajutăm cu pașii necesari pentru certificatul de urbanism, cu documentațiile pentru autorizare
+          și cu coordonarea avizelor cerute, în funcție de proiect și amplasament.
+        </p>
+      </div>
 
-            <div className="listItem">
-              <h3>Vă ocupați și de documentațiile pentru autorizare?</h3>
-              <p>
-                Da. Pregătim documentațiile necesare pentru autorizare, în funcție de cerințele aplicabile
-                și de etapele necesare proiectului tău.
-              </p>
-            </div>
+      <div className="listItem">
+        <h3>Respectați normele de proiectare în vigoare?</h3>
+        <p>
+          Da. Proiectarea se face cu respectarea cerințelor legale și tehnice aplicabile,
+          inclusiv a condițiilor urbanistice, structurale, de siguranță la incendiu și de eficiență energetică.
+        </p>
+      </div>
 
-            <div className="listItem">
-              <h3>Ce specialități sunt incluse într-un proiect complet?</h3>
-              <p>
-                Într-un proiect complet sunt corelate arhitectura, structura și instalațiile,
-                astfel încât soluția finală să fie coerentă și pregătită corect pentru execuție.
-              </p>
-            </div>
+      <div className="listItem">
+        <h3>Casa este proiectată să reziste la cutremur, vânt și foc?</h3>
+        <p>
+          Proiectul este gândit astfel încât structura și soluțiile tehnice să respecte cerințele aplicabile
+          privind siguranța structurală și securitatea la incendiu, în funcție de categoria construcției și de amplasament.
+        </p>
+      </div>
 
-            <div className="listItem">
-              <h3>Pot discuta cu voi chiar dacă sunt la început și nu știu exact ce vreau?</h3>
-              <p>
-                Da. Nu trebuie să ai toate răspunsurile de la început. Este suficient să ne spui ce teren ai
-                și ce obiectiv urmărești, iar noi te ajutăm să clarifici pașii potriviți.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className="listItem">
+        <h3>Ce specialități sunt incluse într-un proiect complet?</h3>
+        <p>
+          Într-un proiect complet sunt corelate arhitectura, structura și instalațiile,
+          astfel încât soluția finală să fie coerentă și pregătită corect pentru execuție.
+        </p>
+      </div>
+
+      <div className="listItem">
+        <h3>Se poate adapta un model de casă la terenul meu?</h3>
+        <p>
+          Da. Modelele prezentate sunt puncte de plecare și pot fi adaptate în funcție de teren,
+          cerințe, reglementări urbanistice și buget.
+        </p>
+      </div>
+
+      <div className="listItem">
+        <h3>Materialele prevăzute în proiect sunt alese doar după preț?</h3>
+        <p>
+          Nu. Urmărim un echilibru între cost, durabilitate, performanță și întreținere în timp,
+          astfel încât soluția aleasă să fie corectă pentru beneficiar, nu doar ieftină la început.
+        </p>
+      </div>
+
+      <div className="listItem">
+        <h3>Luați în calcul durabilitatea construcției în timp?</h3>
+        <p>
+          Da. Prin proiectare și prin alegerea soluțiilor tehnice urmărim nu doar rezistența structurii,
+          ci și comportarea corectă în exploatare, inclusiv controlul umidității, protecția elementelor sensibile
+          și detalii constructive corecte.
+        </p>
+      </div>
+
+      <div className="listItem">
+        <h3>Proiectați și în logica actuală de eficiență energetică și NZEB?</h3>
+        <p>
+          Da. Integrăm soluții compatibile cu cerințele actuale de performanță energetică,
+          astfel încât casa să fie mai eficientă, mai confortabilă și mai bine pregătită pentru costurile reale de exploatare.
+        </p>
+      </div>
+
+      <div className="listItem">
+        <h3>Vă ocupați doar de proiectare sau și de restul etapelor?</h3>
+        <p>
+          Putem lucra flexibil. În funcție de nevoie, putem asigura proiectarea, documentațiile pentru autorizare,
+          coordonarea specialităților și, la nevoie, sprijin până în etapa de execuție.
+        </p>
+      </div>
+
+      <div className="listItem">
+        <h3>Pot discuta cu voi chiar dacă sunt la început și nu știu exact ce vreau?</h3>
+        <p>
+          Da. Nu trebuie să ai toate răspunsurile de la început. Este suficient să ne spui ce teren ai
+          și ce obiectiv urmărești, iar noi te ajutăm să clarifici pașii potriviți.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
       <Lightbox open={lbOpen} images={lbImages} startIndex={lbStart} onClose={closeGallery} />
     </main>
