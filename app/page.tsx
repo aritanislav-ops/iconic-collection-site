@@ -325,7 +325,7 @@ export default function HomePage() {
             </div>
 
             <div className="card qualityCard">
-              <h3 className="cardTitle">Eficiență energetică și principii NZEB</h3>
+              <h3 className="cardTitle">Eficiență energetică și principii NZEB (Nearly Zero-Energy Building) reprezintă clădiri cu o performanță energetică extrem de ridicată. Acestea au un consum de energie aproape egal cu zero, acoperit în proporție semnificativă (minim 10% prin reglementări sau directivă UE 30%)  </h3>
               <p className="cardText">
                 Integrăm soluții compatibile cu cerințele actuale de performanță energetică,
                 astfel încât casa să fie mai confortabilă și mai bine pregătită pentru costurile reale de exploatare.
