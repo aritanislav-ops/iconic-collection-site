@@ -48,7 +48,6 @@ export default function PachetePage() {
           </p>
         </div>
         <div className="listItem">
-        <div className="listItem">
           <h3>3) Analiza utilităților și a condițiilor de branșare</h3>
           <p>
             Verificăm situația utilităților existente la teren sau în zonă: energie electrică, apă,
@@ -64,6 +63,8 @@ export default function PachetePage() {
             pregătim documentațiile necesare pentru obținerea avizelor și acordurilor cerute pentru autorizare.
           </p>
         </div>          
+        
+        <div className="listItem">        
           <h3>5) Ridicare topografică</h3>
           <p>
             Realizăm ridicarea topografică a amplasamentului, atunci când este necesară,
