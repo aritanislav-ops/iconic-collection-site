@@ -83,7 +83,7 @@ export default function PachetePage() {
         </div>
 
         <div className="listItem">
-          <h3>5) Conceptul casei și organizarea soluției</h3>
+          <h3>7) Conceptul casei și organizarea soluției</h3>
           <p>
             Stabilim împreună forma casei, compartimentarea, relația cu terenul și direcția generală a proiectului,
             astfel încât soluția să fie potrivită atât pentru stilul tău de viață, cât și pentru amplasament.
@@ -125,8 +125,9 @@ export default function PachetePage() {
         <div className="listItem">
           <h3>12) Execuție</h3>
           <p>
-            Putem merge mai departe și în etapa de execuție, prin colaborare cu echipe și constructori acreditați,
-            astfel încât să existe continuitate între proiect și realizarea efectivă a casei.
+            Pentru a garanta că realitatea va reflecta la milimetru proiectul, îți oferim servicii complete de Project Management și coordonare generală a execuției.
+            Acționăm ca unicul tău punct de contact pe durata șantierului, selectând și supervizând echipele de constructori acreditați, astfel încât calitatea lucrării
+            să rămână la standardele noastre, fără ca tu să pierzi timp sau energie.
           </p>
         </div>
 
