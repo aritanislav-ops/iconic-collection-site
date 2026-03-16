@@ -1,18 +1,18 @@
-import type { Metadata } from "next";
 import { site } from "../../content/site";
 import ContactForm from "../ui/ContactForm";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contactează iCONiC collection pentru proiectare case, documentații pentru autorizare, coordonarea specialităților și execuție.",
+    "Contactează iCONiC collection pentru proiectare case, documentații pentru autorizare, coordonare și execuție.",
   alternates: {
     canonical: "/contact",
   },
   openGraph: {
     title: "Contact | iCONiC collection",
     description:
-      "Contactează iCONiC collection pentru proiectare case, documentații pentru autorizare, coordonarea specialităților și execuție.",
+      "Contactează iCONiC collection pentru proiectare case, documentații pentru autorizare, coordonare și execuție.",
     url: "https://www.iconic-collection.ro/contact",
     images: ["/brand/og-home.jpg"],
   },
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Contact | iCONiC collection",
     description:
-      "Contactează iCONiC collection pentru proiectare case, documentații pentru autorizare, coordonarea specialităților și execuție.",
+      "Contactează iCONiC collection pentru proiectare case, documentații pentru autorizare, coordonare și execuție.",
     images: ["/brand/og-home.jpg"],
   },
 };
