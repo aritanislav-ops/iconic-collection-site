@@ -3,14 +3,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Pașii Proiectului",
   description:
-    "Vezi pașii proiectului: de la teren și studii inițiale până la proiectare, autorizare, coordonare și execuție.",
+    "Vezi pașii proiectului: de la analiza terenului și utilităților până la certificatul de urbanism, avize, autorizare, proiectare, coordonare și execuție.",
   alternates: {
     canonical: "/pachete",
   },
   openGraph: {
     title: "Pașii Proiectului | iCONiC collection",
     description:
-      "Vezi pașii proiectului: de la teren și studii inițiale până la proiectare, autorizare, coordonare și execuție.",
+      "Vezi pașii proiectului: de la analiza terenului și utilităților până la certificatul de urbanism, avize, autorizare, proiectare, coordonare și execuție.",
     url: "https://www.iconic-collection.ro/pachete",
     images: ["/brand/og-home.jpg"],
   },
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Pașii Proiectului | iCONiC collection",
     description:
-      "Vezi pașii proiectului: de la teren și studii inițiale până la proiectare, autorizare, coordonare și execuție.",
+      "Vezi pașii proiectului: de la analiza terenului și utilităților până la certificatul de urbanism, avize, autorizare, proiectare, coordonare și execuție.",
     images: ["/brand/og-home.jpg"],
   },
 };
@@ -28,7 +28,7 @@ export default function PachetePage() {
     <main className="container">
       <h1 className="pageTitle">Pașii Proiectului</h1>
       <p className="pageLead">
-        De la teren și primele întrebări până la proiectare, autorizare și execuție,
+        De la teren și documentele inițiale până la proiectare, autorizare și execuție,
         lucrăm în pași clari, astfel încât să știi ce urmează și ce primești la fiecare etapă.
       </p>
 
@@ -66,15 +66,48 @@ export default function PachetePage() {
         </div>
 
         <div className="listItem">
-          <h3>5) Documentația pentru autorizare</h3>
+          <h3>5) Certificatul de urbanism</h3>
           <p>
-            Pregătim documentația necesară pentru autorizarea construcției,
-            conform cerințelor aplicabile și pașilor necesari pentru obținerea autorizației.
+            Certificatul de urbanism este etapa care clarifică reglementările aplicabile terenului
+            și lista de avize sau acorduri necesare pentru autorizare.
           </p>
         </div>
 
         <div className="listItem">
-          <h3>6) Proiectul tehnic și detaliile de execuție</h3>
+          <h3>6) Analiza utilităților și a condițiilor de branșare</h3>
+          <p>
+            Verificăm situația utilităților existente la teren sau în zonă: energie electrică, apă,
+            canalizare și, după caz, gaze. Dacă terenul nu este racordat, analizăm soluțiile posibile,
+            condițiile de branșare și eventualele variante alternative necesare proiectului.
+          </p>
+        </div>
+
+        <div className="listItem">
+          <h3>7) Avizele și acordurile necesare</h3>
+          <p>
+            În funcție de ce cere certificatul de urbanism și de situația utilităților din teren sau din zonă,
+            pregătim documentațiile necesare pentru obținerea avizelor și acordurilor cerute pentru autorizare.
+          </p>
+        </div>
+
+        <div className="listItem">
+          <h3>8) DTAC – documentația pentru autorizare</h3>
+          <p>
+            Pregătim documentația tehnică pentru autorizarea executării lucrărilor de construcții,
+            corelată cu cerințele urbanistice, avizele și condițiile aplicabile proiectului.
+          </p>
+        </div>
+
+        <div className="listItem">
+          <h3>9) Autorizația de construire</h3>
+          <p>
+            După depunerea documentației complete, urmează etapa de autorizare,
+            pe baza căreia se poate trece legal la execuția lucrărilor.
+          </p>
+        </div>
+
+        <div className="listItem">
+          <h3>10) Proiectul tehnic și detaliile de execuție</h3>
           <p>
             Dezvoltăm proiectul complet pentru execuție: arhitectură, structură și instalații,
             cu detalii și coordonare între specialități, astfel încât casa să poată fi pusă corect în operă.
@@ -82,18 +115,26 @@ export default function PachetePage() {
         </div>
 
         <div className="listItem">
-          <h3>7) Coordonare și clarificări pe parcurs</h3>
+          <h3>11) Coordonare, clarificări și suport pe parcurs</h3>
           <p>
-            În funcție de ce ai nevoie, asigurăm coordonare, clarificări și urmărire pe etape,
+            În funcție de nevoie, asigurăm coordonare, clarificări și urmărire pe etape,
             astfel încât procesul să rămână organizat și coerent și după finalizarea proiectării.
           </p>
         </div>
 
         <div className="listItem">
-          <h3>8) Execuție</h3>
+          <h3>12) Execuție</h3>
           <p>
             Putem merge mai departe și în etapa de execuție, prin colaborare cu echipe și constructori acreditați,
-            astfel încât să ai continuitate între proiect și realizarea efectivă a casei.
+            astfel încât să existe continuitate între proiect și realizarea efectivă a casei.
+          </p>
+        </div>
+
+        <div className="listItem">
+          <h3>13) Recepția lucrărilor</h3>
+          <p>
+            La final, etapa de execuție se închide corect prin procedurile de recepție,
+            astfel încât construcția să fie predată și documentată corespunzător.
           </p>
         </div>
       </div>
