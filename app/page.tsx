@@ -348,7 +348,14 @@ export default function HomePage() {
                 Proiectăm locuințe personalizate, cu identitate, ancorate în realitatea și visurile tale, nu soluții de serie. 
                 Design adaptat stilului tău de viață și particularităților terenului.
                 Echilibru estetic prin lumină naturală, proporții armonioase și fațade coerente.
-                Experiența locuiriieste mai mult decât o clădire durabilă — garantăm confortul și îți oferim în fiecare zi sentimentul de vacanță, acasă.                         
+                Experiența locuiriieste mai mult decât o clădire durabilă — garantăm confortul și îți oferim în fiecare zi sentimentul de vacanță, acasă.
+                Cum obținem acest lucru? Printr-o înțelegere profundă a rutinei tale zilnice și a dinamicii familiei. Nu desenăm doar planuri și pereți, 
+                ci regizăm modul în care lumina pătrunde dimineața în dormitor, felul fluid în care zona de zi se conectează cu terasa și natura, și modul
+                în care spațiile de depozitare sunt integrate invizibil pentru a menține ordinea vizuală. Fiecare decizie arhitecturală este luată punând 
+                omul în centru. Evităm spațiile moarte și optimizăm circulațiile interioare, astfel încât fiecare metru pătrat să aibă un scop precis și 
+                să contribuie la starea ta de bine. O casă proiectată în interesul tău este o locuință care „lucrează” pentru tine: îți protejează intimitatea
+                când ai nevoie de liniște, dar devine spațiul perfect pentru socializare atunci când primești oaspeți. Fără compromisuri, doar un design care 
+                îți îmbunătățește constant calitatea vieții.
               </p>
             </div>
           </div>
