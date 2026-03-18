@@ -37,7 +37,7 @@ export default function ModelPage({ params }: { params: { slug: string } }) {
           ca un ansamblu coerent de arhitectură, structură, anvelopă, tâmplărie, finisaje și instalații, adaptat fiecărui teren și fiecărui beneficiar.
           Casa este gândită pentru siguranță, durabilitate, eficiență energetică și confort real, cu posibilitatea integrării soluțiilor nZEB, a tehnologiilor
           smart home și a unor sisteme moderne de climatizare, iluminat și control. Finisajele și echipările se personalizează astfel încât imaginea modelului să rămână clară,
-          iar locuința să răspundă corect nevoilor reale de exploatare pe termen lung.
+          iar locuința să răspundă corect nevoilor reale de exploatare.
         </p>
       </div>
 
