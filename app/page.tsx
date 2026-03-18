@@ -379,6 +379,7 @@ export default function HomePage() {
       </section>
 
       <section className="section servicesSection">
+        
         <div className="container">
           <h2 className="sectionTitle">Serviciile noastre</h2>
           <p className="pageLead servicesLead">
@@ -418,6 +419,18 @@ export default function HomePage() {
         <div className="container">
           <h2 className="sectionTitle">Întrebări frecvente</h2>
 
+          <div className="list">
+            <div className="listItem">
+              <h3>Sunt case modulare? Sunt case cu structură metalică din profile subțiri?</h3>
+              <p>
+                Nu sunt case modulare. Sunt case solide, proiectate ca structuri de rezistență reale, alese împreună 
+                cu clientul. Soluția standard poate fi realizată în sistem dual din beton armat, cu cadre, lamele/stâlpi și grinzi din beton armat,
+                iar pentru o execuție mai rapidă și un control superior al calității poate fi aleasă și varianta pe structură metalică clasică din
+                oțel S355(OL52), tratat corespunzător clasei de expunere. Nu folosim profile metalice subțiri și nu promovăm soluții ușoare de compromis.
+                Pentru variantele din beton armat, utilizăm beton C30/37(B500) și oțel-beton B500 clasa de ductilitate "C".                
+              </p>
+            </div>
+ 
           <div className="list">
             <div className="listItem">
               <h3>Pot veni doar cu terenul, fără să știu exact ce trebuie făcut?</h3>
