@@ -298,14 +298,13 @@ export default function HomePage() {
 
               return (
                 <article key={m.slug} className="modelCard">
-                  <button
-                    type="button"
-                    className="modelImgBtn"
-                    onClick={() => images.length && openGallery(images, 0)}
-                    aria-label={`Deschide galeria: ${m.name}`}
-                  >
-                    {cover ? <img className="modelCover" src={cover} alt={m.name} loading="lazy" /> : null}
-                  </button>
+                  <Link
+  href={`/modele/${m.slug}`}
+  className="modelImgBtn"
+  aria-label={`Vezi modelul: ${m.name}`}
+>
+  {cover ? <img className="modelCover" src={cover} alt={m.name} loading="lazy" /> : null}
+</Link>
 
                   <div className="modelBody">
                     <div className="modelName">{m.name}</div>
