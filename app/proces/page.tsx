@@ -118,6 +118,32 @@ export default function ProcesPage() {
             astfel încât beneficiarul să știe exact ce primește și în ce condiții.
           </p>
         </div>
+        <div className="listItem">
+  <h3>11) Casă pregătită pentru automatizare și tehnologii viitoare</h3>
+  <p>
+    Gândim proiectul astfel încât locuința să poată integra ușor soluții de tip smart home,
+    scenarii de control, senzori, monitorizare, management energetic și alte tehnologii
+    care vor deveni tot mai prezente în exploatarea de zi cu zi.
+  </p>
+</div>
+
+<div className="listItem">
+  <h3>12) Spații adaptabile pentru viitor</h3>
+  <p>
+    Urmărim o organizare care să permită adaptarea în timp a locuinței:
+    spații flexibile, trasee tehnice previzibile, zone care pot primi funcțiuni noi
+    și o casă pregătită pentru schimbările familiei, ale stilului de viață și ale tehnologiei.
+  </p>
+</div>
+
+<div className="listItem">
+  <h3>13) Longevity by design</h3>
+  <p>
+    Nu proiectăm doar pentru momentul predării, ci pentru folosire reală pe termen lung:
+    întreținere mai ușoară, soluții durabile, confort constant, infrastructură pregătită
+    pentru modernizări și o locuință care își păstrează valoarea în timp.
+  </p>
+</div>
       </div>
     </main>
   );
