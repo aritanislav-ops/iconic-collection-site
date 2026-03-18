@@ -37,7 +37,7 @@ export default function ProcesPage() {
         Proiectăm pentru siguranță, durabilitate, eficiență și avantajul real al clientului, cu respectarea normelor în vigoare și fără compromisuri făcute
         doar pentru a reduce artificial costul inițial. Echipa are peste 20 de ani de experiență în țară și la nivel internațional și peste 250 de milioane
         de metri pătrați proiectați și executați. Reunim arhitecți premiați, cu experiență, membri OAR, și ingineri experți tehnici atestați, membri AICPS,
-        formați în proiecte mari și complexe, inclusiv la nivel internațional.Fiecare proiect este tratat cu același standard: rigoare, responsabilitate 
+        formați în proiecte mari și complexe, inclusiv la nivel internațional. Fiecare proiect este tratat cu același standard: rigoare, responsabilitate 
         și soluții corecte pe termen lung.
       </p>
 
