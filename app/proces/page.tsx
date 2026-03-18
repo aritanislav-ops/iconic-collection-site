@@ -30,6 +30,10 @@ export default function ProcesPage() {
       <p className="pageLead">
         Proiectăm case pentru siguranță, durabilitate, eficiență și avantajul real al clientului,
         cu respectarea normelor în vigoare și fără compromisuri făcute doar pentru a reduce artificial costul inițial.
+        Experiență care se vede în calitatea proiectului. Echipa are peste 20 de ani de experiență in tara si internationala și peste 250 de milioane de metri pătrați proiectați și executați.
+        Arhitecți premiati cu experiență, membri OAR, și cu ingineri experți tehnici atestați, membri AICPS, formați în proiecte mari și complexe, inclusiv la nivel internațional.
+        Portofoliul include lucrări ample în rezidențial, office, hotelier, industrial, energetic și infrastructură, precum și proiecte internaționale și colaborări cu parteneri externi.
+        Fiecare proiect este tratat cu același standard: rigoare, responsabilitate și soluții corecte pe termen lung.
       </p>
 
       <div className="list">
