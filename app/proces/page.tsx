@@ -28,12 +28,17 @@ export default function ProcesPage() {
     <main className="container">
       <h1 className="pageTitle">Standardul nostru</h1>
       <p className="pageLead">
-        Proiectăm case pentru siguranță, durabilitate, eficiență și avantajul real al clientului,
-        cu respectarea normelor în vigoare și fără compromisuri făcute doar pentru a reduce artificial costul inițial.
-        Experiență care se vede în calitatea proiectului. Echipa are peste 20 de ani de experiență in tara si internationala și peste 250 de milioane de metri pătrați proiectați și executați.
-        Arhitecți premiati cu experiență, membri OAR, și cu ingineri experți tehnici atestați, membri AICPS, formați în proiecte mari și complexe, inclusiv la nivel internațional.
-        Portofoliul include lucrări ample în rezidențial, office, hotelier, industrial, energetic și infrastructură, precum și proiecte internaționale și colaborări cu parteneri externi.
-        Fiecare proiect este tratat cu același standard: rigoare, responsabilitate și soluții corecte pe termen lung.
+        ICONIC s-a născut din dorința de a aduce standardul proiectelor mari într-un brand premium de locuințe, de a educa piața
+        în direcția arhitecturii și structurii de calitate și mai ales să simplificăm pentru client tot procesul construirii unei case,
+        printr-un produs complet, de la A la Z, lăsând coordonarea etapelor esențiale în seama noastră.
+        Nu tratăm casele ca proiecte mici, ci ca proiecte care merită aceeași seriozitate tehnică, aceeași calitate a arhitecturii și 
+        aceeași atenție la durabilitate, confort și execuție. Portofoliul nostru nu se oprește la locuințe unifamiliale: proiectăm
+        și ansambluri rezidențiale ample, office, hotelier, industrial, energetic și proiecte speciale, inclusiv în colaborări internaționale.
+        Proiectăm pentru siguranță, durabilitate, eficiență și avantajul real al clientului, cu respectarea normelor în vigoare și fără compromisuri făcute
+        doar pentru a reduce artificial costul inițial. Echipa are peste 20 de ani de experiență în țară și la nivel internațional și peste 250 de milioane
+        de metri pătrați proiectați și executați. Reunim arhitecți premiați, cu experiență, membri OAR, și ingineri experți tehnici atestați, membri AICPS,
+        formați în proiecte mari și complexe, inclusiv la nivel internațional.Fiecare proiect este tratat cu același standard: rigoare, responsabilitate 
+        și soluții corecte pe termen lung.
       </p>
 
       <div className="list">
