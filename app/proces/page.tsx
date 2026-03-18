@@ -137,7 +137,7 @@ export default function ProcesPage() {
 </div>
 
 <div className="listItem">
-  <h3>13) Longevity by design</h3>
+  <h3>13) Longevity by default</h3>
   <p>
     Nu proiectăm doar pentru momentul predării, ci pentru folosire reală pe termen lung:
     întreținere mai ușoară, soluții durabile, confort constant, infrastructură pregătită
