@@ -459,6 +459,39 @@ export default function HomePage() {
               </p>
             </div>
 
+              <div className="listItem">
+  <h3>Poate casa să fie pregătită pentru smart home?</h3>
+  <p>
+    Da. Putem gândi proiectul astfel încât locuința să poată integra ulterior sau din start
+    soluții de automatizare, senzori, control al iluminatului, climatizării, securității și monitorizare energetică.
+  </p>
+</div>
+
+<div className="listItem">
+  <h3>Poate fi pregătită casa pentru tehnologii viitoare?</h3>
+  <p>
+    Da. Urmărim trasee tehnice, spații și soluții care să permită adaptări ulterioare,
+    astfel încât locuința să nu devină depășită odată cu schimbarea tehnologiei.
+  </p>
+</div>
+
+<div className="listItem">
+  <h3>Luați în calcul și confortul, calitatea aerului și exploatarea pe termen lung?</h3>
+  <p>
+    Da. O casă bună nu înseamnă doar structură și finisaje, ci și confort zilnic,
+    lumină naturală, ventilare corectă, eficiență energetică și întreținere predictibilă în timp.
+  </p>
+</div>
+
+
+ 
+
+
+
+
+
+            
+
             <div className="listItem">
               <h3>Ce specialități sunt incluse într-un proiect complet?</h3>
               <p>
