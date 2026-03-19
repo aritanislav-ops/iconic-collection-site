@@ -94,6 +94,27 @@ export const site = {
         "/brand/models/iconic-1story-stone/13.jpg",
       ],
     },
+      slug: "iconic-1story-WoodSkin",
+      name: "CASA PARTER-iCONiC 1-story STONE",
+      summary: "Varianta WoodSkin — fațadă ce imita lemnul, aspect cald și contrast modern.",
+      images: [
+        "/brand/models/iconic-1story-WoodSkin/01.jpg",
+        "/brand/models/iconic-1story-WoodSkin/02.jpg",
+        "/brand/models/iconic-1story-WoodSkin/03.jpg",
+        "/brand/models/iconic-1story-WoodSkin/04.jpg",
+        "/brand/models/iconic-1story-WoodSkin/05.jpg",
+        "/brand/models/iconic-1story-WoodSkin/06.jpg",
+        "/brand/models/iconic-1story-WoodSkin/07.jpg",
+        "/brand/models/iconic-1story-WoodSkin/08.jpg",
+        "/brand/models/iconic-1story-WoodSkin/09.jpg",
+        "/brand/models/iconic-1story-WoodSkin10.jpg",
+        "/brand/models/iconic-1story-WoodSkin/11.jpg",
+        "/brand/models/iconic-1story-WoodSkin/12.jpg",
+        "/brand/models/iconic-1story-WoodSkin/13.jpg",
+        "/brand/models/iconic-1story-WoodSkin/14.jpg",
+      ],
+    },
+    
   ] as const,
 
   proces: {
