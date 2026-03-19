@@ -95,7 +95,7 @@ export const site = {
       ],
     },
       slug: "iconic-1story-WoodSkin",
-      name: "CASA PARTER-iCONiC 1-story STONE",
+      name: "CASA PARTER-iCONiC 1-story WoodSkin",
       summary: "Varianta WoodSkin — fațadă ce imita lemnul, aspect cald și contrast modern.",
       images: [
         "/brand/models/iconic-1story-WoodSkin/01.jpg",
