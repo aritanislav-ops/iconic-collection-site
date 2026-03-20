@@ -16,6 +16,11 @@ export default function Lightbox({ open, images, startIndex = 0, onClose }: Prop
 
   useEffect(() => {
     if (!open) return;
+    setI(Math.min(Math.max(startIndex, 0), Math.max(list.length - 1, 0)));
+  }, [open, startIndex, list.length]);
+
+  useEffect(() => {
+    if (!open) return;
 
     const prevOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
@@ -38,12 +43,22 @@ export default function Lightbox({ open, images, startIndex = 0, onClose }: Prop
   const canNav = list.length > 1;
   const src = list[i];
 
-  return createPortal(
+  const content = (
     <div className="lbRoot" role="dialog" aria-modal="true">
-      <button className="lbBackdrop" aria-label="Închide" onClick={onClose} />
-      <div className="lbStage">
+      <button
+        type="button"
+        className="lbBackdrop"
+        aria-label="Închide"
+        onClick={onClose}
+      />
+      <div className="lbStage" onClick={(e) => e.stopPropagation()}>
         {canNav ? (
-          <button className="lbNav lbPrev" aria-label="Anterior" onClick={() => setI((v) => (v - 1 + list.length) % list.length)}>
+          <button
+            type="button"
+            className="lbNav lbPrev"
+            aria-label="Anterior"
+            onClick={() => setI((v) => (v - 1 + list.length) % list.length)}
+          >
             ‹
           </button>
         ) : null}
@@ -51,12 +66,22 @@ export default function Lightbox({ open, images, startIndex = 0, onClose }: Prop
         <img className="lbImg" src={src} alt="" />
 
         {canNav ? (
-          <button className="lbNav lbNext" aria-label="Următor" onClick={() => setI((v) => (v + 1) % list.length)}>
+          <button
+            type="button"
+            className="lbNav lbNext"
+            aria-label="Următor"
+            onClick={() => setI((v) => (v + 1) % list.length)}
+          >
             ›
           </button>
         ) : null}
 
-        <button className="lbClose" aria-label="Închide" onClick={onClose}>
+        <button
+          type="button"
+          className="lbClose"
+          aria-label="Închide"
+          onClick={onClose}
+        >
           ×
         </button>
 
@@ -64,7 +89,8 @@ export default function Lightbox({ open, images, startIndex = 0, onClose }: Prop
           {i + 1}/{list.length}
         </div>
       </div>
-    </div>,
-    document.body
+    </div>
   );
+
+  return createPortal(content, document.body);
 }
