@@ -193,17 +193,25 @@ export default function HomePage() {
     ],
   };
 
-  function openGallery(images: string[], startIndex = 0) {
-    setLbImages(images || []);
-    setLbStart(startIndex);
-    setLbOpen(true);
-  }
+function openGallery(images: string[], startIndex = 0) {
+  const y = window.scrollY;
 
-  function closeGallery() {
-    setLbOpen(false);
-    setLbImages([]);
-    setLbStart(0);
-  }
+  setLbImages(images || []);
+  setLbStart(startIndex);
+  setLbOpen(true);
+
+  requestAnimationFrame(() => {
+    window.scrollTo(0, y);
+    document.body.style.overflow = "hidden";
+  });
+}
+
+function closeGallery() {
+  setLbOpen(false);
+  setLbImages([]);
+  setLbStart(0);
+  document.body.style.overflow = "";
+}
 
   return (
     <main>
