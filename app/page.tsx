@@ -202,9 +202,21 @@ export default function HomePage() {
 
       <section className="hero">
         <div className="heroMedia" aria-hidden="true">
-          <video className="heroVideo" autoPlay muted loop playsInline preload="auto" poster="/brand/og-home.jpg" key="/brand/hero.mp4?v=2">
-            <source src="/brand/hero.mp4?v=2" type="video/mp4" />
-          </video>
+          <video
+  className="heroVideo"
+  autoPlay
+  muted
+  loop
+  playsInline
+  preload="auto"
+  poster="/brand/og-home.jpg"
+  onLoadedData={(e) => {
+    e.currentTarget.muted = true;
+    e.currentTarget.play().catch(() => {});
+  }}
+>
+  <source src="/brand/hero.mp4?v=3" type="video/mp4" />
+</video>
           <div className="heroOverlay" />
         </div>
 
