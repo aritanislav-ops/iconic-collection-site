@@ -16,6 +16,11 @@ export default function Lightbox({ open, images, startIndex = 0, onClose }: Prop
 
   useEffect(() => {
     if (!open) return;
+    setI(Math.min(Math.max(startIndex, 0), Math.max(list.length - 1, 0)));
+  }, [open, startIndex, list.length]);
+
+  useEffect(() => {
+    if (!open) return;
 
     const scrollY = window.scrollY;
     const prevOverflow = document.body.style.overflow;
@@ -81,3 +86,4 @@ export default function Lightbox({ open, images, startIndex = 0, onClose }: Prop
     </div>,
     document.body
   );
+}
