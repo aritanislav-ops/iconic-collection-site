@@ -193,24 +193,14 @@ export default function HomePage() {
     ],
   };
 
-useEffect(() => {
-  if (!open) return;
+function openGallery(images: string[], startIndex = 0) {
+  const active = document.activeElement as HTMLElement | null;
+  if (active) active.blur();
 
-  const prevOverflow = document.body.style.overflow;
-  document.body.style.overflow = "hidden";
-
-  function onKey(e: KeyboardEvent) {
-    if (e.key === "Escape") onClose();
-    if (e.key === "ArrowLeft") setI((v) => (v - 1 + list.length) % list.length);
-    if (e.key === "ArrowRight") setI((v) => (v + 1) % list.length);
-  }
-
-  window.addEventListener("keydown", onKey);
-  return () => {
-    window.removeEventListener("keydown", onKey);
-    document.body.style.overflow = prevOverflow;
-  };
-}, [open, list.length, onClose]);
+  setLbImages(images || []);
+  setLbStart(startIndex);
+  setLbOpen(true);
+}
 
 function closeGallery() {
   setLbOpen(false);
@@ -312,13 +302,14 @@ function closeGallery() {
 
               return (
                 <article key={m.slug} className="modelCard">
-                  <Link
-  href={`/modele/${m.slug}`}
+                  <button
+  type="button"
   className="modelImgBtn"
-  aria-label={`Vezi modelul: ${m.name}`}
+  onClick={() => openGallery(images, 0)}
+  aria-label={`Vezi imagini: ${m.name}`}
 >
   {cover ? <img className="modelCover" src={cover} alt={m.name} loading="lazy" /> : null}
-</Link>
+</button>
 
                   <div className="modelBody">
                     <div className="modelName">{m.name}</div>
