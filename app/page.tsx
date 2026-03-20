@@ -193,18 +193,24 @@ export default function HomePage() {
     ],
   };
 
-function openGallery(images: string[], startIndex = 0) {
-  const y = window.scrollY;
+useEffect(() => {
+  if (!open) return;
 
-  setLbImages(images || []);
-  setLbStart(startIndex);
-  setLbOpen(true);
+  const prevOverflow = document.body.style.overflow;
+  document.body.style.overflow = "hidden";
 
-  requestAnimationFrame(() => {
-    window.scrollTo(0, y);
-    document.body.style.overflow = "hidden";
-  });
-}
+  function onKey(e: KeyboardEvent) {
+    if (e.key === "Escape") onClose();
+    if (e.key === "ArrowLeft") setI((v) => (v - 1 + list.length) % list.length);
+    if (e.key === "ArrowRight") setI((v) => (v + 1) % list.length);
+  }
+
+  window.addEventListener("keydown", onKey);
+  return () => {
+    window.removeEventListener("keydown", onKey);
+    document.body.style.overflow = prevOverflow;
+  };
+}, [open, list.length, onClose]);
 
 function closeGallery() {
   setLbOpen(false);
