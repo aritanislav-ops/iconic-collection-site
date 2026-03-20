@@ -428,12 +428,9 @@ a{color:inherit;text-decoration:none}
 .modelGalleryImg{
   width:100%;
   height:260px;
-  object-fit:cover;
+  object-fit:contain;
   display:block;
-}
-
-@media (max-width: 920px){
-  .modelGalleryImg{ height:240px; }
+  background:#f8fafc;
 }
 
 /* LIGHTBOX (fullscreen) — o singură variantă */
