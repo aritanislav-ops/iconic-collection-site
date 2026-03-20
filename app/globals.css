@@ -422,15 +422,14 @@ a{color:inherit;text-decoration:none}
   cursor:pointer;
   border-radius:16px;
   overflow:hidden;
-  box-shadow: var(--shadow-strong);
+  box-shadow:none;
 }
 
 .modelGalleryImg{
   width:100%;
   height:260px;
-  object-fit:contain;
+  object-fit:cover;
   display:block;
-  background:#f8fafc;
 }
 
 .lbBackdrop{
