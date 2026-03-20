@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useMemo, useState } from "react";
+import { createPortal } from "react-dom";
 
 type Props = {
   open: boolean;
@@ -51,7 +52,7 @@ export default function Lightbox({ open, images, startIndex = 0, onClose }: Prop
   const canNav = list.length > 1;
   const src = list[i];
 
-  return (
+  return createPortal(
     <div className="lbRoot" role="dialog" aria-modal="true">
       <button className="lbBackdrop" aria-label="Închide" onClick={onClose} />
       <div className="lbStage">
@@ -77,6 +78,6 @@ export default function Lightbox({ open, images, startIndex = 0, onClose }: Prop
           {i + 1}/{list.length}
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
-}
