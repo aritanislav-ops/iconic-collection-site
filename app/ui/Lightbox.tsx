@@ -12,11 +12,12 @@ type Props = {
 
 export default function Lightbox({ open, images, startIndex = 0, onClose }: Props) {
   const list = useMemo(() => (images || []).filter(Boolean), [images]);
-  const [i, setI] = useState(startIndex);
+  const [i, setI] = useState(0);
 
   useEffect(() => {
     if (!open) return;
-    setI(Math.min(Math.max(startIndex, 0), Math.max(list.length - 1, 0)));
+    const safeIndex = Math.min(Math.max(startIndex, 0), Math.max(list.length - 1, 0));
+    setI(safeIndex);
   }, [open, startIndex, list.length]);
 
   useEffect(() => {
@@ -27,6 +28,7 @@ export default function Lightbox({ open, images, startIndex = 0, onClose }: Prop
 
     function onKey(e: KeyboardEvent) {
       if (e.key === "Escape") onClose();
+      if (list.length < 2) return;
       if (e.key === "ArrowLeft") setI((v) => (v - 1 + list.length) % list.length);
       if (e.key === "ArrowRight") setI((v) => (v + 1) % list.length);
     }
@@ -44,13 +46,8 @@ export default function Lightbox({ open, images, startIndex = 0, onClose }: Prop
   const src = list[i];
 
   const content = (
-    <div className="lbRoot" role="dialog" aria-modal="true">
-      <button
-        type="button"
-        className="lbBackdrop"
-        aria-label="Închide"
-        onClick={onClose}
-      />
+    <div className="lbRoot" role="dialog" aria-modal="true" aria-label="Galerie imagini">
+      <button type="button" className="lbBackdrop" aria-label="Închide" onClick={onClose} />
       <div className="lbStage" onClick={(e) => e.stopPropagation()}>
         {canNav ? (
           <button
@@ -76,12 +73,7 @@ export default function Lightbox({ open, images, startIndex = 0, onClose }: Prop
           </button>
         ) : null}
 
-        <button
-          type="button"
-          className="lbClose"
-          aria-label="Închide"
-          onClick={onClose}
-        >
+        <button type="button" className="lbClose" aria-label="Închide" onClick={onClose}>
           ×
         </button>
 
@@ -94,3 +86,4 @@ export default function Lightbox({ open, images, startIndex = 0, onClose }: Prop
 
   return createPortal(content, document.body);
 }
+``
