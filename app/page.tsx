@@ -202,8 +202,8 @@ export default function HomePage() {
 
       <section className="hero">
         <div className="heroMedia" aria-hidden="true">
-          <video className="heroVideo" autoPlay muted loop playsInline preload="metadata">
-            <source src="/brand/hero.mp4" type="video/mp4" />
+          <video className="heroVideo" autoPlay muted loop playsInline preload="auto" poster="/brand/og-home.jpg" key="/brand/hero.mp4?v=2">
+            <source src="/brand/hero.mp4?v=2" type="video/mp4" />
           </video>
           <div className="heroOverlay" />
         </div>
