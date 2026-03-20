@@ -209,13 +209,12 @@ export default function HomePage() {
   loop
   playsInline
   preload="auto"
-  poster="/brand/og-home.jpg"
-  onLoadedData={(e) => {
+  onCanPlay={(e) => {
     e.currentTarget.muted = true;
     e.currentTarget.play().catch(() => {});
   }}
 >
-  <source src="/brand/hero.mp4?v=4" type="video/mp4" />
+  <source src="/brand/hero.mp4?v=5" type="video/mp4" />
 </video>
           <div className="heroOverlay" />
         </div>
