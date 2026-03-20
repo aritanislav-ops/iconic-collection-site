@@ -1,9 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import React, { useState } from "react";
+import React from "react";
 import { site } from "../content/site";
-import Lightbox from "./ui/Lightbox";
 
 function CheckItem({ children }: { children: React.ReactNode }) {
   return (
@@ -15,9 +14,6 @@ function CheckItem({ children }: { children: React.ReactNode }) {
 }
 
 export default function HomePage() {
-  const [lbOpen, setLbOpen] = useState(false);
-  const [lbImages, setLbImages] = useState<string[]>([]);
-  const [lbStart, setLbStart] = useState(0);
 
   const homeSchema = {
     "@context": "https://schema.org",
@@ -193,22 +189,6 @@ export default function HomePage() {
     ],
   };
 
-function openGallery(images: string[], startIndex = 0) {
-  const active = document.activeElement as HTMLElement | null;
-  if (active) active.blur();
-
-  setLbImages(images || []);
-  setLbStart(startIndex);
-  setLbOpen(true);
-}
-
-function closeGallery() {
-  setLbOpen(false);
-  setLbImages([]);
-  setLbStart(0);
-  document.body.style.overflow = "";
-}
-
   return (
     <main>
       <script
@@ -302,14 +282,13 @@ function closeGallery() {
 
               return (
                 <article key={m.slug} className="modelCard">
-                  <button
-  type="button"
+                  <Link
   className="modelImgBtn"
-  onClick={() => openGallery(images, 0)}
-  aria-label={`Vezi imagini: ${m.name}`}
+  href={`/modele/${m.slug}`}
+  aria-label={`Vezi galeria modelului: ${m.name}`}
 >
   {cover ? <img className="modelCover" src={cover} alt={m.name} loading="lazy" /> : null}
-</button>
+</Link>
 
                   <div className="modelBody">
                     <div className="modelName">{m.name}</div>
@@ -558,8 +537,6 @@ function closeGallery() {
           </div>
         </div>
       </section>
-
-      <Lightbox open={lbOpen} images={lbImages} startIndex={lbStart} onClose={closeGallery} />
     </main>
   );
 }
