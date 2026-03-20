@@ -429,7 +429,11 @@ a{color:inherit;text-decoration:none}
   object-fit:cover;
   display:block;
 }
-
+.lbRoot{
+  position:fixed;
+  inset:0;
+  z-index:99999;
+}
 .lbBackdrop{
   position:absolute;
   inset:0;
@@ -441,6 +445,7 @@ a{color:inherit;text-decoration:none}
 .lbStage{
   position:absolute;
   inset:0;
+  z-index:100000;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -472,6 +477,7 @@ a{color:inherit;text-decoration:none}
   position:absolute;
   top:14px;
   right:14px;
+  z-index:100001;
   width:44px;
   height:44px;
   border-radius:999px;
@@ -487,6 +493,7 @@ a{color:inherit;text-decoration:none}
   position:absolute;
   top:50%;
   transform:translateY(-50%);
+  z-index:100001;
   width:56px;
   height:56px;
   border-radius:999px;
@@ -506,6 +513,7 @@ a{color:inherit;text-decoration:none}
   bottom:14px;
   left:50%;
   transform:translateX(-50%);
+  z-index:100001;
   padding:6px 10px;
   border-radius:999px;
   background:rgba(0,0,0,.35);
