@@ -32,7 +32,8 @@ export default function ModelePage() {
   return (
     <main className="container">
       <h1 className="pageTitle">Modele</h1>
-      <p className="pageLead">Alege un model și vezi galeria completă.</p>
+      <p className="pageLead">Case proiectate și executate corect, personalizate pentru terenul tău, conform reglementărilor urbanistice
+        Alege un model și vezi galeria completă.</p>
 
       <div className="modelsGrid">
         {site.models.map((m) => {
