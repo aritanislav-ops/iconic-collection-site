@@ -116,7 +116,29 @@ export const site = {
         "/brand/models/iconic-1story-woodskin/14.jpg",
       ],
     },
-    
+    {
+      slug: "iconic-2story-black MONOLITH",
+      name: "CASA PARTER-iCONiC 1-story black MONOLITH ",
+      summary: "Varianta black MONOLITH — casă contemporană cu arhitectură monolitică, fațadă dark, detalii premium și estetică minimalistă, definită de volume curate, contraste rafinate și prezență puternică.",
+      images: [
+        "/brand/models/iconic-2story-black MONOLITH /01.jpg",
+        "/brand/models/iconic-2story-black MONOLITH /02.jpg",
+        "/brand/models/iconic-2story-black MONOLITH /03.jpg",
+        "/brand/models/iconic-2story-black MONOLITH /04.jpg",
+        "/brand/models/iconic-2story-black MONOLITH /05.jpg",
+        "/brand/models/iconic-2story-black MONOLITH /06.jpg",
+        "/brand/models/iconic-2story-black MONOLITH /07.jpg",
+        "/brand/models/iconic-2story-black MONOLITH /08.jpg",
+        "/brand/models/iconic-2story-black MONOLITH /09.jpg",
+        "/brand/models/iconic-2story-black MONOLITH /10.jpg",
+        "/brand/models/iconic-2story-black MONOLITH /11.jpg",
+        "/brand/models/iconic-2story-black MONOLITH /12.jpg",
+        "/brand/models/iconic-2story-black MONOLITH /13.jpg",
+        "/brand/models/iconic-2story-black MONOLITH /14.jpg",
+        "/brand/models/iconic-2story-black MONOLITH /15.jpg",
+        "/brand/models/iconic-2story-black MONOLITH /16.jpg",        
+      ],
+    }, 
   ] as const,
 
   proces: {
