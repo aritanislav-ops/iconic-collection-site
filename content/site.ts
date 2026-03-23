@@ -118,7 +118,7 @@ export const site = {
     },
     {
       slug: "iconic-2story-black MONOLITH",
-      name: "CASA PARTER-iCONiC 1-story black MONOLITH ",
+      name: "CASA PARTER+1E-iCONiC 2-story black MONOLITH ",
       summary: "Varianta black MONOLITH — casă contemporană cu arhitectură monolitică, fațadă dark, detalii premium și estetică minimalistă, definită de volume curate, contraste rafinate și prezență puternică.",
       images: [
         "/brand/models/iconic-2story-black MONOLITH/01.jpg", 
