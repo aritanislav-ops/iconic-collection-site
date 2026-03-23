@@ -1,7 +1,7 @@
 export const site = {
   brandName: "iCONiC collection",
   siteUrl: "https://www.iconic-collection.ro",
-  headline: "Case proiectate corect, personalizate pe terenul tău, conform reglementărilor urbanistice.",
+  headline: "Case proiectate și executate corect, personalizate pentru terenul tău, conform reglementărilor urbanistice",
   subheadline:
     "Tu vii cu terenul și obiectivul, iar noi ne putem ocupa de ce ai nevoie: concept, studiu geotehnic, proiect complet (arhitectură, structură și instalații), documentații pentru autorizare, urmărire de șantier, dirigenție și execuție.",
   heroBadges: [
