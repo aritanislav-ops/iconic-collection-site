@@ -144,9 +144,6 @@ images: [
   "/brand/models/iconic-1story-black Scandinavia/20.jpg",
   "/brand/models/iconic-1story-black Scandinavia/21.jpg",
   "/brand/models/iconic-1story-black Scandinavia/22.jpg",
-  "/brand/models/iconic-1story-black Scandinavia/23.jpg",
-  "/brand/models/iconic-1story-black Scandinavia/24.jpg",
-  "/brand/models/iconic-1story-black Scandinavia/25.jpg"
  ],
 },
     
