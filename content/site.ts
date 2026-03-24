@@ -118,8 +118,8 @@ export const site = {
     },
 
 {
-slug: "iconic-1story-black Scandinavia",
-name: "Casă parter iCONiC 1-Story Black Scandinavia",
+slug: "iconic-1story-black-Scandinavia",
+name: "Casă parter iCONiC 1-Story black Scandinavia",
 summary: "Varianta BLACK — Casă modernă cu influență scandinavă, definită de volum clar, acoperiș și învelitoare/fațadă din tablă fălțuită neagră. Designul pune accent pe lumină naturală, vitrări ample, proporții curate și un aspect premium.",
 images: [
   "/brand/models/iconic-1story-black Scandinavia/01.jpg",
@@ -149,6 +149,7 @@ images: [
   "/brand/models/iconic-1story-black Scandinavia/25.jpg"
  ],
 },
+    
 {
   slug: "iconic-2story-black-monolith",
   name: "CASA cu ETAJ -iCONiC 2-story BLACK MONOLITH",
