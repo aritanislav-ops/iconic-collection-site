@@ -10,7 +10,8 @@ export const metadata: Metadata = {
     template: "%s | iCONiC collection",
   },
   description:
-    "Proiectare completă pentru casa ta, documentații pentru autorizare, coordonarea specialităților și execuție, adaptate terenului, cerințelor și bugetului tău.",
+    "Case proiectate și executate corect, personalizate pentru terenul tău, conform reglementărilor urbanistice.
+    Proiectare completă pentru casa ta, documentații pentru autorizare, coordonarea specialităților și execuție, adaptate terenului, cerințelor și bugetului tău.",
   alternates: {
     canonical: "/",
   },
