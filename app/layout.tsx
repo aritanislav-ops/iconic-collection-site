@@ -80,7 +80,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   CUI: RO 21409238 · Reg. Com.: J2007005795403 · Sediu: Bucuresti, Sector 3,
                   Str. Agatha Barsescu Nr.15B, Etaj 01 Biroul 7
                 </div>
-                <div>Email: office@aa-evoconstruct.ro</div>
+                <div>Email: contact@iconic-collection.ro</div>
               </div>
             </div>
 
