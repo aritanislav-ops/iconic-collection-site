@@ -146,6 +146,25 @@ images: [
   "/brand/models/iconic-1story-black Scandinavia/22.jpg",
  ],
 },
+
+{
+slug: "iconic-1story-WoodSkin-Scandinavia",
+name: "Casă parter iCONiC 1-Story WoodSkin Scandinavia",
+summary: "Varianta WoodSkin — Casă modernă cu influență scandinavă, fatada deschisa definită de volum clar, acoperiș și învelitoare/fațadă din tablă fălțuită neagră. Designul pune accent pe lumină naturală, vitrări ample, proporții curate și un aspect premium.",
+images: [
+  "/brand/models/iconic-1story-WoodSkin Scandinavia/01.jpg",
+  "/brand/models/iconic-1story-WoodSkin Scandinavia/02.jpg",
+  "/brand/models/iconic-1story-WoodSkin Scandinavia/03.jpg",
+  "/brand/models/iconic-1story-WoodSkin Scandinavia/04.jpg",
+  "/brand/models/iconic-1story-WoodSkin Scandinavia/05.jpg",
+  "/brand/models/iconic-1story-WoodSkin Scandinavia/06.jpg",
+  "/brand/models/iconic-1story-WoodSkin Scandinavia/07.jpg",
+  "/brand/models/iconic-1story-WoodSkin Scandinavia/08.jpg",
+  "/brand/models/iconic-1story-WoodSkin Scandinavia/09.jpg",
+  "/brand/models/iconic-1story-WoodSkin Scandinavia/10.jpg",
+  "/brand/models/iconic-1story-WoodSkin Scandinavia/11.jpg",
+ ],
+},
     
 {
   slug: "iconic-2story-black-monolith",
