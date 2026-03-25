@@ -1,4 +1,4 @@
-# Case proiectate corect, personalizate pe terenul tău, conform reglementărilor urbanistice
+# Case proiectate și executate corect, personalizate pentru terenul tău, conform reglementărilor urbanistice
 
 ## Pornire local
 npm install
