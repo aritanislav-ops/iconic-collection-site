@@ -189,6 +189,26 @@ images: [
     "/brand/models/iconic-2story-black MONOLITH/16.jpg",
   ],
 }
+
+{
+  slug: "iconic-Bucharest",
+  name: "CASA cu ETAJ -iCONiC-Bucharest",
+  summary: "Varianta BLACK MONOLITH — casă contemporană cu arhitectură monolitică, fațadă dark, detalii premium și estetică minimalistă, definită de volume curate, contraste rafinate și prezență puternică.",
+  images: [
+    "/brand/models/iconic-Bucharest/01.jpg",
+    "/brand/models/iconic-Bucharest/02.jpg",
+    "/brand/models/iconic-Bucharest/03.jpg",
+    "/brand/models/iconic-Bucharest/04.jpg",
+    "/brand/models/iconic-Bucharest/05.jpg",
+    "/brand/models/iconic-Bucharest/06.jpg",
+    "/brand/models/iconic-Bucharest/07.jpg",
+    "/brand/models/iconic-Bucharest/08.jpg",
+    "/brand/models/iconic-Bucharest/09.jpg",
+    "/brand/models/iconic-Bucharest/10.jpg",
+    "/brand/models/iconic-Bucharest/11.jpg",
+,
+  ],
+}
   ] as const,
 
   proces: {
