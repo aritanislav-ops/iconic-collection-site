@@ -188,7 +188,7 @@ images: [
     "/brand/models/iconic-2story-black MONOLITH/15.jpg",
     "/brand/models/iconic-2story-black MONOLITH/16.jpg",
   ],
-}
+},
 
 {
   slug: "iconic-Bucharest",
