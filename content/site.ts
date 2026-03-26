@@ -161,7 +161,8 @@ images: [
   "/brand/models/iconic-1story-WoodSkin Scandinavia/07.jpg",
   "/brand/models/iconic-1story-WoodSkin Scandinavia/08.jpg",
   "/brand/models/iconic-1story-WoodSkin Scandinavia/09.jpg",
-  "/brand/models/iconic-1story-WoodSkin Scandinavia/10.jpg",  
+  "/brand/models/iconic-1story-WoodSkin Scandinavia/10.jpg",
+  "/brand/models/iconic-1story-WoodSkin Scandinavia/11.jpg",
  ],
 },
     
