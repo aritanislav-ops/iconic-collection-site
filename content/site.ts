@@ -171,8 +171,8 @@ images: [
   summary: "Varianta Metropolitan Contemporan — casă cu eleganță contemporană, fațadă luminoasă cu o prezență rafinată modernistă.",
   images: [
     "/brand/models/iconic-Metropolitan/01.jpg",
-    "/brand/models/iconic-Metropolitant/02.jpg",
-    "/brand/models/iconic-Metropolitant/03.jpg",
+    "/brand/models/iconic-Metropolitan/02.jpg",
+    "/brand/models/iconic-Metropolitan/03.jpg",
     "/brand/models/iconic-Metropolitan/04.jpg",
     "/brand/models/iconic-Metropolitan/05.jpg",
     "/brand/models/iconic-Metropolitan/06.jpg",
