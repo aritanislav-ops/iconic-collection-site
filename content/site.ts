@@ -165,7 +165,24 @@ images: [
   "/brand/models/iconic-1story-WoodSkin Scandinavia/11.jpg",
  ],
 },
-    
+{
+  slug: "iconic-Metropolitan",
+  name: "CASA iCONiC-Metropolitan",
+  summary: "Varianta Metropolitan Contemporan — casă cu eleganță contemporană, fațadă luminoasă cu o prezență rafinată modernistă.",
+  images: [
+    "/brand/models/iconic-Metropolitan/01.jpg",
+    "/brand/models/iconic-Metropolitant/02.jpg",
+    "/brand/models/iconic-Metropolitant/03.jpg",
+    "/brand/models/iconic-Metropolitan/04.jpg",
+    "/brand/models/iconic-Metropolitan/05.jpg",
+    "/brand/models/iconic-Metropolitan/06.jpg",
+    "/brand/models/iconic-Metropolitan/07.jpg",
+    "/brand/models/iconic-Metropolitan/08.jpg",
+    "/brand/models/iconic-Metropolitan/09.jpg",
+    "/brand/models/iconic-Metropolitan/10.jpg",
+    "/brand/models/iconic-Metropolitan/11.jpg",  
+  ],
+},   
 {
   slug: "iconic-2story-black-monolith",
   name: "CASA cu ETAJ -iCONiC 2-story BLACK MONOLITH",
