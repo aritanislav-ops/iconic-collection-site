@@ -183,7 +183,6 @@ images: [
     "/brand/models/iconic-Metropolitan/11.jpg",  
   ],
 },
-
 {
   slug: "iconic-Metropolitan Prime",
   name: "CASA iCONiC-Metropolitan Prime",
