@@ -203,7 +203,8 @@ images: [
     "/brand/models/iconic-Metropolitan Prime/13.jpg", 
     "/brand/models/iconic-Metropolitan Prime/14.jpg", 
     "/brand/models/iconic-Metropolitan Prime/15.jpg", 
-    "/brand/models/iconic-Metropolitan Prime/16.jpg", 
+    "/brand/models/iconic-Metropolitan Prime/16.jpg",
+    "/brand/models/iconic-Metropolitan Prime/17.jpg",
   ],
 }, 
 {
