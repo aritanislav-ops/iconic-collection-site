@@ -184,7 +184,7 @@ images: [
   ],
 },
 {
-  slug: "iconic-Metropolitan Prime",
+  slug: "iconic-Metropolitan-Prime",
   name: "CASA iCONiC-Metropolitan Prime",
   summary: "Varianta Metropolitan Prime — casă cu eleganță contemporană, fațadă cu linii curate, cu o prezență rafinată și modernistă.",
   images: [
