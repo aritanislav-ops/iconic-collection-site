@@ -180,7 +180,10 @@ images: [
     "/brand/models/iconic-Metropolitan/08.jpg",
     "/brand/models/iconic-Metropolitan/09.jpg",
     "/brand/models/iconic-Metropolitan/10.jpg",
-    "/brand/models/iconic-Metropolitan/11.jpg",  
+    "/brand/models/iconic-Metropolitan/11.jpg",
+    "/brand/models/iconic-Metropolitan/12.jpg",
+    "/brand/models/iconic-Metropolitan/13.jpg",
+    "/brand/models/iconic-Metropolitan/14.jpg",
   ],
 },
 {
