@@ -418,27 +418,23 @@ a{color:inherit;text-decoration:none}
 .modelGalleryBtn{
   border:0;
   padding:0;
-  background:#fff;
+  background:transparent;
   cursor:pointer;
   border-radius:16px;
   overflow:hidden;
   box-shadow: var(--shadow-strong);
   display:block;
   width:100%;
+  aspect-ratio: 4 / 3;
 }
 
 .modelGalleryImg{
   width:100%;
-  height:320px;
+  height:100%;
   display:block;
-  object-fit:contain;
+  object-fit:cover;
   object-position:center;
-  background:#fff;
   transition:transform .25s ease;
-}
-
-.modelGalleryBtn:hover .modelGalleryImg{
-  transform:scale(1.02);
 }
 
 .lbRoot{
