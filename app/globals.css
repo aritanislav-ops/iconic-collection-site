@@ -431,8 +431,9 @@ a{color:inherit;text-decoration:none}
   width:100%;
   height:320px;
   display:block;
-  object-fit:cover;
+  object-fit:contain;
   object-position:center;
+  background:#fff;
   transition:transform .25s ease;
 }
 
