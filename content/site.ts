@@ -210,7 +210,21 @@ images: [
     "/brand/models/iconic-Metropolitan Prime/17.jpg",
     "/brand/models/iconic-Metropolitan Prime/18.jpg",
   ],
-}, 
+},
+
+
+{
+  slug: "iconic-CUBE FRAME",
+  name: "CASA iCONiC-CUBE FRAME",
+  summary: "Varianta CUBE FRAME — Casă premium, cu volumetrie curată și expresie contemporană.",
+  images: [
+    "/brand/models/iconic-CUBE FRAME/01.jpg",
+    "/brand/models/iconic-CUBE FRAME/02.jpg",
+    "/brand/models/iconic-CUBE FRAME/03.jpg",
+    "/brand/models/iconic-CUBE FRAME/04.jpg",
+  ],
+},
+    
 {
   slug: "iconic-2story-black-monolith",
   name: "CASA cu ETAJ -iCONiC 2-story BLACK MONOLITH",
