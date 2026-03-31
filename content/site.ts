@@ -186,6 +186,8 @@ images: [
     "/brand/models/iconic-Metropolitan/14.jpg",
   ],
 },
+
+  
 {
   slug: "iconic-Metropolitan-Prime",
   name: "CASA iCONiC-Metropolitan Prime",
@@ -264,6 +266,27 @@ images: [
   ],
 },
 
+{
+  slug: "iconic-2story-black-monolith-125",
+  name: "CASA cu ETAJ -iCONiC MONOLITH 125",
+  summary: "Varianta BLACK MONOLITH 125— casă creată pentru cei care caută claritate, ordine și un dialog vizual constant cu exteriorul, totul într-un pachet arhitectural de o eleganță atemporală.",
+  images: [
+    "/brand/models/iconic-2story-black MONOLITH 125/01.jpg",
+    "/brand/models/iconic-2story-black MONOLITH 125/02.jpg",
+    "/brand/models/iconic-2story-black MONOLITH 125/03.jpg",
+    "/brand/models/iconic-2story-black MONOLITH 125/04.jpg",
+    "/brand/models/iconic-2story-black MONOLITH 125/05.jpg",
+    "/brand/models/iconic-2story-black MONOLITH 125/06.jpg",
+    "/brand/models/iconic-2story-black MONOLITH 125/07.jpg",
+    "/brand/models/iconic-2story-black MONOLITH 125/08.jpg",
+    "/brand/models/iconic-2story-black MONOLITH 125/09.jpg",
+    "/brand/models/iconic-2story-black MONOLITH 125/10.jpg",
+    "/brand/models/iconic-2story-black MONOLITH 125/11.jpg",
+    "/brand/models/iconic-2story-black MONOLITH 125/12.jpg",
+  ],
+},
+
+    
 {
   slug: "iconic-Bucharest",
   name: "CASA iCONiC-Bucharest",
