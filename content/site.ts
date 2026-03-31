@@ -241,7 +241,6 @@ images: [
     "/brand/models/iconic-CUBE FRAME/04.jpg",
   ],
 },
-iconic-
 {
   slug: "iconic-Boxline-House",
   name: "CASA iCONiC-Boxline House",
