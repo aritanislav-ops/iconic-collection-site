@@ -241,7 +241,7 @@ images: [
     "/brand/models/iconic-CUBE FRAME/04.jpg",
   ],
 },
-    
+
 {
   slug: "iconic-2story-black-monolith",
   name: "CASA cu ETAJ -iCONiC 2-story BLACK MONOLITH",
