@@ -398,7 +398,6 @@ a{color:inherit;text-decoration:none}
   .featureRow{grid-template-columns:1fr;margin-top:-12px;}
   .modelsHeader{flex-direction:column;align-items:flex-start;}
   .modelsGrid{grid-template-columns:1fr;}
-  .modelCover{height:210px;}
 }
 
 /* MODEL GALLERY (pagina de model) */
