@@ -212,7 +212,22 @@ images: [
   ],
 },
 
-
+{
+  slug: "iconic-North-Line",
+  name: "CASA iCONiC-North Line",
+  summary: "Casă premium cu volumetrie clară, materiale naturale și o imagine arhitecturală calmă, coerentă și actuală.",
+  images: [
+    "/brand/models/iconic-North Line/01.jpg",
+    "/brand/models/iconic-North Line/02.jpg",
+    "/brand/models/iconic-North Line/03.jpg",
+    "/brand/models/iconic-North Line/04.jpg",
+    "/brand/models/iconic-North Line/05.jpg",
+    "/brand/models/iconic-North Line/06.jpg",
+    "/brand/models/iconic-North Line/07.jpg",
+    "/brand/models/iconic-North Line/08.jpg",
+    "/brand/models/iconic-North Line/09.jpg",
+  ],
+},
 {
   slug: "iconic-CUBE-FRAME",
   name: "CASA iCONiC-CUBE FRAME",
