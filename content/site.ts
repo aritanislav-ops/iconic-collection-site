@@ -214,7 +214,7 @@ images: [
 
 
 {
-  slug: "iconic-CUBE FRAME",
+  slug: "iconic-CUBE-FRAME",
   name: "CASA iCONiC-CUBE FRAME",
   summary: "Varianta CUBE FRAME — Casă premium, cu volumetrie curată și expresie contemporană.",
   images: [
