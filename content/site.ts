@@ -241,7 +241,25 @@ images: [
     "/brand/models/iconic-CUBE FRAME/04.jpg",
   ],
 },
-
+iconic-
+{
+  slug: "iconic-Boxline-House",
+  name: "CASA iCONiC-Boxline House",
+  summary: "Varianta Boxline House — casă tip boxline contemporană, fațadă luminoasă cu o prezență rafinată modernistă.",
+  images: [
+    "/brand/models/iconic-Boxline House/01.jpg",
+    "/brand/models/iconic-Boxline House/02.jpg",
+    "/brand/models/iconic-Boxline House/03.jpg",
+    "/brand/models/iconic-Boxline House/04.jpg",
+    "/brand/models/iconic-Boxline House/05.jpg",
+    "/brand/models/iconic-Boxline House/06.jpg",
+    "/brand/models/iconic-Boxline House/07.jpg",
+    "/brand/models/iconic-Boxline House/08.jpg",
+    "/brand/models/iconic-Boxline House/09.jpg",
+    "/brand/models/iconic-Boxline House/10.jpg",
+  ],
+},
+    
 {
   slug: "iconic-2story-black-monolith",
   name: "CASA cu ETAJ -iCONiC 2-story BLACK MONOLITH",
