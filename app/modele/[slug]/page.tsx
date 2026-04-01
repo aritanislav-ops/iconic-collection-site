@@ -35,12 +35,12 @@ export default function ModelPage({ params }: { params: { slug: string } }) {
           pentru terenul și cerințele clientului, pe baza documentațiilor de urbanism și a datelor specifice amplasamentului. Locuința are o arhitectură contemporană,
           cu vitraje ample și un limbaj minimalist premium. Proiectul este conceput ca un ansamblu coerent de arhitectură, structură, anvelopă, tâmplărie, finisaje și
           instalații, adaptat fiecărui teren și fiecărui beneficiar. 
-          Casa este gândită pentru siguranță, durabilitate, eficiență energetică și confort real. Dimensionarea structurală se realizează în conformitate cu norme seismice
-          riguroase, urmărind un răspuns structural preponderent ELASTIC inclusiv la acțiunea seismică asociată cutremurului cu interval mediu de recurență de 475 de ani, asrfel
-          degradările seismice tind catre ZERO. Durabilitatea este asigurată prin alegerea unor materiale de calitate, iar confortul și performanța energetică prin integrarea 
-          soluțiilor nZEB, a tehnologiilor SMART HOME, cu integrarea facilă a sistemelor de automatizare, robotizare și inteligență artificială(AI) cat si a sistemelor moderne
-          de climatizare, iluminat și control. Finisajele și echipările se personalizează astfel încât imaginea modelului să rămână coerentă, iar locuința să răspundă corect nevoilor
-          reale de utilizare.
+          Casa este gândită pentru siguranță, durabilitate, eficiență energetică și confort real. Structura de rezistentă principală este din beton armat, dimensionarea structurală
+          se realizează în conformitate cu norme seismice riguroase, urmărind un răspuns structural preponderent ELASTIC inclusiv la acțiunea seismică asociată cutremurului cu 
+          interval mediu de recurență de 475 de ani, astfel degradările seismice tind catre ZERO. Durabilitatea este asigurată prin alegerea unor materiale de calitate, 
+          iar confortul și performanța energetică prin integrarea soluțiilor nZEB, a tehnologiilor SMART HOME, cu integrarea facilă a sistemelor de automatizare, robotizare și
+          inteligență artificială(AI) cat si a sistemelor moderne de climatizare, iluminat și control. Finisajele și echipările se personalizează astfel încât imaginea modelului
+          să rămână coerentă, iar locuința să răspundă corect nevoilor reale de utilizare.
         </p>
       </div>
 
