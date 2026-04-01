@@ -426,10 +426,10 @@ export default function HomePage() {
             </div>
 
             <div className="listItem">
-              <h3>Pot veni doar cu terenul, fără să știu exact ce trebuie făcut?</h3>
+              <h3>Se poate face un proiect de la zero, pornind de la ideea mea?</h3>
               <p>
-                Da. Mulți clienți pornesc doar de la teren și de la ideea generală a casei dorite.
-                Îți explicăm clar pașii necesari și te ajutăm să înțelegi ce urmează.
+                Da. Mulți clienți vin cu o ideea generală a casei dorite.
+                Sigur că da! Ne bucurăm mereu când clienții vin cu propriile schițe sau concepte. Dacă modelele noastre nu sunt exact ceea ce cauți, echipa noastră va lucra alături de tine pentru a crea de la zero proiectul casei tale mult visate.
               </p>
             </div>
 
