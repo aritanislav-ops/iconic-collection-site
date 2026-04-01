@@ -80,13 +80,10 @@ export default function ModelePage() {
           background:#0b0f17;
         }
         .modelCover{
-          display:block;
-          width:100%;
-          height:240px;
-          object-fit:cover;
-        }
-        @media (max-width: 920px){
-          .modelCover{height:210px;}
+         display:block;
+         width:100%;
+         height:auto;
+         object-fit:contain;
         }
 
         .modelBodyLight{
