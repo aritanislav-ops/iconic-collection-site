@@ -321,6 +321,8 @@ images: [
     "/brand/models/iconic-MONOLITH URBAN-BRICK/10.jpg",
     "/brand/models/iconic-MONOLITH URBAN-BRICK/11.jpg",
     "/brand/models/iconic-MONOLITH URBAN-BRICK/12.jpg",
+    "/brand/models/iconic-MONOLITH URBAN-BRICK/13.jpg",
+    "/brand/models/iconic-MONOLITH URBAN-BRICK/14.jpg",
   ],
 },    
 {
