@@ -304,7 +304,25 @@ images: [
     "/brand/models/iconic-MONOLITH BRICK/14.jpg",
   ],
 },
-    
+{
+  slug: "iconic-MONOLITH-URBAN-BRICK",
+  name: "CASA cu ETAJ -iconic-MONOLITH URBAN-BRICK",
+  summary: "Varianta MONOLITH URBAN-BRICK — casă contemporană cu volumetrie monolitică, fațade minerale deschise și ancadramente negre adâncite, gândită pentru o imagine sobră, elegantă și premium",
+  images: [
+    "/brand/models/iconic-MONOLITH URBAN-BRICK/01.jpg",
+    "/brand/models/iconic-MONOLITH URBAN-BRICK/02.jpg",
+    "/brand/models/iconic-MONOLITH URBAN-BRICK/03.jpg",
+    "/brand/models/iconic-MONOLITH URBAN-BRICK/04.jpg",
+    "/brand/models/iconic-MONOLITH URBAN-BRICK/05.jpg",
+    "/brand/models/iconic-MONOLITH URBAN-BRICK/06.jpg",
+    "/brand/models/iconic-MONOLITH URBAN-BRICK/07.jpg",
+    "/brand/models/iconic-MONOLITH URBAN-BRICK/08.jpg",
+    "/brand/models/iconic-MONOLITH URBAN-BRICK/09.jpg",
+    "/brand/models/iconic-MONOLITH URBAN-BRICK/10.jpg",
+    "/brand/models/iconic-MONOLITH URBAN-BRICK/11.jpg",
+    "/brand/models/iconic-MONOLITH URBAN-BRICK/12.jpg",
+  ],
+},    
 {
   slug: "iconic-2story-black-monolith-125",
   name: "CASA cu ETAJ -iCONiC MONOLITH 125",
