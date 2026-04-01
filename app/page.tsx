@@ -418,7 +418,7 @@ export default function HomePage() {
               <h3>Sunt case modulare? Sunt case pe structură metalică ușoară cu profile laminate la rece?</h3>
               <p>
                 Nu sunt case modulare. Sunt case solide, proiectate ca structuri de rezistență reale, alese împreună 
-                cu clientul. Soluția standard poate fi realizată în sistem dual din beton armat, cu cadre, lamele/stâlpi și grinzi din beton armat,
+                cu clientul. Soluția standard poate fi realizată din beton armat, cu cadre, lamele/stâlpi și grinzi din beton armat,
                 iar pentru o execuție mai rapidă și un control superior al calității poate fi aleasă și varianta pe structură metalică clasică din
                 oțel S355(OL52), tratat corespunzător clasei de expunere. Nu folosim profile metalice laminate la rece și nu promovăm soluții ușoare de compromis.
                 Pentru variantele din beton armat, utilizăm beton C30/37(B500) și oțel-beton S500 clasa de ductilitate "C".
