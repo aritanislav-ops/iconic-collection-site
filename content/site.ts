@@ -355,7 +355,21 @@ images: [
     "/brand/models/iconic-Bucharest/10.jpg",
     "/brand/models/iconic-Bucharest/11.jpg",    
   ],
-}
+},
+
+{
+  slug: "iconic-Bucharest-PREMIUM",
+  name: "CASA iCONiC-Bucharest PREMIUM",
+  summary: "Varianta PREMIUM — casă cu eleganță si proporții echilibrate, fațadă luminoasă și detalii clasice simplificate, cu o prezență rafinată și atemporală.",
+  images: [
+    "/brand/models/iconic-Bucharest PREMIUM/01.jpg",
+    "/brand/models/iconic-Bucharest PREMIUM/02.jpg",
+    "/brand/models/iconic-Bucharest PREMIUM/03.jpg",
+    "/brand/models/iconic-Bucharest PREMIUM/04.jpg",
+    "/brand/models/iconic-Bucharest PREMIUM/05.jpg",
+    "/brand/models/iconic-Bucharest PREMIUM/06.jpg",
+  ],
+}    
   ] as const,
 
   proces: {
