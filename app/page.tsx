@@ -429,7 +429,7 @@ export default function HomePage() {
               <h3>Se poate face un proiect de la zero, pornind de la ideea mea?</h3>
               <p>
                 Da. Mulți clienți vin cu o ideea generală a casei dorite.
-                Sigur că da! Ne bucurăm mereu când clienții vin cu propriile schițe sau concepte. Dacă modelele noastre nu sunt exact ceea ce cauți, echipa noastră va lucra alături de tine pentru a crea de la zero proiectul casei tale mult visate.
+                Ne bucurăm mereu când clienții vin cu propriile schițe sau concepte. Dacă modelele noastre nu sunt exact ceea ce cauți, echipa noastră va lucra alături de tine pentru a crea de la zero proiectul casei tale mult visate.
               </p>
             </div>
 
