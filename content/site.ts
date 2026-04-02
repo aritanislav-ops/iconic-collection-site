@@ -368,6 +368,7 @@ images: [
     "/brand/models/iconic-Bucharest PREMIUM/04.jpg",
     "/brand/models/iconic-Bucharest PREMIUM/05.jpg",
     "/brand/models/iconic-Bucharest PREMIUM/06.jpg",
+    "/brand/models/iconic-Bucharest PREMIUM/07.jpg",
   ],
 }    
   ] as const,
