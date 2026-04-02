@@ -258,7 +258,18 @@ images: [
     "/brand/models/iconic-Boxline House/10.jpg",
   ],
 },
-    
+
+{
+  slug: "iconic-DISTRICT",
+  name: "CASA iCONiC-DISTRICT",
+  summary: "Varianta DISTRICT — Casă premium, cu volumetrie curată și expresie contemporană iberica.",
+  images: [
+    "/brand/models/iconic-DISTRICT/01.jpg",
+    "/brand/models/iconic-DISTRICT/02.jpg",
+    "/brand/models/iconic-DISTRICT/03.jpg",
+    "/brand/models/iconic-DISTRICT/04.jpg",
+  ],
+},
 {
   slug: "iconic-2story-black-monolith",
   name: "CASA cu ETAJ -iCONiC 2-story BLACK MONOLITH",
