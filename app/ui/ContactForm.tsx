@@ -112,7 +112,7 @@ export default function ContactForm() {
           <div style={{ display: 'flex', gap: '15px', flexWrap: 'wrap', fontSize: '0.9rem' }}>
             <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="checkbox" name="Documente[]" value="Cadastru" /> Cadastru</label>
             <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="checkbox" name="Documente[]" value="Certificat Urbanism" /> Certificat Urbanism</label>
-            <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="checkbox" name="Documente[]" value="Studiu Geotehnic" /> Studiu Geo</label>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="checkbox" name="Documente[]" value="Studiu Geotehnic" /> Studiu Geotehnic</label>
           </div>
         </div>
 
@@ -166,7 +166,8 @@ export default function ContactForm() {
             <option value="Parter + 2 Etaje + Mansardă (P+2E+M)">Parter + 2 Etaje + Mansardă (P+2E+M)</option>
             <option value="Parter + 3 Etaje (P+3E)">Parter + 3 Etaje (P+3E)</option>
             <option value="Parter + 3 Etaje + Mansardă (P+3E+M)">Parter + 3 Etaje + Mansardă (P+3E+M)</option>
-            <option value="Subsol/Demisol + Parter + Etaj (S+P+1E)">Subsol/Demisol + Parter + Etaj (S+P+1E)</option>
+            <option value="Subsol + Parter (S+P)">Subsol + Parter(S+P)</option>
+            <option value="S+P+1E">S+P+1E</option>           
             <option value="S+P+1E+M">S+P+1E+M</option>
             <option value="S+P+2E">S+P+2E</option>
             <option value="S+P+2E+M">S+P+2E+M</option>
