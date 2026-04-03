@@ -72,13 +72,10 @@ export default function ContactForm() {
           <input type="number" name="Suprafata_Teren_mp" placeholder="Ex: 500" />
         </label>
 
-        <div style={{ marginBottom: '15px' }}>
-          <span style={{ display: 'block', marginBottom: '8px', fontSize: '0.9rem', fontWeight: '500' }}>Are deschidere la drum?</span>
-          <div style={{ display: 'flex', gap: '15px', fontSize: '0.9rem' }}>
-            <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="radio" name="Deschidere_Drum" value="Da" /> Da</label>
-            <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="radio" name="Deschidere_Drum" value="Nu" /> Nu</label>
-          </div>
-        </div>
+        <label className="field">
+          <span>Deschidere la drum (aprox. metri liniari)</span>
+          <input type="text" name="Deschidere_Drum_Metri" placeholder="Ex: 18m (sau lăsați gol dacă nu știți)" />
+        </label>
 
         <div style={{ marginBottom: '15px' }}>
           <span style={{ display: 'block', marginBottom: '8px', fontSize: '0.9rem', fontWeight: '500' }}>Există calcane (construcții lipite pe limită)?</span>
@@ -130,13 +127,26 @@ export default function ContactForm() {
         <legend style={{ fontWeight: '600', padding: '0 10px', fontSize: '1.1rem' }}>3. Casa Visurilor</legend>
 
         <label className="field">
-          <span>Suprafață construită dorită (aprox.)</span>
-          <select name="Suprafata_Casa_Dorita" style={{ width: '100%', padding: '12px', border: '1px solid var(--border)', borderRadius: '4px', backgroundColor: 'transparent' }}>
+          <span>Suprafață construită desfășurată TOTALĂ dorită (aprox.)</span>
+          <select name="Suprafata_Desfasurata_Dorita" style={{ width: '100%', padding: '12px', border: '1px solid var(--border)', borderRadius: '4px', backgroundColor: 'transparent' }}>
             <option value="">Alege o variantă...</option>
             <option value="Sub 100 mp">Sub 100 mp</option>
             <option value="100 - 150 mp">100 - 150 mp</option>
             <option value="150 - 200 mp">150 - 200 mp</option>
-            <option value="Peste 200 mp">Peste 200 mp</option>
+            <option value="200 - 300 mp">200 - 300 mp</option>
+            <option value="Peste 300 mp">Peste 300 mp</option>
+          </select>
+        </label>
+
+        <label className="field">
+          <span>Amprenta la sol dorită (aprox.)</span>
+          <select name="Amprenta_La_Sol_Dorita" style={{ width: '100%', padding: '12px', border: '1px solid var(--border)', borderRadius: '4px', backgroundColor: 'transparent' }}>
+            <option value="">Alege o variantă...</option>
+            <option value="Sub 80 mp">Sub 80 mp</option>
+            <option value="80 - 120 mp">80 - 120 mp</option>
+            <option value="120 - 150 mp">120 - 150 mp</option>
+            <option value="Peste 150 mp">Peste 150 mp</option>
+            <option value="Nu știu sigur / Depinde de arhitect">Nu știu sigur / Las la decizia arhitectului</option>
           </select>
         </label>
 
@@ -144,10 +154,15 @@ export default function ContactForm() {
           <span>Regim de înălțime dorit</span>
           <select name="Regim_Inaltime" style={{ width: '100%', padding: '12px', border: '1px solid var(--border)', borderRadius: '4px', backgroundColor: 'transparent' }}>
             <option value="">Alege o variantă...</option>
-            <option value="Parter">Parter</option>
-            <option value="Parter + Etaj">Parter + Etaj</option>
-            <option value="Parter + Mansardă">Parter + Mansardă</option>
-            <option value="Demisol/Subsol + P + E">Demisol/Subsol + P + E</option>
+            <option value="Parter (P)">Parter (P)</option>
+            <option value="Parter + Mansardă (P+M)">Parter + Mansardă (P+M)</option>
+            <option value="Parter + Etaj (P+1E)">Parter + Etaj (P+1E)</option>
+            <option value="Subsol/Demisol + Parter + Etaj (S+P+1E)">Subsol/Demisol + Parter + Etaj (S+P+1E)</option>
+            <option value="S+P+1E+M">S+P+1E+M</option>
+            <option value="S+P+2E">S+P+2E</option>
+            <option value="S+P+2E+M">S+P+2E+M</option>
+            <option value="S+P+3E">S+P+3E</option>
+            <option value="S+P+3E+M">S+P+3E+M</option>
           </select>
         </label>
 
@@ -164,12 +179,22 @@ export default function ContactForm() {
 
         <label className="field">
           <span>Ce model din colecția noastră îți place?</span>
-          <input type="text" name="Model_Preferat_Iconic" placeholder="Ex: Poza 15, sau modelul de vilă modernă" />
+          <input list="modele-iconic" name="Model_Preferat_Iconic" placeholder="Alege din listă sau scrie liber..." />
+          <datalist id="modele-iconic">
+            <option value="Model Casă Parter" />
+            <option value="Model Vilă Modernă cu Etaj" />
+            <option value="Am propriul model (atașat mai sus)" />
+            <option value="Încă nu m-am decis" />
+          </datalist>
         </label>
         
         <label className="field">
           <span>Detalii suplimentare</span>
-          <textarea name="message" rows={4} placeholder="Alte cerințe speciale..." />
+          <textarea 
+            name="message" 
+            rows={5} 
+            defaultValue={"Bună ziua,\n\nAș dori o ofertă de preț pentru un proiect de casă, luând în considerare informațiile și preferințele selectate mai sus.\n\nAștept răspunsul dumneavoastră. Mulțumesc!"} 
+          />
         </label>
       </fieldset>
 
