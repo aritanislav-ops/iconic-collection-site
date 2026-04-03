@@ -134,7 +134,11 @@ export default function ContactForm() {
             <option value="100 - 150 mp">100 - 150 mp</option>
             <option value="150 - 200 mp">150 - 200 mp</option>
             <option value="200 - 300 mp">200 - 300 mp</option>
-            <option value="Peste 300 mp">Peste 300 mp</option>
+            <option value="300 - 400 mp">300 - 400 mp</option>
+            <option value="400 - 500 mp">400 - 500 mp</option>
+            <option value="500 - 1000 mp">500 - 1000 mp</option>
+            <option value="1000 - 2000 mp">1000 - 2000 mp</option>
+            <option value="Peste 2000 mp">Peste 2000 mp</option>
           </select>
         </label>
 
@@ -157,6 +161,11 @@ export default function ContactForm() {
             <option value="Parter (P)">Parter (P)</option>
             <option value="Parter + Mansardă (P+M)">Parter + Mansardă (P+M)</option>
             <option value="Parter + Etaj (P+1E)">Parter + Etaj (P+1E)</option>
+            <option value="Parter + Etaj + Mansardă (P+1E+M)">Parter + Etaj + Mansardă (P+1E+M)</option>
+            <option value="Parter + 2 Etaje (P+2E)">Parter + 2 Etaje (P+2E)</option>
+            <option value="Parter + 2 Etaje + Mansardă (P+2E+M)">Parter + 2 Etaje + Mansardă (P+2E+M)</option>
+            <option value="Parter + 3 Etaje (P+3E)">Parter + 3 Etaje (P+3E)</option>
+            <option value="Parter + 3 Etaje + Mansardă (P+3E+M)">Parter + 3 Etaje + Mansardă (P+3E+M)</option>
             <option value="Subsol/Demisol + Parter + Etaj (S+P+1E)">Subsol/Demisol + Parter + Etaj (S+P+1E)</option>
             <option value="S+P+1E+M">S+P+1E+M</option>
             <option value="S+P+2E">S+P+2E</option>
@@ -170,22 +179,26 @@ export default function ContactForm() {
           <span>Structura de rezistență</span>
           <select name="Structura_Rezistenta" style={{ width: '100%', padding: '12px', border: '1px solid var(--border)', borderRadius: '4px', backgroundColor: 'transparent' }}>
             <option value="">Alege o variantă...</option>
-            <option value="Cărămidă și Beton (Clasică)">Cărămidă și Beton (Clasică)</option>
-            <option value="Lemn">Lemn</option>
-            <option value="Structură Metalică">Structură Metalică</option>
+            <option value="Structură în cadre din beton armat">Structură în cadre din beton armat</option>
+            <option value="Structură din zidărie portantă și beton armat">Structură din zidărie portantă și beton armat</option>
+            <option value="Structură metalică clasică cu profile laminate la cald">Structură metalică clasică cu profile laminate la cald</option>
+            <option value="Structură din lemn">Structură din lemn</option>
             <option value="Vreau o recomandare">Vreau o recomandare</option>
           </select>
         </label>
 
+        <div style={{ marginBottom: '15px' }}>
+          <span style={{ display: 'block', marginBottom: '8px', fontSize: '0.9rem', fontWeight: '500' }}>Inspirație Model Casă</span>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '0.9rem' }}>
+             <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="radio" name="Tip_Model" value="Din Colecția Iconic" /> Îmi place un model din Colecția iCONiC (Specificați mai jos numele/nr pozei)</label>
+             <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="radio" name="Tip_Model" value="Model Propriu" /> Am propriul model (Atașat mai sus la Pasul 2)</label>
+             <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="radio" name="Tip_Model" value="Nehotărât" /> Încă nu m-am decis</label>
+          </div>
+        </div>
+
         <label className="field">
-          <span>Ce model din colecția noastră îți place?</span>
-          <input list="modele-iconic" name="Model_Preferat_Iconic" placeholder="Alege din listă sau scrie liber..." />
-          <datalist id="modele-iconic">
-            <option value="Model Casă Parter" />
-            <option value="Model Vilă Modernă cu Etaj" />
-            <option value="Am propriul model (atașat mai sus)" />
-            <option value="Încă nu m-am decis" />
-          </datalist>
+          <span>Dacă ai ales un model iCONiC, scrie numele lui sau numărul pozei:</span>
+          <input type="text" name="Nume_Poza_Model_Iconic" placeholder="Ex: Vilă Modernă Poza 04" />
         </label>
         
         <label className="field">
@@ -193,14 +206,34 @@ export default function ContactForm() {
           <textarea 
             name="message" 
             rows={5} 
-            defaultValue={"Bună ziua,\n\nAș dori o ofertă de preț pentru un proiect de casă, luând în considerare informațiile și preferințele selectate mai sus.\n\nAștept răspunsul dumneavoastră. Mulțumesc!"} 
+            defaultValue={"Bună ziua,\n\nAș dori o ofertă de preț luând în considerare informațiile și preferințele selectate mai sus.\n\nAștept răspunsul dumneavoastră. Mulțumesc!"} 
           />
         </label>
       </fieldset>
 
+      {/* Pachet Servicii Dorit */}
+      <fieldset style={{ marginBottom: '25px', padding: '20px', border: '1px solid #e2e8f0', borderRadius: '8px', backgroundColor: '#e6f2ff' }}>
+        <legend style={{ fontWeight: '600', padding: '0 10px', fontSize: '1.1rem', color: '#0056b3' }}>Pachetul de Servicii Dorit</legend>
+        
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '0.9rem' }}>
+          <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}>
+             <input type="radio" name="Pachet_Servicii" value="Proiect Complet" style={{marginTop: '3px'}}/> 
+             <span><strong>Proiect Complet</strong> (Arhitectură, Structură, Instalații)</span>
+          </label>
+          <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}>
+             <input type="radio" name="Pachet_Servicii" value="Proiect Complet + Avize/Autorizații" style={{marginTop: '3px'}}/> 
+             <span><strong>Proiect Complet + Avize & Autorizații</strong></span>
+          </label>
+          <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}>
+             <input type="radio" name="Pachet_Servicii" value="Pachet Complet All-Inclusive" style={{marginTop: '3px'}}/> 
+             <span><strong>Pachet Complet All-Inclusive</strong> (Proiectare + Avize + Autorizații + Execuție)</span>
+          </label>
+        </div>
+      </fieldset>
+
       {/* PASUL 4: Date de contact */}
       <fieldset style={{ marginBottom: '25px', padding: '20px', border: '1px solid #e2e8f0', borderRadius: '8px', backgroundColor: '#fcfcfc' }}>
-        <legend style={{ fontWeight: '600', padding: '0 10px', fontSize: '1.1rem' }}>4. Datele de contact</legend>
+        <legend style={{ fontWeight: '600', padding: '0 10px', fontSize: '1.1rem' }}>Datele de contact</legend>
 
         <label className="field">
           <span>Nume *</span>
