@@ -3,14 +3,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Standardul nostru",
   description:
-    "Află standardul nostru de proiectare și execuție: respectarea normelor în vigoare, siguranță seismică la 475 ani recurență, eficiență energetică nZEB și proiectare optimizată în interesul real al clientului.",
+    "Află standardul nostru de proiectare și execuție: siguranță seismică superioară la 475 ani (q=1), eficiență energetică nZEB și proiectare în interesul real al clientului.",
   alternates: {
     canonical: "/proces",
   },
   openGraph: {
     title: "Standardul nostru | iCONiC collection",
     description:
-      "Siguranță seismică tratată responsabil, eficiență nZEB și proiectare în interesul clientului. Descoperă standardul iCONiC.",
+      "Siguranță seismică tratată responsabil (q=1, 475 ani), eficiență nZEB și proiectare fără compromisuri. Descoperă standardul iCONiC.",
     url: "https://www.iconic-collection.ro/proces",
     images: ["/brand/og-home.jpg"],
   },
@@ -28,118 +28,149 @@ export default function ProcesPage() {
     <main className="container">
       <h1 className="pageTitle">Standardul nostru</h1>
       <p className="pageLead">
-        ICONIC s-a născut din dorința de a aduce standardul proiectelor mari într-un brand premium de locuințe, de a educa piața
-        în direcția arhitecturii și structurii de calitate și mai ales să simplificăm pentru client tot procesul construirii unei case,
-        printr-un produs complet, de la A la Z. Nu tratăm casele ca proiecte mici, ci ca proiecte care merită aceeași seriozitate tehnică, 
-        durabilitate și atenție la execuție ca un ansamblu rezidențial de anvergură sau o clădire office complexă.
-        Echipa noastră reunește arhitecți premiați și ingineri experți cu peste 20 de ani de experiență și peste 5 milioane de metri pătrați gestionați la nivel internațional.
+        iCONiC s-a născut din dorința de a aduce rigoarea proiectelor mari de infrastructură și office într-un brand premium de locuințe. 
+        Nu tratăm casele ca proiecte „mici”, ci ca investiții de o viață care merită o seriozitate tehnică absolută. 
+        Echipa noastră, cu peste 20 de ani de experiență internațională și 5 milioane de metri pătrați proiectați, 
+        reunește experți tehnici atestați și arhitecți care refuză compromisurile făcute doar pentru a reduce artificial costul inițial. 
+        Proiectăm pentru clienți, nu pentru constructori sau dezvoltatori.
       </p>
 
       <div className="list">
         <div className="listItem">
           <h3>1) Respectarea normelor în vigoare</h3>
           <p>
-            Proiectarea se face cu respectarea strictă a legislației românești, a reglementărilor tehnice și a Eurocodurilor. 
-            La cerere, utilizăm standarde americane (ASCE/AISC) pentru analize comparative, asigurându-ne că soluția finală 
-            depășește cerințele minime obligatorii din România.
+            Proiectarea se face cu respectarea strictă a legislației românești și a Eurocodurilor. 
+            Spre deosebire de practica uzuală, noi folosim reglementările tehnice ca pe un prag minim, 
+            integrând adesea standarde americane (ASCE/AISC) acolo unde acestea oferă o siguranță comparativă superioară.
           </p>
         </div>
 
         <div className="listItem">
-          <h3>2) Siguranță seismică tratată responsabil</h3>
+          <h3>2) Siguranță seismică: Protejăm Casa, nu doar Viața</h3>
           <p>
-            În timp ce norma standard prevede proiectarea pentru un cutremur cu perioadă de recurență de 225 de ani, 
-            <strong> Standardul iCONiC vizează o recurență de 475 de ani</strong>. Dimensionăm structura elastic, 
-            astfel încât degradările structurale să tindă spre ZERO, protejând nu doar viețile, ci și investiția pe termen lung.
+            Majoritatea clienților cred că o casă „conform normei” rămâne intactă după cutremur. 
+            <strong> Realitatea este diferită:</strong> Normativul actual (P100-1) garantează doar 
+            <em> siguranța vieții</em>. Asta înseamnă că, la un cutremur major, clădirea te protejează să nu mori, 
+            dar structura este proiectată să se degradeze (să se rupă controlat) pentru a absorbi energia, 
+            făcând casa adesea imposibil de reparat sau utilizat ulterior.
           </p>
+
+          <div style={{ marginTop: '15px', padding: '20px', borderLeft: '4px solid #0284c7', backgroundColor: '#f0f9ff', borderRadius: '0 8px 8px 0' }}>
+            <span style={{ display: 'block', fontWeight: '700', marginBottom: '12px', color: '#1e3a8a', fontSize: '1rem' }}>Standardul iCONiC: Proiectare în domeniu Elastic (q=1)</span>
+            <ul style={{ listStyleType: 'none', padding: 0, margin: 0, fontSize: '0.95rem', lineHeight: '1.6' }}>
+              <li style={{ marginBottom: '12px' }}>
+                <strong>🛑 Norma Clasică (q=5 - Proiectare Ductilă):</strong> Se bazează pe „factorul de comportare”. 
+                Se permite structurii să sufere degradări plastice (avarii structurale) pentru a reduce costul materialelor. 
+                Rezultă deplasări mari care distrug pereții, geamurile și finisajele.
+              </li>
+              <li style={{ marginBottom: '12px' }}>
+                <strong>💎 Standardul iCONiC (q=1 - Fără degradări):</strong> Noi dimensionăm structura să preia 
+                forța seismică integral în domeniul elastic. Casa nu „se rupe” pentru a rezista. 
+                Deplasările sunt minime, protejând atât structura, cât și toate componentele nestructurale (fațade, finisaje, instalații).
+              </li>
+              <li>
+                <strong>🌍 Recurența de 475 de ani:</strong> Deși normativul P100-1/2025 (care impune standardul european de 475 ani) 
+                este amânat sub presiunea dezvoltatorilor pentru a nu crește costurile, 
+                <strong> noi îl aplicăm deja</strong>. Nu limităm degradările doar la cutremure „curente”, 
+                ci ne asigurăm că locuința rămâne funcțională și după seismul maxim de proiectare.
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div className="listItem">
           <h3>3) Soluție structurală aleasă rațional</h3>
           <p>
-            Alegem sistemul constructiv (beton armat, zidărie portantă sau metal) în funcție de amprenta la sol, deschideri și 
-            comportarea dorită în timp. Nu facem compromisuri de dragul prețului inițial care pot genera fisuri sau tasări ulterioare.
+            Alegem sistemul constructiv în funcție de teren și arhitectură, fără a urmări artificii inutile. 
+            O conformare structurală judicioasă ne permite să obținem acea rigiditate necesară standardului q=1 
+            fără a irosi materiale, optimizând consumul acolo unde contează cu adevărat.
           </p>
         </div>
 
         <div className="listItem">
           <h3>4) Eficiență energetică și principii nZEB</h3>
           <p>
-            O casă nZEB (Nearly Zero Energy Building) nu este doar o bifă legală, ci o clădire cu facturi minime. 
-            Integrăm nativ pompe de căldură, ventilație cu recuperare de căldură și panouri fotovoltaice, eliminând 
-            punțile termice prin detalii de execuție riguroase.
+            O clădire nZEB (Nearly Zero Energy Building) reprezintă echilibrul perfect între izolare termică extremă 
+            și producție proprie de energie. Integrăm soluții active (pompe de căldură, fotovoltaice) și pasive 
+            (orientare solară, eliminarea punților termice) pentru un consum aproape de zero.
           </p>
         </div>
 
         <div className="listItem">
           <h3>5) Materiale și soluții tehnice alese corect</h3>
           <p>
-            Selectăm materialele după rolul lor structural și durabilitate, nu doar după preț. Urmărim folosirea produselor 
-            certificate, cu agremente tehnice, asigurând o îmbătrânire estetică și funcțională a clădirii.
+            Nu alegem materialele după cel mai mic preț de pe raft, ci după fiabilitatea lor în timp. 
+            Urmărim produse cu agremente tehnice clare, care asigură o întreținere minimă și o îmbătrânire 
+            estetică demnă de o locuință premium.
           </p>
         </div>
 
         <div className="listItem">
           <h3>6) Controlul calității în execuție</h3>
           <p>
-            În etapa de execuție, garantăm calitatea prin coordonare tehnică directă, dirigenție de șantier și verificări 
-            la faze determinante, asigurându-ne că realitatea din șantier corespunde 100% cu proiectul tehnic.
+            Atunci când asigurăm și execuția, transformăm proiectul tehnic într-o realitate fără erori. 
+            Verificăm riguros fiecare etapă de control, asigurându-ne că montajul instalațiilor și 
+            turnarea betonului respectă cu precizie milimetrică viziunea inginerului și a arhitectului.
           </p>
         </div>
 
         <div className="listItem">
           <h3>7) Echipă de execuție și responsabilități clare</h3>
           <p>
-            Lucrăm exclusiv cu echipe acreditate. Beneficiarul are o viziune clară asupra ierarhiei: cine execută, 
-            cine verifică și cine își asumă responsabilitatea legală pentru fiecare etapă.
+            Eliminăm ambiguitatea de pe șantier. Lucrăm cu specialiști acreditați (RTE, Dirigenție de șantier) 
+            și constructori calificați, oferind beneficiarului un singur punct de responsabilitate pentru întreg proiectul.
           </p>
         </div>
 
         <div className="listItem">
           <h3>8) Durabilitate și cost corect pe termen lung</h3>
           <p>
-            O economie de 5% la faza de proiectare sau materiale poate însemna costuri de mentenanță de 20% mai mari ulterior. 
-            Noi proiectăm pentru un cost total de proprietate (TCO) minim pe 50 de ani.
+            Evităm „economiile false”. O ieftinire a structurii sau a izolației la început se traduce în costuri 
+            uriașe de reparații sau facturi în viitor. Standardul iCONiC este despre un cost de exploatare corect și predictibil.
           </p>
         </div>
 
         <div className="listItem">
           <h3>9) Proiectare în interesul clientului</h3>
           <p>
-            Fiecare metru pătrat este optimizat pentru a elimina „spațiile moarte”. Regizăm pătrunderea luminii naturale 
-            în funcție de momentele zilei și de rutina familiei, transformând arhitectura într-un instrument de confort.
+            Arhitectura noastră este una de tip „lifestyle engineering”. Optimizăm fluxurile interioare pentru a 
+            elimina spațiile moarte și regizăm lumina naturală pentru a transforma casa într-un spațiu care 
+            lucrează activ pentru confortul și sănătatea ta mentală.
           </p>
         </div>
 
         <div className="listItem">
           <h3>10) Claritate contractuală și garanții</h3>
           <p>
-            Garanția este stabilită clar, acoperind atât viciile ascunse cât și conformitatea lucrărilor. Oferim 
-            documentația „As-Built” completă, esențială pentru revizii sau revânzarea imobilului la valoare maximă.
+            Oferim transparență totală asupra etapelor de recepție și a garanțiilor acordate. 
+            La finalul fiecărui proiect, beneficiarul primește documentația completă, esențială pentru 
+            istoricul clădirii și menținerea valorii de revânzare a imobilului.
           </p>
         </div>
 
         <div className="listItem">
-          <h3>11) Casă pregătită pentru Smart Home și AI</h3>
+          <h3>11) Smart Home & AI Ready</h3>
           <p>
-            Infrastructura este pregătită pentru integrarea sistemelor KNX, Loxone sau Home Assistant. Chiar dacă nu le 
-            instalați acum, traseele tehnice sunt prevăzute pentru senzori, monitorizare și management energetic viitor.
+            Pregătim infrastructura casei pentru tehnologiile de mâine. Chiar dacă nu instalați azi 
+            sisteme complexe, traseele tehnice sunt prevăzute pentru a permite automatizarea facilă 
+            a iluminatului, climatizării și securității, fără a sparge pereții ulterior.
           </p>
         </div>
 
         <div className="listItem">
-          <h3>12) Spații adaptabile (Flexibility by Design)</h3>
+          <h3>12) Spații adaptabile pentru viitor</h3>
           <p>
-            Gândim structura cu deschideri mari care permit recompartimentări ușoare. O casă iCONiC crește odată cu familia, 
-            permițând transformarea unui birou în dormitor sau invers, fără intervenții structurale majore.
+            Gândim structura astfel încât locuința să fie flexibilă. O cameră de oaspeți poate deveni 
+            un birou sau un hobby-room fără intervenții structurale, permițând casei să evolueze 
+            odată cu dinamica familiei tale.
           </p>
         </div>
 
         <div className="listItem">
           <h3>13) Longevity by default</h3>
           <p>
-            Proiectăm pentru viitor: mentenanță ușoară a fațadelor, acces facil la instalații pentru modernizări și o 
-            estetică atemporală care nu se va demoda, păstrând valoarea de piață a proprietății peste decenii.
+            Standardul iCONiC înseamnă „Longevity by design”. Nu proiectăm doar pentru momentul predării cheilor, 
+            ci pentru ca locuința să își păstreze valoarea, estetica și siguranța structurală peste 50 sau 100 de ani.
           </p>
         </div>
       </div>
