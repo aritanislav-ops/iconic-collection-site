@@ -311,50 +311,70 @@ export default function ContactForm() {
         </label>
       </fieldset>
 
-      {/* PASUL 5: Instalații, Apă și Smart Home */}
+      {/* PASUL 5: Instalații, Eficiență și Smart Home */}
       <fieldset style={{ marginBottom: '25px', padding: '20px', border: '1px solid #e2e8f0', borderRadius: '8px', backgroundColor: '#fcfcfc' }}>
         <legend style={{ fontWeight: '600', padding: '0 10px', fontSize: '1.1rem' }}>5. Instalații, Eficiență și Smart Home</legend>
-        <p style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '20px', marginTop: '-5px' }}>Bifați toate tehnologiile pe care doriți să le integrăm în proiect.</p>
+        <p style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '20px', marginTop: '-5px' }}>Selectați tehnologiile vizate pentru proiectul dumneavoastră.</p>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '20px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '25px' }}>
           
-          {/* Coloana 1: HVAC */}
+          {/* Coloana 1: Sursa și Încălzirea */}
           <div>
-            <span style={{ display: 'block', marginBottom: '10px', fontSize: '0.95rem', fontWeight: '600', color: '#334155' }}>Încălzire, Răcire & Energie</span>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '0.9rem' }}>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_HVAC[]" value="Centrală termică (gaz/electrică)" style={{marginTop: '3px'}}/> Centrală termică (gaz/electrică)</label>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_HVAC[]" value="Radiatoare / Calorifere clasice" style={{marginTop: '3px'}}/> Radiatoare / Calorifere clasice</label>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_HVAC[]" value="Aer Condiționat (AC clasic tip split)" style={{marginTop: '3px'}}/> Aer Condiționat (AC clasic tip split)</label>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_HVAC[]" value="Încălzire în pardoseală" style={{marginTop: '3px'}}/> Încălzire în pardoseală</label>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_HVAC[]" value="Pompă de căldură" style={{marginTop: '3px'}}/> Pompă de căldură</label>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_HVAC[]" value="Ventilație cu recuperare de căldură (VRC)" style={{marginTop: '3px'}}/> Ventilație cu recuperare de căldură (VRC)</label>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_HVAC[]" value="Panouri fotovoltaice / solare" style={{marginTop: '3px'}}/> Panouri fotovoltaice / solare</label>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_HVAC[]" value="Răcire în tavan / ventiloconvectoare" style={{marginTop: '3px'}}/> Răcire în tavan / ventiloconvectoare</label>
+            <span style={{ display: 'block', marginBottom: '12px', fontSize: '0.95rem', fontWeight: '700', color: '#1e293b' }}>Încălzire & Răcire (Termice)</span>
+            
+            <span style={{ display: 'block', marginBottom: '6px', fontSize: '0.85rem', fontWeight: '600', color: '#64748b' }}>Sursă de generare:</span>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', fontSize: '0.9rem', marginBottom: '12px' }}>
+              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sursa_Termica[]" value="Pompă de căldură" style={{marginTop: '3px'}}/> Pompă de căldură</label>
+              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sursa_Termica[]" value="Centrală pe gaz" style={{marginTop: '3px'}}/> Centrală termică pe gaz</label>
+              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sursa_Termica[]" value="Centrală electrică" style={{marginTop: '3px'}}/> Centrală electrică</label>
+            </div>
+
+            <span style={{ display: 'block', marginBottom: '6px', fontSize: '0.85rem', fontWeight: '600', color: '#64748b' }}>Sisteme de Încălzire:</span>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', fontSize: '0.9rem', marginBottom: '12px' }}>
+              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sistem_Incalzire[]" value="Încălzire în pardoseală" style={{marginTop: '3px'}}/> Încălzire în pardoseală</label>
+              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sistem_Incalzire[]" value="Radiatoare / Calorifere clasice" style={{marginTop: '3px'}}/> Radiatoare / Calorifere clasice</label>
+            </div>
+
+            <span style={{ display: 'block', marginBottom: '6px', fontSize: '0.85rem', fontWeight: '600', color: '#64748b' }}>Sisteme de Răcire:</span>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', fontSize: '0.9rem' }}>
+              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sistem_Racire[]" value="Răcire în tavan (sistem radiant)" style={{marginTop: '3px'}}/> Răcire în tavan (sistem radiant)</label>
+              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sistem_Racire[]" value="Ventiloconvectoare (pe apă răcită)" style={{marginTop: '3px'}}/> Ventiloconvectoare (pe apă răcită)</label>
+              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sistem_Racire[]" value="Aer Condiționat (sistem Split/VRV cu freon)" style={{marginTop: '3px'}}/> Aer Condiționat (Split/VRV cu freon)</label>
             </div>
           </div>
 
-          {/* Coloana 2: Apă */}
+          {/* Coloana 2: Ventilație, Energie & Apă */}
           <div>
-            <span style={{ display: 'block', marginBottom: '10px', fontSize: '0.95rem', fontWeight: '600', color: '#334155' }}>Management Apă Menajeră</span>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '0.9rem' }}>
+            <span style={{ display: 'block', marginBottom: '12px', fontSize: '0.95rem', fontWeight: '700', color: '#1e293b' }}>Ventilație, Energie & Apă Menajeră</span>
+            
+            <span style={{ display: 'block', marginBottom: '6px', fontSize: '0.85rem', fontWeight: '600', color: '#64748b' }}>Aer & Energie:</span>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', fontSize: '0.9rem', marginBottom: '12px' }}>
+              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sistem_Ventilatie[]" value="Ventilație cu recuperare de căldură (VRC)" style={{marginTop: '3px'}}/> Ventilație cu recuperare de căldură (VRC)</label>
+              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sistem_Energie[]" value="Panouri fotovoltaice (curent electric)" style={{marginTop: '3px'}}/> Panouri fotovoltaice (curent electric)</label>
+              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sistem_Energie[]" value="Panouri solare termice (apă caldă)" style={{marginTop: '3px'}}/> Panouri solare termice (apă caldă)</label>
+            </div>
+
+            <span style={{ display: 'block', marginBottom: '6px', fontSize: '0.85rem', fontWeight: '600', color: '#64748b' }}>Tratare & Distribuție Apă:</span>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', fontSize: '0.9rem' }}>
               <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Apa[]" value="Boiler bivalent/trivalent sau Pompă căldură ACM" style={{marginTop: '3px'}}/> Boiler bivalent/trivalent / Pompă ACM</label>
               <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Apa[]" value="Pompă de recirculare ACM (apă caldă instant)" style={{marginTop: '3px'}}/> Pompă recirculare ACM (apă caldă instant)</label>
               <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Apa[]" value="Stație de dedurizare" style={{marginTop: '3px'}}/> Stație de dedurizare</label>
               <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Apa[]" value="Filtrare osmoză inversă / Cărbune activ" style={{marginTop: '3px'}}/> Filtrare osmoză inversă / Cărbune activ</label>
               <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Apa[]" value="Filtru sedimente cu autocurățare" style={{marginTop: '3px'}}/> Filtru sedimente cu autocurățare</label>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Apa[]" value="Recuperator de căldură pe scurgere (Drain Water Heat Recovery)" style={{marginTop: '3px'}}/> Recuperator căldură pe scurgere duș</label>
+              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Apa[]" value="Recuperator de căldură pe scurgere" style={{marginTop: '3px'}}/> Recuperator căldură pe scurgere duș</label>
             </div>
           </div>
 
           {/* Coloana 3: Smart */}
           <div>
-            <span style={{ display: 'block', marginBottom: '10px', fontSize: '0.95rem', fontWeight: '600', color: '#334155' }}>Smart Home & AI Ready</span>
+            <span style={{ display: 'block', marginBottom: '12px', fontSize: '0.95rem', fontWeight: '700', color: '#1e293b' }}>Smart Home & AI Ready</span>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '0.9rem' }}>
               <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Smart[]" value="Sistem Smart Home integrat (ex: KNX, Loxone)" style={{marginTop: '3px'}}/> Sistem Smart Home integrat (ex: KNX)</label>
               <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Smart[]" value="Monitorizare inteligentă scurgeri apă (electrovalvă auto)" style={{marginTop: '3px'}}/> Monitorizare anti-inundație (AI Ready)</label>
               <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Smart[]" value="Control inteligent iluminat și jaluzele" style={{marginTop: '3px'}}/> Control inteligent iluminat și umbrire</label>
               <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Smart[]" value="Senzori de prezență pentru eficiență (lumini/apă)" style={{marginTop: '3px'}}/> Senzori de prezență eficiență (lumini/apă)</label>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Smart[]" value="Vreau consultanță completă de la arhitect" style={{marginTop: '3px'}}/> <strong>Vreau consultanță completă</strong></label>
+              <div style={{ borderTop: '1px solid #e2e8f0', margin: '8px 0' }}></div>
+              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Consultanta" value="Da" style={{marginTop: '3px'}}/> <strong style={{color: '#0284c7'}}>Vreau consultanță completă pentru instalații</strong></label>
             </div>
           </div>
 
