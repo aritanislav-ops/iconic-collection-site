@@ -193,6 +193,7 @@ export default function ContactForm() {
       <fieldset style={{ marginBottom: '25px', padding: '20px', border: '1px solid #e2e8f0', borderRadius: '8px', backgroundColor: '#fcfcfc' }}>
         <legend style={{ fontWeight: '600', padding: '0 10px', fontSize: '1.1rem' }}>4. Compartimentare și Exterior</legend>
 
+        <span style={{ display: 'block', marginBottom: '10px', fontSize: '0.95rem', fontWeight: '600', color: '#334155' }}>Încăperi Principale:</span>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))', gap: '15px', marginBottom: '20px' }}>
           <label className="field" style={{ marginBottom: '0' }}>
             <span>Nr. Livinguri</span>
@@ -215,14 +216,27 @@ export default function ContactForm() {
           </label>
         </div>
 
-        <div style={{ marginBottom: '15px' }}>
-          <span style={{ display: 'block', marginBottom: '8px', fontSize: '0.9rem', fontWeight: '500' }}>Alte încăperi dorite:</span>
-          <div style={{ display: 'flex', gap: '15px', flexWrap: 'wrap', fontSize: '0.9rem' }}>
-            <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="checkbox" name="Incaperi_Extra[]" value="Birou" /> Birou</label>
-            <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="checkbox" name="Incaperi_Extra[]" value="Dressing separat" /> Dressing separat</label>
-            <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="checkbox" name="Incaperi_Extra[]" value="Cameră tehnică / Spălătorie" /> Cameră tehnică / Spălătorie</label>
-            <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="checkbox" name="Incaperi_Extra[]" value="Cămară" /> Cămară</label>
-          </div>
+        <span style={{ display: 'block', marginBottom: '10px', fontSize: '0.95rem', fontWeight: '600', color: '#334155' }}>Încăperi Suplimentare:</span>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))', gap: '15px', marginBottom: '20px' }}>
+          <label className="field" style={{ marginBottom: '0' }}>
+            <span>Nr. Birouri</span>
+            <input type="number" name="Nr_Birouri" min="0" placeholder="Ex: 1" />
+          </label>
+
+          <label className="field" style={{ marginBottom: '0' }}>
+            <span>Nr. Dressinguri</span>
+            <input type="number" name="Nr_Dressinguri" min="0" placeholder="Ex: 1" />
+          </label>
+
+          <label className="field" style={{ marginBottom: '0' }}>
+            <span>C. Tehnice / Spălătorii</span>
+            <input type="number" name="Nr_Camere_Tehnice" min="0" placeholder="Ex: 1" />
+          </label>
+
+          <label className="field" style={{ marginBottom: '0' }}>
+            <span>Nr. Cămări</span>
+            <input type="number" name="Nr_Camari" min="0" placeholder="Ex: 1" />
+          </label>
         </div>
 
         <label className="field">
@@ -263,13 +277,17 @@ export default function ContactForm() {
                 <input type="number" name="Suprafata_Piscina_mp" placeholder="Suprafață (mp)" style={{ padding: '8px', border: '1px solid #cbd5e1', borderRadius: '4px', width: '130px' }} />
                 <input type="number" step="0.1" name="Adancime_Piscina_m" placeholder="Adâncime (m)" style={{ padding: '8px', border: '1px solid #cbd5e1', borderRadius: '4px', width: '130px' }} />
               </div>
-              <div style={{ display: 'flex', gap: '15px', marginLeft: '25px', marginTop: '5px', flexWrap: 'wrap' }}>
-                <select name="Tip_Piscina" style={{ padding: '6px', border: '1px solid #cbd5e1', borderRadius: '4px' }}>
-                  <option value="">Alege tipul...</option>
-                  <option value="Exterioară">Exterioară</option>
-                  <option value="Interioară">Interioară</option>
-                </select>
-                <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}>
+              <div style={{ display: 'flex', gap: '20px', marginLeft: '25px', marginTop: '5px', flexWrap: 'wrap', alignItems: 'center' }}>
+                <div style={{ display: 'flex', gap: '10px' }}>
+                  <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer', color: '#475569' }}>
+                    <input type="checkbox" name="Tip_Piscina[]" value="Exterioară" /> Exterioară
+                  </label>
+                  <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer', color: '#475569' }}>
+                    <input type="checkbox" name="Tip_Piscina[]" value="Interioară" /> Interioară
+                  </label>
+                </div>
+                <div style={{ borderLeft: '1px solid #cbd5e1', height: '20px' }}></div>
+                <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer', color: '#475569' }}>
                   <input type="checkbox" name="Piscina_Incalzita" value="Da" /> Încălzită
                 </label>
               </div>
