@@ -395,7 +395,7 @@ export default function ContactForm() {
         </div>
 
         <label className="field">
-          <span>Dacă ai ales un model iCONiC, scrie numele lui sau numărul pozei:</span>
+          <span>Dacă ai ales un model iCONiC, scrie numele lui si numărul pozei:</span>
           <input type="text" name="Nume_Poza_Model_Iconic" placeholder="Ex: Vilă Modernă Poza 04" />
         </label>
         
