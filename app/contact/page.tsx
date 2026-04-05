@@ -29,7 +29,7 @@ export default function ContactPage() {
   // Preluăm numărul curat, fără spații, optimizat pentru SEO și AI
   const phoneHref = 'phoneLink' in site.contact 
     ? String((site.contact as any).phoneLink) 
-    : String(site.contact.phone).replace(/\s+/g, "");
+    : String((site.contact as any).phone).replace(/\s+/g, "");
 
   return (
     <main className="contact">
