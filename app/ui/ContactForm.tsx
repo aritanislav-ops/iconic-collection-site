@@ -67,23 +67,67 @@ export default function ContactForm() {
           <input type="text" name="Localitate" placeholder="Ex: Corbeanca, Ilfov" />
         </label>
 
-        <label className="field">
-          <span>Suprafața terenului (aprox. mp)</span>
-          <input type="number" name="Suprafata_Teren_mp" placeholder="Ex: 500" />
-        </label>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '15px', marginBottom: '15px' }}>
+          <label className="field" style={{ marginBottom: '0' }}>
+            <span>Suprafața terenului (aprox. mp)</span>
+            <input type="number" name="Suprafata_Teren_mp" placeholder="Ex: 500" />
+          </label>
 
-        <label className="field">
-          <span>Deschidere la drum (aprox. metri liniari)</span>
-          <input type="text" name="Deschidere_Drum_Metri" placeholder="Ex: 18m (sau lăsați gol dacă nu știți)" />
-        </label>
+          <label className="field" style={{ marginBottom: '0' }}>
+            <span>Deschidere la drum (metri liniari)</span>
+            <input type="text" name="Deschidere_Drum_Metri" placeholder="Ex: 18m" />
+          </label>
+        </div>
+
+        {/* Topografie și Demolări */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '20px', marginBottom: '15px', padding: '15px', backgroundColor: '#f8fafc', borderRadius: '6px', border: '1px solid #e2e8f0' }}>
+          
+          <div>
+            <span style={{ display: 'block', marginBottom: '8px', fontSize: '0.9rem', fontWeight: '600', color: '#334155' }}>Topografia terenului:</span>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '0.9rem' }}>
+              <label style={{ display: 'flex', flexDirection: 'column', cursor: 'pointer' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+                  <input type="radio" name="Topografie_Teren" value="Complet Plat" /> <strong>Complet Plat</strong>
+                </div>
+                <span style={{ fontSize: '0.8rem', color: '#64748b', marginLeft: '20px' }}>Nu necesită fundații în trepte sau lucrări speciale de terasament.</span>
+              </label>
+              <label style={{ display: 'flex', flexDirection: 'column', cursor: 'pointer' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+                  <input type="radio" name="Topografie_Teren" value="Ușor Înclinat / Pantă" /> <strong>Ușor Înclinat / Pantă</strong>
+                </div>
+                <span style={{ fontSize: '0.8rem', color: '#64748b', marginLeft: '20px' }}>Poate necesita ziduri de sprijin, fundații în trepte și costuri suplimentare de structură.</span>
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <span style={{ display: 'block', marginBottom: '8px', fontSize: '0.9rem', fontWeight: '600', color: '#334155' }}>Construcții existente:</span>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '0.9rem' }}>
+              <label style={{ display: 'flex', flexDirection: 'column', cursor: 'pointer' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+                  <input type="radio" name="Constructii_Existente" value="Teren Liber" /> <strong>Teren Liber</strong>
+                </div>
+                <span style={{ fontSize: '0.8rem', color: '#64748b', marginLeft: '20px' }}>Nu necesită proceduri suplimentare.</span>
+              </label>
+              <label style={{ display: 'flex', flexDirection: 'column', cursor: 'pointer' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+                  <input type="radio" name="Constructii_Existente" value="Necesită Demolare" /> <strong>Necesită Demolare</strong>
+                </div>
+                <span style={{ fontSize: '0.8rem', color: '#64748b', marginLeft: '20px' }}>Vom include în ofertă Proiectul de Demolare (DTAD), obligatoriu pentru autorizație.</span>
+              </label>
+            </div>
+          </div>
+
+        </div>
 
         <div style={{ marginBottom: '15px' }}>
-          <span style={{ display: 'block', marginBottom: '8px', fontSize: '0.9rem', fontWeight: '500' }}>Există calcane (construcții lipite pe limită)?</span>
+          <span style={{ display: 'block', marginBottom: '8px', fontSize: '0.9rem', fontWeight: '500' }}>Există calcane (construcții lipite pe limita de proprietate)?</span>
           <div style={{ display: 'flex', gap: '15px', flexWrap: 'wrap', fontSize: '0.9rem' }}>
             <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="radio" name="Calcane" value="Da" /> Da</label>
             <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="radio" name="Calcane" value="Nu" /> Nu</label>
             <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="radio" name="Calcane" value="Nu știu sigur" /> Nu știu sigur</label>
           </div>
+          <span style={{ display: 'block', fontSize: '0.8rem', color: '#64748b', marginTop: '4px' }}>Construirea la calcan necesită expertiză tehnică pentru clădirea vecină și măsuri speciale de protecție la săpătură.</span>
         </div>
 
         <label className="field">
@@ -303,7 +347,7 @@ export default function ContactForm() {
         </label>
       </fieldset>
 
-      {/* PASUL 5: Instalații, Eficiență și Smart Home — VERSIUNE COMPLETĂ */}
+      {/* PASUL 5: Instalații, Eficiență și Smart Home */}
       <fieldset style={{ marginBottom: '25px', padding: '20px', border: '1px solid #e2e8f0', borderRadius: '8px', backgroundColor: '#fcfcfc' }}>
         <legend style={{ fontWeight: '600', padding: '0 10px', fontSize: '1.1rem' }}>5. Instalații, Eficiență și Smart Home</legend>
         <p style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '20px', marginTop: '-5px' }}>
@@ -464,15 +508,72 @@ export default function ContactForm() {
 
       </fieldset>
 
-      {/* PASUL 6: Model și Mesaj */}
+      {/* PASUL 6: Pachetul de Servicii și Finisaje */}
+      <fieldset style={{ marginBottom: '25px', padding: '20px', border: '1px solid #e2e8f0', borderRadius: '8px', backgroundColor: '#e6f2ff' }}>
+        <legend style={{ fontWeight: '600', padding: '0 10px', fontSize: '1.1rem', color: '#0056b3' }}>6. Pachetul de Servicii Dorit</legend>
+        
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', fontSize: '0.9rem', marginBottom: '20px' }}>
+          
+          <label style={{ display: 'flex', flexDirection: 'column', cursor: 'pointer' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <input type="radio" name="Pachet_Servicii" value="Proiect Complet" /> 
+              <span><strong>Proiect Complet (DTAC + PT)</strong></span>
+            </div>
+            <span style={{ fontSize: '0.8rem', color: '#64748b', marginLeft: '22px' }}>Include Arhitectură, Structură de rezistență și Instalații (fără obținere avize).</span>
+          </label>
+
+          <label style={{ display: 'flex', flexDirection: 'column', cursor: 'pointer' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <input type="radio" name="Pachet_Servicii" value="Proiect Complet + Avize/Autorizații" /> 
+              <span><strong>Proiect Complet + Avize &amp; Autorizații</strong></span>
+            </div>
+            <span style={{ fontSize: '0.8rem', color: '#64748b', marginLeft: '22px' }}>Ne ocupăm noi de birocrație: depunere acte, obținere avize și autorizația de construire.</span>
+          </label>
+
+          <label style={{ display: 'flex', flexDirection: 'column', cursor: 'pointer' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <input type="radio" name="Pachet_Servicii" value="Pachet Complet All-Inclusive" /> 
+              <span><strong>Pachet Complet All-Inclusive (Proiectare + Execuție)</strong></span>
+            </div>
+            <span style={{ fontSize: '0.8rem', color: '#64748b', marginLeft: '22px' }}>Vă predăm casa la cheie, exact ca în randări. Gândim proiectul tehnic direct corelat cu bugetul de execuție.</span>
+          </label>
+        </div>
+
+        {/* Câmpuri suplimentare pentru claritate */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px', padding: '15px', backgroundColor: '#fff', borderRadius: '6px', border: '1px solid #bfdbfe' }}>
+          
+          <label className="field" style={{ marginBottom: '0' }}>
+            <span style={{ fontSize: '0.9rem', fontWeight: '600', color: '#1e3a8a' }}>Design Interior (Opțional)</span>
+            <select name="Design_Interior" style={{ width: '100%', padding: '10px', border: '1px solid var(--border)', borderRadius: '4px', backgroundColor: 'transparent', fontSize: '0.9rem' }}>
+              <option value="">Alegeți o opțiune...</option>
+              <option value="Doresc ofertă separată pentru Design Interior">Doresc ofertă separată (randări 3D, mobilier, lumini)</option>
+              <option value="Nu doresc Design Interior în această etapă">Nu doresc în această etapă</option>
+            </select>
+          </label>
+
+          <label className="field" style={{ marginBottom: '0' }}>
+            <span style={{ fontSize: '0.9rem', fontWeight: '600', color: '#1e3a8a' }}>Nivel Finisaje (Pentru All-Inclusive)</span>
+            <select name="Nivel_Finisaje" style={{ width: '100%', padding: '10px', border: '1px solid var(--border)', borderRadius: '4px', backgroundColor: 'transparent', fontSize: '0.9rem' }}>
+              <option value="">Alegeți o opțiune...</option>
+              <option value="Standard (Bune, accesibile)">Standard (Calitate bună, finisaje uzuale pe piață)</option>
+              <option value="Premium (Materiale superioare)">Premium (Lemn masiv/stratificat, ceramică format mare, baterii premium)</option>
+              <option value="Lux (Materiale exclusiviste)">Lux (Piatră naturală, marmură, sisteme custom, uși filomuro)</option>
+              <option value="Nu sunt decis">Nu sunt decis încă</option>
+            </select>
+          </label>
+
+        </div>
+      </fieldset>
+
+      {/* PASUL 7: Inspirație și Detalii */}
       <fieldset style={{ marginBottom: '25px', padding: '20px', border: '1px solid #e2e8f0', borderRadius: '8px', backgroundColor: '#fcfcfc' }}>
-        <legend style={{ fontWeight: '600', padding: '0 10px', fontSize: '1.1rem' }}>6. Inspirație și Detalii</legend>
+        <legend style={{ fontWeight: '600', padding: '0 10px', fontSize: '1.1rem' }}>7. Inspirație și Detalii Suplimentare</legend>
 
         <div style={{ marginBottom: '15px' }}>
           <span style={{ display: 'block', marginBottom: '8px', fontSize: '0.9rem', fontWeight: '500' }}>Inspirație Model Casă</span>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '0.9rem' }}>
             <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="radio" name="Tip_Model" value="Din Colecția Iconic" /> Îmi place un model din Colecția iCONiC (Specificați mai jos numele/nr pozei)</label>
-            <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="radio" name="Tip_Model" value="Model Propriu" /> Am propriul model (Atașat mai sus la Pasul 2)</label>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="radio" name="Tip_Model" value="Model Propriu" /> Am propriul model (Atașat link mai sus la Pasul 2)</label>
             <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="radio" name="Tip_Model" value="Nehotărât" /> Încă nu m-am decis</label>
           </div>
         </div>
@@ -483,7 +584,7 @@ export default function ContactForm() {
         </label>
 
         <label className="field">
-          <span>Detalii suplimentare</span>
+          <span>Detalii suplimentare, întrebări sau viziunea ta:</span>
           <textarea
             name="message"
             rows={5}
@@ -492,40 +593,24 @@ export default function ContactForm() {
         </label>
       </fieldset>
 
-      {/* Pachet Servicii Dorit */}
-      <fieldset style={{ marginBottom: '25px', padding: '20px', border: '1px solid #e2e8f0', borderRadius: '8px', backgroundColor: '#e6f2ff' }}>
-        <legend style={{ fontWeight: '600', padding: '0 10px', fontSize: '1.1rem', color: '#0056b3' }}>Pachetul de Servicii Dorit</legend>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '0.9rem' }}>
-          <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}>
-            <input type="radio" name="Pachet_Servicii" value="Proiect Complet" style={{ marginTop: '3px' }} />
-            <span><strong>Proiect Complet</strong> (Arhitectură, Structură, Instalații)</span>
-          </label>
-          <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}>
-            <input type="radio" name="Pachet_Servicii" value="Proiect Complet + Avize/Autorizații" style={{ marginTop: '3px' }} />
-            <span><strong>Proiect Complet + Avize &amp; Autorizații</strong></span>
-          </label>
-          <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}>
-            <input type="radio" name="Pachet_Servicii" value="Pachet Complet All-Inclusive" style={{ marginTop: '3px' }} />
-            <span><strong>Pachet Complet All-Inclusive</strong> (Proiectare + Avize + Autorizații + Execuție)</span>
-          </label>
-        </div>
-      </fieldset>
-
-      {/* PASUL 7: Date de contact */}
+      {/* PASUL 8: Date de contact */}
       <fieldset style={{ marginBottom: '25px', padding: '20px', border: '1px solid #e2e8f0', borderRadius: '8px', backgroundColor: '#fcfcfc' }}>
         <legend style={{ fontWeight: '600', padding: '0 10px', fontSize: '1.1rem' }}>Datele de contact</legend>
-        <label className="field">
-          <span>Nume *</span>
-          <input type="text" name="name" required />
-        </label>
-        <label className="field">
-          <span>Email *</span>
-          <input type="email" name="email" required />
-        </label>
-        <label className="field">
-          <span>Telefon *</span>
-          <input type="tel" name="phone" required />
-        </label>
+        
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '15px' }}>
+          <label className="field" style={{ marginBottom: '0' }}>
+            <span>Numele complet *</span>
+            <input type="text" name="name" required />
+          </label>
+          <label className="field" style={{ marginBottom: '0' }}>
+            <span>Email *</span>
+            <input type="email" name="email" required />
+          </label>
+          <label className="field" style={{ marginBottom: '0' }}>
+            <span>Telefon *</span>
+            <input type="tel" name="phone" required />
+          </label>
+        </div>
       </fieldset>
 
       <label className="consent">
@@ -539,7 +624,7 @@ export default function ContactForm() {
         {state === "sending" ? "TRIMIT..." : "SOLICITĂ OFERTA"}
       </button>
 
-      {state === "ok" ? <div className="formOk" style={{ marginTop: '15px' }}>Mesaj trimis! Îți răspundem cât mai repede.</div> : null}
+      {state === "ok" ? <div className="formOk" style={{ marginTop: '15px' }}>Mesaj trimis cu succes! Îți răspundem în cel mai scurt timp.</div> : null}
       {state === "err" ? <div className="formErr" style={{ marginTop: '15px' }}>{errMsg}</div> : null}
     </form>
   );
