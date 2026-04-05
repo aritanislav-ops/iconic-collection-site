@@ -408,7 +408,8 @@ images: [
 
 contact: {
   title: "Hai să discutăm despre proiectul tău",
-  phone: "+40 741 259 236",
+  phone: "0741 259 236",
+  phoneLink: "+40741259236",
   email: "contact@iconic-collection.ro",
   note: "Dacă ai deja terenul sau doar ideea de la care vrei să pornești, ne poți scrie. Îți răspundem clar și îți spunem ce pași urmează.",
   address: "Sector 3, Str. Agatha Bârsescu Nr. 15B, Etaj 01, Biroul 7, București",
