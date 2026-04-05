@@ -35,7 +35,7 @@ export default function ProcesPage() {
         aceeași atenție la durabilitate, confort și execuție. Portofoliul nostru nu se oprește la locuințe unifamiliale: proiectăm
         și ansambluri rezidențiale ample, office, hotelier, industrial, energetic și proiecte speciale, inclusiv în colaborări internaționale.
         Proiectăm pentru siguranță, durabilitate, eficiență și avantajul real al clientului, cu respectarea normelor în vigoare și fără compromisuri făcute
-        doar pentru a reduce artificial costul inițial. Echipa are peste 20 de ani de experiență în țară și la nivel internațional și peste 250 de milioane
+        doar pentru a reduce artificial costul inițial. Echipa are peste 20 de ani de experiență în țară și la nivel internațional și peste 5 de milioane
         de metri pătrați proiectați și executați. Reunim arhitecți premiați, cu experiență, membri OAR, și ingineri experți tehnici atestați, membri AICPS,
         formați în proiecte mari și complexe, inclusiv la nivel internațional. Fiecare proiect este tratat cu același standard: rigoare, responsabilitate 
         și soluții corecte pe termen lung.
