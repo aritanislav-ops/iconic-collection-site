@@ -44,7 +44,7 @@ export default function ContactForm() {
   }
 
   return (
-    <form className="contactForm" action={FORM_ENDPOINT} method="POST" encType="multipart/form-data" onSubmit={onSubmit}>
+    <form className="contactForm" action={FORM_ENDPOINT} method="POST" onSubmit={onSubmit}>
       <p className="formLead">
         Completând acest formular ne ajuți să înțelegem exact ce îți dorești și să îți oferim o estimare corectă. Nu este obligatoriu să ai toate detaliile acum.
       </p>
@@ -117,8 +117,8 @@ export default function ContactForm() {
         </div>
 
         <label className="field" style={{ marginBottom: '0' }}>
-          <span>Atașează documente/poze (Opțional)</span>
-          <input type="file" name="Fisiere_Atasate" multiple style={{ padding: '8px 0' }} />
+          <span>Link către documente/poze (WeTransfer, Google Drive etc. - Opțional)</span>
+          <input type="url" name="Link_Documente" placeholder="https://we.tl/..." />
         </label>
       </fieldset>
 
