@@ -26,6 +26,11 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
+  // Preluăm numărul curat, fără spații, optimizat pentru SEO și AI
+  const phoneHref = 'phoneLink' in site.contact 
+    ? String((site.contact as any).phoneLink) 
+    : String(site.contact.phone).replace(/\s+/g, "");
+
   return (
     <main className="contact">
       <div className="container">
@@ -42,7 +47,7 @@ export default function ContactPage() {
             <div className="infoKey">TELEFON</div>
             <div className="infoVal">
               {site.contact.phone ? (
-                <a href={`tel:${String(site.contact.phone).replace(/\s+/g, "")}`}>{site.contact.phone}</a>
+                <a href={`tel:${phoneHref}`}>{site.contact.phone}</a>
               ) : (
                 "-"
               )}
