@@ -52,7 +52,7 @@ export default function ContactForm() {
       {/* PASUL 1: Terenul */}
       <fieldset style={{ marginBottom: '25px', padding: '20px', border: '1px solid #e2e8f0', borderRadius: '8px', backgroundColor: '#fcfcfc' }}>
         <legend style={{ fontWeight: '600', padding: '0 10px', fontSize: '1.1rem' }}>1. Situația Terenului</legend>
-        
+
         <div style={{ marginBottom: '15px' }}>
           <span style={{ display: 'block', marginBottom: '8px', fontSize: '0.9rem', fontWeight: '500' }}>Ai deja terenul achiziționat?</span>
           <div style={{ display: 'flex', gap: '15px', flexWrap: 'wrap', fontSize: '0.9rem' }}>
@@ -166,8 +166,8 @@ export default function ContactForm() {
             <option value="Parter + 2 Etaje + Mansardă (P+2E+M)">Parter + 2 Etaje + Mansardă (P+2E+M)</option>
             <option value="Parter + 3 Etaje (P+3E)">Parter + 3 Etaje (P+3E)</option>
             <option value="Parter + 3 Etaje + Mansardă (P+3E+M)">Parter + 3 Etaje + Mansardă (P+3E+M)</option>
-            <option value="Subsol + Parter (S+P)">Subsol + Parter(S+P)</option>
-            <option value="S+P+1E">S+P+1E</option>            
+            <option value="Subsol + Parter (S+P)">Subsol + Parter (S+P)</option>
+            <option value="S+P+1E">S+P+1E</option>
             <option value="S+P+1E+M">S+P+1E+M</option>
             <option value="S+P+2E">S+P+2E</option>
             <option value="S+P+2E+M">S+P+2E+M</option>
@@ -199,17 +199,14 @@ export default function ContactForm() {
             <span>Nr. Livinguri</span>
             <input type="number" name="Nr_Livinguri" min="1" placeholder="Ex: 1" />
           </label>
-
           <label className="field" style={{ marginBottom: '0' }}>
             <span>Nr. Bucătării</span>
             <input type="number" name="Nr_Bucatarii" min="1" placeholder="Ex: 1" />
           </label>
-
           <label className="field" style={{ marginBottom: '0' }}>
             <span>Nr. Dormitoare</span>
             <input type="number" name="Nr_Dormitoare" min="1" placeholder="Ex: 3" />
           </label>
-
           <label className="field" style={{ marginBottom: '0' }}>
             <span>Nr. Băi</span>
             <input type="number" name="Nr_Bai" min="1" placeholder="Ex: 2" />
@@ -222,17 +219,14 @@ export default function ContactForm() {
             <span>Nr. Birouri</span>
             <input type="number" name="Nr_Birouri" min="0" placeholder="Ex: 1" />
           </label>
-
           <label className="field" style={{ marginBottom: '0' }}>
             <span>Nr. Dressinguri</span>
             <input type="number" name="Nr_Dressinguri" min="0" placeholder="Ex: 1" />
           </label>
-
           <label className="field" style={{ marginBottom: '0' }}>
             <span>C. Tehnice / Spălătorii</span>
             <input type="number" name="Nr_Camere_Tehnice" min="0" placeholder="Ex: 1" />
           </label>
-
           <label className="field" style={{ marginBottom: '0' }}>
             <span>Nr. Cămări</span>
             <input type="number" name="Nr_Camari" min="0" placeholder="Ex: 1" />
@@ -256,7 +250,6 @@ export default function ContactForm() {
             <span>Terasă Acoperită (mp)</span>
             <input type="number" name="Terasa_Acoperita_mp" placeholder="Ex: 20" />
           </label>
-
           <label className="field" style={{ flex: '1 1 120px', marginBottom: '0' }}>
             <span>Terasă Neacoperită (mp)</span>
             <input type="number" name="Terasa_Neacoperita_mp" placeholder="Ex: 15" />
@@ -264,11 +257,9 @@ export default function ContactForm() {
         </div>
 
         <div style={{ marginBottom: '15px' }}>
-          <span style={{ display: 'block', marginBottom: '12px', fontSize: '0.9rem', fontWeight: '500' }}>Amenajări exterioare dorite (bifați și introduceți detaliile):</span>
-          
+          <span style={{ display: 'block', marginBottom: '12px', fontSize: '0.9rem', fontWeight: '500' }}>Amenajări exterioare dorite:</span>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', fontSize: '0.9rem' }}>
-            
-            {/* Piscină Complex */}
+
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', padding: '12px', border: '1px solid #e2e8f0', borderRadius: '6px', backgroundColor: '#fff' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '15px', flexWrap: 'wrap' }}>
                 <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer', minWidth: '150px', fontWeight: '600' }}>
@@ -302,6 +293,7 @@ export default function ContactForm() {
               <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer', minWidth: '220px' }}><input type="checkbox" name="Amenajari_Exterioare[]" value="Foișor / Bucătărie de vară" /> Foișor / Bucătărie de vară</label>
               <input type="number" name="Suprafata_Foisor_mp" placeholder="Suprafață (mp)" style={{ padding: '8px', border: '1px solid #cbd5e1', borderRadius: '4px', width: '160px' }} />
             </div>
+
           </div>
         </div>
 
@@ -311,100 +303,191 @@ export default function ContactForm() {
         </label>
       </fieldset>
 
-      {/* PASUL 5: Instalații, Eficiență și Smart Home */}
+      {/* PASUL 5: Instalații, Eficiență și Smart Home — VERSIUNE COMPLETĂ */}
       <fieldset style={{ marginBottom: '25px', padding: '20px', border: '1px solid #e2e8f0', borderRadius: '8px', backgroundColor: '#fcfcfc' }}>
         <legend style={{ fontWeight: '600', padding: '0 10px', fontSize: '1.1rem' }}>5. Instalații, Eficiență și Smart Home</legend>
-        <p style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '20px', marginTop: '-5px' }}>Selectați tehnologiile vizate pentru proiectul dumneavoastră.</p>
+        <p style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '20px', marginTop: '-5px' }}>
+          Selectați tehnologiile vizate. Nu trebuie să știți exact — vă ajutăm să alegeți ce e potrivit pentru proiectul dumneavoastră.
+        </p>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '25px' }}>
-          
-          {/* Coloana 1: Sursa și Încălzirea */}
-          <div>
-            <span style={{ display: 'block', marginBottom: '12px', fontSize: '0.95rem', fontWeight: '700', color: '#1e293b' }}>Încălzire & Răcire (Termice)</span>
-            
-            <span style={{ display: 'block', marginBottom: '6px', fontSize: '0.85rem', fontWeight: '600', color: '#64748b' }}>Sursă de generare:</span>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', fontSize: '0.9rem', marginBottom: '12px' }}>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sursa_Termica[]" value="Pompă de căldură" style={{marginTop: '3px'}}/> Pompă de căldură</label>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sursa_Termica[]" value="Centrală pe gaz" style={{marginTop: '3px'}}/> Centrală termică pe gaz</label>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sursa_Termica[]" value="Centrală electrică" style={{marginTop: '3px'}}/> Centrală electrică</label>
+        {/* ── A. ENERGIE & CLIMĂ ── */}
+        <div style={{ marginBottom: '24px', padding: '18px', border: '1px solid #bfdbfe', borderRadius: '8px', backgroundColor: '#eff6ff' }}>
+          <span style={{ display: 'block', marginBottom: '18px', fontSize: '1rem', fontWeight: '700', color: '#1e40af' }}>
+            A. Energie &amp; Climă
+          </span>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '24px' }}>
+
+            {/* Sursă de căldură */}
+            <div>
+              <span style={{ display: 'block', marginBottom: '8px', fontSize: '0.8rem', fontWeight: '700', color: '#374151', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Sursă de căldură</span>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '7px', fontSize: '0.9rem' }}>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sursa_Termica[]" value="Pompă de căldură aer-apă (split exterior)" style={{ marginTop: '3px' }} /> Pompă de căldură aer-apă</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sursa_Termica[]" value="Pompă de căldură geotermală (sol-apă)" style={{ marginTop: '3px' }} /> Pompă de căldură geotermală (sol-apă)</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sursa_Termica[]" value="Centrală termică pe gaz (condensare)" style={{ marginTop: '3px' }} /> Centrală termică pe gaz (condensare)</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sursa_Termica[]" value="Centrală electrică" style={{ marginTop: '3px' }} /> Centrală electrică</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sursa_Termica[]" value="Centrală pe pelleți" style={{ marginTop: '3px' }} /> Centrală pe pelleți</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sursa_Termica[]" value="Șemineu / Focar cu recuperator de căldură" style={{ marginTop: '3px' }} /> Șemineu / Focar cu recuperator</label>
+              </div>
             </div>
 
-            <span style={{ display: 'block', marginBottom: '6px', fontSize: '0.85rem', fontWeight: '600', color: '#64748b' }}>Sisteme de Încălzire:</span>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', fontSize: '0.9rem', marginBottom: '12px' }}>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sistem_Incalzire[]" value="Încălzire în pardoseală" style={{marginTop: '3px'}}/> Încălzire în pardoseală</label>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sistem_Incalzire[]" value="Radiatoare / Calorifere clasice" style={{marginTop: '3px'}}/> Radiatoare / Calorifere clasice</label>
+            {/* Distribuție căldură / răcire */}
+            <div>
+              <span style={{ display: 'block', marginBottom: '8px', fontSize: '0.8rem', fontWeight: '700', color: '#374151', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Distribuție căldură &amp; răcire</span>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '7px', fontSize: '0.9rem' }}>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sistem_Incalzire[]" value="Încălzire în pardoseală" style={{ marginTop: '3px' }} /> Încălzire în pardoseală</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sistem_Incalzire[]" value="Radiatoare / Calorifere clasice" style={{ marginTop: '3px' }} /> Radiatoare / Calorifere clasice</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sistem_Racire[]" value="Răcire în tavan (sistem radiant)" style={{ marginTop: '3px' }} /> Răcire în tavan (radiant)</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sistem_Racire[]" value="Ventiloconvectoare (pe apă răcită)" style={{ marginTop: '3px' }} /> Ventiloconvectoare (apă răcită)</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sistem_Racire[]" value="Aer Condiționat (Split/VRV cu freon)" style={{ marginTop: '3px' }} /> Aer Condiționat (Split / VRV)</label>
+              </div>
             </div>
 
-            <span style={{ display: 'block', marginBottom: '6px', fontSize: '0.85rem', fontWeight: '600', color: '#64748b' }}>Sisteme de Răcire:</span>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', fontSize: '0.9rem' }}>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sistem_Racire[]" value="Răcire în tavan (sistem radiant)" style={{marginTop: '3px'}}/> Răcire în tavan (sistem radiant)</label>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sistem_Racire[]" value="Ventiloconvectoare (pe apă răcită)" style={{marginTop: '3px'}}/> Ventiloconvectoare (pe apă răcită)</label>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sistem_Racire[]" value="Aer Condiționat (sistem Split/VRV cu freon)" style={{marginTop: '3px'}}/> Aer Condiționat (Split/VRV cu freon)</label>
+            {/* Energie electrică */}
+            <div>
+              <span style={{ display: 'block', marginBottom: '8px', fontSize: '0.8rem', fontWeight: '700', color: '#374151', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Energie electrică</span>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '7px', fontSize: '0.9rem' }}>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sistem_Energie[]" value="Panouri fotovoltaice (curent electric)" style={{ marginTop: '3px' }} /> Panouri fotovoltaice</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sistem_Energie[]" value="Panouri solare termice (apă caldă)" style={{ marginTop: '3px' }} /> Panouri solare termice (ACM)</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sistem_Energie[]" value="Baterie de stocare energie (ex: Pylontech, Tesla Powerwall)" style={{ marginTop: '3px' }} /> Baterie stocare energie</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sistem_Energie[]" value="Generator de curent / Grup electrogen backup" style={{ marginTop: '3px' }} /> Generator backup / Grup electrogen</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sistem_Energie[]" value="Stație de încărcare mașină electrică (Wallbox)" style={{ marginTop: '3px' }} /> Stație încărcare mașină electrică (Wallbox)</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sistem_Energie[]" value="Tablou electric monitorizat / Contor inteligent" style={{ marginTop: '3px' }} /> Tablou electric monitorizat / Contor smart</label>
+              </div>
             </div>
+
+            {/* Ventilație */}
+            <div>
+              <span style={{ display: 'block', marginBottom: '8px', fontSize: '0.8rem', fontWeight: '700', color: '#374151', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Ventilație</span>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '7px', fontSize: '0.9rem' }}>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sistem_Ventilatie[]" value="Ventilație mecanică cu recuperare de căldură (VMC/VRC)" style={{ marginTop: '3px' }} /> Ventilație mecanică cu recuperare (VMC)</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sistem_Ventilatie[]" value="Purificator / Filtru aer interior (HEPA, ionizare)" style={{ marginTop: '3px' }} /> Purificator / Filtru aer interior (HEPA)</label>
+              </div>
+            </div>
+
           </div>
-
-          {/* Coloana 2: Ventilație, Energie & Apă */}
-          <div>
-            <span style={{ display: 'block', marginBottom: '12px', fontSize: '0.95rem', fontWeight: '700', color: '#1e293b' }}>Ventilație, Energie & Apă Menajeră</span>
-            
-            <span style={{ display: 'block', marginBottom: '6px', fontSize: '0.85rem', fontWeight: '600', color: '#64748b' }}>Aer & Energie:</span>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', fontSize: '0.9rem', marginBottom: '12px' }}>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sistem_Ventilatie[]" value="Ventilație cu recuperare de căldură (VRC)" style={{marginTop: '3px'}}/> Ventilație cu recuperare de căldură (VRC)</label>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sistem_Energie[]" value="Panouri fotovoltaice (curent electric)" style={{marginTop: '3px'}}/> Panouri fotovoltaice (curent electric)</label>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Sistem_Energie[]" value="Panouri solare termice (apă caldă)" style={{marginTop: '3px'}}/> Panouri solare termice (apă caldă)</label>
-            </div>
-
-            <span style={{ display: 'block', marginBottom: '6px', fontSize: '0.85rem', fontWeight: '600', color: '#64748b' }}>Tratare & Distribuție Apă:</span>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', fontSize: '0.9rem' }}>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Apa[]" value="Boiler bivalent/trivalent sau Pompă căldură ACM" style={{marginTop: '3px'}}/> Boiler bivalent/trivalent / Pompă ACM</label>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Apa[]" value="Pompă de recirculare ACM (apă caldă instant)" style={{marginTop: '3px'}}/> Pompă recirculare ACM (apă caldă instant)</label>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Apa[]" value="Stație de dedurizare" style={{marginTop: '3px'}}/> Stație de dedurizare</label>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Apa[]" value="Filtrare osmoză inversă / Cărbune activ" style={{marginTop: '3px'}}/> Filtrare osmoză inversă / Cărbune activ</label>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Apa[]" value="Filtru sedimente cu autocurățare" style={{marginTop: '3px'}}/> Filtru sedimente cu autocurățare</label>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Apa[]" value="Recuperator de căldură pe scurgere" style={{marginTop: '3px'}}/> Recuperator căldură pe scurgere duș</label>
-            </div>
-          </div>
-
-          {/* Coloana 3: Smart */}
-          <div>
-            <span style={{ display: 'block', marginBottom: '12px', fontSize: '0.95rem', fontWeight: '700', color: '#1e293b' }}>Smart Home & AI Ready</span>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '0.9rem' }}>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Smart[]" value="Sistem Smart Home integrat (ex: KNX, Loxone)" style={{marginTop: '3px'}}/> Sistem Smart Home integrat (ex: KNX)</label>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Smart[]" value="Monitorizare inteligentă scurgeri apă (electrovalvă auto)" style={{marginTop: '3px'}}/> Monitorizare anti-inundație (AI Ready)</label>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Smart[]" value="Control inteligent iluminat și jaluzele" style={{marginTop: '3px'}}/> Control inteligent iluminat și umbrire</label>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Smart[]" value="Senzori de prezență pentru eficiență (lumini/apă)" style={{marginTop: '3px'}}/> Senzori de prezență eficiență (lumini/apă)</label>
-              <div style={{ borderTop: '1px solid #e2e8f0', margin: '8px 0' }}></div>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Consultanta" value="Da" style={{marginTop: '3px'}}/> <strong style={{color: '#0284c7'}}>Vreau consultanță completă pentru instalații</strong></label>
-            </div>
-          </div>
-
         </div>
+
+        {/* ── B. APĂ & SANITARE ── */}
+        <div style={{ marginBottom: '24px', padding: '18px', border: '1px solid #bbf7d0', borderRadius: '8px', backgroundColor: '#f0fdf4' }}>
+          <span style={{ display: 'block', marginBottom: '18px', fontSize: '1rem', fontWeight: '700', color: '#166534' }}>
+            B. Apă &amp; Sanitare
+          </span>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '24px' }}>
+
+            {/* Apă caldă */}
+            <div>
+              <span style={{ display: 'block', marginBottom: '8px', fontSize: '0.8rem', fontWeight: '700', color: '#374151', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Apă caldă menajeră (ACM)</span>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '7px', fontSize: '0.9rem' }}>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Apa[]" value="Boiler bivalent / trivalent" style={{ marginTop: '3px' }} /> Boiler bivalent / trivalent</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Apa[]" value="Pompă de căldură dedicată ACM" style={{ marginTop: '3px' }} /> Pompă de căldură dedicată ACM</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Apa[]" value="Pompă de recirculare ACM (apă caldă instant la robinet)" style={{ marginTop: '3px' }} /> Pompă recirculare (apă caldă instant)</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Apa[]" value="Recuperator de căldură pe scurgere duș" style={{ marginTop: '3px' }} /> Recuperator căldură pe scurgere duș</label>
+              </div>
+            </div>
+
+            {/* Tratare apă */}
+            <div>
+              <span style={{ display: 'block', marginBottom: '8px', fontSize: '0.8rem', fontWeight: '700', color: '#374151', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Tratare &amp; filtrare apă</span>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '7px', fontSize: '0.9rem' }}>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Apa[]" value="Stație de dedurizare" style={{ marginTop: '3px' }} /> Stație de dedurizare</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Apa[]" value="Filtru sedimente cu autocurățare" style={{ marginTop: '3px' }} /> Filtru sedimente cu autocurățare</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Apa[]" value="Filtrare osmoză inversă / Cărbune activ" style={{ marginTop: '3px' }} /> Osmoză inversă / Cărbune activ</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Apa[]" value="Sistem colectare și reutilizare apă pluvială" style={{ marginTop: '3px' }} /> Colectare &amp; reutilizare apă pluvială</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Apa[]" value="Stație de epurare / Fosă septică ecologică" style={{ marginTop: '3px' }} /> Stație epurare / Fosă septică ecologică</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Apa[]" value="Separator hidraulic (sisteme termice complexe)" style={{ marginTop: '3px' }} /> Separator hidraulic</label>
+              </div>
+            </div>
+
+            {/* Exterior apă */}
+            <div>
+              <span style={{ display: 'block', marginBottom: '8px', fontSize: '0.8rem', fontWeight: '700', color: '#374151', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Exterior &amp; grădină</span>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '7px', fontSize: '0.9rem' }}>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Apa[]" value="Irigații automatizate grădină" style={{ marginTop: '3px' }} /> Irigații automatizate grădină</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Apa[]" value="Drenaj perimetral / Sistem drenaj teren" style={{ marginTop: '3px' }} /> Drenaj perimetral / Drenaj teren</label>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        {/* ── C. SMART, SECURITATE & CONFORT ── */}
+        <div style={{ marginBottom: '8px', padding: '18px', border: '1px solid #e9d5ff', borderRadius: '8px', backgroundColor: '#faf5ff' }}>
+          <span style={{ display: 'block', marginBottom: '18px', fontSize: '1rem', fontWeight: '700', color: '#6b21a8' }}>
+            C. Smart Home, Securitate &amp; Confort
+          </span>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '24px' }}>
+
+            {/* Automatizare */}
+            <div>
+              <span style={{ display: 'block', marginBottom: '8px', fontSize: '0.8rem', fontWeight: '700', color: '#374151', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Automatizare &amp; control</span>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '7px', fontSize: '0.9rem' }}>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Smart[]" value="Sistem Smart Home integrat (ex: KNX, Loxone, Home Assistant)" style={{ marginTop: '3px' }} /> Smart Home integrat (KNX / Loxone)</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Smart[]" value="Control inteligent iluminat și jaluzele / umbrire" style={{ marginTop: '3px' }} /> Control iluminat &amp; jaluzele inteligente</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Smart[]" value="Senzori de prezență pentru eficiență (lumini / apă)" style={{ marginTop: '3px' }} /> Senzori prezență (eficiență lumini / apă)</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Smart[]" value="Termostate inteligente pe zone (control individual pe cameră)" style={{ marginTop: '3px' }} /> Termostate inteligente pe zone</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Smart[]" value="Monitorizare anti-inundație cu electrovalvă automată" style={{ marginTop: '3px' }} /> Monitorizare anti-inundație (electrovalvă)</label>
+              </div>
+            </div>
+
+            {/* Securitate */}
+            <div>
+              <span style={{ display: 'block', marginBottom: '8px', fontSize: '0.8rem', fontWeight: '700', color: '#374151', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Securitate &amp; acces</span>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '7px', fontSize: '0.9rem' }}>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Securitate[]" value="Sistem alarmă antiefracție" style={{ marginTop: '3px' }} /> Sistem alarmă antiefracție</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Securitate[]" value="Supraveghere video CCTV (interior / exterior)" style={{ marginTop: '3px' }} /> Supraveghere video CCTV</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Securitate[]" value="Interfon video / Control acces (card, amprentă, față)" style={{ marginTop: '3px' }} /> Interfon video / Control acces smart</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Securitate[]" value="Paratrăsnet" style={{ marginTop: '3px' }} /> Paratrăsnet</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Securitate[]" value="Detector fum, CO și gaze" style={{ marginTop: '3px' }} /> Detectoare fum, CO și gaze</label>
+              </div>
+            </div>
+
+            {/* Confort */}
+            <div>
+              <span style={{ display: 'block', marginBottom: '8px', fontSize: '0.8rem', fontWeight: '700', color: '#374151', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Confort &amp; audio-video</span>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '7px', fontSize: '0.9rem' }}>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Confort[]" value="Sistem audio multiroom" style={{ marginTop: '3px' }} /> Sistem audio multiroom</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Confort[]" value="Aspirator central" style={{ marginTop: '3px' }} /> Aspirator central</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Confort[]" value="Rețea structurată (internet, TV, telefonie — Cat6/Cat7)" style={{ marginTop: '3px' }} /> Rețea structurată (Cat6 / Cat7 / fibră)</label>
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_Confort[]" value="Puncte acces WiFi profesional (mesh interior)" style={{ marginTop: '3px' }} /> Puncte acces WiFi profesional (mesh)</label>
+              </div>
+            </div>
+
+          </div>
+
+          <div style={{ marginTop: '16px', paddingTop: '14px', borderTop: '1px solid #e9d5ff' }}>
+            <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer', fontSize: '0.9rem' }}>
+              <input type="checkbox" name="Instalatii_Consultanta" value="Da" style={{ marginTop: '3px' }} />
+              <strong style={{ color: '#6b21a8' }}>Vreau consultanță completă pentru instalații — nu știu exact ce îmi trebuie și doresc o recomandare personalizată.</strong>
+            </label>
+          </div>
+        </div>
+
       </fieldset>
 
       {/* PASUL 6: Model și Mesaj */}
       <fieldset style={{ marginBottom: '25px', padding: '20px', border: '1px solid #e2e8f0', borderRadius: '8px', backgroundColor: '#fcfcfc' }}>
-         <legend style={{ fontWeight: '600', padding: '0 10px', fontSize: '1.1rem' }}>6. Inspirație și Detalii</legend>
-        
+        <legend style={{ fontWeight: '600', padding: '0 10px', fontSize: '1.1rem' }}>6. Inspirație și Detalii</legend>
+
         <div style={{ marginBottom: '15px' }}>
           <span style={{ display: 'block', marginBottom: '8px', fontSize: '0.9rem', fontWeight: '500' }}>Inspirație Model Casă</span>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '0.9rem' }}>
-             <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="radio" name="Tip_Model" value="Din Colecția Iconic" /> Îmi place un model din Colecția iCONiC (Specificați mai jos numele/nr pozei)</label>
-             <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="radio" name="Tip_Model" value="Model Propriu" /> Am propriul model (Atașat mai sus la Pasul 2)</label>
-             <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="radio" name="Tip_Model" value="Nehotărât" /> Încă nu m-am decis</label>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="radio" name="Tip_Model" value="Din Colecția Iconic" /> Îmi place un model din Colecția iCONiC (Specificați mai jos numele/nr pozei)</label>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="radio" name="Tip_Model" value="Model Propriu" /> Am propriul model (Atașat mai sus la Pasul 2)</label>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="radio" name="Tip_Model" value="Nehotărât" /> Încă nu m-am decis</label>
           </div>
         </div>
 
         <label className="field">
-          <span>Dacă ai ales un model iCONiC, scrie numele lui si numărul pozei:</span>
-          <input type="text" name="Nume_Poza_Model_Iconic" placeholder="Ex: Vilă Modernă Poza 04" />
+          <span>Dacă ai ales un model iCONiC, scrie numele lui și numărul pozei:</span>
+          <input type="text" name="Nume_Poza_Model_Iconic" placeholder="Ex: 1-story BLACK, poza 04" />
         </label>
-        
+
         <label className="field">
           <span>Detalii suplimentare</span>
-          <textarea 
-            name="message" 
-            rows={5} 
-            defaultValue={"Bună ziua,\n\nAș dori o ofertă de preț luând în considerare informațiile și preferințele selectate mai sus.\n\nAștept răspunsul dumneavoastră. Mulțumesc!"} 
+          <textarea
+            name="message"
+            rows={5}
+            defaultValue={"Bună ziua,\n\nAș dori o ofertă de preț luând în considerare informațiile și preferințele selectate mai sus.\n\nAștept răspunsul dumneavoastră. Mulțumesc!"}
           />
         </label>
       </fieldset>
@@ -412,19 +495,18 @@ export default function ContactForm() {
       {/* Pachet Servicii Dorit */}
       <fieldset style={{ marginBottom: '25px', padding: '20px', border: '1px solid #e2e8f0', borderRadius: '8px', backgroundColor: '#e6f2ff' }}>
         <legend style={{ fontWeight: '600', padding: '0 10px', fontSize: '1.1rem', color: '#0056b3' }}>Pachetul de Servicii Dorit</legend>
-        
         <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '0.9rem' }}>
           <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}>
-             <input type="radio" name="Pachet_Servicii" value="Proiect Complet" style={{marginTop: '3px'}}/> 
-             <span><strong>Proiect Complet</strong> (Arhitectură, Structură, Instalații)</span>
+            <input type="radio" name="Pachet_Servicii" value="Proiect Complet" style={{ marginTop: '3px' }} />
+            <span><strong>Proiect Complet</strong> (Arhitectură, Structură, Instalații)</span>
           </label>
           <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}>
-             <input type="radio" name="Pachet_Servicii" value="Proiect Complet + Avize/Autorizații" style={{marginTop: '3px'}}/> 
-             <span><strong>Proiect Complet + Avize & Autorizații</strong></span>
+            <input type="radio" name="Pachet_Servicii" value="Proiect Complet + Avize/Autorizații" style={{ marginTop: '3px' }} />
+            <span><strong>Proiect Complet + Avize &amp; Autorizații</strong></span>
           </label>
           <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}>
-             <input type="radio" name="Pachet_Servicii" value="Pachet Complet All-Inclusive" style={{marginTop: '3px'}}/> 
-             <span><strong>Pachet Complet All-Inclusive</strong> (Proiectare + Avize + Autorizații + Execuție)</span>
+            <input type="radio" name="Pachet_Servicii" value="Pachet Complet All-Inclusive" style={{ marginTop: '3px' }} />
+            <span><strong>Pachet Complet All-Inclusive</strong> (Proiectare + Avize + Autorizații + Execuție)</span>
           </label>
         </div>
       </fieldset>
@@ -432,17 +514,14 @@ export default function ContactForm() {
       {/* PASUL 7: Date de contact */}
       <fieldset style={{ marginBottom: '25px', padding: '20px', border: '1px solid #e2e8f0', borderRadius: '8px', backgroundColor: '#fcfcfc' }}>
         <legend style={{ fontWeight: '600', padding: '0 10px', fontSize: '1.1rem' }}>Datele de contact</legend>
-
         <label className="field">
           <span>Nume *</span>
           <input type="text" name="name" required />
         </label>
-
         <label className="field">
           <span>Email *</span>
           <input type="email" name="email" required />
         </label>
-
         <label className="field">
           <span>Telefon *</span>
           <input type="tel" name="phone" required />
