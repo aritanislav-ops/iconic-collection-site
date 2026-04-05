@@ -193,13 +193,23 @@ export default function ContactForm() {
       <fieldset style={{ marginBottom: '25px', padding: '20px', border: '1px solid #e2e8f0', borderRadius: '8px', backgroundColor: '#fcfcfc' }}>
         <legend style={{ fontWeight: '600', padding: '0 10px', fontSize: '1.1rem' }}>4. Compartimentare și Exterior</legend>
 
-        <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap', marginBottom: '15px' }}>
-          <label className="field" style={{ flex: '1 1 120px', marginBottom: '0' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))', gap: '15px', marginBottom: '20px' }}>
+          <label className="field" style={{ marginBottom: '0' }}>
+            <span>Nr. Livinguri</span>
+            <input type="number" name="Nr_Livinguri" min="1" placeholder="Ex: 1" />
+          </label>
+
+          <label className="field" style={{ marginBottom: '0' }}>
+            <span>Nr. Bucătării</span>
+            <input type="number" name="Nr_Bucatarii" min="1" placeholder="Ex: 1" />
+          </label>
+
+          <label className="field" style={{ marginBottom: '0' }}>
             <span>Nr. Dormitoare</span>
             <input type="number" name="Nr_Dormitoare" min="1" placeholder="Ex: 3" />
           </label>
 
-          <label className="field" style={{ flex: '1 1 120px', marginBottom: '0' }}>
+          <label className="field" style={{ marginBottom: '0' }}>
             <span>Nr. Băi</span>
             <input type="number" name="Nr_Bai" min="1" placeholder="Ex: 2" />
           </label>
@@ -240,12 +250,29 @@ export default function ContactForm() {
         </div>
 
         <div style={{ marginBottom: '15px' }}>
-          <span style={{ display: 'block', marginBottom: '12px', fontSize: '0.9rem', fontWeight: '500' }}>Amenajări exterioare dorite (bifați și introduceți suprafața estimată):</span>
+          <span style={{ display: 'block', marginBottom: '12px', fontSize: '0.9rem', fontWeight: '500' }}>Amenajări exterioare dorite (bifați și introduceți detaliile):</span>
           
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '0.9rem' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '15px', flexWrap: 'wrap' }}>
-              <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer', minWidth: '220px' }}><input type="checkbox" name="Amenajari_Exterioare[]" value="Piscină" /> Piscină</label>
-              <input type="number" name="Suprafata_Piscina_mp" placeholder="Suprafață (mp)" style={{ padding: '8px', border: '1px solid #cbd5e1', borderRadius: '4px', width: '160px' }} />
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', fontSize: '0.9rem' }}>
+            
+            {/* Piscină Complex */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', padding: '12px', border: '1px solid #e2e8f0', borderRadius: '6px', backgroundColor: '#fff' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '15px', flexWrap: 'wrap' }}>
+                <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer', minWidth: '150px', fontWeight: '600' }}>
+                  <input type="checkbox" name="Amenajari_Exterioare[]" value="Piscină" /> Piscină
+                </label>
+                <input type="number" name="Suprafata_Piscina_mp" placeholder="Suprafață (mp)" style={{ padding: '8px', border: '1px solid #cbd5e1', borderRadius: '4px', width: '130px' }} />
+                <input type="number" step="0.1" name="Adancime_Piscina_m" placeholder="Adâncime (m)" style={{ padding: '8px', border: '1px solid #cbd5e1', borderRadius: '4px', width: '130px' }} />
+              </div>
+              <div style={{ display: 'flex', gap: '15px', marginLeft: '25px', marginTop: '5px', flexWrap: 'wrap' }}>
+                <select name="Tip_Piscina" style={{ padding: '6px', border: '1px solid #cbd5e1', borderRadius: '4px' }}>
+                  <option value="">Alege tipul...</option>
+                  <option value="Exterioară">Exterioară</option>
+                  <option value="Interioară">Interioară</option>
+                </select>
+                <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}>
+                  <input type="checkbox" name="Piscina_Incalzita" value="Da" /> Încălzită
+                </label>
+              </div>
             </div>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: '15px', flexWrap: 'wrap' }}>
@@ -260,9 +287,9 @@ export default function ContactForm() {
           </div>
         </div>
 
-        <label className="field" style={{ marginTop: '15px' }}>
-          <span>Lungime gard la stradă (metri liniari)</span>
-          <input type="number" name="Lungime_Gard_ML" placeholder="Ex: 25 (sau lăsați gol dacă nu doriți proiect gard)" />
+        <label className="field" style={{ marginTop: '20px' }}>
+          <span>Lungime gard ce trebuie executat (metri liniari)</span>
+          <input type="number" name="Lungime_Gard_ML" placeholder="Ex: 80 (sau lăsați gol dacă nu doriți proiect gard)" />
         </label>
       </fieldset>
 
@@ -277,12 +304,14 @@ export default function ContactForm() {
           <div>
             <span style={{ display: 'block', marginBottom: '10px', fontSize: '0.95rem', fontWeight: '600', color: '#334155' }}>Încălzire, Răcire & Energie</span>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '0.9rem' }}>
+              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_HVAC[]" value="Centrală termică (gaz/electrică)" style={{marginTop: '3px'}}/> Centrală termică (gaz/electrică)</label>
+              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_HVAC[]" value="Radiatoare / Calorifere clasice" style={{marginTop: '3px'}}/> Radiatoare / Calorifere clasice</label>
+              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_HVAC[]" value="Aer Condiționat (AC clasic tip split)" style={{marginTop: '3px'}}/> Aer Condiționat (AC clasic tip split)</label>
               <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_HVAC[]" value="Încălzire în pardoseală" style={{marginTop: '3px'}}/> Încălzire în pardoseală</label>
               <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_HVAC[]" value="Pompă de căldură" style={{marginTop: '3px'}}/> Pompă de căldură</label>
               <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_HVAC[]" value="Ventilație cu recuperare de căldură (VRC)" style={{marginTop: '3px'}}/> Ventilație cu recuperare de căldură (VRC)</label>
               <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_HVAC[]" value="Panouri fotovoltaice / solare" style={{marginTop: '3px'}}/> Panouri fotovoltaice / solare</label>
               <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_HVAC[]" value="Răcire în tavan / ventiloconvectoare" style={{marginTop: '3px'}}/> Răcire în tavan / ventiloconvectoare</label>
-              <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}><input type="checkbox" name="Instalatii_HVAC[]" value="Centrală pe gaz / Calorifere clasice" style={{marginTop: '3px'}}/> Centrală pe gaz / Calorifere clasice</label>
             </div>
           </div>
 
