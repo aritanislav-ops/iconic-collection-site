@@ -167,7 +167,7 @@ export default function ContactForm() {
             <option value="Parter + 3 Etaje (P+3E)">Parter + 3 Etaje (P+3E)</option>
             <option value="Parter + 3 Etaje + Mansardă (P+3E+M)">Parter + 3 Etaje + Mansardă (P+3E+M)</option>
             <option value="Subsol + Parter (S+P)">Subsol + Parter(S+P)</option>
-            <option value="S+P+1E">S+P+1E</option>           
+            <option value="S+P+1E">S+P+1E</option>            
             <option value="S+P+1E+M">S+P+1E+M</option>
             <option value="S+P+2E">S+P+2E</option>
             <option value="S+P+2E+M">S+P+2E+M</option>
@@ -187,7 +187,92 @@ export default function ContactForm() {
             <option value="Vreau o recomandare">Vreau o recomandare</option>
           </select>
         </label>
+      </fieldset>
 
+      {/* PASUL 4: Dotări și Preferințe */}
+      <fieldset style={{ marginBottom: '25px', padding: '20px', border: '1px solid #e2e8f0', borderRadius: '8px', backgroundColor: '#fcfcfc' }}>
+        <legend style={{ fontWeight: '600', padding: '0 10px', fontSize: '1.1rem' }}>4. Compartimentare, Dotări și Exterior</legend>
+
+        <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap', marginBottom: '15px' }}>
+          <label className="field" style={{ flex: '1 1 120px', marginBottom: '0' }}>
+            <span>Nr. Dormitoare</span>
+            <input type="number" name="Nr_Dormitoare" min="1" placeholder="Ex: 3" />
+          </label>
+
+          <label className="field" style={{ flex: '1 1 120px', marginBottom: '0' }}>
+            <span>Nr. Băi</span>
+            <input type="number" name="Nr_Bai" min="1" placeholder="Ex: 2" />
+          </label>
+        </div>
+
+        <div style={{ marginBottom: '15px' }}>
+          <span style={{ display: 'block', marginBottom: '8px', fontSize: '0.9rem', fontWeight: '500' }}>Alte încăperi dorite:</span>
+          <div style={{ display: 'flex', gap: '15px', flexWrap: 'wrap', fontSize: '0.9rem' }}>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="checkbox" name="Incaperi_Extra[]" value="Birou" /> Birou</label>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="checkbox" name="Incaperi_Extra[]" value="Dressing separat" /> Dressing separat</label>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="checkbox" name="Incaperi_Extra[]" value="Cameră tehnică / Spălătorie" /> Cameră tehnică / Spălătorie</label>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="checkbox" name="Incaperi_Extra[]" value="Cămară" /> Cămară</label>
+          </div>
+        </div>
+
+        <label className="field">
+          <span>Garaj / Parcare acoperită</span>
+          <select name="Garaj" style={{ width: '100%', padding: '12px', border: '1px solid var(--border)', borderRadius: '4px', backgroundColor: 'transparent' }}>
+            <option value="">Alege o variantă...</option>
+            <option value="Fără garaj">Fără garaj</option>
+            <option value="Garaj pentru 1 mașină (închis)">Garaj pentru 1 mașină (închis)</option>
+            <option value="Garaj pentru 2 mașini (închis)">Garaj pentru 2 mașini (închis)</option>
+            <option value="Carport pentru 1 mașină (deschis)">Carport pentru 1 mașină (deschis)</option>
+            <option value="Carport pentru 2 mașini (deschis)">Carport pentru 2 mașini (deschis)</option>
+          </select>
+        </label>
+
+        <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap', marginBottom: '15px' }}>
+          <label className="field" style={{ flex: '1 1 120px', marginBottom: '0' }}>
+            <span>Terasă Acoperită (mp)</span>
+            <input type="number" name="Terasa_Acoperita_mp" placeholder="Ex: 20" />
+          </label>
+
+          <label className="field" style={{ flex: '1 1 120px', marginBottom: '0' }}>
+            <span>Terasă Neacoperită (mp)</span>
+            <input type="number" name="Terasa_Neacoperita_mp" placeholder="Ex: 15" />
+          </label>
+        </div>
+
+        <div style={{ marginBottom: '15px' }}>
+          <span style={{ display: 'block', marginBottom: '8px', fontSize: '0.9rem', fontWeight: '500' }}>Amenajări exterioare dorite:</span>
+          <div style={{ display: 'flex', gap: '15px', flexWrap: 'wrap', fontSize: '0.9rem' }}>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="checkbox" name="Amenajari_Exterioare[]" value="Piscină" /> Piscină</label>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="checkbox" name="Amenajari_Exterioare[]" value="Amenajare peisagistică curte" /> Amenajare peisagistică curte</label>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}><input type="checkbox" name="Amenajari_Exterioare[]" value="Foișor / Bucătărie de vară" /> Foișor / Bucătărie de vară</label>
+          </div>
+        </div>
+
+        <label className="field">
+          <span>Lungime gard la stradă (metri liniari)</span>
+          <input type="number" name="Lungime_Gard_ML" placeholder="Ex: 25 (sau lăsați gol dacă nu doriți proiect gard)" />
+        </label>
+
+        <label className="field">
+          <span>Sisteme de încălzire și eficiență (selecție multiplă posibilă):</span>
+          <select name="Sisteme_Incalzire[]" multiple style={{ width: '100%', padding: '12px', border: '1px solid var(--border)', borderRadius: '4px', backgroundColor: 'transparent', height: '120px' }}>
+            <option value="Încălzire în pardoseală">Încălzire în pardoseală</option>
+            <option value="Calorifere clasice">Calorifere clasice</option>
+            <option value="Pompă de căldură">Pompă de căldură</option>
+            <option value="Centrală pe gaz">Centrală pe gaz</option>
+            <option value="Panouri fotovoltaice / solare">Panouri fotovoltaice / solare</option>
+            <option value="Sistem de ventilație cu recuperare de căldură">Ventilație cu recuperare de căldură</option>
+            <option value="Vreau recomandări de la arhitect">Vreau recomandări de la arhitect</option>
+          </select>
+          <span style={{fontSize: '0.8rem', color: '#64748b', marginTop: '4px', display: 'block'}}>*Țineți apăsat CTRL (sau CMD pe Mac) pentru a selecta mai multe opțiuni.</span>
+        </label>
+
+      </fieldset>
+
+      {/* PASUL 5: Model și Mesaj */}
+      <fieldset style={{ marginBottom: '25px', padding: '20px', border: '1px solid #e2e8f0', borderRadius: '8px', backgroundColor: '#fcfcfc' }}>
+         <legend style={{ fontWeight: '600', padding: '0 10px', fontSize: '1.1rem' }}>5. Inspirație și Detalii</legend>
+        
         <div style={{ marginBottom: '15px' }}>
           <span style={{ display: 'block', marginBottom: '8px', fontSize: '0.9rem', fontWeight: '500' }}>Inspirație Model Casă</span>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '0.9rem' }}>
@@ -232,7 +317,7 @@ export default function ContactForm() {
         </div>
       </fieldset>
 
-      {/* PASUL 4: Date de contact */}
+      {/* PASUL 6: Date de contact */}
       <fieldset style={{ marginBottom: '25px', padding: '20px', border: '1px solid #e2e8f0', borderRadius: '8px', backgroundColor: '#fcfcfc' }}>
         <legend style={{ fontWeight: '600', padding: '0 10px', fontSize: '1.1rem' }}>Datele de contact</legend>
 
