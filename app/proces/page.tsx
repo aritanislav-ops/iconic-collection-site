@@ -40,10 +40,10 @@ export default function ProcesPage() {
         <div className="listItem">
           <h3>2) Siguranță seismică: Protejăm casa, nu doar viața</h3>
           <p>
-            O casă proiectată clasic, „conform normei”, este gândită în primul rând să evite colapsul structural în timpul unui cutremur major. 
-            Norma permite însă degradări atat la nivel de finisaje cat și la nivel de structură prin utilizarea factorului de comportare <strong>q</strong>, 
-            factor ceduce la reducerea forței seismice de calcul în schimbul acceptării unor avarii plastice. 
-            Rezultatul: viața este protejată, dar locuința poate suferi degradări serioase și poate deveni INUTILIZABILĂ după un cutremur puternic(cutremurul de proiectare).
+            O casă proiectată CLASIC, „conform normei actuale”, este gândită în primul rând să evite colapsul structural în timpul unui cutremur major. 
+            Norma permite însă degradări atat la nivel de finisaje cât și la nivel de structură prin utilizarea factorului de comportare <strong>q</strong>, 
+            factor ce duce la reducerea forței seismice de calcul în schimbul acceptării unor avarii atat la nivel structural cât si la nivel de finisaje. 
+            Rezultatul este o structură care protejează viața, dar care poate deveni INUTILIZABILĂ după un cutremur major din cauza daunelor severe suferite(cutremurul de proiectare).
           </p>
 
           <div style={{ marginTop: '15px', padding: '20px', borderLeft: '4px solid #0284c7', backgroundColor: '#f0f9ff', borderRadius: '0 8px 8px 0' }}>
