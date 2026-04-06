@@ -211,6 +211,7 @@ export default function ContactForm() {
             <option value="Parter + 3 Etaje (P+3E)">Parter + 3 Etaje (P+3E)</option>
             <option value="Parter + 3 Etaje + Mansardă (P+3E+M)">Parter + 3 Etaje + Mansardă (P+3E+M)</option>
             <option value="Subsol + Parter (S+P)">Subsol + Parter (S+P)</option>
+            <option value="S+P+M">S+P+M</option>
             <option value="S+P+1E">S+P+1E</option>
             <option value="S+P+1E+M">S+P+1E+M</option>
             <option value="S+P+2E">S+P+2E</option>
@@ -284,8 +285,12 @@ export default function ContactForm() {
             <option value="Fără garaj">Fără garaj</option>
             <option value="Garaj pentru 1 mașină (închis)">Garaj pentru 1 mașină (închis)</option>
             <option value="Garaj pentru 2 mașini (închis)">Garaj pentru 2 mașini (închis)</option>
+            <option value="Garaj pentru 3 mașini (închis)">Garaj pentru 3 mașini (închis)</option>
+            <option value="Garaj pentru 4 mașini (închis)">Garaj pentru 4 mașini (închis)</option>
             <option value="Carport pentru 1 mașină (deschis)">Carport pentru 1 mașină (deschis)</option>
             <option value="Carport pentru 2 mașini (deschis)">Carport pentru 2 mașini (deschis)</option>
+            <option value="Carport pentru 3 mașini (deschis)">Carport pentru 3 mașini (deschis)</option>
+            <option value="Carport pentru 4 mașini (deschis)">Carport pentru 4 mașini (deschis)</option>
           </select>
         </label>
 
