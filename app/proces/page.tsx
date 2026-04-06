@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Standardul nostru | iCONiC collection",
+  title: "Standardul nostru",
   description:
-    "Descoperă standardul iCONiC: Proiectare seismică în domeniu elastic (q=1), eficiență energetică nZEB și tehnologii Smart Home de ultimă generație.",
+    "Descoperă standardul iCONiC: Proiectare seismică în domeniu elastic (q=1), eficiență energetică nZEB și protecția reală a investiției pe termen lung.",
   alternates: {
     canonical: "/proces",
   },
   openGraph: {
     title: "Standardul nostru | iCONiC collection",
     description:
-      "Protejăm casa, nu doar viața. Proiectare seismică avansată, eficiență nZEB și monitorizare post-seism.",
+      "Protejăm casa, nu doar viața. Proiectare seismică avansată și eficiență nZEB fără compromisuri.",
     url: "https://www.iconic-collection.ro/proces",
     images: ["/brand/og-home.jpg"],
   },
@@ -19,150 +19,159 @@ export const metadata: Metadata = {
 export default function ProcesPage() {
   return (
     <main className="container">
-      <h1 className="pageTitle">Standardul iCONiC</h1>
+      <h1 className="pageTitle">Standardul nostru</h1>
       <p className="pageLead">
         iCONiC s-a născut din dorința de a aduce rigoarea proiectelor mari de infrastructură și office într-un brand premium de locuințe. 
         Echipa noastră reunește experți tehnici atestați și arhitecți cu peste 20 de ani de experiență internațională, 
         tratând fiecare casă cu aceeași seriozitate tehnică și atenție la durabilitate ca pe un proiect de anvergură. 
+        Proiectăm pentru siguranță reală și pentru avantajul pe termen lung al clientului.
       </p>
 
       <div className="list">
-        {/* 1 */}
         <div className="listItem">
           <h3>1) Respectarea normelor în vigoare</h3>
           <p>
             Proiectarea se face cu respectarea strictă a legislației românești și a Eurocodurilor. 
             Utilizăm reglementările tehnice ca pe un prag minim de siguranță, integrând soluții care 
-            asigură o performanță superioară a clădirii în exploatare și o durată de viață extinsă.
+            asigură o performanță superioară a clădirii în exploatare.
           </p>
         </div>
 
-        {/* 2 */}
         <div className="listItem">
           <h3>2) Siguranță seismică: Protejăm casa, nu doar viața</h3>
           <p>
-            O casă proiectată CLASIC este gândită să evite colapsul structural, dar permite degradări majore (fisuri, rotiri plastice) prin factorul <strong>q</strong>. 
-            Rezultatul este o structură care protejează viața, dar care poate deveni <strong>inutilizabilă</strong> după un cutremur major.
+            O casă proiectată CLASIC, „conform normei actuale”, este gândită în primul rând să evite colapsul structural în timpul unui cutremur major (cutremurul de proiectare). 
+            Norma permite însă degradări atât la nivel de finisaje cât și la nivel de structură prin utilizarea factorului de comportare <strong>q</strong>, 
+            factor ce duce la reducerea forței seismice de calcul direct proporțional în schimbul acceptării DEGRADĂRILOR. 
+            Rezultatul este o structură care protejează viața, dar care poate deveni INUTILIZABILĂ după un cutremur major (cutremurul de proiectare) din cauza DAUNELOR severe suferite.
           </p>
 
           <div style={{ marginTop: '15px', padding: '20px', borderLeft: '4px solid #0284c7', backgroundColor: '#f0f9ff', borderRadius: '0 8px 8px 0' }}>
-            <span style={{ display: 'block', fontWeight: '700', marginBottom: '12px', color: '#1e3a8a', fontSize: '1rem' }}>Filozofia iCONiC: q = 1 (Domeniul Elastic)</span>
+            <span style={{ display: 'block', fontWeight: '700', marginBottom: '12px', color: '#1e3a8a', fontSize: '1rem' }}>Filozofia iCONiC: q = 1 vs q = 5</span>
             <ul style={{ listStyleType: 'none', padding: 0, margin: 0, fontSize: '0.95rem', lineHeight: '1.6' }}>
               <li style={{ marginBottom: '12px' }}>
-                <strong>💎 Standardul q = 1:</strong> Dimensionăm structura la nivelul forței reale seismice, fără a ne baza pe degradări plastice. Asta înseamnă secțiuni robuste, deplasări minime și avarii care tind către zero.
+                <strong>🛑 Proiectarea Clasică (q ≈ 5):</strong> Forța seismică de calcul este redusă de aproximativ 5 ori, 
+                iar diferența este „recuperată” prin deformații ductile — adică prin fisurare, rotiri plastice și avarii controlate. 
+                Deplasările mari pot distruge pereții, tâmplăria și finisajele, apărând astfel costuri importante ce le va suporta clientul.
+              </li>
+              <li style={{ marginBottom: '12px' }}>
+                <strong>💎 Standardul iCONiC (q = 1):</strong> Alegem proiectarea în <strong>domeniul elastic</strong>. 
+                Datorită regimului mic de înălțime și printr-o conformare structurală judicioasă, structura se dimensionează la nivelul forței reale comportării elastice, fără a se baza pe degradări plastice ca mecanism de rezistență. 
+                Asta înseamnă secțiuni mai robuste, rigiditate sporită și deplasări mult mai mici astfel încât avariile și degradările să tindă către ZERO.
               </li>
               <li>
-                <strong>🌍 Recurența de 475 de ani:</strong> Adoptăm deja direcția propusă de viitorul cod P100-1/2025, oferind un nivel de siguranță net superior normelor actuale (care folosesc referința de 225 ani).
+                <strong>🌍 Recurența de 475 de ani:</strong> Codul P100-1/2013 folosește încă referința de 225 de ani pentru acțiunea seismică. 
+                Noi adoptăm deja direcția propusă de P100-1/2025 (recurență de 475 ani), oferind un nivel de siguranță net superior și mai mult de atât dimensionarea în elastic
+                pentru a păstra funcționalitatea locuinței și după un seism foarte sever. Datorită regimului mic de înălțime și expertizei inginerilor noștri în conformare structurală, reușim să garantăm acest beneficiu esențial pentru clienți, fără a compromite accesibilitatea prețului.
               </li>
             </ul>
           </div>
-
+          
           <p style={{ marginTop: '15px' }}>
-            Impactul real al unui seism major asupra unei clădiri standard nu este doar tehnic, ci destabilizează viața familiei:
+            Deși viața este protejată, rezultatul unui seism major asupra unei astfel de clădiri este adesea o locuință INUTILIZABILĂ. Impactul real pentru proprietar nu este doar unul tehnic, ci unul care destabilizează întreaga viață a familiei:
+            Costuri Disproporționate: Efortul financiar necesar pentru înlocuirea suprafețelor vitrate mari, refacerea integrală a finisajelor și consolidarea elementelor structurale avariate depășește cu mult investiția modică ce ar fi fost necesară inițial pentru o soluție tehnică superioară.
+            Haosul Relocării: O casă avariată obligă familia la o mutare de urgență. Într-un oraș afectat de seism, găsirea unei chirii sigure devine o provocare aproape imposibilă și extrem de costisitoare.
+            Logistica și Depozitarea: Costurile și efortul de a muta și depozita întregul mobilier și bunurile personale pe durata unor reparații care pot dura luni de zile reprezintă o povară ascunsă, dar uriașă.
+            Timp și Stres: Șantierul post-seism înseamnă luni de incertitudine și disconfort, timp în care viața de familie este suspendată.
+            Concluzia noastră: Adoptarea unei soluții de proiectare reziliente, pe care noi o propunem, nu este un cost suplimentar, ci o asigurare pentru viitor. Investiția marginală de astăzi elimină riscul ca, după un cutremur, să pierdeți nu doar finisajele casei, ci și confortul, timpul și liniștea familiei dumneavoastră.
           </p>
-          <ul style={{ paddingLeft: '20px', marginTop: '10px' }}>
-            <li><strong>Costuri Disproporționate:</strong> Reparațiile finisajelor și consolidările post-seism depășesc investiția inițială într-o structură elastică.</li>
-            <li><strong>Haosul Relocării:</strong> O casă avariată obligă familia la o mutare de urgență într-un context urban deja afectat.</li>
-            <li><strong>Timp și Stres:</strong> Șantierul post-seism înseamnă luni de incertitudine și disconfort major.</li>
-          </ul>
         </div>
 
-        {/* 3 */}
         <div className="listItem">
           <h3>3) Soluție structurală aleasă rațional</h3>
           <p>
-            Nu urmărim artificii inutile. Optimizăm structura în funcție de teren și arhitectură, asigurând o conformare judicioasă care să permită comportamentul elastic (q=1) fără a irosi resurse, ci concentrându-le acolo unde contează pentru stabilitate.
+            Nu urmărim artificii inutile. Alegem structura în funcție de teren și arhitectură, 
+            asigurând o conformare judicioasă care să permită comportarea elastică (q=1) 
+            fără a irosi resurse, ci optimizându-le acolo unde contează pentru stabilitate.
           </p>
         </div>
 
-        {/* 4 - Detaliat nZEB */}
         <div className="listItem">
-          <h3>4) Eficiență energetică nZEB și Independență</h3>
+          <h3>4) Eficiență energetică și principii nZEB</h3>
           <p>
-            Standardul nZEB este pentru noi un sistem integrat de instalații și izolație, menit să elimine facturile mari și să asigure un mediu sănătos:
+            Integrăm soluții compatibile cu standardele nZEB (Nearly Zero Energy Building). 
+            O casă bine proiectată nu înseamnă doar izolație, ci o anvelopă eficientă și sisteme inteligente 
+            (pompe de căldură aer-apă sau sol-apă, ventilație HRV cu recuperare de căldură și filtrare activă a aerului / ionizatoare) care reduc drastic costurile de exploatare. 
+            Implementăm soluții de climatizare avansate, precum încălzirea și răcirea în pardoseală sau tavan, și pregătim infrastructura pentru panouri fotovoltaice și stocare în baterii pentru o independență energetică reală.
           </p>
-          <ul style={{ paddingLeft: '20px', marginTop: '10px' }}>
-            <li><strong>Climatizare Avansată:</strong> Pompe de căldură (aer-apă/sol-apă) cuplate cu încălzire și răcire în pardoseală sau tavan (fără jet de aer).</li>
-            <li><strong>Ventilație HRV:</strong> Recuperare de căldură cu filtrare activă și purificatoare (ionizatoare) pentru un aer steril, fără praf sau polen.</li>
-            <li><strong>Energie Regenerabilă:</strong> Integrare panouri fotovoltaice și sisteme de stocare în baterii pentru un grad ridicat de auto-consum.</li>
-          </ul>
         </div>
 
-        {/* 5 */}
         <div className="listItem">
           <h3>5) Materiale și soluții tehnice alese corect</h3>
           <p>
-            Materialele sunt alese după rolul lor real, durabilitate și modul în care îmbătrânesc estetic. Folosim produse certificate care asigură o barieră fonică și termică de top.
+            Materialele nu sunt alese după preț, ci după rolul lor real, durabilitate și întreținere. 
+            Urmărim folosirea produselor conforme și certificate, care asigură o îmbătrânire estetică demnă de un proiect premium.
           </p>
         </div>
 
-        {/* 6 */}
         <div className="listItem">
           <h3>6) Controlul calității în execuție</h3>
           <p>
-            Urmărim calitatea prin coordonare tehnică riguroasă și dirigenție de șantier. Verificăm etanșeitatea anvelopei și eliminăm punțile termice prin detalii de execuție de precizie.
+            Atunci când asigurăm execuția, urmărim calitatea prin coordonare tehnică riguroasă, 
+            dirigenție de șantier și verificarea respectării stricte a detaliilor de proiect. 
+            Fiecare etapă este monitorizată pentru a elimina erorile de montaj.
           </p>
         </div>
 
-        {/* 7 */}
         <div className="listItem">
           <h3>7) Echipă de execuție și responsabilități clare</h3>
           <p>
-            Lucrăm cu constructori calificați sub o structură contractuală transparentă. Beneficiarul are vizibilitate totală asupra etapelor și a celor responsabili pentru fiecare detaliu tehnic.
+            Lucrăm cu constructori calificați și responsabilități bine definite. 
+            Beneficiarul știe în orice moment cine execută și cine verifică, 
+            asigurând o transparență totală pe parcursul șantierului.
           </p>
         </div>
 
-        {/* 8 */}
         <div className="listItem">
-          <h3>8) Durabilitate și valoare de revânzare</h3>
+          <h3>8) Durabilitate și cost corect pe termen lung</h3>
           <p>
-            O casă iCONiC evită „economiile false”. Standardul nostru reprezintă o investiție predictibilă, asigurând o valoare de piață ridicată pe termen lung datorită performanței structurale.
+            O casă bună evită „economiile false” de la început care generează costuri uriașe ulterior. 
+            Standardul iCONiC înseamnă o investiție predictibilă, cu o valoare de revânzare ridicată.
           </p>
         </div>
 
-        {/* 9 */}
         <div className="listItem">
           <h3>9) Proiectare în interesul clientului</h3>
           <p>
-            Optimizăm fiecare metru pătrat, eliminăm spațiile moarte și maximizăm aportul de lumină naturală, adaptând fluxurile casei la ritmul tău de viață.
+            Nu proiectăm pentru a cosmetiza cifrele, ci pentru ca spațiul să lucreze pentru tine. 
+            Optimizăm fiecare metru pătrat, eliminăm spațiile moarte și maximizăm aportul de lumină naturală 
+            în funcție de ritmul tău de viață.
           </p>
         </div>
 
-        {/* 10 */}
         <div className="listItem">
-          <h3>10) Claritate contractuală și Digital Twin</h3>
+          <h3>10) Claritate contractuală și garanții</h3>
           <p>
-            La final, primești documentația tehnică completă („As-Built”). Aceasta servește drept „carte de identitate digitală” a casei, esențială pentru mentenanță sau modificări viitoare.
+            Definim clar etapele de recepție și condițiile de garanție. 
+            La final, primești documentația tehnică completă („As-Built”), 
+            cartea tehnică a construcției fiind pilonul siguranței tale juridice și tehnice.
           </p>
         </div>
 
-        {/* 11 - Detaliat Smart Home & AI */}
         <div className="listItem">
-          <h3>11) Smart Home, AI și Monitorizare Structurală</h3>
+          <h3>11) Smart Home, AI & Monitorizare Structurală</h3>
           <p>
-            Gândim un ecosistem unitar (standard KNX sau similar) care lucrează proactiv pentru confortul și siguranța ta:
+            Gândim infrastructura pentru a permite integrarea facilă a sistemelor de automatizare proactivă (standard KNX sau similar). 
+            Casa este pregătită pentru senzori AI, monitorizare energetică și control inteligent al climatizării, iluminatului și scenariilor de securitate (CCTV, control acces biometric, senzori inundație/foc). 
+            În exclusivitate, integrăm opțiunea de monitorizare structurală post-seism, oferind un raport tehnic imediat despre starea clădirii pentru liniștea totală a familiei tale.
           </p>
-          <ul style={{ paddingLeft: '20px', marginTop: '10px' }}>
-            <li><strong>Automatizare Inteligentă:</strong> Managementul proactiv al iluminatului, climatizării și jaluzelelor în funcție de senzori și scenarii de viață.</li>
-            <li><strong>Monitorizare Structurală (Exclusiv):</strong> Posibilitatea instalării de senzori care confirmă integritatea casei în domeniul elastic după un seism.</li>
-            <li><strong>Siguranță Activă:</strong> Sisteme de securitate cu analiză video AI, control acces biometric și senzori de prevenție (inundație/foc) cu auto-oprire.</li>
-            <li><strong>Managementul Resurselor:</strong> Monitorizarea în timp real a consumului de energie și apă pentru optimizarea costurilor de exploatare.</li>
-          </ul>
         </div>
 
-        {/* 12 */}
         <div className="listItem">
           <h3>12) Spații adaptabile</h3>
           <p>
-            Proiectăm structuri flexibile care permit recompartimentări viitoare fără a afecta rezistența clădirii, permițând casei să evolueze odată cu familia ta.
+            Proiectăm structuri flexibile care permit adaptarea funcțiunilor în timp. 
+            O casă iCONiC evoluează odată cu familia ta, oferind posibilitatea de recompartimentare 
+            fără a afecta rezistența clădirii.
           </p>
         </div>
 
-        {/* 13 */}
         <div className="listItem">
           <h3>13) Longevity by Default</h3>
           <p>
-            Standardul iCONiC este despre longevitate. Proiectăm locuințe care își păstrează performanța structurală, eficiența și estetica pe parcursul mai multor generații.
+            Standardul iCONiC este despre longevitate. Proiectăm locuințe care își păstrează 
+            performanța structurală, eficiența și estetica pe parcursul mai multor generații, 
+            sfidând trecerea timpului.
           </p>
         </div>
       </div>
