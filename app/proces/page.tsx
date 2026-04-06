@@ -67,19 +67,16 @@ export default function ProcesPage() {
             </ul>
           </div>
         </div>
-        <p>
-        Deși viața este protejată, rezultatul unui seism major asupra unei astfel de clădiri este adesea o locuință INUTILIZABILĂ. Impactul real pentru proprietar nu este doar unul tehnic, ci unul care destabilizează întreaga viață a familiei:
-
-Costuri Disproporționate: Efortul financiar necesar pentru înlocuirea suprafețelor vitrate mari, refacerea integrală a finisajelor și consolidarea elementelor structurale avariate depășește cu mult investiția modică ce ar fi fost necesară inițial pentru o soluție tehnică superioară.
-
-Haosul Relocării: O casă avariată obligă familia la o mutare de urgență. Într-un oraș afectat de seism, găsirea unei chirii sigure devine o provocare aproape imposibilă și extrem de costisitoare.
-
-Logistica și Depozitarea: Costurile și efortul de a muta și depozita întregul mobilier și bunurile personale pe durata unor reparații care pot dura luni de zile reprezintă o povară ascunsă, dar uriașă.
-
-Timp și Stres: Șantierul post-seism înseamnă luni de incertitudine și disconfort, timp în care viața de familie este suspendată.
-
-Concluzia noastră: Adoptarea unei soluții de proiectare reziliente, pe care noi o propunem, nu este un cost suplimentar, ci o asigurare pentru viitor. Investiția marginală de astăzi elimină riscul ca, după un cutremur, să pierdeți nu doar finisajele casei, ci și confortul, timpul și liniștea familiei dumneavoastră.
-<p>
+ <p>
+    Deși viața este protejată, rezultatul unui seism major asupra unei astfel de clădiri este adesea o locuință INUTILIZABILĂ. Impactul real pentru proprietar nu este doar unul tehnic, ci unul care destabilizează întreaga viață a familiei:
+    Costuri Disproporționate: Efortul financiar necesar pentru înlocuirea suprafețelor vitrate mari, refacerea integrală a finisajelor și consolidarea elementelor structurale avariate depășește cu mult investiția modică ce ar fi fost necesară inițial pentru o soluție tehnică superioară.
+    Haosul Relocării: O casă avariată obligă familia la o mutare de urgență. Într-un oraș afectat de seism, găsirea unei chirii sigure devine o provocare aproape imposibilă și extrem de costisitoare.
+    Logistica și Depozitarea: Costurile și efortul de a muta și depozita întregul mobilier și bunurile personale pe durata unor reparații care pot dura luni de zile reprezintă o povară ascunsă, dar uriașă.
+    Timp și Stres: Șantierul post-seism înseamnă luni de incertitudine și disconfort, timp în care viața de familie este suspendată.
+    Concluzia noastră: Adoptarea unei soluții de proiectare reziliente, pe care noi o propunem, nu este un cost suplimentar, ci o asigurare pentru viitor. Investiția marginală de astăzi elimină riscul ca, după un cutremur, să pierdeți nu doar finisajele casei, ci și confortul, timpul și liniștea familiei dumneavoastră.
+</p>
+</div>
+      
         <div className="listItem">
           <h3>3) Soluție structurală aleasă rațional</h3>
           <p>
