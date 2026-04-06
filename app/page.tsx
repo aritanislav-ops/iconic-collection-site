@@ -214,7 +214,7 @@ export default function HomePage() {
     e.currentTarget.play().catch(() => {});
   }}
 >
-  <source src="/brand/hero-h264.mp4" type="video/mp4" />
+  <source src="/brand/HERO 5.mp4" type="video/mp4" />
 </video>
           <div className="heroOverlay" />
         </div>
