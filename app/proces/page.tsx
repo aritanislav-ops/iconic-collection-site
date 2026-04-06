@@ -43,7 +43,7 @@ export default function ProcesPage() {
             O casă proiectată CLASIC, „conform normei actuale”, este gândită în primul rând să evite colapsul structural în timpul unui cutremur major (cutremurul de proiectare). 
             Norma permite însă degradări atât la nivel de finisaje cât și la nivel de structură prin utilizarea factorului de comportare <strong>q</strong>, 
             factor ce duce la reducerea forței seismice de calcul direct proporțional în schimbul acceptării DEGRADĂRILOR. 
-            Rezultatul este o structură care protejează viața, dar care poate deveni INUTILIZABILĂ după un cutremur major (cutremurul de proiectare) din cauza DAUNELOR severe suferite.
+            Rezultatul este o structură care protejează viața, dar care poate deveni INUTILIZABILĂ după un cutremur major din cauza DAUNELOR severe suferite.
           </p>
 
           <div style={{ marginTop: '15px', padding: '20px', borderLeft: '4px solid #0284c7', backgroundColor: '#f0f9ff', borderRadius: '0 8px 8px 0' }}>
@@ -61,19 +61,16 @@ export default function ProcesPage() {
               </li>
               <li>
                 <strong>🌍 Recurența de 475 de ani:</strong> Codul P100-1/2013 folosește încă referința de 225 de ani pentru acțiunea seismică. 
-                Noi adoptăm deja direcția propusă de P100-1/2025 (recurență de 475 ani), oferind un nivel de siguranță net superior și mai mult de atât dimensionarea în elastic
-                pentru a păstra funcționalitatea locuinței și după un seism foarte sever. Datorită regimului mic de înălțime și expertizei inginerilor noștri în conformare structurală, reușim să garantăm acest beneficiu esențial pentru clienți, fără a compromite accesibilitatea prețului.
+                Noi adoptăm deja direcția propusă de P100-1/2025 (recurență de 475 ani), oferind un nivel de siguranță net superior și dimensionarea în elastic
+                pentru a păstra funcționalitatea locuinței și după un seism foarte sever.
               </li>
             </ul>
           </div>
           
           <p style={{ marginTop: '15px' }}>
             Deși viața este protejată, rezultatul unui seism major asupra unei astfel de clădiri este adesea o locuință INUTILIZABILĂ. Impactul real pentru proprietar nu este doar unul tehnic, ci unul care destabilizează întreaga viață a familiei:
-            Costuri Disproporționate: Efortul financiar necesar pentru înlocuirea suprafețelor vitrate mari, refacerea integrală a finisajelor și consolidarea elementelor structurale avariate depășește cu mult investiția modică ce ar fi fost necesară inițial pentru o soluție tehnică superioară.
-            Haosul Relocării: O casă avariată obligă familia la o mutare de urgență. Într-un oraș afectat de seism, găsirea unei chirii sigure devine o provocare aproape imposibilă și extrem de costisitoare.
-            Logistica și Depozitarea: Costurile și efortul de a muta și depozita întregul mobilier și bunurile personale pe durata unor reparații care pot dura luni de zile reprezintă o povară ascunsă, dar uriașă.
-            Timp și Stres: Șantierul post-seism înseamnă luni de incertitudine și disconfort, timp în care viața de familie este suspendată.
-            Concluzia noastră: Adoptarea unei soluții de proiectare reziliente, pe care noi o propunem, nu este un cost suplimentar, ci o asigurare pentru viitor. Investiția marginală de astăzi elimină riscul ca, după un cutremur, să pierdeți nu doar finisajele casei, ci și confortul, timpul și liniștea familiei dumneavoastră.
+            Costuri Disproporționate, Haosul Relocării, Logistica și Depozitarea, Timp și Stres.
+            Concluzia noastră: Adoptarea unei soluții de proiectare reziliente nu este un cost suplimentar, ci o asigurare pentru viitor.
           </p>
         </div>
 
@@ -87,12 +84,12 @@ export default function ProcesPage() {
         </div>
 
         <div className="listItem">
-          <h3>4) Eficiență energetică și principii nZEB</h3>
+          <h3>4) Energie, Climă și Eficiență nZEB</h3>
           <p>
-            Integrăm soluții compatibile cu standardele nZEB (Nearly Zero Energy Building). 
-            O casă bine proiectată nu înseamnă doar izolație, ci o anvelopă eficientă și sisteme inteligente 
-            (pompe de căldură aer-apă sau sol-apă, ventilație HRV cu recuperare de căldură și filtrare activă a aerului / ionizatoare) care reduc drastic costurile de exploatare. 
-            Implementăm soluții de climatizare avansate, precum încălzirea și răcirea în pardoseală sau tavan, și pregătim infrastructura pentru panouri fotovoltaice și stocare în baterii pentru o independență energetică reală.
+            Standardul iCONiC integrează sisteme de ultimă generație pentru o independență energetică reală. Utilizăm surse de căldură avansate precum <strong>pompe de căldură aer-apă sau geotermale (sol-apă)</strong>, completate de soluții de distribuție radiantă prin <strong>încălzire în pardoseală și răcire în tavan</strong> (fără jet de aer). 
+            Eficiența este susținută de sisteme <strong>VMC (ventilație mecanică cu recuperare)</strong> și filtrare HEPA/ionizare pentru un aer interior steril. 
+            Proiectăm casa ca pe o unitate de producție: <strong>panouri fotovoltaice, baterii de stocare, stații de încărcare EV</strong> și tablouri electrice monitorizate prin contoare smart. 
+            Totul este completat de un management riguros al apei: boilere bivalente, stații de dedurizare, osmoză inversă și sisteme de <strong>colectare a apei pluviale</strong> pentru irigații automatizate și drenaj perimetral.
           </p>
         </div>
 
@@ -149,11 +146,12 @@ export default function ProcesPage() {
         </div>
 
         <div className="listItem">
-          <h3>11) Smart Home, AI & Monitorizare Structurală</h3>
+          <h3>11) Smart Home, Securitate & Tehnologii AI</h3>
           <p>
-            Gândim infrastructura pentru a permite integrarea facilă a sistemelor de automatizare proactivă (standard KNX sau similar). 
-            Casa este pregătită pentru senzori AI, monitorizare energetică și control inteligent al climatizării, iluminatului și scenariilor de securitate (CCTV, control acces biometric, senzori inundație/foc). 
-            În exclusivitate, integrăm opțiunea de monitorizare structurală post-seism, oferind un raport tehnic imediat despre starea clădirii pentru liniștea totală a familiei tale.
+            Casa iCONiC dispune de un "creier" centralizat bazat pe standarde profesionale (<strong>KNX / Loxone</strong>). Integrăm controlul inteligent al iluminatului, jaluzelelor și climatizării pe zone, alături de sisteme de <strong>monitorizare anti-inundație cu electrovalve automate</strong>. 
+            Securitatea este tratată la nivel de infrastructură critică: supraveghere video CCTV, alarmă antiefracție, control acces biometric, paratrăsnet și detectoare de fum/CO/gaze. 
+            Pentru confort digital, implementăm <strong>rețele structurate Cat6/Cat7</strong> cu puncte de acces WiFi mesh profesionale și audio multiroom. 
+            În plus, oferim opțiunea exclusivă de <strong>monitorizare structurală post-seism</strong> pentru confirmarea integrității clădirii în domeniul elastic.
           </p>
         </div>
 
