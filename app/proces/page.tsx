@@ -40,10 +40,10 @@ export default function ProcesPage() {
         <div className="listItem">
           <h3>2) Siguranță seismică: Protejăm casa, nu doar viața</h3>
           <p>
-            O casă proiectată clasic, „conform normei”, este gândită în primul rând să nu se prăbușească la cutremurul de proiectare. 
-            Norma permite însă degradări structurale controlate prin utilizarea factorului de comportare <strong>q</strong>, 
-            adică reducerea forței seismice de calcul în schimbul acceptării unor avarii plastice. 
-            Rezultatul: viața este protejată, dar locuința poate suferi degradări serioase și poate deveni greu de utilizat după un cutremur puternic.
+            O casă proiectată clasic, „conform normei”, este gândită în primul rând să evite colapsul structural în timpul unui cutremur major. 
+            Norma permite însă degradări atat la nivel de finisaje cat și la nivel de structură prin utilizarea factorului de comportare <strong>q</strong>, 
+            factor ceduce la reducerea forței seismice de calcul în schimbul acceptării unor avarii plastice. 
+            Rezultatul: viața este protejată, dar locuința poate suferi degradări serioase și poate deveni INUTILIZABILĂ după un cutremur puternic(cutremurul de proiectare).
           </p>
 
           <div style={{ marginTop: '15px', padding: '20px', borderLeft: '4px solid #0284c7', backgroundColor: '#f0f9ff', borderRadius: '0 8px 8px 0' }}>
@@ -51,18 +51,18 @@ export default function ProcesPage() {
             <ul style={{ listStyleType: 'none', padding: 0, margin: 0, fontSize: '0.95rem', lineHeight: '1.6' }}>
               <li style={{ marginBottom: '12px' }}>
                 <strong>🛑 Proiectarea Clasică (q ≈ 5):</strong> Forța seismică de calcul este redusă de aproximativ 5 ori, 
-                iar diferența este „recuperată” prin ductilitate — adică prin fisurare, rotiri plastice și avarii controlate. 
-                Deplasările mari pot distruge pereții, tâmplăria și finisajele.
+                iar diferența este „recuperată” prin deformatii ductile — adică prin fisurare, rotiri plastice și avarii controlate. 
+                Deplasările mari pot distruge pereții, tâmplăria și finisajele, aparand astfel costuri importante ce le va suporta clientul.
               </li>
               <li style={{ marginBottom: '12px' }}>
                 <strong>💎 Standardul iCONiC (q = 1):</strong> Alegem proiectarea în <strong>domeniul elastic</strong>. 
-                Structura se dimensionează la nivelul forței reale, fără a se baza pe degradări plastice ca mecanism de rezistență. 
-                Asta înseamnă secțiuni mai robuste, rigiditate sporită și deplasări mult mai mici.
+                Datorită regimului mic de înăltime si printr-o conformare structurala judicioasa structura se dimensionează la nivelul forței reale comportarii elastice, fără a se baza pe degradări plastice ca mecanism de rezistență. 
+                Asta înseamnă secțiuni mai robuste, rigiditate sporită și deplasări mult mai mici astfel incât avariile și degradările să tindă către ZERO.
               </li>
               <li>
                 <strong>🌍 Recurența de 475 de ani:</strong> Codul P100-1/2013 folosește încă referința de 225 de ani pentru acțiunea seismică. 
-                Noi adoptăm deja direcția propusă de proiectul P100-1/2025 (recurență de 475 ani), oferind un nivel de siguranță superior 
-                pentru a păstra funcționalitatea locuinței și după un seism sever.
+                Noi adoptăm deja direcția propusă de P100-1/2025 (recurență de 475 ani), oferind un nivel de siguranță net superior si mai mult de atat dimensionarea in elastic
+                pentru a păstra funcționalitatea locuinței și după un seism foarte sever.Datorită regimului mic de înălțime și expertizei inginerilor noștri în conformare structurală, reușim să garantăm acest beneficiu esențial pentru clienți, fără a compromite accesibilitatea prețului
               </li>
             </ul>
           </div>
