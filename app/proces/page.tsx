@@ -28,6 +28,7 @@ export default function ProcesPage() {
       </p>
 
       <div className="list">
+        {/* 1 */}
         <div className="listItem">
           <h3>1) Respectarea normelor în vigoare</h3>
           <p>
@@ -37,13 +38,14 @@ export default function ProcesPage() {
           </p>
         </div>
 
+        {/* 2 */}
         <div className="listItem">
           <h3>2) Siguranță seismică: Protejăm casa, nu doar viața</h3>
           <p>
-            O casă proiectată CLASIC, „conform normei actuale”, este gândită în primul rând să evite colapsul structural în timpul unui cutremur major(cutremurul de proiectare). 
-            Norma permite însă degradări atat la nivel de finisaje cât și la nivel de structură prin utilizarea factorului de comportare <strong>q</strong>, 
-            factor ce duce la reducerea forței seismice de calcul direct proportional în schimbul acceptării DEGRADĂRILOR. 
-            Rezultatul este o structură care protejează viața, dar care poate deveni INUTILIZABILĂ după un cutremur major(cutremurul de proiectare) din cauza DAUNELOR severe suferite.
+            O casă proiectată CLASIC, „conform normei actuale”, este gândită în primul rând să evite colapsul structural în timpul unui cutremur major (cutremurul de proiectare). 
+            Norma permite însă degradări atât la nivel de finisaje cât și la nivel de structură prin utilizarea factorului de comportare <strong>q</strong>, 
+            factor ce duce la reducerea forței seismice de calcul direct proporțional în schimbul acceptării DEGRADĂRILOR. 
+            Rezultatul este o structură care protejează viața, dar care poate deveni INUTILIZABILĂ după un cutremur major din cauza DAUNELOR severe suferite.
           </p>
 
           <div style={{ marginTop: '15px', padding: '20px', borderLeft: '4px solid #0284c7', backgroundColor: '#f0f9ff', borderRadius: '0 8px 8px 0' }}>
@@ -51,32 +53,35 @@ export default function ProcesPage() {
             <ul style={{ listStyleType: 'none', padding: 0, margin: 0, fontSize: '0.95rem', lineHeight: '1.6' }}>
               <li style={{ marginBottom: '12px' }}>
                 <strong>🛑 Proiectarea Clasică (q ≈ 5):</strong> Forța seismică de calcul este redusă de aproximativ 5 ori, 
-                iar diferența este „recuperată” prin deformatii ductile — adică prin fisurare, rotiri plastice și avarii controlate. 
-                Deplasările mari pot distruge pereții, tâmplăria și finisajele, aparand astfel costuri importante ce le va suporta clientul.
+                iar diferența este „recuperată” prin deformații ductile — adică prin fisurare, rotiri plastice și avarii controlate. 
+                Deplasările mari pot distruge pereții, tâmplăria și finisajele, apărând astfel costuri importante ce le va suporta clientul.
               </li>
               <li style={{ marginBottom: '12px' }}>
                 <strong>💎 Standardul iCONiC (q = 1):</strong> Alegem proiectarea în <strong>domeniul elastic</strong>. 
-                Datorită regimului mic de înăltime si printr-o conformare structurala judicioasa structura se dimensionează la nivelul forței reale comportarii elastice, fără a se baza pe degradări plastice ca mecanism de rezistență. 
-                Asta înseamnă secțiuni mai robuste, rigiditate sporită și deplasări mult mai mici astfel incât avariile și degradările să tindă către ZERO.
+                Datorită regimului mic de înălțime și printr-o conformare structurală judicioasă, structura se dimensionează la nivelul forței reale comportării elastice, fără a se baza pe degradări plastice ca mecanism de rezistență. 
+                Asta înseamnă secțiuni mai robuste, rigiditate sporită și deplasări mult mai mici, astfel încât avariile și degradările să tindă către ZERO.
               </li>
               <li>
                 <strong>🌍 Recurența de 475 de ani:</strong> Codul P100-1/2013 folosește încă referința de 225 de ani pentru acțiunea seismică. 
-                Noi adoptăm deja direcția propusă de P100-1/2025 (recurență de 475 ani), oferind un nivel de siguranță net superior si mai mult de atat dimensionarea in elastic
-                pentru a păstra funcționalitatea locuinței și după un seism foarte sever.Datorită regimului mic de înălțime și expertizei inginerilor noștri în conformare structurală, reușim să garantăm acest beneficiu esențial pentru clienți, fără a compromite accesibilitatea prețului
+                Noi adoptăm deja direcția propusă de P100-1/2025 (recurență de 475 ani), oferind un nivel de siguranță net superior pentru a păstra funcționalitatea locuinței și după un seism foarte sever.
               </li>
             </ul>
           </div>
+
+          <p style={{ marginTop: '15px' }}>
+            Deși viața este protejată, rezultatul unui seism major asupra unei astfel de clădiri este adesea o locuință INUTILIZABILĂ. Impactul real pentru proprietar destabilizează întreaga viață a familiei:
+          </p>
+          <ul style={{ paddingLeft: '20px', marginTop: '10px' }}>
+            <li><strong>Costuri Disproporționate:</strong> Efortul financiar pentru reparații depășește investiția inițială într-o soluție superioară.</li>
+            <li><strong>Haosul Relocării:</strong> O casă avariată obligă familia la o mutare de urgență într-un context urban dificil.</li>
+            <li><strong>Timp și Stres:</strong> Șantierul post-seism înseamnă luni de incertitudine și disconfort.</li>
+          </ul>
+          <p style={{ fontWeight: '600', marginTop: '10px' }}>
+            Concluzia noastră: Adoptarea unei soluții reziliente nu este un cost, ci o asigurare pentru viitorul familiei dumneavoastră.
+          </p>
         </div>
- <p>
-    Deși viața este protejată, rezultatul unui seism major asupra unei astfel de clădiri este adesea o locuință INUTILIZABILĂ. Impactul real pentru proprietar nu este doar unul tehnic, ci unul care destabilizează întreaga viață a familiei:
-    Costuri Disproporționate: Efortul financiar necesar pentru înlocuirea suprafețelor vitrate mari, refacerea integrală a finisajelor și consolidarea elementelor structurale avariate depășește cu mult investiția modică ce ar fi fost necesară inițial pentru o soluție tehnică superioară.
-    Haosul Relocării: O casă avariată obligă familia la o mutare de urgență. Într-un oraș afectat de seism, găsirea unei chirii sigure devine o provocare aproape imposibilă și extrem de costisitoare.
-    Logistica și Depozitarea: Costurile și efortul de a muta și depozita întregul mobilier și bunurile personale pe durata unor reparații care pot dura luni de zile reprezintă o povară ascunsă, dar uriașă.
-    Timp și Stres: Șantierul post-seism înseamnă luni de incertitudine și disconfort, timp în care viața de familie este suspendată.
-    Concluzia noastră: Adoptarea unei soluții de proiectare reziliente, pe care noi o propunem, nu este un cost suplimentar, ci o asigurare pentru viitor. Investiția marginală de astăzi elimină riscul ca, după un cutremur, să pierdeți nu doar finisajele casei, ci și confortul, timpul și liniștea familiei dumneavoastră.
-</p>
-</div>
-      
+
+        {/* 3 */}
         <div className="listItem">
           <h3>3) Soluție structurală aleasă rațional</h3>
           <p>
@@ -86,6 +91,7 @@ export default function ProcesPage() {
           </p>
         </div>
 
+        {/* 4 */}
         <div className="listItem">
           <h3>4) Eficiență energetică și principii nZEB</h3>
           <p>
@@ -95,6 +101,7 @@ export default function ProcesPage() {
           </p>
         </div>
 
+        {/* 5 */}
         <div className="listItem">
           <h3>5) Materiale și soluții tehnice alese corect</h3>
           <p>
@@ -103,6 +110,7 @@ export default function ProcesPage() {
           </p>
         </div>
 
+        {/* 6 */}
         <div className="listItem">
           <h3>6) Controlul calității în execuție</h3>
           <p>
@@ -112,6 +120,7 @@ export default function ProcesPage() {
           </p>
         </div>
 
+        {/* 7 */}
         <div className="listItem">
           <h3>7) Echipă de execuție și responsabilități clare</h3>
           <p>
@@ -121,6 +130,7 @@ export default function ProcesPage() {
           </p>
         </div>
 
+        {/* 8 */}
         <div className="listItem">
           <h3>8) Durabilitate și cost corect pe termen lung</h3>
           <p>
@@ -129,6 +139,7 @@ export default function ProcesPage() {
           </p>
         </div>
 
+        {/* 9 */}
         <div className="listItem">
           <h3>9) Proiectare în interesul clientului</h3>
           <p>
@@ -138,6 +149,7 @@ export default function ProcesPage() {
           </p>
         </div>
 
+        {/* 10 */}
         <div className="listItem">
           <h3>10) Claritate contractuală și garanții</h3>
           <p>
@@ -147,6 +159,7 @@ export default function ProcesPage() {
           </p>
         </div>
 
+        {/* 11 */}
         <div className="listItem">
           <h3>11) Smart Home & Tehnologii Viitoare</h3>
           <p>
@@ -156,6 +169,7 @@ export default function ProcesPage() {
           </p>
         </div>
 
+        {/* 12 */}
         <div className="listItem">
           <h3>12) Spații adaptabile</h3>
           <p>
@@ -165,6 +179,7 @@ export default function ProcesPage() {
           </p>
         </div>
 
+        {/* 13 */}
         <div className="listItem">
           <h3>13) Longevity by Default</h3>
           <p>
