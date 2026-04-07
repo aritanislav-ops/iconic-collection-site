@@ -280,9 +280,7 @@ export default function HomePage() {
               </h1>
 
               <p className="heroSub">
-              Tu vii cu terenul și obiectivul, iar noi ne ocupăm de concept, studiu geotehnic, proiect complet, documentații pentru autorizare și execuție,
-                astfel încât casa să rămână coerentă cu proiectul, bugetul și condițiile reale din teren.
-              </p>
+              Tu vii cu terenul și obiectivul, iar noi ne ocupăm de concept, studiu geotehnic, proiect complet, documentații pentru autorizare și execuție, astfel încât casa să rămână coerentă cu proiectul, bugetul și condițiile reale din teren. </p>
 
               <ul className="heroChecks">
                 <CheckItem>Proiectare completă pentru casă</CheckItem>
