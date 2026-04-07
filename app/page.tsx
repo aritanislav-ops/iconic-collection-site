@@ -13,6 +13,48 @@ function CheckItem({ children }: { children: React.ReactNode }) {
   );
 }
 
+function IconDesign() {
+  return (
+    <svg viewBox="0 0 24 24" className="featureSvg" aria-hidden="true">
+      <rect x="4.5" y="5" width="10.5" height="10.5" rx="1.6" />
+      <path d="M8 8.5h4M8 11.5h3.2M17 7l2.5 2.5M14.8 11.7l4.7-4.7M14.1 12.4l-.6 2.7 2.7-.6" />
+    </svg>
+  );
+}
+
+function IconDocs() {
+  return (
+    <svg viewBox="0 0 24 24" className="featureSvg" aria-hidden="true">
+      <path d="M8 4.75h6.6l3.15 3.15V18A1.75 1.75 0 0 1 16 19.75H8A1.75 1.75 0 0 1 6.25 18V6.5A1.75 1.75 0 0 1 8 4.75Z" />
+      <path d="M14.5 4.9V8h3.1" />
+      <path d="M9.2 13l1.8 1.8 3.8-3.8" />
+    </svg>
+  );
+}
+
+function IconExecution() {
+  return (
+    <svg viewBox="0 0 24 24" className="featureSvg" aria-hidden="true">
+      <path d="M7 12.25a5 5 0 0 1 10 0" />
+      <path d="M5.5 12.25h13" />
+      <path d="M7 12.25V15a1.25 1.25 0 0 1-1.25 1.25h-.5" />
+      <path d="M17 12.25V15a1.25 1.25 0 0 0 1.25 1.25h.5" />
+      <path d="M12 7.25v2.25" />
+      <path d="M9 17.75h6" />
+    </svg>
+  );
+}
+
+function FeatureIcon({ type }: { type: "design" | "docs" | "execution" }) {
+  return (
+    <div className="featureIcon" aria-hidden="true">
+      {type === "design" && <IconDesign />}
+      {type === "docs" && <IconDocs />}
+      {type === "execution" && <IconExecution />}
+    </div>
+  );
+}
+
 export default function HomePage() {
 
   const homeSchema = {
@@ -203,19 +245,19 @@ export default function HomePage() {
       <section className="hero">
         <div className="heroMedia" aria-hidden="true">
           <video
-  className="heroVideo"
-  autoPlay
-  muted
-  loop
-  playsInline
-  preload="auto"
-  onCanPlay={(e) => {
-    e.currentTarget.muted = true;
-    e.currentTarget.play().catch(() => {});
-  }}
->
-  <source src="/brand/HERO 5.mp4" type="video/mp4" />
-</video>
+            className="heroVideo"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            onCanPlay={(e) => {
+              e.currentTarget.muted = true;
+              e.currentTarget.play().catch(() => {});
+            }}
+          >
+            <source src="/brand/HERO 5.mp4" type="video/mp4" />
+          </video>
           <div className="heroOverlay" />
         </div>
 
@@ -254,7 +296,7 @@ export default function HomePage() {
         <div className="container heroUnder">
           <div className="featureRow">
             <div className="featureCard">
-              <div className="featureIcon" aria-hidden="true">⌁</div>
+              <FeatureIcon type="design" />
               <div className="featureTitle">Proiectare completă</div>
               <div className="featureText">
                 Arhitectură, structură și instalații, coordonate într-un proiect coerent și adaptat casei tale.
@@ -262,7 +304,7 @@ export default function HomePage() {
             </div>
 
             <div className="featureCard">
-              <div className="featureIcon" aria-hidden="true">◩</div>
+              <FeatureIcon type="docs" />
               <div className="featureTitle">Autorizații și documentații</div>
               <div className="featureText">
                 Te ajutăm cu documentațiile și pașii necesari pentru autorizarea corectă a proiectului.
@@ -270,7 +312,7 @@ export default function HomePage() {
             </div>
 
             <div className="featureCard">
-              <div className="featureIcon" aria-hidden="true">⎘</div>
+              <FeatureIcon type="execution" />
               <div className="featureTitle">Execuție și coordonare</div>
               <div className="featureText">
                 Putem merge mai departe decât proiectarea, cu coordonare și implicare până în etapa de execuție.
@@ -294,12 +336,12 @@ export default function HomePage() {
               return (
                 <article key={m.slug} className="modelCard">
                   <Link
-  className="modelImgBtn"
-  href={`/modele/${m.slug}`}
-  aria-label={`Vezi galeria modelului: ${m.name}`}
->
-  {cover ? <img className="modelCover" src={cover} alt={m.name} loading="lazy" /> : null}
-</Link>
+                    className="modelImgBtn"
+                    href={`/modele/${m.slug}`}
+                    aria-label={`Vezi galeria modelului: ${m.name}`}
+                  >
+                    {cover ? <img className="modelCover" src={cover} alt={m.name} loading="lazy" /> : null}
+                  </Link>
 
                   <div className="modelBody">
                     <div className="modelName">{m.name}</div>
