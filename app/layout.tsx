@@ -123,33 +123,31 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
 
             <nav className="footerLinks" aria-label="Linkuri legale">
-              <Link href="/termeni">Termeni</Link>
-              <Link href="/confidentialitate">Confidențialitate</Link>
-              <Link href="/cookies">Cookies</Link>
-              <Link href="/contact" className="footerContactBtn">Contactează-ne</Link>
+  <Link href="/termeni">Termeni</Link>
+  <Link href="/confidentialitate">Confidențialitate</Link>
+  <Link href="/cookies">Cookies</Link>
+  <Link href="/contact" className="footerContactBtn">Contactează-ne</Link>
 
-              <a
-                href="https://anpc.ro/ce-este-sal/"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="SAL ANPC"
-                className="footerLogoLink"
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img className="footerLogo" src="/brand/sol-anpc.png" alt="SAL ANPC" />
-              </a>
+  <a
+    href="https://anpc.ro/ce-este-sal/"
+    target="_blank"
+    rel="noreferrer"
+    aria-label="SAL ANPC"
+    className="footerLogoLink"
+  >
+    <img className="footerLogo" src="/brand/sol-anpc.png" alt="SAL ANPC" />
+  </a>
 
-              <a
-                href="https://consumer-redress.ec.europa.eu/index_en"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="SOL UE"
-                className="footerLogoLink"
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img className="footerLogo" src="/brand/sol-ue.png" alt="SOL UE" />
-              </a>
-            </nav>
+  <a
+    href="https://consumer-redress.ec.europa.eu/index_en"
+    target="_blank"
+    rel="noreferrer"
+    aria-label="SOL UE"
+    className="footerLogoLink"
+  >
+    <img className="footerLogo" src="/brand/sol-ue.png" alt="SOL UE" />
+  </a>
+</nav>
           </div>
         </footer>
 
