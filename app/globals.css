@@ -9,8 +9,8 @@
   --shadow: 0 10px 30px rgba(2,6,23,.08);
   --shadow-strong: 0 18px 60px rgba(2,6,23,.16);
   
-  /* SECRETUL LUXULUI: Colțuri drepte arhitecturale in loc de rotunjimi mari */
-  --radius:0px; 
+  /* AM READUS COLȚURILE ROTUNJITE PENTRU IMAGINI ȘI CARDURI */
+  --radius:14px; 
 
   /* accent (auriu discret) */
   --gold:#caa46a;
