@@ -136,7 +136,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 className="footerLogoLink"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img className="footerLogo" src="/brand/legal/sal.png" alt="SAL ANPC" />
+                <img className="footerLogo" src="/brand/sol-anpc.png" alt="SAL ANPC" />
               </a>
 
               <a
@@ -147,7 +147,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 className="footerLogoLink"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img className="footerLogo" src="/brand/legal/sol-ue.png" alt="SOL UE" />
+                <img className="footerLogo" src="/brand/sol-ue.png" alt="SOL UE" />
               </a>
             </nav>
           </div>
