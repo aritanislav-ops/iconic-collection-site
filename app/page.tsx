@@ -435,24 +435,21 @@ export default function HomePage() {
             <div className="card serviceCard">
               <h3 className="cardTitle">Proiectare completă</h3>
               <p className="cardText">
-                Arhitectură, structură și instalații, coordonate într-un proiect coerent,
-                adaptat terenului, cerințelor și bugetului tău.
+                Arhitectură, structură și instalații, coordonate într-un proiect coerent și adaptat terenului, cerințelor și bugetului tău.
               </p>
             </div>
 
             <div className="card serviceCard">
               <h3 className="cardTitle">Documentații pentru autorizare</h3>
               <p className="cardText">
-                Pregătim documentațiile necesare pentru autorizare și clarificăm pașii
-                care trebuie urmați pentru proiectul tău.
+                Pregătim documentațiile necesare pentru autorizare și clarificăm pașii care trebuie urmați pentru proiectul tău.
               </p>
             </div>
 
             <div className="card serviceCard">
               <h3 className="cardTitle">Coordonare și execuție</h3>
               <p className="cardText">
-                În funcție de nevoie, putem merge mai departe decât proiectarea,
-                cu coordonare, urmărire pe etape și sprijin până la execuție.
+                În funcție de nevoie, putem asigura coordonarea execuției până la capăt, astfel încât casa realizată să rămână coerentă cu proiectul și cu condițiile reale din teren.
               </p>
             </div>
           </div>
