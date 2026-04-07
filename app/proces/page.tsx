@@ -3,14 +3,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Standardul nostru",
   description:
-    "Descoperă standardul iCONiC: Proiectare seismică în domeniu elastic (q=1), eficiență energetică nZEB și protecția reală a investiției pe termen lung.",
+    "Standardul iCONiC înseamnă proiectare corectă, documentații pentru autorizare, execuție coordonată și case premium personalizate pentru terenul clientului.",
   alternates: {
     canonical: "/proces",
   },
   openGraph: {
     title: "Standardul nostru | iCONiC collection",
     description:
-      "Protejăm casa, nu doar viața. Proiectare seismică avansată și eficiență nZEB fără compromisuri.",
+      "Proiectare corectă, execuție coordonată și case premium personalizate pentru terenul clientului. Protejăm casa, nu doar viața. Proiectare seismică avansată și eficiență nZEB fără compromisuri.",    
     url: "https://www.iconic-collection.ro/proces",
     images: ["/brand/og-home.jpg"],
   },
@@ -25,6 +25,8 @@ export default function ProcesPage() {
         Echipa noastră reunește experți tehnici atestați și arhitecți cu peste 20 de ani de experiență internațională, 
         tratând fiecare casă cu aceeași seriozitate tehnică și atenție la durabilitate ca pe un proiect de anvergură. 
         Proiectăm pentru siguranță reală și pentru avantajul pe termen lung al clientului.
+        Standardul iCONiC înseamnă proiectare corectă, execuție coordonată atent, soluții tehnice alese rațional și case personalizate
+        pentru terenul clientului. Nu urmărim compromisuri de imagine, ci coerență între proiect, buget, reglementări și rezultatul final construit.
       </p>
 
       <div className="list">
