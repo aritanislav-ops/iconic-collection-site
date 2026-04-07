@@ -64,13 +64,13 @@ a{color:inherit;text-decoration:none}
 
 .navlinks{
   display:flex;
-  gap:18px; /* Spatiere mai mare intre linkuri */
+  gap:18px;
   flex-wrap:wrap;
   justify-content:flex-end;
 }
 
 .navlinks a{
-  padding:8px 0; /* Fara background la hover pentru lux, doar o subliniere fina sau schimbare de culoare */
+  padding:8px 0; 
   color:var(--text);
   font-size: 13px;
   text-transform: uppercase;
@@ -87,7 +87,7 @@ a{color:inherit;text-decoration:none}
 /* HERO */
 .hero{
   position:relative;
-  min-height:750px; /* Mai inalt pentru a da o senzatie de grandoare */
+  min-height:750px;
   padding:0;
   overflow:hidden;
   background:#0b1220; 
@@ -111,18 +111,13 @@ a{color:inherit;text-decoration:none}
   transform:scale(1.02);
 }
 
-/* overlay mai profund pentru a face textul alb sa straluceasca */
+/* Un strat fin de intunecare generala peste poze/video */
 .heroMedia::after{
   content:"";
   position:absolute;
   inset:0;
   z-index:1;
-  background: linear-gradient(
-    90deg,
-    rgba(10,15,25,.85) 0%,
-    rgba(10,15,25,.40) 50%,
-    rgba(10,15,25,.10) 100%
-  );
+  background: rgba(10, 15, 25, 0.3);
 }
 
 .hero .container{
@@ -137,64 +132,59 @@ a{color:inherit;text-decoration:none}
   padding:88px 0 80px;
 }
 
+/* CASETA TEXTULUI: Fundal intunecat pentru lizibilitate 100% peste colajul de poze */
 .heroText{
-  max-width:700px;
-  padding:0; /* Am eliminat cutia aceea transparenta complet. Textul direct pe video intunecat arata mult mai scump */
-  background: transparent;
-  border: none;
-  box-shadow: none;
-  backdrop-filter: none;
+  max-width: 680px;
+  padding: 44px; 
+  background: rgba(10, 15, 22, 0.85); 
+  backdrop-filter: blur(12px); 
+  border: 1px solid rgba(255, 255, 255, 0.08); 
+  border-radius: 4px; 
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 }
 
 .heroTitle{
-  font-family: 'Playfair Display', serif; /* Fontul de lux */
+  font-family: 'Playfair Display', serif;
   color:#fff;
-  font-size:54px; /* Dimensiune impunatoare */
-  line-height:1.1;
-  margin:0 0 24px 0;
-  font-weight:500; /* Medium, nu prea gros */
+  font-size: 42px; 
+  line-height: 1.15;
+  margin:0 0 20px 0;
+  font-weight: 500;
   letter-spacing: -0.01em;
-  text-shadow: 0 4px 12px rgba(0,0,0,.4);
 }
 
 .heroSub{
   font-family: 'Inter', sans-serif;
   color:rgba(255,255,255,.85);
-  margin:0 0 30px 0;
-  font-size:16px;
-  line-height:1.6;
+  margin:0 0 24px 0;
+  font-size: 15px;
+  line-height: 1.6;
   font-weight: 300;
-  max-width: 60ch;
 }
 
 /* bullets */
 .heroChecks{
   list-style:none;
   padding:0;
-  margin:0 0 40px 0;
+  margin:0 0 32px 0;
   display:grid;
-  gap:16px; /* Spatiu de respirat */
-  max-width:520px;
+  gap:12px; 
 }
 
 .heroCheckItem{
   display:flex;
-  gap:14px;
-  align-items:center;
+  gap:12px;
+  align-items:flex-start;
   color:#ffffff;
   font-size:14px;
   line-height:1.4;
-  letter-spacing: 0.02em;
 }
 
 .heroCheckIcon{
-  color: var(--gold); /* Am inlocuit bifa rotunda cu simplul caracter pe care l-ai schimbat in page.tsx */
-  font-size: 18px;
+  color: var(--gold); 
+  font-size: 16px;
   font-weight: 300;
-  background: transparent;
-  border: none;
-  width: auto;
-  height: auto;
+  margin-top: 2px;
 }
 
 /* BUTOANE SUPER MARKETING */
@@ -204,20 +194,20 @@ a{color:inherit;text-decoration:none}
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  height:48px; /* Butoane mai inalte */
-  padding:0 28px;
-  border-radius:0px; /* COLTURI DREPTE - esential pentru look-ul premium */
+  height:44px; 
+  padding:0 24px;
+  border-radius:0px; /* COLTURI DREPTE */
   font-size:12px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.12em;
   border:1px solid transparent;
   cursor:pointer;
   transition: all 0.3s ease;
 }
 
 .btnPrimary{
-  background:#ffffff; /* Alb curat */
+  background:#ffffff;
   color:#000000;
   border-color:#ffffff;
 }
@@ -230,7 +220,7 @@ a{color:inherit;text-decoration:none}
 .btnSecondary{
   background:transparent;
   color:#ffffff;
-  border-color:rgba(255,255,255,.5);
+  border-color:rgba(255,255,255,.3);
 }
 .btnSecondary:hover{
   background:#ffffff;
@@ -245,17 +235,17 @@ a{color:inherit;text-decoration:none}
 }
 
 .featureRow{
-  margin-top:-60px; /* Le ridicam mai mult peste video */
+  margin-top:-60px; 
   display:grid;
   grid-template-columns:repeat(3, 1fr);
-  gap:2px; /* Linii fine intre ele, fara gap mare */
+  gap:2px; 
   background: rgba(255,255,255,0.1);
 }
 
 .featureCard{
-  background:rgba(10, 15, 20, 0.9); /* Negru profund in loc de albastrui */
+  background:rgba(10, 15, 20, 0.9); 
   border:none;
-  border-radius:0px; /* Colturi drepte */
+  border-radius:0px; 
   padding:40px 30px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -271,7 +261,7 @@ a{color:inherit;text-decoration:none}
   border:none;
   display:flex;
   align-items:center;
-  justify-content:flex-start; /* Aliniat la stanga, nu pe centru */
+  justify-content:flex-start; 
   margin:0 0 20px 0;
   box-shadow: none;
 }
@@ -279,8 +269,8 @@ a{color:inherit;text-decoration:none}
 .featureSvg{
   width:32px;
   height:32px;
-  stroke:var(--gold); /* Iconite aurii fine */
-  stroke-width:1.2; /* Super subțiri și elegante */
+  stroke:var(--gold); 
+  stroke-width:1.2; 
 }
 
 .featureCard:hover{
@@ -303,14 +293,7 @@ a{color:inherit;text-decoration:none}
   font-weight: 300;
 }
 
-/* RESPONSIVE PENTRU NOUA SECTIUNE HERO */
-@media (max-width: 920px){
-  .heroInner{min-height:560px;padding:72px 0 36px;}
-  .heroTitle{font-size:38px; line-height:1.1;}
-  .heroSub{font-size:14px;}
-  .featureRow{grid-template-columns:1fr;margin-top:0px; background: transparent; gap: 10px;}
-  .featureCard{border: 1px solid rgba(255,255,255,0.1);}
-}
+
 /* MODELS (pe alb, curat) */
 .modelsSection{
   padding:34px 0 56px;
@@ -339,7 +322,7 @@ a{color:inherit;text-decoration:none}
 }
 
 .modelCard{
-  border-radius:18px;
+  border-radius:var(--radius);
   overflow:hidden;
   border:1px solid var(--border);
   background:#ffffff;
@@ -387,7 +370,7 @@ a{color:inherit;text-decoration:none}
   gap:8px;
   height:34px;
   padding:0 12px;
-  border-radius:999px;
+  border-radius:0px; /* Aliniat la stilul premium */
   background:rgba(2,6,23,.04);
   border:1px solid rgba(2,6,23,.08);
   color:var(--text);
@@ -399,7 +382,6 @@ a{color:inherit;text-decoration:none}
 .section{padding:34px 0}
 .sectionTitle{margin:0 0 14px 0;font-size:18px;font-weight:750}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-@media (max-width: 920px){.grid3{grid-template-columns:1fr}}
 .card{
   background:var(--card);
   border:1px solid var(--border);
@@ -436,19 +418,6 @@ a{color:inherit;text-decoration:none}
 .listItem h3{margin:0 0 6px 0;font-size:14px}
 .listItem p{margin:0;color:var(--muted);font-size:13px}
 
-/* RESPONSIVE */
-@media (max-width: 920px){
-  .heroInner{min-height:560px;padding:72px 0 36px;}
-  .heroTitle{font-size:30px; line-height:1.04;}
-  .heroText{padding:16px 16px 14px;border-radius:16px; background: rgba(15,23,42,.56);}
-  .heroSub{font-size:14px; line-height:1.42;}
-  .featureRow{grid-template-columns:1fr;margin-top:-12px;}
-  .modelsHeader{flex-direction:column;align-items:flex-start;}
-  .modelsGrid{grid-template-columns:1fr;}
-}
-
-/* MODEL GALLERY (pagina de model) */
-/* MODEL GALLERY (pagina de model) */
 /* MODEL GALLERY (pagina de model) */
 .modelGallery{
   display:grid;
@@ -457,16 +426,12 @@ a{color:inherit;text-decoration:none}
   margin:14px 0 0;
 }
 
-@media (max-width: 920px){
-  .modelGallery{ grid-template-columns:1fr; }
-}
-
 .modelGalleryBtn{
   border:0;
   padding:0;
   background:transparent;
   cursor:pointer;
-  border-radius:16px;
+  border-radius:var(--radius);
   overflow:hidden;
   box-shadow: var(--shadow-strong);
   display:block;
@@ -512,17 +477,6 @@ a{color:inherit;text-decoration:none}
   object-fit:contain;
   background:transparent;
 }
-@media (max-width: 920px){
-  .lbStage{
-    padding:10px;
-  }
-
-  .lbImg{
-    max-width:95vw;
-    max-height:82vh;
-  }
-}
-
 
 /* butoane peste imagine */
 .lbClose{
@@ -573,6 +527,7 @@ a{color:inherit;text-decoration:none}
   color:#fff;
   font-size:12px;
 }
+
 .footerGrid{
   display:flex;
   gap:16px;
@@ -584,29 +539,6 @@ a{color:inherit;text-decoration:none}
 .footerCompany{display:grid;gap:6px}
 .footerMeta{display:grid;gap:4px;margin-top:6px;color:var(--muted)}
 
-.footerLinks{
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
-  align-items:flex-start;
-}
-
-.footerLinks a{
-  padding:6px 8px;
-  border-radius:10px;
-  color:var(--muted);
-}
-
-.footerLinks a:hover{
-  background:#f1f5f9;
-  color:var(--text);
-}
-.footerLogo{
-  height:34px;
-  width:auto;
-  display:block;
-}
-.footerLinks{align-items:center}
 .footerLinks{
   display:flex;
   gap:12px;
@@ -639,10 +571,7 @@ a{color:inherit;text-decoration:none}
   width:auto;
   display:block;
 }
-.footerLinks{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
-.footerLogoLink{display:inline-flex;align-items:center;padding:6px 8px;border-radius:10px}
-.footerLogoLink:hover{background:#f1f5f9}
-.footerLogo{height:34px;width:auto;display:block}
+
 .contact{padding:22px 0 56px}
 
 .contactInfo{
@@ -690,7 +619,7 @@ a{color:inherit;text-decoration:none}
   width:100%;
   padding:10px 12px;
   border:1px solid var(--border);
-  border-radius:12px;
+  border-radius:0px; /* Actualizat pentru look premium */
   outline:none;
   font:inherit;
   background:#fff;
@@ -699,7 +628,7 @@ a{color:inherit;text-decoration:none}
 .contactSubmit{
   width:100%;
   height:40px;
-  border-radius:999px;
+  border-radius:0px; /* Actualizat */
   border:1px solid rgba(2,6,23,.10);
   background:var(--text);
   color:#fff;
@@ -718,14 +647,6 @@ a{color:inherit;text-decoration:none}
 }
 .mapWrap iframe{width:100%;height:100%;border:0;display:block}
 
-@media (max-width: 980px){
-  .contactInfo{grid-template-columns:repeat(2,1fr)}
-  .contactGrid{grid-template-columns:1fr}
-  .mapWrap{height:360px}
-}
-@media (max-width: 520px){
-  .contactInfo{grid-template-columns:1fr}
-}
 /* Cookie banner */
 .cbRoot{
   position:fixed;
@@ -742,7 +663,7 @@ a{color:inherit;text-decoration:none}
   width:min(980px, 100%);
   background:rgba(255,255,255,.96);
   border:1px solid var(--border);
-  border-radius:16px;
+  border-radius:var(--radius);
   box-shadow: var(--shadow-strong);
   padding:14px;
   backdrop-filter: blur(10px);
@@ -791,7 +712,7 @@ a{color:inherit;text-decoration:none}
 .cbBtn{
   height:38px;
   padding:0 12px;
-  border-radius:999px;
+  border-radius:0px;
   border:1px solid rgba(2,6,23,.10);
   background:#fff;
   color:var(--text);
@@ -819,7 +740,7 @@ a{color:inherit;text-decoration:none}
 .contactAltBtn{
   height:34px;
   padding:0 12px;
-  border-radius:999px;
+  border-radius:0px;
   border:1px solid rgba(2,6,23,.10);
   background:#fff;
   color:var(--text);
@@ -830,16 +751,95 @@ a{color:inherit;text-decoration:none}
 
 .formOk{margin-top:10px;color:#166534;font-size:13px}
 .formErr{margin-top:10px;color:#b91c1c;font-size:13px}
+
+.footerContactBtn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  height:36px;
+  padding:0 14px;
+  border-radius:0px;
+  background:var(--gold);
+  color:var(--gold-ink) !important;
+  border:1px solid rgba(2,6,23,.10);
+  font-size:13px;
+  font-weight:600;
+  white-space:nowrap;
+}
+
+.footerContactBtn:hover{
+  filter:brightness(.98);
+  background:var(--gold);
+  color:var(--gold-ink) !important;
+}
+
+.faqSection{ padding-top: 6px; padding-bottom: 56px; }
+.faqSection .sectionTitle{ margin-bottom: 14px; }
+.qualitySection{ padding-top: 8px; padding-bottom: 20px; }
+.qualityLead{ max-width: 74ch; margin-bottom: 16px; }
+.qualityGrid{ align-items: stretch; }
+.qualityCard{ box-shadow: var(--shadow); transition: transform .18s ease, box-shadow .18s ease; }
+.qualityCard:hover{ transform: translateY(-2px); box-shadow: var(--shadow-strong); }
+.servicesSection{ padding-top: 8px; padding-bottom: 20px; }
+.servicesLead{ max-width: 72ch; margin-bottom: 16px; }
+.servicesGrid{ align-items: stretch; }
+.serviceCard{ box-shadow: var(--shadow); transition: transform .18s ease, box-shadow .18s ease; }
+.serviceCard:hover{ transform: translateY(-2px); box-shadow: var(--shadow-strong); }
+
+/* RESPONSIVE PENTRU TOT SITE-UL */
+@media (max-width: 980px){
+  .contactInfo{grid-template-columns:repeat(2,1fr)}
+  .contactGrid{grid-template-columns:1fr}
+  .mapWrap{height:360px}
+}
+
+@media (max-width: 920px){
+  .grid3{grid-template-columns:1fr}
+  
+  /* Responsive Hero / Text Reparat */
+  .heroInner{
+    min-height:auto; 
+    padding:40px 0;
+  }
+  .heroText{
+    padding: 24px; 
+    max-width: 100%;
+  }
+  .heroTitle{
+    font-size: 30px; 
+    line-height: 1.15;
+  }
+  .heroSub{
+    font-size: 14px;
+  }
+  .btn {
+    width: 100%; 
+    margin-bottom: 8px;
+  }
+  .actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .featureRow{grid-template-columns:1fr;margin-top:0px; background: transparent; gap: 10px;}
+  .featureCard{border: 1px solid rgba(255,255,255,0.1);}
+  .modelsHeader{flex-direction:column;align-items:flex-start;}
+  .modelsGrid{grid-template-columns:1fr;}
+  .modelGallery{ grid-template-columns:1fr; }
+  .lbStage{ padding:10px; }
+  .lbImg{ max-width:95vw; max-height:82vh; }
+}
+
 @media (max-width: 520px){
+  .contactInfo{grid-template-columns:1fr}
+  
   .nav{
     height:auto;
     padding:10px 0;
     align-items:center;
     gap:10px;
   }
-
   .brandLogo img{ height:52px; }
-
   .navlinks{
     width:100%;
     justify-content:flex-start;
@@ -849,154 +849,11 @@ a{color:inherit;text-decoration:none}
     gap:8px;
     padding-bottom:4px;
   }
-
   .navlinks a{
     white-space:nowrap;
     flex:0 0 auto;
     padding:6px 8px;
     font-size:13px;
   }
-
-  /* opțional: ascunde scrollbarul (Chrome/Safari) */
   .navlinks::-webkit-scrollbar{ height:0; }
-}
-.footerContactBtn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  height:36px;
-  padding:0 14px;
-  border-radius:999px;
-  background:var(--gold);
-  color:var(--gold-ink) !important;
-  border:1px solid rgba(2,6,23,.10);
-  font-size:13px;
-  font-weight:600;
-  white-space:nowrap;
-}
-
-.footerContactBtn:hover{
-  filter:brightness(.98);
-  background:var(--gold);
-  color:var(--gold-ink) !important;
-}
-.faqSection{
-  padding-top: 6px;
-  padding-bottom: 56px;
-}
-
-.faqSection .sectionTitle{
-  margin-bottom: 14px;
-}
-.qualitySection{
-  padding-top: 8px;
-  padding-bottom: 20px;
-}
-
-.qualityLead{
-  max-width: 74ch;
-  margin-bottom: 16px;
-}
-
-.qualityGrid{
-  align-items: stretch;
-}
-
-.qualityCard{
-  box-shadow: var(--shadow);
-  transition: transform .18s ease, box-shadow .18s ease;
-}
-
-.qualityCard:hover{
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-strong);
-}
-.footerContactBtn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  height:36px;
-  padding:0 14px;
-  border-radius:999px;
-  background:var(--gold);
-  color:var(--gold-ink) !important;
-  border:1px solid rgba(2,6,23,.10);
-  font-size:13px;
-  font-weight:600;
-  white-space:nowrap;
-}
-
-.footerContactBtn:hover{
-  filter:brightness(.98);
-  background:var(--gold);
-  color:var(--gold-ink) !important;
-}
-.servicesSection{
-  padding-top: 8px;
-  padding-bottom: 20px;
-}
-
-.servicesLead{
-  max-width: 72ch;
-  margin-bottom: 16px;
-}
-
-.servicesGrid{
-  align-items: stretch;
-}
-
-.serviceCard{
-  box-shadow: var(--shadow);
-  transition: transform .18s ease, box-shadow .18s ease;
-}
-
-.serviceCard:hover{
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-strong);
-}
-.servicesSection{
-  padding-top: 8px;
-  padding-bottom: 20px;
-}
-
-.servicesLead{
-  max-width: 72ch;
-  margin-bottom: 16px;
-}
-
-.servicesGrid{
-  align-items: stretch;
-}
-
-.serviceCard{
-  box-shadow: var(--shadow);
-  transition: transform .18s ease, box-shadow .18s ease;
-}
-
-.serviceCard:hover{
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-strong);
-}
-.servicesSection{
-  padding-top: 8px;
-  padding-bottom: 20px;
-}
-
-.servicesLead{
-  max-width: 72ch;
-  margin-bottom: 16px;
-}
-
-.servicesGrid{
-  align-items: stretch;
-}
-
-.serviceCard{
-  box-shadow: var(--shadow);
-  transition: transform .18s ease, box-shadow .18s ease;
-}
-
-.serviceCard:hover{
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-strong);
 }
