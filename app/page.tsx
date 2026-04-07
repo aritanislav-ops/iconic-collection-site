@@ -276,18 +276,17 @@ export default function HomePage() {
           <div className="heroInner">
             <div className="heroText">
               <h1 className="heroTitle">
-                Case proiectate și executate corect, personalizate pentru terenul tău, conform reglementărilor urbanistice
+                Case premium personalizate pentru terenul tău, proiectate și executate corect, conform reglementărilor urbanistice
               </h1>
 
               <p className="heroSub">
-                Tu vii cu terenul și obiectivul, iar noi ne putem ocupa de ce ai nevoie:
-                concept, studiu geotehnic, proiect complet (arhitectură, structură și instalații),
-                documentații pentru autorizare, urmărire de șantier, dirigenție și execuție.
+              Tu vii cu terenul și obiectivul, iar noi ne ocupăm de concept, studiu geotehnic, proiect complet, documentații pentru autorizare și execuție,
+                astfel încât casa să rămână coerentă cu proiectul, bugetul și condițiile reale din teren.
               </p>
 
               <ul className="heroChecks">
                 <CheckItem>Proiectare completă pentru casă</CheckItem>
-                <CheckItem>Soluție personalizată în funcție de teren, cerințe și buget</CheckItem>
+                <CheckItem>Personalizare în funcție de teren, buget și cerințe</CheckItem>
                 <CheckItem>Documentații și pași pentru autorizare</CheckItem>
                 <CheckItem>Execuție și coordonare până la capăt</CheckItem>
               </ul>
