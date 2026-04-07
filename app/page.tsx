@@ -469,14 +469,13 @@ export default function HomePage() {
             <div className="listItem">
               <h3>Sunt case modulare? Sunt case pe structură metalică ușoară cu profile laminate la rece?</h3>
               <p>
-                Nu sunt case modulare. Sunt case solide, proiectate ca structuri de rezistență reale, alese împreună 
+                Nu. Nu sunt case modulare. Sunt case solide, proiectate ca structuri de rezistență reale, alese împreună 
                 cu clientul. Soluția standard poate fi realizată din beton armat, cu cadre, lamele/stâlpi și grinzi din beton armat,
                 iar pentru o execuție mai rapidă și un control superior al calității poate fi aleasă și varianta pe structură metalică clasică din
                 oțel S355(OL52), tratat corespunzător clasei de expunere. Nu folosim profile metalice laminate la rece și nu promovăm soluții ușoare de compromis.
                 Pentru variantele din beton armat, utilizăm beton C30/37(B500) și oțel-beton S500 clasa de ductilitate "C".
               </p>
             </div>
-
             <div className="listItem">
               <h3>Se poate face un proiect de la zero, pornind de la ideea mea?</h3>
               <p>
@@ -552,8 +551,7 @@ export default function HomePage() {
             <div className="listItem">
               <h3>Se poate adapta un model de casă la terenul meu?</h3>
               <p>
-                Da. Modelele prezentate sunt puncte de plecare și pot fi adaptate în funcție de teren,
-                cerințe, reglementări urbanistice și buget.
+                Da. Modelele prezentate sunt puncte de plecare și pot fi personalizate în funcție de teren, buget, cerințe urbanistice și preferințele beneficiarului.
               </p>
             </div>
 
@@ -585,8 +583,7 @@ export default function HomePage() {
             <div className="listItem">
               <h3>Vă ocupați doar de proiectare sau și de restul etapelor?</h3>
               <p>
-                Putem lucra flexibil. În funcție de nevoie, putem asigura proiectarea, documentațiile pentru autorizare,
-                coordonarea specialităților și, la nevoie, sprijin până în etapa de execuție.
+                În funcție de nevoie, putem asigura proiectarea, documentațiile pentru autorizare și coordonarea execuției, etapă cu etapă, până la finalizarea lucrărilor.                
               </p>
             </div>
 
