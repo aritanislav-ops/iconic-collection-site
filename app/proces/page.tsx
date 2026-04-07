@@ -165,7 +165,7 @@ export default function ProcesPage() {
             <li><strong>Automatizare Inteligentă:</strong> Control integrat pentru iluminat, climatizare și jaluzele. Sistemele învață din rutinele tale și se ajustează automat folosind senzori de prezență și luminozitate.</li>
             <li><strong>Securitate & Prevenție:</strong> Camere CCTV avansate cu analiză AI, control acces biometric și senzori inteligenți de inundație/fum care opresc automat electrovalvele de apă și gaz în caz de urgență.</li>
             <li><strong>Monitorizare Resurse:</strong> Urmărirea și optimizarea consumului de curent și apă direct din aplicație.</li>
-            <li><strong>Monitorizare Structurală (Exclusiv iCONiC):</strong> Ca urmare a proiectării în domeniu elastic (q=1), oferim opțiunea instalării unor senzori de accelerație care emit un raport tehnic instantaneu după un seism, confirmând integritatea structurală a clădirii.</li>
+            <li><strong>Monitorizare Structurală (Exclusiv iCONiC):</strong> Ca urmare a proiectării în domeniu elastic (q=1), putem oferi si opțiunea instalării unor senzori de accelerație care emit un raport tehnic instantaneu după un seism, confirmând integritatea structurală a clădirii.</li>
           </ul>
         </div>
 
