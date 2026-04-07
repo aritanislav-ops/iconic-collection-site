@@ -16,8 +16,12 @@ function CheckItem({ children }: { children: React.ReactNode }) {
 function IconDesign() {
   return (
     <svg viewBox="0 0 24 24" className="featureSvg" aria-hidden="true">
-      <rect x="4.5" y="5" width="10.5" height="10.5" rx="1.6" />
-      <path d="M8 8.5h4M8 11.5h3.2M17 7l2.5 2.5M14.8 11.7l4.7-4.7M14.1 12.4l-.6 2.7 2.7-.6" />
+      <path d="M4.75 6.5A1.75 1.75 0 0 1 6.5 4.75h8A1.75 1.75 0 0 1 16.25 6.5v8a1.75 1.75 0 0 1-1.75 1.75h-8A1.75 1.75 0 0 1 4.75 14.5v-8Z" />
+      <path d="M8 8.25h5" />
+      <path d="M8 11.25h3.5" />
+      <path d="M16.75 7.25 19 9.5" />
+      <path d="M14.8 11.45 19 7.25" />
+      <path d="m14.2 12.05-.65 2.75 2.75-.65" />
     </svg>
   );
 }
@@ -25,9 +29,9 @@ function IconDesign() {
 function IconDocs() {
   return (
     <svg viewBox="0 0 24 24" className="featureSvg" aria-hidden="true">
-      <path d="M8 4.75h6.6l3.15 3.15V18A1.75 1.75 0 0 1 16 19.75H8A1.75 1.75 0 0 1 6.25 18V6.5A1.75 1.75 0 0 1 8 4.75Z" />
-      <path d="M14.5 4.9V8h3.1" />
-      <path d="M9.2 13l1.8 1.8 3.8-3.8" />
+      <path d="M8 4.75h6.25L17.75 8v10A1.75 1.75 0 0 1 16 19.75H8A1.75 1.75 0 0 1 6.25 18V6.5A1.75 1.75 0 0 1 8 4.75Z" />
+      <path d="M14.25 4.75V8h3.5" />
+      <path d="m9 13 1.8 1.8 4.2-4.2" />
     </svg>
   );
 }
@@ -35,12 +39,12 @@ function IconDocs() {
 function IconExecution() {
   return (
     <svg viewBox="0 0 24 24" className="featureSvg" aria-hidden="true">
-      <path d="M7 12.25a5 5 0 0 1 10 0" />
-      <path d="M5.5 12.25h13" />
-      <path d="M7 12.25V15a1.25 1.25 0 0 1-1.25 1.25h-.5" />
-      <path d="M17 12.25V15a1.25 1.25 0 0 0 1.25 1.25h.5" />
-      <path d="M12 7.25v2.25" />
-      <path d="M9 17.75h6" />
+      <path d="M7 11.75a5 5 0 0 1 10 0" />
+      <path d="M5.5 11.75h13" />
+      <path d="M8 11.75V15a1.25 1.25 0 0 1-1.25 1.25h-.75" />
+      <path d="M16 11.75V15a1.25 1.25 0 0 0 1.25 1.25H18" />
+      <path d="M12 7v2.5" />
+      <path d="M9.25 17.75h5.5" />
     </svg>
   );
 }
