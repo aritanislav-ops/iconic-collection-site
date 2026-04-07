@@ -56,7 +56,7 @@ export default function ProcesPage() {
               </li>
               <li style={{ marginBottom: '12px' }}>
                 <strong>💎 Standardul iCONiC (q = 1):</strong> Alegem proiectarea în <strong>domeniul elastic</strong>. 
-                Datorită regimului mic de înălțime și printr-o conformare structurală judicioasă structura se dimensionează la nivelul forței reale comportării elastice, fără a se baza pe degradări plastice ca mecanism de rezistență. 
+                Datorită regimului mic de înălțime și printr-o conformare structurală judicioasă creată de experții noștri, structura se dimensionează la nivelul forței reale comportării elastice, fără a se baza pe degradări plastice ca mecanism de rezistență. 
                 Asta înseamnă secțiuni mai robuste, rigiditate sporită și deplasări mult mai mici astfel încât avariile și degradările să tindă către ZERO.
               </li>
               <li>
