@@ -37,20 +37,6 @@ export default function ModelePage() {
         Modelele prezentate sunt puncte de plecare și pot fi personalizate în funcție de terenul clientului, buget, cerințele urbanistice și modul de utilizare al casei.
       </p>
 
-      <section className="section">
-        <h2 className="sectionTitle">Cum pot fi adaptate</h2>
-        <p>
-          Modelele pot fi ajustate în funcție de configurația terenului, retrageri, orientare, regim de înălțime, compartimentare, suprafață și buget, astfel încât soluția finală să rămână corectă tehnic și coerentă cu nevoile beneficiarului.
-        </p>
-      </section>
-
-      <section className="section">
-        <h2 className="sectionTitle">Ce putem asigura</h2>
-        <p>
-          În funcție de nevoie, putem asigura proiectarea completă, documentațiile pentru autorizare și coordonarea execuției, astfel încât casa realizată să rămână coerentă cu proiectul și cu condițiile reale din teren.
-        </p>
-      </section>
-
       <div className="modelsGrid">
         {site.models.map((m) => {
           const cover = m.images?.[0] ?? "";
@@ -74,11 +60,17 @@ export default function ModelePage() {
       </div>
 
       <style>{`
+        .pageLead{
+          margin:0 0 18px;
+          font-size:15px;
+          line-height:1.65;
+          max-width:900px;
+        }
         .modelsGrid{
           display:grid;
           grid-template-columns:repeat(2,1fr);
           gap:14px;
-          margin:16px 0 44px;
+          margin:8px 0 44px;
         }
         @media (max-width: 920px){
           .modelsGrid{grid-template-columns:1fr;}
@@ -89,7 +81,7 @@ export default function ModelePage() {
           overflow:hidden;
           border:1px solid var(--border);
           background:#fff;
-          box-shadow: 0 18px 60px rgba(2,6,23,.10);
+          box-shadow:0 18px 60px rgba(2,6,23,.10);
         }
         .modelMedia{
           display:block;
