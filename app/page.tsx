@@ -16,11 +16,12 @@ function CheckItem({ children }: { children: React.ReactNode }) {
 function IconDesign() {
   return (
     <svg viewBox="0 0 24 24" className="featureSvg" aria-hidden="true">
-      <rect x="3.5" y="4" width="12" height="12" rx="2" />
-      <path d="M7 8h5M7 11h3.5" />
-      <path d="M16.5 7.5 20 11" />
-      <path d="M14.8 12.7 20 7.5" />
-      <path d="m14 13.5-.8 3.2 3.2-.8" />
+      <rect x="3.75" y="4.25" width="11.5" height="11.5" rx="1.75" />
+      <path d="M7 8h5.25" />
+      <path d="M7 11h3.5" />
+      <path d="M16.25 7.25 19.75 10.75" />
+      <path d="M14.5 12.5 19.75 7.25" />
+      <path d="m13.9 13.1-.7 3 3-.7" />
     </svg>
   );
 }
@@ -28,13 +29,16 @@ function IconDesign() {
 function IconDocs() {
   return (
     <svg viewBox="0 0 24 24" className="featureSvg" aria-hidden="true">
-      <path d="M4.5 19.25h15" />
-      <path d="M6.25 19.25V10.5" />
-      <path d="M9.5 19.25V10.5" />
-      <path d="M14.5 19.25V10.5" />
-      <path d="M17.75 19.25V10.5" />
-      <path d="M5 10.5h14" />
-      <path d="M12 4.75 19 8.5H5L12 4.75Z" />
+      <path d="M3.75 19.25h10.5" />
+      <path d="M5 19.25V10.25" />
+      <path d="M7.75 19.25v-9" />
+      <path d="M10.5 19.25v-9" />
+      <path d="M13.25 19.25v-9" />
+      <path d="M4.25 10.25h9.75" />
+      <path d="M9.125 4.75 14 7.75H4.25l4.875-3Z" />
+      <path d="M15.75 8.25h3.25l1.25 1.25v6.75a1.5 1.5 0 0 1-1.5 1.5h-3" />
+      <path d="M16.75 11.5h2.25" />
+      <path d="M16.75 14h2.25" />
     </svg>
   );
 }
@@ -42,12 +46,12 @@ function IconDocs() {
 function IconExecution() {
   return (
     <svg viewBox="0 0 24 24" className="featureSvg" aria-hidden="true">
-      <path d="M6.5 11.5a5.5 5.5 0 0 1 11 0" />
-      <path d="M4.5 11.5h15" />
-      <path d="M7.5 11.5V15a1.5 1.5 0 0 1-1.5 1.5h-.8" />
-      <path d="M16.5 11.5V15a1.5 1.5 0 0 0 1.5 1.5h.8" />
-      <path d="M12 6.2v2.6" />
-      <path d="M9.5 18.2h5" />
+      <path d="M6 12a6 6 0 0 1 12 0" />
+      <path d="M4.5 12h15" />
+      <path d="M8 12v3a1.5 1.5 0 0 1-1.5 1.5H6" />
+      <path d="M16 12v3a1.5 1.5 0 0 0 1.5 1.5H18" />
+      <path d="M12 6v2.5" />
+      <path d="M9.5 18h5" />
     </svg>
   );
 }
