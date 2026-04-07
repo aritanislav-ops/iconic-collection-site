@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { site } from "../../../content/site";
 import ModelGallery from "@/app/ui/ModelGallery";
@@ -7,6 +8,39 @@ export const dynamicParams = false;
 
 export function generateStaticParams() {
   return site.models.map((m) => ({ slug: m.slug }));
+}
+
+export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+  const model = site.models.find((m) => m.slug === params.slug);
+
+  if (!model) {
+    return {
+      title: "Model de casă",
+      description: "Model de casă personalizabil în funcție de teren, buget și cerințele urbanistice.",
+    };
+  }
+
+  const cover = model.images?.[0] ?? "/brand/og-home.jpg";
+
+  return {
+    title: `${model.name} | iCONiC collection`,
+    description: `${model.name} este un model de casă care poate fi personalizat în funcție de terenul clientului, buget și cerințele urbanistice.`,
+    alternates: {
+      canonical: `/modele/${model.slug}`,
+    },
+    openGraph: {
+      title: `${model.name} | iCONiC collection`,
+      description: `${model.name} este un model de casă care poate fi personalizat în funcție de terenul clientului, buget și cerințele urbanistice.`,
+      url: `https://www.iconic-collection.ro/modele/${model.slug}`,
+      images: [cover],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${model.name} | iCONiC collection`,
+      description: `${model.name} este un model de casă care poate fi personalizat în funcție de terenul clientului, buget și cerințele urbanistice.`,
+      images: [cover],
+    },
+  };
 }
 
 export default function ModelPage({ params }: { params: { slug: string } }) {
@@ -29,25 +63,39 @@ export default function ModelPage({ params }: { params: { slug: string } }) {
     <main className="container">
       <div className="modelHeader">
         <h1 className="pageTitle">{model.name}</h1>
-        <p className="pageLead">{model.summary}</p>
+
+        <p className="pageLead">
+          {model.summary} Acest model este un punct de plecare și poate fi personalizat în funcție de terenul clientului, buget, cerințele urbanistice și modul de utilizare al casei.
+        </p>
+
         <p className="modelNote">
-          Modelul este un concept dezvoltat de arhitecți și ingineri experți atestați, cu experiență și recunoaștere profesională. Proiectul final se personalizează 
-          pentru terenul și cerințele clientului, pe baza documentațiilor de urbanism și a datelor specifice amplasamentului. Locuința are o arhitectură contemporană,
-          cu vitraje ample și un limbaj minimalist premium. Proiectul este conceput ca un ansamblu coerent de arhitectură, structură, anvelopă, tâmplărie, finisaje și
-          instalații, adaptat fiecărui teren și fiecărui beneficiar. 
-          Casa este gândită pentru siguranță, durabilitate, eficiență energetică și confort real. Structura de rezistentă principală este din beton armat, dimensionarea structurală
-          se realizează în conformitate cu norme seismice riguroase, urmărind un răspuns structural preponderent ELASTIC inclusiv la acțiunea seismică asociată cutremurului cu 
-          interval mediu de recurență de 475 de ani, astfel degradările seismice tind catre ZERO. Durabilitatea este asigurată prin alegerea unor materiale de calitate, 
-          iar confortul și performanța energetică prin integrarea soluțiilor nZEB, a tehnologiilor SMART HOME, cu integrarea facilă a sistemelor de automatizare, robotizare și
-          inteligență artificială(AI) cat si a sistemelor moderne de climatizare, iluminat și control. Finisajele și echipările se personalizează astfel încât imaginea modelului
-          să rămână coerentă, iar locuința să răspundă corect nevoilor reale de utilizare.
+          Proiectul final se adaptează terenului, datelor de urbanism și cerințelor beneficiarului, astfel încât soluția construită să rămână coerentă din punct de vedere arhitectural, structural și funcțional.
         </p>
       </div>
+
+      <section className="section">
+        <h2 className="sectionTitle">Cum poate fi adaptat</h2>
+        <p>
+          Modelul poate fi ajustat în funcție de configurația terenului, retrageri, orientare, regim de înălțime, compartimentare, suprafață și buget, astfel încât soluția finală să rămână corectă tehnic și coerentă cu nevoile beneficiarului.
+        </p>
+      </section>
+
+      <section className="section">
+        <h2 className="sectionTitle">Ce putem asigura pentru acest proiect</h2>
+        <p>
+          În funcție de nevoie, putem asigura proiectarea completă, documentațiile pentru autorizare și coordonarea execuției până la capăt, astfel încât casa realizată să rămână coerentă cu proiectul și cu condițiile reale din teren.
+        </p>
+      </section>
 
       <ModelGallery images={images} />
 
       <style>{`
-        .modelHeader{padding: 8px 0 10px;}
+        .modelHeader{padding:8px 0 10px;}
+        .modelNote{
+          margin:10px 0 0;
+          color:var(--muted);
+          line-height:1.65;
+        }
       `}</style>
     </main>
   );
