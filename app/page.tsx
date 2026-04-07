@@ -7,8 +7,9 @@ import { site } from "../content/site";
 function CheckItem({ children }: { children: React.ReactNode }) {
   return (
     <li className="heroCheckItem">
-      <span className="heroCheckIcon" aria-hidden="true">✓</span>
-      <span>{children}</span>
+      {/* Am inlocuit bifa cu o linie fina, eleganta */}
+      <span className="heroCheckIcon" aria-hidden="true">—</span>
+      <span className="heroCheckText">{children}</span>
     </li>
   );
 }
