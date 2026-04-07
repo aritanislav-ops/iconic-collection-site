@@ -65,36 +65,32 @@ export default function ModelPage({ params }: { params: { slug: string } }) {
         <h1 className="pageTitle">{model.name}</h1>
 
         <p className="pageLead">
-          {model.summary} Acest model este un punct de plecare și poate fi personalizat în funcție de terenul clientului, buget, cerințele urbanistice și modul de utilizare al casei.
+          {model.summary} Modelul este orientativ și poate fi personalizat în funcție de terenul clientului, buget și cerințele urbanistice.
         </p>
 
         <p className="modelNote">
-          Proiectul final se adaptează terenului, datelor de urbanism și cerințelor beneficiarului, astfel încât soluția construită să rămână coerentă din punct de vedere arhitectural, structural și funcțional.
+          Proiectul final se adaptează terenului, condițiilor de urbanism și cerințelor beneficiarului, astfel încât soluția să rămână coerentă arhitectural, structural și funcțional.
         </p>
       </div>
-
-      <section className="section">
-        <h2 className="sectionTitle">Cum poate fi adaptat</h2>
-        <p>
-          Modelul poate fi ajustat în funcție de configurația terenului, retrageri, orientare, regim de înălțime, compartimentare, suprafață și buget, astfel încât soluția finală să rămână corectă tehnic și coerentă cu nevoile beneficiarului.
-        </p>
-      </section>
-
-      <section className="section">
-        <h2 className="sectionTitle">Ce putem asigura pentru acest proiect</h2>
-        <p>
-          În funcție de nevoie, putem asigura proiectarea completă, documentațiile pentru autorizare și coordonarea execuției până la capăt, astfel încât casa realizată să rămână coerentă cu proiectul și cu condițiile reale din teren.
-        </p>
-      </section>
 
       <ModelGallery images={images} />
 
       <style>{`
-        .modelHeader{padding:8px 0 10px;}
+        .modelHeader{
+          padding:8px 0 0;
+        }
+        .pageLead{
+          margin:0 0 8px;
+          font-size:15px;
+          line-height:1.65;
+          max-width:980px;
+        }
         .modelNote{
-          margin:10px 0 0;
+          margin:0 0 18px;
           color:var(--muted);
           line-height:1.65;
+          font-size:15px;
+          max-width:980px;
         }
       `}</style>
     </main>
