@@ -78,13 +78,23 @@ export default function ConfidentialitatePage() {
             atunci când prelucrarea este necesară pentru demersuri precontractuale sau executarea
             unui contract, în temeiul art. 6 alin. (1) lit. f) pentru interese legitime precum
             securitatea, administrarea și îmbunătățirea site-ului, iar pentru activarea instrumentului
-            de statistici în condițiile stabilite de bannerul de pe site, pe baza opțiunii exprimate
+            de statistici, în condițiile stabilite de bannerul de pe site, pe baza opțiunii exprimate
             de utilizator.
           </p>
         </div>
 
         <div className="listItem">
-          <h3>6) Statistici de utilizare ale site-ului</h3>
+          <h3>6) Interese legitime urmărite</h3>
+          <p>
+            Atunci când prelucrarea se bazează pe art. 6 alin. (1) lit. f) din GDPR, interesele noastre
+            legitime pot include securitatea site-ului, prevenirea abuzurilor, administrarea tehnică,
+            apărarea drepturilor noastre și îmbunătățirea funcționării site-ului și a comunicării cu
+            potențialii clienți.
+          </p>
+        </div>
+
+        <div className="listItem">
+          <h3>7) Statistici de utilizare ale site-ului</h3>
           <p>
             Site-ul poate utiliza Cloudflare Web Analytics pentru a înțelege modul de utilizare a
             site-ului, paginile accesate și alte date agregate de trafic. Acest instrument este
@@ -94,7 +104,7 @@ export default function ConfidentialitatePage() {
         </div>
 
         <div className="listItem">
-          <h3>7) Cui putem divulga datele</h3>
+          <h3>8) Cui putem divulga datele</h3>
           <p>
             Putem transmite date către furnizori de servicii utilizați pentru operarea site-ului și
             gestionarea solicitărilor, inclusiv furnizori de hosting, servicii de formulare online,
@@ -104,34 +114,58 @@ export default function ConfidentialitatePage() {
         </div>
 
         <div className="listItem">
-          <h3>8) Cât timp păstrăm datele</h3>
+          <h3>9) Transferuri către alte state</h3>
           <p>
-            Păstrăm datele doar atât cât este necesar pentru scopurile pentru care au fost colectate,
-            pentru gestionarea solicitărilor, pentru apărarea drepturilor noastre sau pentru
-            respectarea obligațiilor legale aplicabile.
+            În măsura în care utilizăm furnizori precum servicii de formulare online, hosting sau
+            analiză, anumite date pot fi prelucrate și în afara Spațiului Economic European. În astfel
+            de situații, urmărim utilizarea unor garanții adecvate, în conformitate cu legislația
+            aplicabilă și politicile furnizorilor utilizați.
           </p>
         </div>
 
         <div className="listItem">
-          <h3>9) Drepturile tale</h3>
+          <h3>10) Cât timp păstrăm datele</h3>
+          <p>
+            Mesajele și datele transmise prin formular sau e-mail sunt păstrate atât timp cât este
+            necesar pentru gestionarea solicitării, continuarea discuțiilor precontractuale și, după
+            caz, pentru apărarea drepturilor noastre sau respectarea obligațiilor legale. Datele tehnice
+            și statistice sunt păstrate conform configurărilor și politicilor furnizorilor utilizați
+            sau pe perioada necesară scopurilor administrative și de securitate.
+          </p>
+        </div>
+
+        <div className="listItem">
+          <h3>11) Caracterul furnizării datelor</h3>
+          <p>
+            Furnizarea datelor prin formularul de contact este voluntară, însă lipsa unor date precum
+            numele, adresa de e-mail, numărul de telefon sau conținutul solicitării poate face imposibilă
+            analizarea cererii și transmiterea unui răspuns util.
+          </p>
+        </div>
+
+        <div className="listItem">
+          <h3>12) Drepturile tale</h3>
           <p>
             Ai dreptul de acces, rectificare, ștergere, restricționare a prelucrării, opoziție,
             portabilitate, precum și dreptul de a retrage consimțământul, atunci când prelucrarea
             se bazează pe consimțământ. De asemenea, ai dreptul de a depune plângere la
             Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal.
-            În cazul unor eventuale litigii, vom încerca mai întâi soluționarea amiabilă. Consumatorii pot apela și la mecanismele de soluționare alternativă a litigiilor puse la dispoziție de ANPC, conform informațiilor publicate de autoritatea competentă.
-
           </p>
         </div>
-        <div className="listItem">
-
-    
 
         <div className="listItem">
-          <h3>10) Contact</h3>
+          <h3>13) Decizii automate și profilare</h3>
           <p>
-            Pentru întrebări privind protecția datelor, ne poți contacta la
-            {" "}contact@iconic-collection.ro.
+            Nu utilizăm prin intermediul acestui site procese decizionale exclusiv automate și nu
+            realizăm profilare în sensul GDPR pentru solicitările transmise de utilizatori.
+          </p>
+        </div>
+
+        <div className="listItem">
+          <h3>14) Contact</h3>
+          <p>
+            Pentru întrebări privind protecția datelor, ne poți contacta la{" "}
+            contact@iconic-collection.ro.
           </p>
         </div>
       </div>
