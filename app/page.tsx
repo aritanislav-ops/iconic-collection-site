@@ -514,7 +514,7 @@ export default function HomePage() {
               <h3>Casa este proiectată să reziste la cutremur, vânt și foc?</h3>
               <p>
                 Proiectul este gândit astfel încât structura și soluțiile tehnice să respecte cerințele aplicabile
-                priving siguranța structurală și securitatea la incendiu, în funcție de categoria construcției și de amplasament.
+                privind siguranța structurală și securitatea la incendiu, în funcție de categoria construcției și de amplasament.
               </p>
             </div>
 
