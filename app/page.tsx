@@ -276,7 +276,7 @@ export default function HomePage() {
           <div className="heroInner">
             <div className="heroText">
               <h1 className="heroTitle">
-                Case premium personalizate pentru terenul tău, proiectate și executate corect, conform reglementărilor urbanistice
+                Case premium personalizate pentru terenul și cerințele tale, proiectate și executate corect, conform reglementărilor urbanistice
               </h1>
 
               <p className="heroSub">
