@@ -235,13 +235,12 @@ images: [
   name: "CASA iCONiC-CUBE FRAME",
   summary: "Varianta CUBE FRAME — Casă premium, cu volumetrie curată și expresie contemporană.",
   images: [
-    "/brand/models/iconic-CUBE-FRAME/01.jpg",
-    "/brand/models/iconic-CUBE-FRAME/02.jpg",
-    "/brand/models/iconic-CUBE-FRAME/03.jpg",
-    "/brand/models/iconic-CUBE-FRAME/04.jpg",
+    "/brand/models/iconic-CUBE FRAME/01.jpg",
+    "/brand/models/iconic-CUBE FRAME/02.jpg",
+    "/brand/models/iconic-CUBE FRAME/03.jpg",
+    "/brand/models/iconic-CUBE FRAME/04.jpg",
   ],
 },
-
 {
   slug: "iconic-Boxline-House",
   name: "CASA iCONiC-Boxline House",
