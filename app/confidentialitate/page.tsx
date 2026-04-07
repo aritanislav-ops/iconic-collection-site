@@ -119,8 +119,13 @@ export default function ConfidentialitatePage() {
             portabilitate, precum și dreptul de a retrage consimțământul, atunci când prelucrarea
             se bazează pe consimțământ. De asemenea, ai dreptul de a depune plângere la
             Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal.
+            În cazul unor eventuale litigii, vom încerca mai întâi soluționarea amiabilă. Consumatorii pot apela și la mecanismele de soluționare alternativă a litigiilor puse la dispoziție de ANPC, conform informațiilor publicate de autoritatea competentă.
+
           </p>
         </div>
+        <div className="listItem">
+
+    
 
         <div className="listItem">
           <h3>10) Contact</h3>
