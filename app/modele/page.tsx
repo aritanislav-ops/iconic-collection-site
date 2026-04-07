@@ -31,9 +31,25 @@ export const metadata: Metadata = {
 export default function ModelePage() {
   return (
     <main className="container">
-      <h1 className="pageTitle">Modele</h1>
-      <p className="pageLead">Case proiectate și executate corect, personalizate pentru terenul tău, conform reglementărilor urbanistice
-        Alege un model și vezi galeria completă.</p>
+      <h1 className="pageTitle">Modele de case</h1>
+
+      <p className="pageLead">
+        Modelele prezentate sunt puncte de plecare și pot fi personalizate în funcție de terenul clientului, buget, cerințele urbanistice și modul de utilizare al casei.
+      </p>
+
+      <section className="section">
+        <h2 className="sectionTitle">Cum pot fi adaptate</h2>
+        <p>
+          Modelele pot fi ajustate în funcție de configurația terenului, retrageri, orientare, regim de înălțime, compartimentare, suprafață și buget, astfel încât soluția finală să rămână corectă tehnic și coerentă cu nevoile beneficiarului.
+        </p>
+      </section>
+
+      <section className="section">
+        <h2 className="sectionTitle">Ce putem asigura</h2>
+        <p>
+          În funcție de nevoie, putem asigura proiectarea completă, documentațiile pentru autorizare și coordonarea execuției, astfel încât casa realizată să rămână coerentă cu proiectul și cu condițiile reale din teren.
+        </p>
+      </section>
 
       <div className="modelsGrid">
         {site.models.map((m) => {
@@ -80,10 +96,10 @@ export default function ModelePage() {
           background:#0b0f17;
         }
         .modelCover{
-         display:block;
-         width:100%;
-         height:auto;
-         object-fit:contain;
+          display:block;
+          width:100%;
+          height:auto;
+          object-fit:contain;
         }
 
         .modelBodyLight{
