@@ -101,7 +101,8 @@ export default function TermeniPage() {
           <h3>8) Linkuri către terți</h3>
           <p>
             Site-ul poate conține linkuri către pagini externe. Nu controlăm în mod direct conținutul,
-            disponibilitatea sau politicile acestor site-uri și nu răspundem pentru modul în care acestea funcționează.
+            disponibilitatea sau politicile acestor site-uri și nu răspundem pentru modul în care acestea
+            funcționează.
           </p>
         </div>
 
@@ -115,10 +116,19 @@ export default function TermeniPage() {
         </div>
 
         <div className="listItem">
-          <h3>10) Contact</h3>
+          <h3>10) Modificarea termenilor</h3>
           <p>
-            Pentru întrebări privind acești termeni, ne poți contacta la
-            {" "}contact@iconic-collection.ro.
+            Ne rezervăm dreptul de a actualiza acești termeni atunci când este necesar pentru
+            reflectarea modificărilor legislative, tehnice sau comerciale. Versiunea publicată pe site
+            la momentul consultării este versiunea aplicabilă pentru utilizarea site-ului.
+          </p>
+        </div>
+
+        <div className="listItem">
+          <h3>11) Contact</h3>
+          <p>
+            Pentru întrebări privind acești termeni, ne poți contacta la{" "}
+            contact@iconic-collection.ro.
           </p>
         </div>
       </div>
