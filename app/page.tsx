@@ -28,9 +28,13 @@ function IconDesign() {
 function IconDocs() {
   return (
     <svg viewBox="0 0 24 24" className="featureSvg" aria-hidden="true">
-      <path d="M7 3.75h7l4 4V18a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5.75a2 2 0 0 1 2-2Z" />
-      <path d="M14 3.75V8h4" />
-      <path d="m9 13 2 2 4-4" />
+      <path d="M4.5 19.25h15" />
+      <path d="M6.25 19.25V10.5" />
+      <path d="M9.5 19.25V10.5" />
+      <path d="M14.5 19.25V10.5" />
+      <path d="M17.75 19.25V10.5" />
+      <path d="M5 10.5h14" />
+      <path d="M12 4.75 19 8.5H5L12 4.75Z" />
     </svg>
   );
 }
