@@ -88,6 +88,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link className="brandLogo" href="/" aria-label="Acasă">
                 <img src="/brand/logo-dark.png" alt="iCONiC collection" />
               </Link>
+              <a
+                href="https://www.instagram.com/numele_tau/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="headerInstagram"
+              >
+                <img src="/brand/instagram.png" alt="Instagram" />
+              </a>
 
               <nav className="navlinks" aria-label="Navigare">
                 <Link href="/">Acasă</Link>
