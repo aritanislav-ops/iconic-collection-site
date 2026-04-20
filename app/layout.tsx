@@ -95,7 +95,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 aria-label="Instagram"
                 className="headerInstagram"
               >
-                <svg viewBox="0 0 24 24" aria-hidden="true" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8">
+                <svg viewBox="0 0 24 24" aria-hidden="true" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="1.8">
                   <rect x="3.5" y="3.5" width="17" height="17" rx="5"></rect>
                   <circle cx="12" cy="12" r="4"></circle>
                   <circle cx="17.4" cy="6.6" r="1"></circle>
