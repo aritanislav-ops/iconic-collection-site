@@ -89,7 +89,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <img src="/brand/logo-dark.png" alt="iCONiC collection" />
               </Link>
               <a
-                href="https://www.instagram.com/numele_tau/"
+                href="https://www.instagram.com/iconic.collection.ro/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
