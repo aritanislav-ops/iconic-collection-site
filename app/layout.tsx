@@ -155,7 +155,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         {/* WhatsApp Button */}
         
-          href="https://wa.me/40741259236?text=Bun%C4%83%20ziua%2C%20sunt%20interesat%20de%20serviciile%20Iconic%20Collection"
+          href="https://wa.me/40XXXXXXXXX?text=Bun%C4%83%20ziua%2C%20sunt%20interesat%20de%20serviciile%20Iconic%20Collection"
           target="_blank"
           rel="noopener noreferrer"
           style={{
