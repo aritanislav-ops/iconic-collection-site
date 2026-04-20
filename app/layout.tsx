@@ -86,7 +86,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="container">
             <div className="nav">
               <Link className="brandLogo" href="/" aria-label="Acasă">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/brand/logo-dark.png" alt="iCONiC collection" />
               </Link>
 
@@ -128,7 +127,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/cookies">Cookies</Link>
               <Link href="/contact" className="footerContactBtn">Contactează-ne</Link>
 
-              
+              <a
                 href="https://anpc.ro/ce-este-sal/"
                 target="_blank"
                 rel="noreferrer"
@@ -138,7 +137,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <img className="footerLogo" src="/brand/sol-anpc.png" alt="SAL ANPC" />
               </a>
 
-              
+              <a
                 href="https://consumer-redress.ec.europa.eu/index_en"
                 target="_blank"
                 rel="noreferrer"
@@ -153,11 +152,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <CookieBanner />
 
-        {/* WhatsApp Button */}
-        
-          href="https://wa.me/40XXXXXXXXX?text=Bun%C4%83%20ziua%2C%20sunt%20interesat%20de%20serviciile%20Iconic%20Collection"
+        <a
+          href="https://wa.me/40741259236?text=Bun%C4%83%20ziua%2C%20sunt%20interesat%20de%20serviciile%20Iconic%20Collection"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="WhatsApp"
           style={{
             position: "fixed",
             bottom: "24px",
@@ -181,7 +180,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             alt="WhatsApp"
           />
         </a>
-
       </body>
     </html>
   );
