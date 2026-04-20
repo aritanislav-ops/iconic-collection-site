@@ -978,15 +978,25 @@ a{color:inherit;text-decoration:none}
   justify-content:center;
   margin-left:24px;
   margin-right:auto;
-  width:36px;
-  height:36px;
+  width:42px;
+  height:42px;
+  border-radius:999px;
+  background:linear-gradient(135deg, #f9ce34 0%, #ee2a7b 45%, #6228d7 100%);
+  box-shadow:0 4px 14px rgba(2,6,23,.12);
   text-decoration:none;
+  flex:0 0 auto;
 }
 
 .headerInstagram img{
-  width:24px;
-  height:24px;
+  width:20px;
+  height:20px;
   display:block;
+  object-fit:contain;
+}
+
+.headerInstagram:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 20px rgba(2,6,23,.16);
 }
 /* RESPONSIVE */
 @media (max-width: 980px){
