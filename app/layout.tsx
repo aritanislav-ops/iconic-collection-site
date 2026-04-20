@@ -123,35 +123,65 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
 
             <nav className="footerLinks" aria-label="Linkuri legale">
-  <Link href="/termeni">Termeni</Link>
-  <Link href="/confidentialitate">Confidențialitate</Link>
-  <Link href="/cookies">Cookies</Link>
-  <Link href="/contact" className="footerContactBtn">Contactează-ne</Link>
+              <Link href="/termeni">Termeni</Link>
+              <Link href="/confidentialitate">Confidențialitate</Link>
+              <Link href="/cookies">Cookies</Link>
+              <Link href="/contact" className="footerContactBtn">Contactează-ne</Link>
 
-  <a
-    href="https://anpc.ro/ce-este-sal/"
-    target="_blank"
-    rel="noreferrer"
-    aria-label="SAL ANPC"
-    className="footerLogoLink"
-  >
-    <img className="footerLogo" src="/brand/sol-anpc.png" alt="SAL ANPC" />
-  </a>
+              
+                href="https://anpc.ro/ce-este-sal/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="SAL ANPC"
+                className="footerLogoLink"
+              >
+                <img className="footerLogo" src="/brand/sol-anpc.png" alt="SAL ANPC" />
+              </a>
 
-  <a
-    href="https://consumer-redress.ec.europa.eu/index_en"
-    target="_blank"
-    rel="noreferrer"
-    aria-label="SOL UE"
-    className="footerLogoLink"
-  >
-    <img className="footerLogo" src="/brand/sol-ue.png" alt="SOL UE" />
-  </a>
-</nav>
+              
+                href="https://consumer-redress.ec.europa.eu/index_en"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="SOL UE"
+                className="footerLogoLink"
+              >
+                <img className="footerLogo" src="/brand/sol-ue.png" alt="SOL UE" />
+              </a>
+            </nav>
           </div>
         </footer>
 
         <CookieBanner />
+
+        {/* WhatsApp Button */}
+        
+          href="https://wa.me/40741259236?text=Bun%C4%83%20ziua%2C%20sunt%20interesat%20de%20serviciile%20Iconic%20Collection"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            position: "fixed",
+            bottom: "24px",
+            right: "24px",
+            zIndex: 9999,
+            backgroundColor: "#25D366",
+            borderRadius: "50%",
+            width: "60px",
+            height: "60px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            boxShadow: "0 4px 12px rgba(0,0,0,0.3)",
+            textDecoration: "none",
+          }}
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+            width={32}
+            height={32}
+            alt="WhatsApp"
+          />
+        </a>
+
       </body>
     </html>
   );
